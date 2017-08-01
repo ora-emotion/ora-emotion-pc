@@ -183,3 +183,70 @@ body {
     top: -24px;
   }
 }
+.child-page .module-01 .module-bot {
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+}
+.child-page .module-01 .module-bot .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+@media (min-width: 1106px) {
+  .child-page .module-01 .module-bot .bg {
+    height: 660px;
+  }
+}
+@media (max-width: 1106px) {
+  .child-page .module-01 .module-bot .bg {
+    height: 500px;
+  }
+}
+.child-page .module-01 .module-bot .bg .left {
+  width: 90px;
+  border-top: 90px solid #fd3232;
+  border-right: 90px solid transparent;
+  border-bottom: 90px solid transparent;
+  border-left: 90px solid #fd3232;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.child-page .module-01 .module-bot .bg .left .left-inner {
+  width: 75px;
+  border-top: 75px solid #2d2d2d;
+  border-right: 75px solid transparent;
+  border-bottom: 75px solid transparent;
+  border-left: 75px solid #2d2d2d;
+  position: absolute;
+  top: -90px;
+  left: -90px;
+}
+.child-page .module-01 .module-bot .bg .right {
+  width: 90px;
+  border-top: 90px solid transparent;
+  border-right: 90px solid #fd3232;
+  border-bottom: 90px solid #fd3232;
+  border-left: 90px solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.child-page .module-01 .module-bot .bg .right .right-inner {
+  width: 75px;
+  border-top: 75px solid transparent;
+  border-right: 75px solid #2d2d2d;
+  border-bottom: 75px solid #2d2d2d;
+  border-left: 75px solid transparent;
+  position: absolute;
+  bottom: -90px;
+  right: -90px;
+}
+.child-page .module-01 .module-bot .pic-list .row .item .pic {
+  width: 340px;
+}
+.child-page .module-01 .module-bot .pic-list .row .item .pic img {
+  width: 100%;
+}
