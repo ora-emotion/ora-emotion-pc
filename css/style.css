@@ -275,7 +275,7 @@ font:13px 'PT Sans', Arial, Tahoma, Verdana, Sans-Serif;color:#393939;
 	cursor: pointer;
 }
 .arrowButton .prevArrow{
-	background: url(../images/prev.png) no-repeat; 
+	background: url(../img/index/prev.png) no-repeat;
 	width: 60px;
 	height: 60px;      
 	position: absolute;
@@ -284,7 +284,7 @@ font:13px 'PT Sans', Arial, Tahoma, Verdana, Sans-Serif;color:#393939;
     z-index: 3;
 } 
 .arrowButton .nextArrow{                 
-	background: url(../images/next.png) no-repeat;
+	background: url(../img/index/next.png) no-repeat;
 	width: 60px;
 	height: 60px;
 	position: absolute;
