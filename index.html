@@ -295,6 +295,10 @@
 
     <!-- 导师团队-->
     <div class="team">
+        <div class="title text-center">
+            <h2>导师团队</h2>
+            <p class="subtitle">MENTOR TEAM</p>
+        </div>
         <div class="wrape homeone">
             <!-- <div class="fallback"><img src="images/home_page_1_fallback.jpg" alt="" /></div> -->
             <!--<div class="bg-service"></div>-->
@@ -728,6 +732,18 @@
     </script>
     <!-- /javascript -->
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#obo_slider').runbanner({
+                className: 'oneByOne1',
+                easeType: 'fadeInRight',  //动画参数
+                /*
+                 "rollIn", "fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "fadeInRight", "bounceIn", "bounceInDown", "bounceInUp", "bounceInLeft",        "bounceInRight", "rotateIn", "rotateInDownLeft", "rotateInDownRight", "rotateInUpLeft", "rotateInUpRight" (18种动画类型可调用)
+                 */
+                slideShow: true  //为false时不会自动播放
+            });
+        })
+    </script>
     </body>
 
 </html>
