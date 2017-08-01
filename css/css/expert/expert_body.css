@@ -1,0 +1,153 @@
+
+
+
+
+.head1{
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+.head1 img{
+	max-width: 1550px;
+}
+.zhuti1{
+	height: 600px;
+}
+.biaoti{
+	text-align: center;
+	margin-top: 50px;
+}
+.neirong1{
+	width: 100%;
+	height: 500px;
+	margin-top: 50px;
+}
+.neirong1 ul li{
+	float: left;
+	margin-left: 20px;
+	width: 31%;
+}
+
+.neirong1 ul li img:hover{
+	background-color: #FF6C9E;
+}
+.neirong1 ul li h3{
+	text-align: center;
+	font-weight: bold;
+}
+.neirong1 ul li h3:hover{
+	color: #FF6C9E;
+}
+.neirong1 ul li p{
+	text-align: center; 
+}
+.zuihou1{
+	color: #FF6C9E;
+	font-size: 16px;
+	font-weight: bold;
+}
+.zhuti2{
+	width: 100%;
+	height: 650px;
+}
+.zhuti2 .neirong2>img{
+	width: 80%;
+	margin-top: 100px;
+	margin-bottom: -5px;
+	margin-left: 150px;
+}
+.xia{
+	width: 100%;
+	height: 150px;
+	background: url(../../images/expert/banner1.jpg);
+}
+
+.xia img{
+	width: 150px;
+	float: right;
+	margin-right: 200px;
+	margin-top: 100px;
+}
+.xia img:hover{
+	background-color: #FF95B9;
+}
+.neirong3{
+	height: 800px;
+	width: 100%;
+	margin-left: -50px;
+}
+.neirong3 ul li{
+	width: 520px;
+	height: 300px;
+	float: left;
+}
+.li1{
+	background-image: url(../../images/expert/jiawei.jpg); 
+	background-size: 544px 347px;
+	margin-left: 230px;
+	margin-top: 50px;
+	width: 520px;
+	height: 300px;
+}
+.li2{
+	background-image: url(../../images/expert/moyan.jpg);
+	margin-left: 100px;
+	margin-top: 50px;
+	width: 500px;
+	height: 300px;
+}
+.li3{
+	background-image: url(../../images/expert/chaersi.jpg);
+	margin-left: 230px;
+	margin-top: 50px;
+	width: 540px;
+	height: 300px;
+}
+.li4{
+	background-image: url(../../images/expert/haoyu.jpg);
+	margin-left: 100px;
+	margin-top: 50px;
+	width: 540px;
+	height: 300px;
+}
+
+.liaojie{
+	margin-left: 300px;
+	line-height: 500px;
+	color: #0B0B0B;
+	border: 2px solid #0B0B0B;
+	padding: 5px 5px 5px 5px;
+}
+.liaojie:hover{
+	color: #FF6C9E;
+	border: 2px solid #FF6C9E;
+}
+.zixun{
+	margin-left: 50px;
+	background-color: #FF6C9E;
+	padding: 7px 7px 7px 7px;
+}
+.zixun:hover{
+	background-color: #FF8E01;
+}
+.fenye{
+	text-align: center;
+	height: 50px;
+	width: 600px;
+	margin-left: 500px;
+	line-height: 100px;
+}
+.fenye a{
+	color: #AAAAAA;
+	border: 2px solid #AAAAAA;
+	padding: 5px 5px 5px 5px;
+}
+.fenye a:hover{
+	color: #FF6C9E;
+	border-color: #FF6C9E;
+}
+#yiye{
+	color: #FFFFFF;
+	background-color: #FF6C9E;
+	border-color: #FF6C9E;
+}

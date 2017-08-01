@@ -1,0 +1,81 @@
+h2{
+	/*background-image: url(../images/cis_a.png);*/
+}
+body{
+	background-size: 100% 100%;
+	/*固定背景不动*/
+	background-attachment: fixed;
+	
+
+}
+embed{
+	/*悬浮效果*/
+    box-shadow: 0 10px 10px #ccc;
+    /*边框圆化*/
+	/*border-radius: 10px;*/
+}
+	/*embed:hover{
+    	box-shadow: 0 10px 10px #C0C0C0;
+	}*/
+.w1200{
+	width: 1100px;
+	margin: 0 auto;
+	height: 2300px;
+}
+.body1{
+	height: 600px;
+}
+.body2{
+	height: 1000px;
+}
+.biaoti{
+	margin-top: 0px auto;
+	height: 100px;
+	text-align: center;
+}
+.biaoti h2{
+	height: 31px;
+	width: 157px;
+	margin-top: 50px;
+	padding-top: 20px;
+	margin-left: 500px;
+	color: #FF6C9E;
+	background-image: url(../images/cis_a.png);
+}
+.biaoti h2:hover{
+	background-color: #FF6C9E;
+	color: #FFFFFF;
+	background-image: none;
+	border-radius: 10px;
+	line-height: 15px;
+}
+.video1{
+	margin-top: 50px;
+}
+.left{
+	float: left;
+	width: 580px;
+	height: 400px;
+	border-radius: 10px;
+}
+.right{
+	float: right;
+	width: 480px;
+	border-radius: 10px;
+}
+.video2{
+	width: 1100px;
+}
+.video2 ul li{
+	float: left;
+	margin-left: 20px;
+	margin-top: 50px;
+}
+.video2 ul li h2{
+	text-align: center;
+	color: #03A9F4;
+	height: 50px;
+}
+.video2 ul li h2:hover{
+	color: #FF6C9E;
+}

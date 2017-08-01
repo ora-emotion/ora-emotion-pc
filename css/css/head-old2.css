@@ -1,0 +1,141 @@
+/* 样式预设 */
+html, body, h1, h2, h3, h4, h5, h6, p ,ol, ul, li, pre, code, address, variable, form, fieldset, blockquote, div, dd, dl, dt, apan, ol, ul, span,input {
+    /*margin:0;
+    padding:0;
+    border:0;*/
+}
+
+a{color:#fff; text-decoration:none;}
+a:hover{text-decoration:none;}
+a, a:visited, a:focus, a:active, a:hover{outline:0 none !important;}
+a:focus{outline:none;}
+ol,li,ul{list-style:none;}
+
+.inner {
+    width: 1106px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#wap{
+    margin: 0 auto;
+    width: 100%;
+    min-width: 1106px;
+    overflow: hidden;
+}
+
+/* 鼠标悬停显示微信二维码 */
+.header .modal {
+    position: relative;
+}
+
+.header .wechat {
+    position: absolute;
+    top: 8px;
+    right: -210px;
+}
+
+.header .modal .wechat {
+    opacity: 0;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.header .modal:hover .wechat {
+    opacity: 1;
+}
+/* /鼠标悬停显示微信二维码 */
+
+.top{
+    width: 100%;
+    height: 145px;
+    background: url(../img/index/taitou.jpg) center center no-repeat;
+}
+.top .dianji{
+	width: 150px;
+	height: 35px;
+	float: right;
+	margin-right: 500px;
+	margin-top: 20px;
+	/*border: 2px solid #000000;*/
+}
+#erweima{
+	float: right;
+	/*margin-left: 1350px;*/
+	margin-right: 20px;
+	margin-top: 15px;
+	width: 115px;
+	height: 115px;
+	/*display: none;*/  
+}
+#erweima img{
+	width: 115px;
+	height: 115px;
+}
+.flexslider{
+    position:relative;
+    height:885px;
+    overflow:hidden;
+}
+.slides{
+    position:relative;
+    z-index:1;
+}
+.slides li{
+    height:885px;
+}
+.h86{
+    height: 86px;
+}
+
+/* 导航栏 */
+.nav {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #2D2D2D;
+    margin: 0 auto;
+}
+
+.nav .inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.nav .inner ul {
+    display: flex;
+    justify-content: space-around;
+    line-height: 50px;
+}
+
+.nav .inner ul li {
+    flex-grow: 1;
+    background-color: transparent;
+    -webkit-transition: background-color .3s;
+    -moz-transition: background-color .3s;
+    -ms-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    transition: background-color .3s;
+}
+.nav .inner ul li:hover {
+    background-color: #ff3232;
+    color: #F0F0F0;
+}
+.nav .inner ul li:hover a{
+	color: #F0F0F0;
+}
+/* /导航栏 */
+.lunbo1{
+	width: 100%;
+	min-width: 1106px;
+}

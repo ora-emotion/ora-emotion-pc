@@ -1,0 +1,56 @@
+
+
+.body{
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.w1001{
+	width: 790px;
+    line-height: 40px;
+    float: left;
+}
+.cis1{
+    height: 100%;
+    background: url("../images/cis.png") no-repeat center 86px;
+}
+.cis1>h3{
+    margin-top: 230px;
+    text-align: center;
+}
+.cis1>p{
+    margin: 0 auto;
+    width: 924px;
+    margin-top: 32px;
+    /*
+     * 首行缩进
+     */
+    text-indent: 30px;
+}
+.cis1>div{
+    margin-left: 20px;
+    padding-top: 18px;
+    width: 175px;
+    height: 51px;
+    line-height: 51px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #434343;
+    background: url("../images/cis_a.png") no-repeat center center;
+}
+.cis1>img{
+    display: block;
+    margin: 20px auto;
+}
+.cis1>h4{
+    margin: 20px 0 0 35px;
+}
+.right1{
+	float: right;
+	width: 400px;
+	height: 600px;
+	margin-right: 1px;
+	margin-top: 230px;
+}
+
