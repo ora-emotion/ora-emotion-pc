@@ -37,269 +37,66 @@ body {
   font-size: 14px;
   letter-spacing: 2.5px;
 }
-.child-page .module-01 .module-top {
-  min-width: 1106px;
-  position: relative;
-  border-bottom: 2px solid #d6d5d5;
-}
-@media (min-width: 1570px) {
-  .child-page .module-01 .module-top {
-    height: 592px;
-  }
-}
-@media (min-width: 1106px) and (max-width: 1570px) {
-  .child-page .module-01 .module-top {
-    height: 550px;
-  }
-}
-@media (max-width: 1106px) {
-  .child-page .module-01 .module-top {
-    height: 500px;
-  }
-}
-.child-page .module-01 .module-top .txt {
-  letter-spacing: 15px;
-  position: absolute;
-  top: 50px;
-  left: 10%;
-  right: 10%;
-}
-@media (min-width: 1650px) {
-  .child-page .module-01 .module-top .txt {
-    font-size: 2em;
-  }
-}
-@media (min-width: 1570px) and (max-width: 1650px) {
-  .child-page .module-01 .module-top .txt {
-    font-size: 1.6em;
-  }
-}
-@media (min-width: 1106px) and (max-width: 1570px) {
-  .child-page .module-01 .module-top .txt {
-    font-size: 1.2em;
-  }
-}
-@media (max-width: 1106px) {
-  .child-page .module-01 .module-top .txt {
-    font-size: 1.3em;
-    top: 35px;
-  }
-}
-.child-page .module-01 .module-top .bg {
+.child-page .module.module-01 .bg.top {
   width: 100%;
+  height: 527px;
+  background: url("../img/save-marriage/part01-bg-top.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.child-page .module.module-01 .bg.top p {
+  width: 430px;
+  height: 195px;
+  margin: 0 auto;
+  padding-top: 50px;
+  font-size: 32px;
+  line-height: 52px;
+}
+.child-page .module.module-01 .module-title .line {
+  width: 100%;
+  border-top: 2px solid #d6d5d5;
+  position: relative;
+  top: 66px;
+}
+.child-page .module.module-01 .module-title .txt {
+  width: 323px;
+  margin: 0 auto;
+  position: relative;
+  bottom: -38px;
+  color: #2d2d2d;
+  background: url("../img/save-marriage/title-icon.png") no-repeat center 8px;
+}
+.child-page .module.module-01 .module-title .txt h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 14px;
+}
+.child-page .module.module-01 .module-title .txt p {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.child-page .module.module-01 .bg.bot {
+  width: 100%;
+  height: 663px;
+  border: 3px solid #2d2d2d;
+  border-left: none;
+  border-right: none;
+  background: url("../img/save-marriage/part01-bg-bot.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  top: 78px;
+}
+.child-page .module.module-01 .bg.bot .module01-items {
+  width: 100%;
+  padding: 50px 100px 0;
   display: flex;
   justify-content: space-around;
 }
-@media (min-width: 1650px) {
-  .child-page .module-01 .module-top .bg .bg-left {
-    height: 324px;
-    border-top: 162px solid #2d2d2d;
-    border-right: 162px solid transparent;
-    border-bottom: 162px solid transparent;
-    border-left: 162px solid #2d2d2d;
-  }
-}
-@media (min-width: 1106px) and (max-width: 1650px) {
-  .child-page .module-01 .module-top .bg .bg-left {
-    height: 260px;
-    border-top: 130px solid #2d2d2d;
-    border-right: 130px solid transparent;
-    border-bottom: 130px solid transparent;
-    border-left: 130px solid #2d2d2d;
-  }
-}
-@media (min-width: 996px) and (max-width: 1106px) {
-  .child-page .module-01 .module-top .bg .bg-left {
-    height: 200px;
-    border-top: 100px solid #2d2d2d;
-    border-right: 100px solid transparent;
-    border-bottom: 100px solid transparent;
-    border-left: 100px solid #2d2d2d;
-  }
-}
-.child-page .module-01 .module-top .bg .bg-mid {
-  width: 100%;
-  background: url("../img/save-marriage/part01-bg.png") no-repeat center top;
-  -webkit-background-size: contain;
-  background-size: contain;
-}
-@media (min-width: 1650px) {
-  .child-page .module-01 .module-top .bg .bg-mid {
-    height: 500px;
-  }
-}
-@media (min-width: 1570px) and (max-width: 1650px) {
-  .child-page .module-01 .module-top .bg .bg-mid {
-    height: 400px;
-  }
-}
-@media (min-width: 1106px) and (max-width: 1570px) {
-  .child-page .module-01 .module-top .bg .bg-mid {
-    height: 360px;
-  }
-}
-@media (max-width: 1106px) {
-  .child-page .module-01 .module-top .bg .bg-mid {
-    height: 360px;
-  }
-}
-@media (min-width: 1650px) {
-  .child-page .module-01 .module-top .bg .bg-right {
-    height: 260px;
-    border-top: 162px solid #2d2d2d;
-    border-right: 162px solid #2d2d2d;
-    border-bottom: 162px solid transparent;
-    border-left: 162px solid transparent;
-  }
-}
-@media (min-width: 1106px) and (max-width: 1650px) {
-  .child-page .module-01 .module-top .bg .bg-right {
-    height: 260px;
-    border-top: 130px solid #2d2d2d;
-    border-right: 130px solid #2d2d2d;
-    border-bottom: 130px solid transparent;
-    border-left: 130px solid transparent;
-  }
-}
-@media (min-width: 996px) and (max-width: 1106px) {
-  .child-page .module-01 .module-top .bg .bg-right {
-    height: 200px;
-    border-top: 100px solid #2d2d2d;
-    border-right: 100px solid #2d2d2d;
-    border-bottom: 100px solid transparent;
-    border-left: 100px solid transparent;
-  }
-}
-.child-page .module-01 .module-mid.title {
-  width: 100%;
-  display: block;
-}
-.child-page .module-01 .module-mid.title .txt-cont {
-  position: relative;
-  background-color: #fff;
-  display: inline-block;
-  width: 330px;
-}
-@media (min-width: 1570px) {
-  .child-page .module-01 .module-mid.title .txt-cont {
-    top: -27px;
-  }
-}
-@media (min-width: 1106px) and (max-width: 1570px) {
-  .child-page .module-01 .module-mid.title .txt-cont {
-    top: -26px;
-  }
-}
-@media (max-width: 1106px) {
-  .child-page .module-01 .module-mid.title .txt-cont {
-    top: -24px;
-  }
-}
-.child-page .module-01 .module-bot {
-  width: 100%;
-  height: 660px;
-  background-color: transparent;
-  position: relative;
-}
-.child-page .module-01 .module-bot .bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-@media (min-width: 1106px) {
-  .child-page .module-01 .module-bot .bg {
-    height: 660px;
-  }
-}
-@media (max-width: 1106px) {
-  .child-page .module-01 .module-bot .bg {
-    height: 500px;
-  }
-}
-.child-page .module-01 .module-bot .bg .left {
-  width: 90px;
-  border-top: 90px solid #fd3232;
-  border-right: 90px solid transparent;
-  border-bottom: 90px solid transparent;
-  border-left: 90px solid #fd3232;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.child-page .module-01 .module-bot .bg .left .left-inner {
-  width: 75px;
-  border-top: 75px solid #2d2d2d;
-  border-right: 75px solid transparent;
-  border-bottom: 75px solid transparent;
-  border-left: 75px solid #2d2d2d;
-  position: absolute;
-  top: -90px;
-  left: -90px;
-}
-.child-page .module-01 .module-bot .bg .right {
-  width: 90px;
-  border-top: 90px solid transparent;
-  border-right: 90px solid #fd3232;
-  border-bottom: 90px solid #fd3232;
-  border-left: 90px solid transparent;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-.child-page .module-01 .module-bot .bg .right .right-inner {
-  width: 75px;
-  border-top: 75px solid transparent;
-  border-right: 75px solid #2d2d2d;
-  border-bottom: 75px solid #2d2d2d;
-  border-left: 75px solid transparent;
-  position: absolute;
-  bottom: -90px;
-  right: -90px;
-}
-.child-page .module-01 .module-bot .pic-list {
-  padding: 0 180px;
-}
-.child-page .module-01 .module-bot .pic-list .pic-list-item {
-  padding-top: 68px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-.child-page .module-01 .module-bot .pic-list .pic-list-item .pic {
-  width: 340px;
-}
-.child-page .module-01 .module-bot .pic-list .pic-list-item .pic img {
-  width: 100%;
-}
-.child-page .module-01 .module-bot .pic-list .pic-list-item .icon {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  bottom: -100px;
-  background-repeat: no-repeat;
-}
-.child-page .module-01 .module-bot .pic-list .pic-list-item .txt {
-  position: absolute;
-  bottom: -180px;
-  font-size: 22px;
+.child-page .module.module-01 .bg.bot .module01-items .item p {
+  font-size: 30px;
   font-weight: bold;
-}
-.child-page .module-01 .module-bot .pic-list .pic-list-item:first-child .icon {
-  background-image: url("../img/save-marriage/icons-save-marriage.png");
-  background-position: -120px -40px;
-}
-.child-page .module-01 .module-bot .pic-list .pic-list-item:nth-child(2) .icon {
-  background-image: url("../img/save-marriage/icons-save-marriage.png");
-  background-position: -40px -40px;
-}
-.child-page .module-01 .module-bot .pic-list .pic-list-item:nth-child(3) .icon {
-  background-image: url("../img/save-marriage/icons-save-marriage.png");
-  background-position: 0px -40px;
-}
-.child-page .module-01 .module-bot .pic-list .pic-list-item:last-child .icon {
-  background-image: url("../img/save-marriage/icons-save-marriage.png");
-  background-position: -80px -40px;
+  padding-top: 47px;
 }
 .child-page .module-02 {
   height: 1008px;
