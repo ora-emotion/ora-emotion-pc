@@ -19,6 +19,7 @@ li {
 .child-page {
   /* 模块公共样式 */
   /* 模块一：当下婚姻状态 */
+  /* 模块一：当下婚姻状态 */
   /* 模块二：婚姻危机出现的原因 */
   /* 模块二：婚姻危机出现的原因 */
   /* 模块三：橘子情感优势 */
@@ -205,4 +206,62 @@ li {
 .child-page .module.module-02 .main .content .item-group .item:last-child {
   margin: 0;
   height: 159px;
+}
+.child-page .module.module-03 {
+  position: relative;
+  top: 306px;
+}
+.child-page .module.module-03 .module-title .line {
+  width: 100%;
+  border-top: 2px solid #d6d5d5;
+  position: relative;
+  top: 66px;
+}
+.child-page .module.module-03 .module-title .txt {
+  width: 322px;
+  margin: 0 auto;
+  position: relative;
+  bottom: -38px;
+  color: #2d2d2d;
+  background: url("../img/save-marriage/title-icon03.png") no-repeat center 8px;
+}
+.child-page .module.module-03 .module-title .txt h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 14px;
+}
+.child-page .module.module-03 .module-title .txt p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.child-page .module.module-03 .main {
+  position: relative;
+  top: 75px;
+}
+.child-page .module.module-03 .main .bg {
+  background: url("../img/save-marriage/part03-bg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.child-page .module.module-03 .main .bg .para p {
+  font-size: 24px;
+  line-height: 43px;
+  padding: 34px 44px;
+  border: 1px solid #2d2d2d;
+  width: 647px;
+  margin: 0 auto;
+  position: relative;
+}
+.child-page .module.module-03 .main .bg .para .top-para {
+  top: 32px;
+  margin-bottom: 112px;
+}
+.child-page .module.module-03 .main .bg .para .bot-para {
+  bottom: 30px;
+}
+.child-page .module.module-03 .main .bg .para .bg-inner {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
 }
