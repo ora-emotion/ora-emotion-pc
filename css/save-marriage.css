@@ -417,29 +417,24 @@ body {
 .child-page .module-03 .main {
   width: 100%;
   height: 526px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.child-page .module-03 .main .left.bg {
-  position: absolute;
-  left: 0;
-  line-height: 526px;
+  background: url("../img/save-marriage/part03-bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 .child-page .module-03 .main .mid.txt {
-  padding: 0 80px;
-  width: 700px;
-  min-width: 660px;
+  width: 650px;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 24px;
+  line-height: 42px;
+}
+.child-page .module-03 .main .mid.txt p {
+  color: #2d2d2d;
 }
 .child-page .module-03 .main .mid.txt p:first-child {
-  margin-bottom: 95px;
+  padding-top: 76px;
 }
-.child-page .module-03 .main .right.bg {
-  position: absolute;
-  right: 0;
+.child-page .module-03 .main .mid.txt p:last-child {
+  padding-top: 151px;
 }
 .child-page .module-04 {
   min-width: 1106px;
