@@ -12,6 +12,8 @@ body {
   /* 模块一：当下婚姻状态 */
   /* 模块二：婚姻危机出现的原因 */
   /* 模块二：婚姻危机出现的原因 */
+  /* 模块三：橘子情感优势 */
+  /* 模块三：橘子情感优势 */
 }
 .child-page .module .title {
   position: relative;
@@ -328,11 +330,11 @@ body {
   font-size: 36px;
   font-weight: bold;
 }
-.child-page .module-02 .main .txt.left .list .list-item {
+.child-page .module-02 .main .txt.left .module02-list .list-item {
   height: 120px;
   display: flex;
 }
-.child-page .module-02 .main .txt.left .list .list-item .left {
+.child-page .module-02 .main .txt.left .module02-list .list-item .left {
   padding: 0 0 120px;
   color: #fd3232;
   font-weight: bold;
@@ -341,31 +343,31 @@ body {
   padding-right: 30px;
   padding-left: 92px;
 }
-.child-page .module-02 .main .txt.left .list .list-item p {
+.child-page .module-02 .main .txt.left .module02-list .list-item p {
   line-height: 30px;
 }
-.child-page .module-02 .main .txt.left .list .list-item .right {
+.child-page .module-02 .main .txt.left .module02-list .list-item .right {
   line-height: 120px;
 }
-.child-page .module-02 .main .txt.left .list .list-item .right p:first-child {
+.child-page .module-02 .main .txt.left .module02-list .list-item .right p:first-child {
   height: 20px;
   line-height: 20px;
   padding-top: 34px;
   font-weight: bold;
   font-size: 24px;
 }
-.child-page .module-02 .main .txt.left .list .list-item .right p:last-child {
+.child-page .module-02 .main .txt.left .module02-list .list-item .right p:last-child {
   line-height: 30px;
   padding-top: 18px;
   width: 430px;
   font-size: 18px;
 }
-.child-page .module-02 .main .txt.left .list .list-item:nth-child(2) .left,
-.child-page .module-02 .main .txt.left .list .list-item:nth-child(4) .left {
+.child-page .module-02 .main .txt.left .module02-list .list-item:nth-child(2) .left,
+.child-page .module-02 .main .txt.left .module02-list .list-item:nth-child(4) .left {
   padding-left: 50px;
 }
-.child-page .module-02 .main .txt.left .list .list-item:nth-child(2) .right p,
-.child-page .module-02 .main .txt.left .list .list-item:nth-child(4) .right p {
+.child-page .module-02 .main .txt.left .module02-list .list-item:nth-child(2) .right p,
+.child-page .module-02 .main .txt.left .module02-list .list-item:nth-child(4) .right p {
   width: 480px;
 }
 .child-page .module-02 .main .pic.right {
@@ -391,4 +393,45 @@ body {
   flex-grow: 1;
   height: 900px;
   background-color: #fd3232;
+}
+.child-page .module-03 {
+  position: relative;
+  top: 170px;
+  border-top: 2px solid #c2c2c2;
+}
+.child-page .module-03 .module.title {
+  position: relative;
+  top: -41px;
+}
+.child-page .module-03 .module.title .txt-cont {
+  width: 350px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.child-page .module-03 .main {
+  width: 100%;
+  height: 526px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.child-page .module-03 .main .left.bg {
+  position: absolute;
+  left: 0;
+  line-height: 526px;
+}
+.child-page .module-03 .main .mid.txt {
+  padding: 0 80px;
+  width: 700px;
+  min-width: 660px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+.child-page .module-03 .main .mid.txt p:first-child {
+  margin-bottom: 95px;
+}
+.child-page .module-03 .main .right.bg {
+  position: absolute;
+  right: 0;
 }
