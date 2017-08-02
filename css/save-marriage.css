@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  min-width: 1106px;
+}
+.child-page {
+  /* 模块公共样式 */
+  /* 模块一：当下婚姻状态 */
+  /* 模块二：婚姻危机出现的原因 */
+  /* 模块二：婚姻危机出现的原因 */
+  /* 模块三：橘子情感优势 */
+  /* 模块三：橘子情感优势 */
+}
+.child-page .module .title {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #2d2d2d;
+}
+.child-page .module .title h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+.child-page .module .title .subtitle {
+  font-size: 14px;
+  letter-spacing: 2.5px;
+}
+.child-page .module.module-01 .bg.top {
+  width: 100%;
+  height: 527px;
+  background: url("../img/save-marriage/part01-bg-top.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.child-page .module.module-01 .bg.top p {
+  width: 430px;
+  height: 195px;
+  margin: 0 auto;
+  padding-top: 50px;
+  font-size: 32px;
+  line-height: 52px;
+}
+.child-page .module.module-01 .module-title .line {
+  width: 100%;
+  border-top: 2px solid #d6d5d5;
+  position: relative;
+  top: 66px;
+}
+.child-page .module.module-01 .module-title .txt {
+  width: 323px;
+  margin: 0 auto;
+  position: relative;
+  bottom: -38px;
+  color: #2d2d2d;
+  background: url("../img/save-marriage/title-icon.png") no-repeat center 8px;
+}
+.child-page .module.module-01 .module-title .txt h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 14px;
+}
+.child-page .module.module-01 .module-title .txt p {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.child-page .module.module-01 .bg.bot {
+  width: 100%;
+  border: 3px solid #2d2d2d;
+  border-left: none;
+  border-right: none;
+  background: url("../img/save-marriage/part01-bg-bot.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  top: 78px;
+}
+.child-page .module.module-01 .bg.bot .module01-items {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 140px;
+}
+.child-page .module.module-01 .bg.bot .module01-items .item {
+  padding: 0 25px;
+}
+.child-page .module.module-01 .bg.bot .module01-items .item img:nth-child(1) {
+  padding-top: 50px;
+}
+.child-page .module.module-01 .bg.bot .module01-items .item img:nth-child(2) {
+  margin: 33px auto 48px;
+}
+.child-page .module.module-01 .bg.bot .module01-items .item p {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 59px;
+}
+.child-page .module.module-02 {
+  border-top: 2px solid #c2c2c2;
+  position: relative;
+  top: 210px;
+}
+.child-page .module.module-02 .module-title .title-icon-left {
+  background: url("../img/save-marriage/title-icon-left.png") no-repeat 1px 1px;
+}
+.child-page .module.module-02 .module-title .txt {
+  width: 323px;
+  margin: 0 auto;
+  position: relative;
+  bottom: -38px;
+  color: #2d2d2d;
+  background: url("../img/save-marriage/title-icon.png") no-repeat center 8px;
+}
+.child-page .module.module-02 .module-title .txt h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 14px;
+}
+.child-page .module.module-02 .module-title .txt p {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.child-page .module.module-02 .module-title .title-icon-right {
+  background: url("../img/save-marriage/title-icon-right.png") no-repeat 1px 1px;
+}
