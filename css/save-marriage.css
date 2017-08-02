@@ -16,6 +16,8 @@ body {
   /* 模块三：橘子情感优势 */
   /* 模块四：错误挽回方式 */
   /* 模块四：错误挽回方式 */
+  /* 模块五：擅长挽回的婚姻类型 */
+  /* 模块五：擅长挽回的婚姻类型 */
 }
 .child-page .module .title {
   position: relative;
@@ -438,6 +440,7 @@ body {
   right: 0;
 }
 .child-page .module-04 {
+  min-width: 1106px;
   border-top: 2px solid #c2c2c2;
   position: relative;
   top: 260px;
@@ -459,9 +462,18 @@ body {
   background-color: #2d2d2d;
 }
 .child-page .module-04 .main .item-group {
-  padding: 60px 180px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+@media (min-width: 1270px) {
+  .child-page .module-04 .main .item-group {
+    padding: 60px 180px;
+  }
+}
+@media (max-width: 1270px) {
+  .child-page .module-04 .main .item-group {
+    padding: 60px 40px;
+  }
 }
 .child-page .module-04 .main .item-group .module04-item {
   width: 394px;
@@ -504,4 +516,16 @@ body {
 }
 .child-page .module-04 .main .item-group:last-child .module04-item:nth-child(3) {
   background-image: url("../img/save-marriage/part04-pic01.png");
+}
+.child-page .module-05 {
+  position: relative;
+  top: 436px;
+  border-top: 2px solid #c2c2c2;
+}
+.child-page .module-05 .module.title {
+  position: relative;
+  top: -36px;
+  width: 420px;
+  margin: 0 auto;
+  background-color: #fff;
 }
