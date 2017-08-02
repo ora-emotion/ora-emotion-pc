@@ -244,9 +244,47 @@ body {
   bottom: -90px;
   right: -90px;
 }
-.child-page .module-01 .module-bot .pic-list .row .item .pic {
+.child-page .module-01 .module-bot .pic-list {
+  padding: 0 180px;
+}
+.child-page .module-01 .module-bot .pic-list .pic-list-item {
+  padding-top: 68px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.child-page .module-01 .module-bot .pic-list .pic-list-item .pic {
   width: 340px;
 }
-.child-page .module-01 .module-bot .pic-list .row .item .pic img {
+.child-page .module-01 .module-bot .pic-list .pic-list-item .pic img {
   width: 100%;
+}
+.child-page .module-01 .module-bot .pic-list .pic-list-item .icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: -100px;
+  background-repeat: no-repeat;
+}
+.child-page .module-01 .module-bot .pic-list .pic-list-item .txt {
+  position: absolute;
+  bottom: -180px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.child-page .module-01 .module-bot .pic-list .pic-list-item:first-child .icon {
+  background-image: url("../img/save-marriage/icons-save-marriage.png");
+  background-position: -120px -40px;
+}
+.child-page .module-01 .module-bot .pic-list .pic-list-item:nth-child(2) .icon {
+  background-image: url("../img/save-marriage/icons-save-marriage.png");
+  background-position: -40px -40px;
+}
+.child-page .module-01 .module-bot .pic-list .pic-list-item:nth-child(3) .icon {
+  background-image: url("../img/save-marriage/icons-save-marriage.png");
+  background-position: 0px -40px;
+}
+.child-page .module-01 .module-bot .pic-list .pic-list-item:last-child .icon {
+  background-image: url("../img/save-marriage/icons-save-marriage.png");
+  background-position: -80px -40px;
 }
