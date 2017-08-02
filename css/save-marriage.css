@@ -14,6 +14,8 @@ body {
   /* 模块二：婚姻危机出现的原因 */
   /* 模块三：橘子情感优势 */
   /* 模块三：橘子情感优势 */
+  /* 模块四：错误挽回方式 */
+  /* 模块四：错误挽回方式 */
 }
 .child-page .module .title {
   position: relative;
@@ -434,4 +436,72 @@ body {
 .child-page .module-03 .main .right.bg {
   position: absolute;
   right: 0;
+}
+.child-page .module-04 {
+  border-top: 2px solid #c2c2c2;
+  position: relative;
+  top: 260px;
+  /*--> 模块四主体*/
+}
+.child-page .module-04 .module.title {
+  position: absolute;
+  top: -38px;
+}
+.child-page .module-04 .module.title .txt-cont {
+  background-color: #fff;
+  width: 350px;
+  margin: 0 auto;
+}
+.child-page .module-04 .main {
+  position: relative;
+  top: 86px;
+  width: 100%;
+  background-color: #2d2d2d;
+}
+.child-page .module-04 .main .item-group {
+  padding: 60px 180px;
+  display: flex;
+  justify-content: space-between;
+}
+.child-page .module-04 .main .item-group .module04-item {
+  width: 394px;
+  height: 341px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.child-page .module-04 .main .item-group .module04-item h4 {
+  line-height: 28px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.child-page .module-04 .main .item-group .module04-item p {
+  width: 305px;
+  line-height: 26px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.child-page .module-04 .main .item-group:first-child .module04-item:nth-child(1) {
+  background-image: url("../img/save-marriage/part04-pic01.png");
+}
+.child-page .module-04 .main .item-group:first-child .module04-item:nth-child(2) {
+  background-image: url("../img/save-marriage/part04-pic01.png");
+}
+.child-page .module-04 .main .item-group:first-child .module04-item:nth-child(3) {
+  background-image: url("../img/save-marriage/part04-pic01.png");
+}
+.child-page .module-04 .main .item-group:last-child .module04-item:nth-child(1) {
+  background-image: url("../img/save-marriage/part04-pic01.png");
+}
+.child-page .module-04 .main .item-group:last-child .module04-item:nth-child(2) {
+  background-image: url("../img/save-marriage/part04-pic01.png");
+}
+.child-page .module-04 .main .item-group:last-child .module04-item:nth-child(3) {
+  background-image: url("../img/save-marriage/part04-pic01.png");
 }
