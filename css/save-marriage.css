@@ -6,6 +6,16 @@ html,
 body {
   min-width: 1106px;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  color: #2d2d2d;
+}
 .child-page {
   /* 模块公共样式 */
   /* 模块一：当下婚姻状态 */
@@ -59,7 +69,7 @@ body {
   position: relative;
   bottom: -38px;
   color: #2d2d2d;
-  background: url("../img/save-marriage/title-icon.png") no-repeat center 8px;
+  background: url("../img/save-marriage/title-icon01.png") no-repeat center 8px;
 }
 .child-page .module.module-01 .module-title .txt h2 {
   font-size: 40px;
@@ -101,20 +111,22 @@ body {
   padding-bottom: 59px;
 }
 .child-page .module.module-02 {
-  border-top: 2px solid #c2c2c2;
   position: relative;
-  top: 210px;
+  top: 126px;
 }
-.child-page .module.module-02 .module-title .title-icon-left {
-  background: url("../img/save-marriage/title-icon-left.png") no-repeat 1px 1px;
+.child-page .module.module-02 .module-title .line {
+  width: 100%;
+  border-top: 2px solid #d6d5d5;
+  position: relative;
+  top: 66px;
 }
 .child-page .module.module-02 .module-title .txt {
-  width: 323px;
+  width: 440px;
   margin: 0 auto;
   position: relative;
   bottom: -38px;
   color: #2d2d2d;
-  background: url("../img/save-marriage/title-icon.png") no-repeat center 8px;
+  background: url("../img/save-marriage/title-icon02.png") no-repeat center 8px;
 }
 .child-page .module.module-02 .module-title .txt h2 {
   font-size: 40px;
@@ -124,7 +136,73 @@ body {
 .child-page .module.module-02 .module-title .txt p {
   font-size: 14px;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.child-page .module.module-02 .module-title .title-icon-right {
-  background: url("../img/save-marriage/title-icon-right.png") no-repeat 1px 1px;
+.child-page .module.module-02 .main {
+  position: relative;
+  top: 75px;
+}
+.child-page .module.module-02 .main .content {
+  background: url("../img/save-marriage/part02-bg.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  top: 39px;
+  margin-left: 187px;
+}
+.child-page .module.module-02 .main .content h3 {
+  width: 643px;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 31px;
+  border-bottom: 3px solid #2d2d2d;
+}
+.child-page .module.module-02 .main .content .item-group {
+  width: 643px;
+  padding-top: 41px;
+}
+.child-page .module.module-02 .main .content .item-group .item {
+  display: flex;
+  height: 114px;
+  margin-bottom: 53px;
+}
+.child-page .module.module-02 .main .content .item-group .item .num {
+  color: #fd3232;
+  font-size: 102px;
+  font-weight: bold;
+  position: relative;
+  top: -24px;
+}
+.child-page .module.module-02 .main .content .item-group .item .txt .title {
+  font-size: 30px;
+  font-weight: bold;
+  height: 37px;
+  line-height: 37px;
+  padding-bottom: 4px;
+}
+.child-page .module.module-02 .main .content .item-group .item .txt .para {
+  font-size: 24px;
+  line-height: 42px;
+}
+.child-page .module.module-02 .main .content .item-group .item:nth-child(2),
+.child-page .module.module-02 .main .content .item-group .item:nth-child(4) {
+  padding-left: 49px;
+}
+.child-page .module.module-02 .main .content .item-group .item:nth-child(2) .txt,
+.child-page .module.module-02 .main .content .item-group .item:nth-child(4) .txt {
+  width: 439px;
+}
+.child-page .module.module-02 .main .content .item-group .item:nth-child(1),
+.child-page .module.module-02 .main .content .item-group .item:nth-child(3),
+.child-page .module.module-02 .main .content .item-group .item:nth-child(5) {
+  padding-left: 93px;
+}
+.child-page .module.module-02 .main .content .item-group .item:nth-child(1) .txt,
+.child-page .module.module-02 .main .content .item-group .item:nth-child(3) .txt,
+.child-page .module.module-02 .main .content .item-group .item:nth-child(5) .txt {
+  width: 395px;
+}
+.child-page .module.module-02 .main .content .item-group .item:last-child {
+  margin: 0;
+  height: 159px;
 }
