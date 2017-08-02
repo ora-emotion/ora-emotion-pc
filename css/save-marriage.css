@@ -74,8 +74,10 @@ body {
     font-size: 1.6em;
   }
 }
-@meida (min-width: 1106px) and (max-width: 1570px) {
-  font-size: 1.2em;
+@media (min-width: 1106px) and (max-width: 1570px) {
+  .child-page .module-01 .module-top .txt {
+    font-size: 1.2em;
+  }
 }
 @media (max-width: 1106px) {
   .child-page .module-01 .module-top .txt {
@@ -528,4 +530,157 @@ body {
   width: 420px;
   margin: 0 auto;
   background-color: #fff;
+}
+.child-page .module-05 .main {
+  width: 100%;
+  height: 667px;
+  background-image: url("../img/save-marriage/part05-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+.child-page .module-05 .main .bg {
+  height: 100%;
+  background-image: url("../img/save-marriage/part05-bg-left.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.child-page .module-05 .main .subtitle {
+  width: 0;
+  height: 0;
+  border-top: 120px solid transparent;
+  border-right: 120px solid transparent;
+  border-bottom: 120px solid #fd3232;
+  border-left: 120px solid #fd3232;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: -120px;
+}
+@media (min-width: 1270px) {
+  .child-page .module-05 .main .subtitle {
+    left: 460px;
+  }
+}
+@media (max-width: 1270px) {
+  .child-page .module-05 .main .subtitle {
+    left: 20%;
+  }
+}
+.child-page .module-05 .main .subtitle h4 {
+  width: 120px;
+  font-weight: bold;
+  font-size: 26px;
+  color: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 34px;
+  left: -90px;
+}
+.child-page .module-05 .main .subtitle p {
+  color: #fff;
+  font-size: 24px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 48px;
+  left: -120px;
+}
+.child-page .module-05 .main .module05-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.child-page .module-05 .main .module05-list ul {
+  position: relative;
+  padding: 45px 0 0;
+}
+@media (min-width: 1700px) {
+  .child-page .module-05 .main .module05-list ul {
+    left: -500px;
+  }
+}
+@media (min-width: 1450px) and (max-width: 1700px) {
+  .child-page .module-05 .main .module05-list ul {
+    left: -300px;
+  }
+}
+@media (min-width: 1106px) and (max-width: 1450px) {
+  .child-page .module-05 .main .module05-list ul {
+    left: -200px;
+  }
+}
+.child-page .module-05 .main .module05-list ul li {
+  padding: 20px 0;
+  position: relative;
+}
+.child-page .module-05 .main .module05-list ul li .num {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #fd3232;
+  text-align: center;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  left: -80px;
+}
+.child-page .module-05 .main .module05-list ul li .num span {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+@media (min-width: 1700px) {
+  .child-page .module-05 .main .module05-list ul li:nth-child(2) {
+    left: 60px;
+  }
+  .child-page .module-05 .main .module05-list ul li:nth-child(3) {
+    left: 120px;
+  }
+  .child-page .module-05 .main .module05-list ul li:nth-child(4) {
+    left: 180px;
+  }
+  .child-page .module-05 .main .module05-list ul li:nth-child(5) {
+    left: 240px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1700px) {
+  .child-page .module-05 .main .module05-list ul li:nth-child(2) {
+    left: 60px;
+  }
+  .child-page .module-05 .main .module05-list ul li:nth-child(3) {
+    left: 120px;
+  }
+  .child-page .module-05 .main .module05-list ul li:nth-child(4) {
+    left: 180px;
+  }
+  .child-page .module-05 .main .module05-list ul li:nth-child(5) {
+    left: 240px;
+  }
+}
+.child-page .module-05 .main .module05-list ul p {
+  position: relative;
+  top: -42px;
+  font-size: 24px;
+  font-weight: bold;
 }
