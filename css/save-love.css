@@ -26,11 +26,11 @@
 .body1{
 	width: 100%;
 	min-width: 1106px;
+	max-width: 1920px;
 	height: 1100px;
-	position: relative;
 	background:url(../img/save-love/background1.png) center center no-repeat;
 	background-size: contain;
-	background-position: 0 0;
+	background-position:  50% 0;
 }
 .body11{
 	padding-top: 480px;
