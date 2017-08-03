@@ -17,6 +17,8 @@ li {
   color: #2d2d2d;
 }
 .child-page {
+  margin-bottom: 1418px;
+  /* 模块公共样式 */
   /* 模块公共样式 */
   /* 模块一：当下婚姻状态 */
   /* 模块一：当下婚姻状态 */
@@ -753,8 +755,4 @@ li {
 .child-page .module.module-09 .main .content .bg-line .items .item:nth-child(6):hover p {
   transition: color .3s;
   color: #fd3232;
-}
-.child-page footer {
-  position: relative;
-  top: 1000px !important;
 }
