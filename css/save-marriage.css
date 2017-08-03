@@ -6,6 +6,16 @@ html,
 body {
   min-width: 1106px;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  color: #2d2d2d;
+}
 .child-page {
   /* 模块公共样式 */
   /* 模块一：当下婚姻状态 */
@@ -14,10 +24,6 @@ body {
   /* 模块二：婚姻危机出现的原因 */
   /* 模块三：橘子情感优势 */
   /* 模块三：橘子情感优势 */
-  /* 模块四：错误挽回方式 */
-  /* 模块四：错误挽回方式 */
-  /* 模块五：擅长挽回的婚姻类型 */
-  /* 模块五：擅长挽回的婚姻类型 */
 }
 .child-page .module .title {
   position: relative;
@@ -53,6 +59,7 @@ body {
   line-height: 52px;
 }
 .child-page .module.module-01 .module-title .line {
+<<<<<<< HEAD
   width: 100%;
   border-top: 2px solid #d6d5d5;
   position: relative;
@@ -98,120 +105,107 @@ body {
   font-weight: bold;
   padding-top: 47px;
 }
-.child-page .module-02 {
-  height: 1008px;
-  border-top: 2px solid #c2c2c2;
-  margin-top: 90px;
-}
-.child-page .module-02 div:first-child {
+.child-page .module.module-02 {
   position: relative;
-  bottom: 10px;
-  padding-bottom: 18px;
+  top: 126px;
 }
-.child-page .module-02 div:first-child .txt-cont {
-  width: 430px;
-  background-color: #fff;
+.child-page .module.module-02 .module-title .line {
+  width: 100%;
+  border-top: 2px solid #d6d5d5;
+  position: relative;
+  top: 66px;
+}
+.child-page .module.module-02 .module-title .txt {
+  width: 440px;
   margin: 0 auto;
-}
-.child-page .module-02 .main {
-  display: flex;
-}
-.child-page .module-02 .main .txt.left {
-  height: 100%;
-  min-width: 650px;
-  display: flex;
-  flex-direction: column;
   position: relative;
-  padding-left: 10%;
-  margin-right: 2%;
-  z-index: 1;
+  bottom: -38px;
+  color: #2d2d2d;
+  background: url("../img/save-marriage/title-icon02.png") no-repeat center 8px;
 }
-.child-page .module-02 .main .txt.left .top.title {
-  padding: 31px 0;
+.child-page .module.module-02 .module-title .txt h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 14px;
+}
+.child-page .module.module-02 .module-title .txt p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.child-page .module.module-02 .main {
+  position: relative;
+  top: 75px;
+}
+.child-page .module.module-02 .main .content {
+  background: url("../img/save-marriage/part02-bg.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  top: 39px;
+  margin-left: 187px;
+}
+.child-page .module.module-02 .main .content h3 {
+  width: 643px;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 31px;
   border-bottom: 3px solid #2d2d2d;
-  margin-top: 39px;
-  font-size: 36px;
-  font-weight: bold;
 }
-.child-page .module-02 .main .txt.left .module02-list .list-item {
-  height: 120px;
+.child-page .module.module-02 .main .content .item-group {
+  width: 643px;
+  padding-top: 41px;
+}
+.child-page .module.module-02 .main .content .item-group .item {
   display: flex;
+  height: 114px;
+  margin-bottom: 53px;
 }
-.child-page .module-02 .main .txt.left .module02-list .list-item .left {
-  padding: 0 0 120px;
+.child-page .module.module-02 .main .content .item-group .item .num {
   color: #fd3232;
+  font-size: 102px;
   font-weight: bold;
-  font-size: 80px;
-  vertical-align: top;
-  padding-right: 30px;
-  padding-left: 92px;
+  position: relative;
+  top: -24px;
 }
-.child-page .module-02 .main .txt.left .module02-list .list-item p {
-  line-height: 30px;
-}
-.child-page .module-02 .main .txt.left .module02-list .list-item .right {
-  line-height: 120px;
-}
-.child-page .module-02 .main .txt.left .module02-list .list-item .right p:first-child {
-  height: 20px;
-  line-height: 20px;
-  padding-top: 34px;
+.child-page .module.module-02 .main .content .item-group .item .txt .title {
+  font-size: 30px;
   font-weight: bold;
+  height: 37px;
+  line-height: 37px;
+  padding-bottom: 4px;
+}
+.child-page .module.module-02 .main .content .item-group .item .txt .para {
   font-size: 24px;
+  line-height: 42px;
 }
-.child-page .module-02 .main .txt.left .module02-list .list-item .right p:last-child {
-  line-height: 30px;
-  padding-top: 18px;
-  width: 430px;
-  font-size: 18px;
+.child-page .module.module-02 .main .content .item-group .item:nth-child(2),
+.child-page .module.module-02 .main .content .item-group .item:nth-child(4) {
+  padding-left: 49px;
 }
-.child-page .module-02 .main .txt.left .module02-list .list-item:nth-child(2) .left,
-.child-page .module-02 .main .txt.left .module02-list .list-item:nth-child(4) .left {
-  padding-left: 50px;
+.child-page .module.module-02 .main .content .item-group .item:nth-child(2) .txt,
+.child-page .module.module-02 .main .content .item-group .item:nth-child(4) .txt {
+  width: 439px;
 }
-.child-page .module-02 .main .txt.left .module02-list .list-item:nth-child(2) .right p,
-.child-page .module-02 .main .txt.left .module02-list .list-item:nth-child(4) .right p {
-  width: 480px;
+.child-page .module.module-02 .main .content .item-group .item:nth-child(1),
+.child-page .module.module-02 .main .content .item-group .item:nth-child(3),
+.child-page .module.module-02 .main .content .item-group .item:nth-child(5) {
+  padding-left: 93px;
 }
-.child-page .module-02 .main .pic.right {
-  height: 100%;
-  flex-grow: 1;
+.child-page .module.module-02 .main .content .item-group .item:nth-child(1) .txt,
+.child-page .module.module-02 .main .content .item-group .item:nth-child(3) .txt,
+.child-page .module.module-02 .main .content .item-group .item:nth-child(5) .txt {
+  width: 395px;
+}
+.child-page .module.module-02 .main .content .item-group .item:last-child {
+  margin: 0;
+  height: 159px;
+}
+.child-page .module.module-03 {
   position: relative;
-  z-index: 2;
+  top: 306px;
 }
-.child-page .module-02 .main .pic.right .pic.front {
-  flex-grow: 1;
-  height: 1008px;
-  background-image: url("../img/save-marriage/part02-bg.png");
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  position: relative;
-  z-index: 2;
-}
-.child-page .module-02 .main .pic.right .bg.back {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-  flex-grow: 1;
-  height: 900px;
-  background-color: #fd3232;
-}
-.child-page .module-03 {
-  position: relative;
-  top: 170px;
-  border-top: 2px solid #c2c2c2;
-}
-.child-page .module-03 .module.title {
-  position: relative;
-  top: -41px;
-}
-.child-page .module-03 .module.title .txt-cont {
-  width: 350px;
-  background-color: #fff;
-  margin: 0 auto;
-}
-.child-page .module-03 .main {
+.child-page .module.module-03 .module-title .line {
   width: 100%;
   height: 526px;
   background: url("../img/save-marriage/part03-bg.jpg") no-repeat center center;
@@ -251,228 +245,47 @@ body {
 }
 .child-page .module-04 .main {
   position: relative;
-  top: 86px;
-  width: 100%;
-  background-color: #2d2d2d;
+  bottom: -38px;
+  color: #2d2d2d;
+  background: url("../img/save-marriage/title-icon03.png") no-repeat center 8px;
 }
-.child-page .module-04 .main .item-group {
-  display: flex;
-  justify-content: space-around;
-}
-@media (min-width: 1270px) {
-  .child-page .module-04 .main .item-group {
-    padding: 60px 180px;
-  }
-}
-@media (max-width: 1270px) {
-  .child-page .module-04 .main .item-group {
-    padding: 60px 40px;
-  }
-}
-.child-page .module-04 .main .item-group .module04-item {
-  width: 394px;
-  height: 341px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: contain;
-  background-size: contain;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.child-page .module-04 .main .item-group .module04-item h4 {
-  line-height: 28px;
-  font-size: 20px;
+.child-page .module.module-03 .module-title .txt h2 {
+  font-size: 40px;
   font-weight: bold;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
 }
-.child-page .module-04 .main .item-group .module04-item p {
-  width: 305px;
-  line-height: 26px;
-  margin: 0 auto;
-  font-size: 16px;
+.child-page .module.module-03 .module-title .txt p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.child-page .module-04 .main .item-group:first-child .module04-item:nth-child(1) {
-  background-image: url("../img/save-marriage/part04-pic01.png");
-}
-.child-page .module-04 .main .item-group:first-child .module04-item:nth-child(2) {
-  background-image: url("../img/save-marriage/part04-pic01.png");
-}
-.child-page .module-04 .main .item-group:first-child .module04-item:nth-child(3) {
-  background-image: url("../img/save-marriage/part04-pic01.png");
-}
-.child-page .module-04 .main .item-group:last-child .module04-item:nth-child(1) {
-  background-image: url("../img/save-marriage/part04-pic01.png");
-}
-.child-page .module-04 .main .item-group:last-child .module04-item:nth-child(2) {
-  background-image: url("../img/save-marriage/part04-pic01.png");
-}
-.child-page .module-04 .main .item-group:last-child .module04-item:nth-child(3) {
-  background-image: url("../img/save-marriage/part04-pic01.png");
-}
-.child-page .module-05 {
+.child-page .module.module-03 .main {
   position: relative;
-  top: 436px;
-  border-top: 2px solid #c2c2c2;
+  top: 75px;
 }
-.child-page .module-05 .module.title {
-  position: relative;
-  top: -36px;
-  width: 420px;
-  margin: 0 auto;
-  background-color: #fff;
-}
-.child-page .module-05 .main {
-  width: 100%;
-  height: 667px;
-  background-image: url("../img/save-marriage/part05-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
+.child-page .module.module-03 .main .bg {
+  background: url("../img/save-marriage/part03-bg.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   background-size: cover;
+}
+.child-page .module.module-03 .main .bg .para p {
+  font-size: 24px;
+  line-height: 43px;
+  padding: 34px 44px;
+  border: 1px solid #2d2d2d;
+  width: 647px;
+  margin: 0 auto;
   position: relative;
 }
-.child-page .module-05 .main .bg {
+.child-page .module.module-03 .main .bg .para .top-para {
+  top: 32px;
+  margin-bottom: 112px;
+}
+.child-page .module.module-03 .main .bg .para .bot-para {
+  bottom: 30px;
+}
+.child-page .module.module-03 .main .bg .para .bg-inner {
+  width: 100%;
   height: 100%;
-  background-image: url("../img/save-marriage/part05-bg-left.png");
-  background-repeat: no-repeat;
-  background-position: left bottom;
-}
-.child-page .module-05 .main .subtitle {
-  width: 0;
-  height: 0;
-  border-top: 120px solid transparent;
-  border-right: 120px solid transparent;
-  border-bottom: 120px solid #fd3232;
-  border-left: 120px solid #fd3232;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  position: absolute;
-  top: -120px;
-}
-@media (min-width: 1270px) {
-  .child-page .module-05 .main .subtitle {
-    left: 460px;
-  }
-}
-@media (max-width: 1270px) {
-  .child-page .module-05 .main .subtitle {
-    left: 20%;
-  }
-}
-.child-page .module-05 .main .subtitle h4 {
-  width: 120px;
-  font-weight: bold;
-  font-size: 26px;
-  color: #fff;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  position: absolute;
-  top: 34px;
-  left: -90px;
-}
-.child-page .module-05 .main .subtitle p {
-  color: #fff;
-  font-size: 24px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  position: absolute;
-  top: 48px;
-  left: -120px;
-}
-.child-page .module-05 .main .module05-list {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.child-page .module-05 .main .module05-list ul {
-  position: relative;
-  padding: 45px 0 0;
-}
-@media (min-width: 1700px) {
-  .child-page .module-05 .main .module05-list ul {
-    left: -500px;
-  }
-}
-@media (min-width: 1450px) and (max-width: 1700px) {
-  .child-page .module-05 .main .module05-list ul {
-    left: -300px;
-  }
-}
-@media (min-width: 1106px) and (max-width: 1450px) {
-  .child-page .module-05 .main .module05-list ul {
-    left: -200px;
-  }
-}
-.child-page .module-05 .main .module05-list ul li {
-  padding: 20px 0;
-  position: relative;
-}
-.child-page .module-05 .main .module05-list ul li .num {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  background-color: #fd3232;
-  text-align: center;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  position: relative;
-  left: -80px;
-}
-.child-page .module-05 .main .module05-list ul li .num span {
-  display: inline-block;
-  color: #fff;
-  font-size: 18px;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-@media (min-width: 1700px) {
-  .child-page .module-05 .main .module05-list ul li:nth-child(2) {
-    left: 60px;
-  }
-  .child-page .module-05 .main .module05-list ul li:nth-child(3) {
-    left: 120px;
-  }
-  .child-page .module-05 .main .module05-list ul li:nth-child(4) {
-    left: 180px;
-  }
-  .child-page .module-05 .main .module05-list ul li:nth-child(5) {
-    left: 240px;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1700px) {
-  .child-page .module-05 .main .module05-list ul li:nth-child(2) {
-    left: 60px;
-  }
-  .child-page .module-05 .main .module05-list ul li:nth-child(3) {
-    left: 120px;
-  }
-  .child-page .module-05 .main .module05-list ul li:nth-child(4) {
-    left: 180px;
-  }
-  .child-page .module-05 .main .module05-list ul li:nth-child(5) {
-    left: 240px;
-  }
-}
-.child-page .module-05 .main .module05-list ul p {
-  position: relative;
-  top: -42px;
-  font-size: 24px;
-  font-weight: bold;
+  background-color: #fafafa;
 }

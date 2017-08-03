@@ -29,6 +29,7 @@
 
 .biaoti span {
 	font-size: 40px;
+	font-weight: bold;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
@@ -551,7 +552,6 @@
 	width: 100%;
 	min-width: 1106px;
 	height: 600px;
-	background-color: #2D2D2D;
 	background: url(../img/save-love/service-delivery1.png) 100% 100% no-repeat;
 	background-size: 100%;
 	/*background-position: 0 0;*/
@@ -579,9 +579,9 @@
 	font-size: 20px;
 	letter-spacing: 2px;
 }
-.body6-zhuti ul li:hover{
-	
-}
+
+.body6-zhuti ul li:hover {}
+
 @media only screen and (max-width: 1200px) {
 	.body6-zhuti {
 		float: right;
@@ -611,5 +611,83 @@
 	.body6-zhuti ul li {
 		line-height: 40px;
 		font-size: 18px;
+	}
+}
+
+.body7 {
+	width: 100%;
+	min-width: 1106px;
+	height: 1200px;
+	background-color: #F0F0F0;
+}
+
+.body7-left {
+	width: 700px;
+	padding-left: 100px;
+	margin-top: -6px;
+	float: left;
+}
+.body7-left h3{
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.body7-left p{
+	font-size: 18px;
+	padding: 2px;
+}
+.body7-left img{
+	width: 100%;
+}
+.body7-right {
+	width: 600px;
+	margin-right: 50px;
+	float: right;
+	margin-top: 63px;
+}
+.body7-right h3{
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.body7-right p{
+	font-size: 18px;
+	padding: 2px;
+}
+.body7-right img{
+	width: 100%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+	.body7 {
+		height: 1100px;
+	}
+	.body7-left {
+		width: 500px;
+		padding-left: 5%;
+		margin-top: -6px;
+	}
+	.body7-left img{
+		
+	}
+	.body7-right {
+		width: 500px;
+		padding-left: 10%;
+		margin-top: 103px;
+	}
+}
+@media only screen and (max-width: 1199px) {
+	.body7 {
+		height: 1100px;
+	}
+	.body7-left {
+		width: 500px;
+		padding-left: 5%;
+		margin-top: -6px;
+	}
+	.body7-left img{
+		
+	}
+	.body7-right {
+		width: 480px;
+		padding-left: 5%;
+		margin-top: 93px;
 	}
 }
