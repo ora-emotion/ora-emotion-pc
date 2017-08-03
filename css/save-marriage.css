@@ -33,6 +33,8 @@ li {
   /* 模块七：成功案例 */
   /* 模块八：导师团队 */
   /*/--> 导师团队 */
+  /* 模块九 */
+  /* 模块九 */
 }
 .child-page .module .title {
   position: relative;
@@ -618,4 +620,34 @@ li {
   margin: 0 auto;
   position: relative;
   top: 31px;
+}
+.child-page .module.module-09 {
+  position: relative;
+  top: 1226px;
+  /*--> 标题 */
+  /*/--> 标题 */
+}
+.child-page .module.module-09 .module-title .line {
+  width: 100%;
+  border-top: 2px solid #d6d5d5;
+  position: relative;
+  top: 66px;
+}
+.child-page .module.module-09 .module-title .txt {
+  width: 442px;
+  margin: 0 auto;
+  position: relative;
+  bottom: -38px;
+  color: #2d2d2d;
+  background: url("../img/save-marriage/title-icon09.png") no-repeat center 8px;
+}
+.child-page .module.module-09 .module-title .txt h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 14px;
+}
+.child-page .module.module-09 .module-title .txt p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
