@@ -475,3 +475,12 @@ li {
   width: 258px;
   margin: 0 auto;
 }
+.child-page .module.module-06 .main .content .module06-list {
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.child-page .module.module-06 .main .content .module06-list li {
+  line-height: 68px;
+  height: 68px;
+}
