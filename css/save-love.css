@@ -627,34 +627,42 @@
 	margin-top: -6px;
 	float: left;
 }
-.body7-left h3{
+
+.body7-left h3 {
 	margin-bottom: 20px;
 	font-weight: bold;
 }
-.body7-left p{
+
+.body7-left p {
 	font-size: 18px;
 	padding: 2px;
 }
-.body7-left img{
+
+.body7-left img {
 	width: 100%;
 }
+
 .body7-right {
 	width: 600px;
 	margin-right: 50px;
 	float: right;
 	margin-top: 63px;
 }
-.body7-right h3{
+
+.body7-right h3 {
 	margin-bottom: 20px;
 	font-weight: bold;
 }
-.body7-right p{
+
+.body7-right p {
 	font-size: 18px;
 	padding: 2px;
 }
-.body7-right img{
+
+.body7-right img {
 	width: 100%;
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
 	.body7 {
 		height: 1100px;
@@ -664,15 +672,14 @@
 		padding-left: 5%;
 		margin-top: -6px;
 	}
-	.body7-left img{
-		
-	}
+	.body7-left img {}
 	.body7-right {
 		width: 500px;
 		padding-left: 10%;
 		margin-top: 103px;
 	}
 }
+
 @media only screen and (max-width: 1199px) {
 	.body7 {
 		height: 1100px;
@@ -682,12 +689,213 @@
 		padding-left: 5%;
 		margin-top: -6px;
 	}
-	.body7-left img{
-		
-	}
+	.body7-left img {}
 	.body7-right {
 		width: 480px;
 		padding-left: 5%;
 		margin-top: 93px;
+	}
+}
+
+.body8 {
+	width: 100%;
+	min-width: 1106px;
+	height: 700px;
+	background: url(../img/save-love/daoshi-baimg.png) center center no-repeat;
+	background-size: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#LoopDiv {}
+
+.imageflow img {
+	-webkit-box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.1);
+	box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.1);
+}
+
+.imageflow {
+	overflow: hidden;
+	position: relative;
+	text-align: left;
+	visibility: hidden;
+	width: 80%;
+	min-width: 1106px;
+	margin: 0 auto;
+}
+
+.imageflow img {
+	border: none;
+	position: absolute;
+	top: 0px;
+	visibility: hidden;
+	-ms-interpolation-mode: bicubic
+}
+
+.imageflow p {
+	margin: 0 auto;
+	text-align: center
+}
+
+.imageflow .loading {
+	border: 1px solid #ccc;
+	height: 15px;
+	left: 50%;
+	margin-left: -106px;
+	padding: 5px;
+	position: relative;
+	visibility: visible;
+	width: 200px
+}
+
+.imageflow .loading_bar {
+	background: #ccc;
+	height: 15px;
+	visibility: visible;
+	width: 1%
+}
+
+
+/*.imageflow .images {
+	overflow: hidden;
+	white-space: nowrap
+}*/
+
+.body9 {
+	width: 100%;
+	min-width: 1106px;
+	height: 500px;
+	background: url(../img/save-love/love-process-beijing_02.png) center center no-repeat;
+	background-size: 100%;
+}
+
+.body9-left {
+	float: left;
+	color: #F0F0F0;
+	width: 35%;
+	padding-left: 20%;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.body9-left ul {
+	padding-top: 40px;
+}
+
+.body9-left ul li {
+	margin-top: 10px;
+	height: 50px;
+}
+.body9-left ul li div{
+	width: 44px;
+	height: 44px;
+	float: left;
+	margin-top: -2px;
+}
+.lli1-img{
+	background: url(../img/save-love/love-process-consult.png);
+	background-size: 100%;
+}
+.lli2-img{
+	background: url(../img/save-love/love-process-signed.png) center center no-repeat;
+	background-size: 100%;
+}
+.lli3-img{
+	background: url(../img/save-love/love-process-team.png) center center no-repeat;
+	background-size: 100%;
+}
+.lli4-img{
+	background: url(../img/save-love/love-process-scheme.png) center center no-repeat;
+	background-size: 100%;
+}
+.lli5-img{
+	background: url(../img/save-love/love-process-maintain.png) center center no-repeat;
+	background-size: 100%;
+}
+.lli6-img{
+	background: url(../img/save-love/love-process-destroy.png) center center no-repeat;
+	background-size: 100%;
+}
+.body9-left ul li span {
+	margin-left: 10px;
+}
+.body9-right {
+	float: right;
+	margin-right: 22%;
+	padding-top: 5%;
+}
+
+.body9-right img {
+	width: 450px;
+	height: 300px;
+}
+@media only screen and (min-width: 1620px) and (max-width: 1920px){
+	.body9-right {
+		margin-top: -50px;
+	}
+	.body9-right img {
+		width: 550px;
+		height: 360px;
+	}
+}
+@media only screen and (min-width: 1300px) and (max-width: 1500px) {
+	.body9-left {
+		font-size: 14px;
+	}
+	.body9-left ul {
+		padding-top: 80px;
+	}
+	.body9-left ul li {
+		margin-top: 10px;
+		height: 40px;
+	}
+	.body9-right {
+		margin-top: 3%;
+	}
+	.body9-right img {
+		width: 380px;
+		height: 260px;
+	}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+	.body9-left {
+		font-size: 14px;
+	}
+	.body9-left ul {
+		padding-top: 80px;
+	}
+	.body9-left ul li {
+		margin-top: 18px;
+		height: 30px;
+	}
+	.body9-right {
+		margin-top: 5%;
+	}
+	.body9-right img {
+		width: 350px;
+		height: 230px;
+	}
+}
+@media only screen and (max-width: 1199px) {
+	.body9-left {
+		font-size: 14px;
+		width: 37%;
+	}
+	.body9-left ul {
+		padding-top: 85px;
+	}
+	.body9-left ul li {
+		height: 40px;
+		margin-top: 7px;
+	}
+	.body9-right {
+		margin-top: 7%;
+	}
+	.body9-right img {
+		width: 320px;
+		height: 200px;
 	}
 }
