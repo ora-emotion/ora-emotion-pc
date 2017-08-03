@@ -338,11 +338,13 @@ li {
   width: 299px;
 }
 .child-page .module.module-04 .main .item-group .item p:first-child {
+  padding-top: 5px;
   font-weight: bold;
   line-height: 30px;
 }
 .child-page .module.module-04 .main .item-group .item p:last-child {
   line-height: 36px;
+  padding-top: 10px;
 }
 .child-page .module.module-04 .main .item-group:first-child {
   top: 108px;
@@ -392,16 +394,26 @@ li {
   justify-content: flex-end;
 }
 .child-page .module.module-05 .main .module05-list {
-  padding-top: 140px;
-  padding-bottom: 35px;
+  padding-top: 90px;
+  padding-bottom: 70px;
   position: relative;
   right: 5%;
+}
+@media (min-width: 1520px) {
+  .child-page .module.module-05 .main .module05-list {
+    right: 15%;
+  }
+}
+@media (max-width: 768px) and (min-width: 1520px) {
+  .child-page .module.module-05 .main .module05-list {
+    right: 10%;
+  }
 }
 .child-page .module.module-05 .main .module05-list li {
   font-size: 40px;
   font-weight: bold;
   padding-left: 97px;
-  margin: 25px 0;
+  margin: 30px 0;
 }
 .child-page .module.module-05 .main .module05-list li:nth-child(1) {
   background: url("../img/save-marriage/part05-list-icon01.png") no-repeat 0;
@@ -541,7 +553,13 @@ li {
   background-size: cover;
   position: absolute;
   top: 99px;
-  left: 13.5%;
+  left: 50%;
+  opacity: 0;
+}
+.child-page .module.module-07 .main .top .txt {
+  position: absolute;
+  top: 65px;
+  left: 618px;
 }
 .child-page .module.module-07 .main .bot {
   width: 1642px;
@@ -551,6 +569,32 @@ li {
   background-size: cover;
   position: absolute;
   top: 745px;
+  left: -50%;
+  opacity: 0;
+}
+.child-page .module.module-07 .main .bot .txt {
+  position: absolute;
+  top: 77px;
+  left: 360px;
+}
+.child-page .module.module-07 .main .top .txt,
+.child-page .module.module-07 .main .bot .txt {
+  width: 657px;
+}
+.child-page .module.module-07 .main .top .txt h5,
+.child-page .module.module-07 .main .bot .txt h5 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  height: 79px;
+  line-height: 79px;
+}
+.child-page .module.module-07 .main .top .txt p,
+.child-page .module.module-07 .main .bot .txt p {
+  color: #fff;
+  font-size: 24px;
+  line-height: 41px;
+  padding-bottom: 66px;
 }
 .child-page .module.module-08 {
   position: relative;
