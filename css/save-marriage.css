@@ -16,6 +16,13 @@ p,
 li {
   color: #2d2d2d;
 }
+a:hover {
+  color: #fff;
+}
+.nav .inner ul li.active {
+  background-color: #fd3232;
+  color: #fff;
+}
 .child-page {
   margin-bottom: 1217px;
   /* 模块公共样式 */
@@ -204,7 +211,7 @@ li {
 }
 .child-page .module.module-02 .main .content .item-group .item:nth-child(2) .txt,
 .child-page .module.module-02 .main .content .item-group .item:nth-child(4) .txt {
-  width: 439px;
+  width: 444px;
 }
 .child-page .module.module-02 .main .content .item-group .item:nth-child(1),
 .child-page .module.module-02 .main .content .item-group .item:nth-child(3),
@@ -214,7 +221,7 @@ li {
 .child-page .module.module-02 .main .content .item-group .item:nth-child(1) .txt,
 .child-page .module.module-02 .main .content .item-group .item:nth-child(3) .txt,
 .child-page .module.module-02 .main .content .item-group .item:nth-child(5) .txt {
-  width: 395px;
+  width: 410px;
 }
 .child-page .module.module-02 .main .content .item-group .item:last-child {
   margin: 0;
@@ -703,7 +710,7 @@ li {
   font-size: 18px;
   font-weight: bold;
   position: absolute;
-  top: 100px;
+  top: 95px;
 }
 .child-page .module.module-09 .main .content .bg-line .items .item p {
   color: #fff;
@@ -724,7 +731,7 @@ li {
   color: #fd3232;
 }
 .child-page .module.module-09 .main .content .bg-line .items .item:nth-child(2) {
-  left: 18.5%;
+  left: 20%;
 }
 .child-page .module.module-09 .main .content .bg-line .items .item:nth-child(2) p {
   color: #fff;
@@ -735,7 +742,7 @@ li {
   color: #fd3232;
 }
 .child-page .module.module-09 .main .content .bg-line .items .item:nth-child(3) {
-  left: 36%;
+  left: 35.3%;
 }
 .child-page .module.module-09 .main .content .bg-line .items .item:nth-child(3) p {
   color: #fff;
@@ -746,7 +753,7 @@ li {
   color: #fd3232;
 }
 .child-page .module.module-09 .main .content .bg-line .items .item:nth-child(4) {
-  left: 53.5%;
+  left: 54.5%;
 }
 .child-page .module.module-09 .main .content .bg-line .items .item:nth-child(4) p {
   color: #fff;
@@ -757,7 +764,7 @@ li {
   color: #fd3232;
 }
 .child-page .module.module-09 .main .content .bg-line .items .item:nth-child(5) {
-  left: 71%;
+  left: 70.5%;
 }
 .child-page .module.module-09 .main .content .bg-line .items .item:nth-child(5) p {
   color: #fff;
@@ -768,7 +775,7 @@ li {
   color: #fd3232;
 }
 .child-page .module.module-09 .main .content .bg-line .items .item:nth-child(6) {
-  left: 88.5%;
+  left: 89.2%;
 }
 .child-page .module.module-09 .main .content .bg-line .items .item:nth-child(6) p {
   color: #fff;
