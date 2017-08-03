@@ -543,7 +543,7 @@ input:-webkit-autofill {
     margin-left: 8%;
 }
 .body2 .right1 h1{
-	margin-top: 50px;
+	margin-top: 150px;
 }
 .body2 .right1 p{
 	font-size: 1.4em;
@@ -923,11 +923,15 @@ input:-webkit-autofill {
 .service .item h3 {
     font-weight: bold;
     font-size: 30px;
+    margin-top: 50px;
+    
 }
 
 .service .item p {
     font-size: 20px;
     width: 450px;
+    line-height: 35px;
+    margin-top: 20px;
 }
 
 .service .item .btn {
