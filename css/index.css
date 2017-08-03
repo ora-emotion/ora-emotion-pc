@@ -557,7 +557,7 @@ input:-webkit-autofill {
 	padding-bottom: 30px;
     border-top: 1px solid #666;
 	color: #2D2D2D;
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 
 .gundong:last-child {
@@ -711,7 +711,7 @@ input:-webkit-autofill {
 }
 
 .service-guarantee .service-top .right .banner-wrap {
-    padding: 0 30px 28px 30px;
+    padding: 20px 30px 28px 80px;
 }
 
 @media (min-width: 1520px) {
@@ -747,7 +747,7 @@ input:-webkit-autofill {
         color: #fff;
         font-size: 18px;
         padding-top: 5px;
-        padding-right: 260px;
+        padding-right: 240px;
     }
 }
 
@@ -763,7 +763,7 @@ input:-webkit-autofill {
 
     .service-guarantee .service-top .right .banner-wrap p {
         color: #fff;
-        font-size: 17px;
+        font-size: 15px;
         margin-right: 0;
         padding-top: 5px;
     }
@@ -1329,3 +1329,42 @@ input:-webkit-autofill {
     margin-top: 45px;
 }
 /* /导师团队 */
+
+
+/*
+ * 文字滚动
+ */
+.scroll-text {
+	width: 500px;
+	height: 4.5em;
+	overflow: hidden;
+	padding:3px;
+}
+.scroll-text ul {
+	width: 800px;
+	height: 200px;
+	overflow: hidden;
+	margin: 0;
+}
+.scroll-text ul li {
+	height: 4.5em;
+	font-size: 1.3em;
+	line-height: 3em;
+}
+.scroll-text-long {
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	padding:3px;
+}
+.scroll-text-long ul {
+	width: 800px;
+	height: 240px;
+	overflow: hidden;
+	margin: 0;
+}
+.scroll-text-long ul li {
+	height: 1.5em;
+	font-size: 1.2em;
+	color: #F0F0F0;
+}
