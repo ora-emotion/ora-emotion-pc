@@ -207,6 +207,7 @@ header .inner .pull-right .txt p:last-child {
 }
 .nav1 .inner ul li{
     line-height: 250px;
+    color: #fff;
 }
 .nav1 ul li:nth-child(1){
     background: url("../img/index/icon-team-white.png") no-repeat center 15%;
