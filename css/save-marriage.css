@@ -24,6 +24,7 @@ li {
   /* 模块二：婚姻危机出现的原因 */
   /* 模块三：橘子情感优势 */
   /* 模块三：橘子情感优势 */
+  /* 模块四：错误挽回方式 */
 }
 .child-page .module .title {
   position: relative;
@@ -59,7 +60,6 @@ li {
   line-height: 52px;
 }
 .child-page .module.module-01 .module-title .line {
-<<<<<<< HEAD
   width: 100%;
   border-top: 2px solid #d6d5d5;
   position: relative;
@@ -71,7 +71,7 @@ li {
   position: relative;
   bottom: -38px;
   color: #2d2d2d;
-  background: url("../img/save-marriage/title-icon.png") no-repeat center 8px;
+  background: url("../img/save-marriage/title-icon01.png") no-repeat center 8px;
 }
 .child-page .module.module-01 .module-title .txt h2 {
   font-size: 40px;
@@ -84,7 +84,6 @@ li {
 }
 .child-page .module.module-01 .bg.bot {
   width: 100%;
-  height: 663px;
   border: 3px solid #2d2d2d;
   border-left: none;
   border-right: none;
@@ -95,15 +94,23 @@ li {
   top: 78px;
 }
 .child-page .module.module-01 .bg.bot .module01-items {
-  width: 100%;
-  padding: 50px 100px 0;
   display: flex;
   justify-content: space-around;
+  padding: 0 140px;
+}
+.child-page .module.module-01 .bg.bot .module01-items .item {
+  padding: 0 25px;
+}
+.child-page .module.module-01 .bg.bot .module01-items .item img:nth-child(1) {
+  padding-top: 50px;
+}
+.child-page .module.module-01 .bg.bot .module01-items .item img:nth-child(2) {
+  margin: 33px auto 48px;
 }
 .child-page .module.module-01 .bg.bot .module01-items .item p {
   font-size: 30px;
   font-weight: bold;
-  padding-top: 47px;
+  padding-bottom: 59px;
 }
 .child-page .module.module-02 {
   position: relative;
@@ -207,43 +214,13 @@ li {
 }
 .child-page .module.module-03 .module-title .line {
   width: 100%;
-  height: 526px;
-  background: url("../img/save-marriage/part03-bg.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-.child-page .module-03 .main .mid.txt {
-  width: 650px;
-  margin: 0 auto;
-  font-size: 24px;
-  line-height: 42px;
-}
-.child-page .module-03 .main .mid.txt p {
-  color: #2d2d2d;
-}
-.child-page .module-03 .main .mid.txt p:first-child {
-  padding-top: 76px;
-}
-.child-page .module-03 .main .mid.txt p:last-child {
-  padding-top: 151px;
-}
-.child-page .module-04 {
-  min-width: 1106px;
-  border-top: 2px solid #c2c2c2;
+  border-top: 2px solid #d6d5d5;
   position: relative;
-  top: 260px;
-  /*--> 模块四主体*/
+  top: 66px;
 }
-.child-page .module-04 .module.title {
-  position: absolute;
-  top: -38px;
-}
-.child-page .module-04 .module.title .txt-cont {
-  background-color: #fff;
-  width: 350px;
+.child-page .module.module-03 .module-title .txt {
+  width: 322px;
   margin: 0 auto;
-}
-.child-page .module-04 .main {
   position: relative;
   bottom: -38px;
   color: #2d2d2d;
@@ -288,4 +265,74 @@ li {
   width: 100%;
   height: 100%;
   background-color: #fafafa;
+}
+.child-page .module.module-04 {
+  position: relative;
+  top: 447px;
+  /*--> 标题 */
+  /*/--> 标题 */
+  /*--> 模块四主体 */
+  /*/--> 模块四主体 */
+}
+.child-page .module.module-04 .module-title .line {
+  width: 100%;
+  border-top: 2px solid #d6d5d5;
+  position: relative;
+  top: 66px;
+}
+.child-page .module.module-04 .module-title .txt {
+  width: 322px;
+  margin: 0 auto;
+  position: relative;
+  bottom: -38px;
+  color: #2d2d2d;
+  background: url("../img/save-marriage/title-icon03.png") no-repeat center 8px;
+}
+.child-page .module.module-04 .module-title .txt h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 14px;
+}
+.child-page .module.module-04 .module-title .txt p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.child-page .module.module-04 .main {
+  height: 997px;
+  position: relative;
+  top: 55px;
+  background: url("../img/save-marriage/part04-bg.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.child-page .module.module-04 .main .item-group {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 28px 0 46px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 1920px) {
+  .child-page .module.module-04 .main .item-group {
+    width: 1311px;
+  }
+}
+.child-page .module.module-04 .main .item-group .item p {
+  color: #fff;
+  font-size: 20px;
+  width: 299px;
+}
+.child-page .module.module-04 .main .item-group .item p:first-child {
+  font-weight: bold;
+  line-height: 30px;
+}
+.child-page .module.module-04 .main .item-group .item p:last-child {
+  line-height: 36px;
+}
+.child-page .module.module-04 .main .item-group:first-child {
+  top: 108px;
+}
+.child-page .module.module-04 .main .item-group:last-child {
+  top: 404px;
 }
