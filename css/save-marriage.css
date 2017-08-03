@@ -31,6 +31,8 @@ li {
   /* 模块六：能够提供的挽回婚姻服务 */
   /* 模块七：成功案例 */
   /* 模块七：成功案例 */
+  /* 模块八：导师团队 */
+  /*/--> 导师团队 */
 }
 .child-page .module .title {
   position: relative;
@@ -566,4 +568,54 @@ li {
 }
 .child-page .module.module-07 .main .content .bot .button_base {
   margin-top: 260px;
+}
+.child-page .module.module-08 {
+  position: relative;
+  top: 1061px;
+  /*--> 标题 */
+  /*/--> 标题 */
+  /*--> 模块八主体 */
+  /*/--> 模块八主体 */
+}
+.child-page .module.module-08 .module-title .line {
+  width: 100%;
+  border-top: 2px solid #d6d5d5;
+  position: relative;
+  top: 66px;
+}
+.child-page .module.module-08 .module-title .txt {
+  width: 442px;
+  margin: 0 auto;
+  position: relative;
+  bottom: -38px;
+  color: #2d2d2d;
+  background: url("../img/save-marriage/title-icon07.png") no-repeat center 8px;
+}
+.child-page .module.module-08 .module-title .txt h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 14px;
+}
+.child-page .module.module-08 .module-title .txt p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.child-page .module.module-08 .main {
+  background: url("../img/save-marriage/part08-bg.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 756px;
+  position: relative;
+  top: 99px;
+}
+.child-page .module.module-08 .main .mentor-team {
+  background: url("../img/save-marriage/part08-mentor-team.png") no-repeat center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 1246px;
+  height: 673px;
+  margin: 0 auto;
+  position: relative;
+  top: 31px;
 }
