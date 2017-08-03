@@ -426,6 +426,10 @@
 	}
 }
 
+
+/*
+ * 橘子情感优势部分CSS
+ */
 .body4 {
 	width: 100%;
 	min-width: 1106px;
@@ -455,6 +459,12 @@
 	height: 100%;
 }*/
 
+/*
+ * 擅长挽回的爱情类型部分CSS
+ */
+
+
+	/*keyframes 动画*/
 @keyframes myfirst {
 	from {
 		padding: 10px;
@@ -499,7 +509,7 @@
 		padding: 1px;
 	}
 }
-
+/***********************/
 .body5 {
 	width: 100%;
 	min-width: 1106px;
@@ -548,6 +558,10 @@
 	padding: 15px;
 }
 
+
+/*
+ * 能够提供的挽回爱情服务部分CSS
+ */
 .body6 {
 	width: 100%;
 	min-width: 1106px;
@@ -614,6 +628,11 @@
 	}
 }
 
+
+
+/*
+ * 成功案例部分CSS
+ */
 .body7 {
 	width: 100%;
 	min-width: 1106px;
@@ -697,6 +716,10 @@
 	}
 }
 
+
+/*
+ * 导师团队部分CSS
+ */
 .body8 {
 	width: 100%;
 	min-width: 1106px;
@@ -757,11 +780,16 @@
 }
 
 
-/*.imageflow .images {
+/*设置导师图片滑动是否有界限
+ * .imageflow .images {
 	overflow: hidden;
 	white-space: nowrap
 }*/
 
+
+/*
+ * 挽回爱情服务流程部分CSS
+ */
 .body9 {
 	width: 100%;
 	min-width: 1106px;
