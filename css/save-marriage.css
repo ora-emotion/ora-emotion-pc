@@ -25,6 +25,7 @@ li {
   /* 模块三：橘子情感优势 */
   /* 模块三：橘子情感优势 */
   /* 模块四：错误挽回方式 */
+  /* 模块五：擅长挽回的婚姻类型 */
 }
 .child-page .module .title {
   position: relative;
@@ -335,4 +336,76 @@ li {
 }
 .child-page .module.module-04 .main .item-group:last-child {
   top: 404px;
+}
+.child-page .module.module-05 {
+  position: relative;
+  top: 568px;
+  /*--> 标题 */
+  /*/--> 标题 */
+  /*--> 模块五主体 */
+  /*--> 模块五主体 */
+}
+.child-page .module.module-05 .module-title .line {
+  width: 100%;
+  border-top: 2px solid #d6d5d5;
+  position: relative;
+  top: 66px;
+}
+.child-page .module.module-05 .module-title .txt {
+  width: 442px;
+  margin: 0 auto;
+  position: relative;
+  bottom: -38px;
+  color: #2d2d2d;
+  background: url("../img/save-marriage/title-icon05.png") no-repeat center 8px;
+}
+.child-page .module.module-05 .module-title .txt h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 14px;
+}
+.child-page .module.module-05 .module-title .txt p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.child-page .module.module-05 .main {
+  background: url("../img/save-marriage/part05-bg.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  top: 98px;
+  display: flex;
+  justify-content: flex-end;
+}
+.child-page .module.module-05 .main .module05-list {
+  padding-top: 140px;
+  padding-bottom: 35px;
+  position: relative;
+  right: 5%;
+}
+.child-page .module.module-05 .main .module05-list li {
+  font-size: 40px;
+  font-weight: bold;
+  padding-left: 97px;
+  margin: 25px 0;
+}
+.child-page .module.module-05 .main .module05-list li:nth-child(1) {
+  background: url("../img/save-marriage/part05-list-icon01.png") no-repeat 0;
+}
+.child-page .module.module-05 .main .module05-list li:nth-child(2) {
+  background: url("../img/save-marriage/part05-list-icon02.png") no-repeat 0 0;
+  margin-left: 51px;
+}
+.child-page .module.module-05 .main .module05-list li:nth-child(3) {
+  background: url("../img/save-marriage/part05-list-icon03.png") no-repeat 0 0;
+  margin-left: 102px;
+}
+.child-page .module.module-05 .main .module05-list li:nth-child(4) {
+  background: url("../img/save-marriage/part05-list-icon04.png") no-repeat 0 0;
+  margin-left: 153px;
+}
+.child-page .module.module-05 .main .module05-list li:nth-child(5) {
+  background: url("../img/save-marriage/part05-list-icon05.png") no-repeat 0 0;
+  margin-left: 204px;
 }
