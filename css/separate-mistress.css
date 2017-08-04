@@ -1,0 +1,261 @@
+/*
+ * 标题样式CSS
+ */
+
+.biaoti {
+	width: 100%;
+	min-width: 1106px;
+	height: 100px;
+	margin-top: 50px;
+	text-align: center;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.biaoti img {
+	position: absolute;
+	width: 42%;
+	top: 15px;
+}
+
+.biaoti img:nth-child(1) {
+	left: 0;
+	margin-right: 10px;
+}
+
+.biaoti img:nth-child(3) {
+	right: 0;
+	margin-left: 10px;
+}
+
+.biaoti span {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+	.biaoti span {
+		font-size: 30px;
+	}
+	.biaoti p {
+		font-size: 0.9em;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.biaoti span {
+		font-size: 22px;
+	}
+	.biaoti p {
+		font-size: 0.7em;
+	}
+}
+
+.biaoti p {
+	color: #CCCCCC;
+	letter-spacing: 2px;
+}
+
+.biaoti-long img {
+	position: absolute;
+	width: 40%;
+	top: 15px;
+}
+
+.biaoti-solong img {
+	position: absolute;
+	width: 36%;
+	top: 15px;
+}
+
+.biaoti-solong1 img {
+	position: absolute;
+	width: 34%;
+	top: 15px;
+}
+
+
+/*
+ * 头部背景图CSS
+ */
+
+.body1 {
+	width: 100%;
+	min-width: 1106px;
+	max-width: 1920px;
+	height: 650px;
+	background: url(../img/separate-mistress/separate-head-bgimg.jpg) center center no-repeat;
+	background-size: 100%;
+	background-position: 0 0;
+}
+
+
+/*
+ * 婚姻状况CSS
+ */
+
+.body2 {
+	width: 100%;
+	min-width: 1106px;
+	height: 400px;
+}
+
+.body2 ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.body2 ul li {
+	width: 15%;
+}
+
+.body2 ul li h3 {
+	margin-top: 50px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 22px;
+}
+
+.body2 ul li p {
+	margin-top: 10px;
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: 1px;
+	padding: 5px;
+}
+
+
+/*
+ * 出现第三者原因CSS
+ */
+
+.body3 {
+	width: 100%;
+	min-width: 1106px;
+	max-width: 1920px;
+	height: 700px;
+	background: url(../img/separate-mistress/appear-bgimg.png) center center no-repeat;
+	background-size: 100%;
+	background-position: 0 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.body3 ul {
+	width: 80%;
+	height: 700px;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+}
+
+.body3 ul li {
+	width: 15%;
+	padding-top: 100px;
+}
+
+.body3 ul li p {
+	font-size: 22px;
+	color: #F0F0F0;
+	text-align: center;
+	font-weight: 500;
+}
+
+.body3 ul li p:nth-child(2) {
+	margin-top: 20px;
+}
+
+@media only screen and (max-width: 1300px) {
+	.body3 ul li img {
+		width: 80%;
+		height: 20%;
+	}
+	.body3 ul li p {
+		font-size: 18px;
+		color: #F0F0F0;
+		text-align: center;
+		font-weight: 500;
+		margin-left: -20px;
+	}
+}
+
+
+/*
+ * 错误应对方式CSS
+ */
+
+.body4 {
+	width: 100%;
+	min-width: 1106px;
+	display: -webkit-flex;
+	justify-content: space-around;
+}
+
+.scroll-img {
+	width: 1200px;
+	height: 550px;
+	overflow: hidden;
+	font-size: 0;
+	margin-top: -10px;
+}
+
+.scroll-img ul {
+	width: 1200px;
+	height: 550px;
+	margin: 0;
+	display: -webkit-flex;
+	justify-content: space-around;
+}
+
+.scroll-img ul li {
+	display: inline-block;
+	margin: 10px 0 10px 10px;
+}
+
+#demo5.scroll-img ul {
+	width: 1558px;
+}
+
+#demo5-btn {
+	padding-top: 10px;
+}
+.body4-right img{
+	width: 380px;
+	height: 525px;
+}
+@media only screen and (max-width: 1520px) {
+	.scroll-img {
+		width: 900px;
+		height: 430px;
+		overflow: hidden;
+		font-size: 0;
+		margin-top: -10px;
+	}
+	.scroll-img ul {
+		width: 900px;
+		height: 430px;
+		margin: 0;
+	}
+	.scroll-img ul li {
+		display: inline-block;
+		margin: 10px 0 10px 40px;
+	}
+	.scroll-img ul li a img{
+		width: 80%;
+		height: 80%;
+	}
+	#demo5.scroll-img ul {
+		width: 1800px;
+	}
+	#demo5-btn {
+		padding-top: 10px;
+	}
+	.body4-left img{
+		width: 240px;
+		height: 330px;
+	}
+	.body4-right img{
+		width: 250px;
+		height: 330px;
+	}
+}
