@@ -27,6 +27,8 @@ a:hover {
   min-width: 1106px;
   /* 模块公共样式 */
   /* 模块公共样式 */
+  /* 前言部分 */
+  /* /前言部分 */
   /* 模块一：单身原因 */
   /* /模块一：单身原因 */
   /* 模块二：错误做法导致后果 */
@@ -84,8 +86,21 @@ a:hover {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+.child-page .preface .bg {
+  background: url("../img/custom-love/preface-bg.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 476px;
+}
+.child-page .preface p.para {
+  font-size: 31px;
+  line-height: 54px;
+  padding-top: 32px;
+  padding-bottom: 0;
+}
 .child-page .module.module-01 {
-  margin-top: 32px;
+  margin-top: 112px;
   /* 模块一标题 */
   /* /模块一标题 */
 }
@@ -120,9 +135,11 @@ a:hover {
 .child-page .module.module-01 .main .content .pics-group img {
   width: 100%;
   height: 100%;
+  display: none;
   opacity: 0;
 }
 .child-page .module.module-01 .main .content .pics-group img:nth-child(1) {
+  display: block;
   opacity: 1;
 }
 .child-page .module.module-01 .main .content .module01-list {
