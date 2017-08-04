@@ -23,6 +23,16 @@ a:hover {
   background-color: #fd3232;
   color: #fff;
 }
+/* banner 图区域 */
+.banner {
+  background: url("../img/custom-love/banner.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 885px;
+  overflow: hidden;
+}
+/* /banner 图区域 */
 .child-page {
   min-width: 1106px;
   /* 模块公共样式 */
@@ -96,7 +106,7 @@ a:hover {
 .child-page .preface p.para {
   font-size: 31px;
   line-height: 54px;
-  padding-top: 32px;
+  padding-top: 35px;
   padding-bottom: 0;
 }
 .child-page .module.module-01 {
@@ -182,6 +192,9 @@ a:hover {
 }
 .child-page .module.module-01 .main .content .module01-list li:first-child svg.arrow {
   opacity: 1;
+}
+.child-page .module.module-01 .main .content .module01-list li:nth-child(5) div.txt div.title {
+  width: 200px;
 }
 .child-page .module.module-02 {
   margin-top: 122px;
@@ -324,6 +337,9 @@ a:hover {
 .child-page .module.module-06 .module-title .txt {
   width: 322px;
   background: url("../img/custom-love/title-icon01.png") no-repeat center 8px;
+}
+.child-page .module.module-06 .main {
+  margin-top: 75px;
 }
 .child-page .module.module-07 {
   margin-top: 122px;
