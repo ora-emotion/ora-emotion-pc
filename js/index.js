@@ -43,12 +43,12 @@ $(document).ready(function() {
             var windowHeight = $(window).height();
             // 获取第七个模块距离屏幕顶端的高度
             var moduleSevenOffsetTop = $(".module-07 .main").offset().top;
-            console.log(moduleSevenOffsetTop);
+            // console.log(moduleSevenOffsetTop);
 
             $(window).scroll(function () {
                 // 获取滚动条滚动的距离
                 var scrollTop = $(window).scrollTop();
-                console.log(scrollTop);
+                // console.log(scrollTop);
 
                 if (scrollTop > (moduleSevenOffsetTop - windowHeight + 100)) {
                     // alert("ok");

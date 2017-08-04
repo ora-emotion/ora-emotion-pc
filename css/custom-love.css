@@ -85,6 +85,7 @@ a:hover {
   text-transform: uppercase;
 }
 .child-page .module.module-01 {
+  margin-top: 32px;
   /* 模块一标题 */
   /* /模块一标题 */
 }
@@ -92,7 +93,81 @@ a:hover {
   width: 322px;
   background: url("../img/custom-love/title-icon01.png") no-repeat center 8px;
 }
+.child-page .module.module-01 .main {
+  position: relative;
+  top: 75px;
+}
+.child-page .module.module-01 .main .bg {
+  width: 360px;
+  height: 863px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: url("../img/custom-love/m01-bg.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.child-page .module.module-01 .main .content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+.child-page .module.module-01 .main .content .pics-group {
+  width: 717px;
+  height: 863px;
+}
+.child-page .module.module-01 .main .content .pics-group img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.child-page .module.module-01 .main .content .pics-group img:nth-child(1) {
+  opacity: 1;
+}
+.child-page .module.module-01 .main .content .module01-list {
+  padding-right: 54px;
+  display: flex;
+  flex-direction: column;
+}
+.child-page .module.module-01 .main .content .module01-list li {
+  display: flex;
+  height: 147px;
+}
+.child-page .module.module-01 .main .content .module01-list li svg.arrow {
+  opacity: 0;
+}
+.child-page .module.module-01 .main .content .module01-list li svg.triangle {
+  position: relative;
+  left: 36px;
+}
+.child-page .module.module-01 .main .content .module01-list li div.txt {
+  position: relative;
+  left: 48px;
+}
+.child-page .module.module-01 .main .content .module01-list li div.txt div.title {
+  width: 130px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 28px;
+  height: 28px;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  transition: color .3s;
+}
+.child-page .module.module-01 .main .content .module01-list li div.txt div.title:hover {
+  color: #fd3232;
+}
+.child-page .module.module-01 .main .content .module01-list li div.txt div.para {
+  font-size: 24px;
+  line-height: 41px;
+  width: 576px;
+}
+.child-page .module.module-01 .main .content .module01-list li:first-child svg.arrow {
+  opacity: 1;
+}
 .child-page .module.module-02 {
+  margin-top: 122px;
   /* 模块二标题 */
   /* /模块二标题 */
 }
