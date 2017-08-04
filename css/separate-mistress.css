@@ -151,7 +151,7 @@
 
 .body3 ul li {
 	width: 15%;
-	padding-top: 100px;
+	padding-top: 150px;
 }
 
 .body3 ul li p {
@@ -213,17 +213,17 @@
 }
 
 #demo5.scroll-img ul {
-	width: 1558px;
+	width: 1550px;
 }
 
 #demo5-btn {
 	padding-top: 10px;
 }
 .body4-right img{
-	width: 380px;
+	width: 370px;
 	height: 525px;
 }
-@media only screen and (max-width: 1520px) {
+@media only screen and (max-width: 1700px) {
 	.scroll-img {
 		width: 900px;
 		height: 430px;
