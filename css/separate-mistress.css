@@ -83,7 +83,7 @@
 	width: 100%;
 	min-width: 1106px;
 	max-width: 1920px;
-	height: 650px;
+	height: 750px;
 	background: url(../img/separate-mistress/separate-head-bgimg.jpg) center center no-repeat;
 	background-size: 100%;
 	background-position: 0 0;
@@ -275,7 +275,7 @@
 
 
 /*
- * 
+ * 擅长分离的小三类型CSS
  */
 .body6{
 	width: 100%;
@@ -336,6 +336,7 @@
 	right: 0;
 	text-align: center;
 	color: #F0F0F0;
+	padding-top: 5px;
 }
 
 
@@ -379,6 +380,7 @@
 	left: 0;
 	text-align: center;
 	color: #F0F0F0;
+	padding-top: 5px;
 }
 
 /*
@@ -424,6 +426,7 @@
 	right: 0;
 	text-align: center;
 	color: #F0F0F0;
+	padding-top: 10px;
 }
 
 
@@ -467,4 +470,73 @@
 	left: 0;
 	text-align: center;
 	color: #F0F0F0;
+	padding-top: 10px;
+}
+
+/*
+ * 能够提供的分离小三的服务CSS
+ */
+.body7{
+	width: 100%;
+	min-width: 1106px;
+	max-width: 1920px;
+	height: 1080px;
+	background: url(../img/separate-mistress/service-delivery-bgimg.png) center center no-repeat;
+	background-size: 100%;
+}
+.body8{
+	width: 100%;
+	min-width: 1106px;
+	max-width: 1920px;
+	height: 860px;
+	background: url(../img/separate-mistress/successful-case-bgimg.png) center center no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+.body8 div{
+	/*border: 3px solid #FF3232;*/
+	color: #F0F0F0;
+	
+}
+.body8 div h2{
+	font-size: 28px;
+	font-weight: 600;
+	text-align: center;
+}
+.body8 div p{
+	margin-top: 20px;
+	font-size: 20px;
+	line-height: 35px;
+}
+.body8 div p a{
+	float: right;
+	color: #FF3232;
+}
+.body8-left{
+	position: absolute;
+	width: 480px;
+	height: 250px;
+	bottom: 80px;
+	left: 390px;
+}
+.body8-right{
+	position: absolute;
+	width: 480px;
+	height: 250px;
+	bottom: 80px;
+	right: 380px;
+}
+
+
+/*
+ * 导师团队
+ */
+.body9{
+	width: 100%;
+	min-width: 1106px;
+	max-width: 1920px;
+	height: 950px;
+	background: url(../img/separate-mistress/mentor-team-bgimg.png) center center no-repeat;
+	background-size: 100%;
+	position: relative;
 }
