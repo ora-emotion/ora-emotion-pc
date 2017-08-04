@@ -136,7 +136,6 @@
 	height: 700px;
 	background: url(../img/separate-mistress/appear-bgimg.png) center center no-repeat;
 	background-size: 100%;
-	background-position: 0 0;
 	display: flex;
 	justify-content: space-around;
 }
@@ -258,4 +257,214 @@
 		width: 250px;
 		height: 330px;
 	}
+}
+
+
+/*
+ * 橘子情感优势CSS
+ */
+
+.body5{
+	width: 100%;
+	min-width: 1106px;
+	max-width: 1920px;
+	height: 625px;
+	background: url(../img/separate-mistress/advantage-bgimg.png) center center no-repeat;
+	background-size: 100%;
+}
+
+
+/*
+ * 
+ */
+.body6{
+	width: 100%;
+	min-width: 1106px;
+	max-width: 1920px;
+	height: 700px;
+	background: url(../img/separate-mistress/good-at-separating-bgimg.png) center center no-repeat;
+	background-size: 100%;
+}
+/*.body6 div{
+	border: 2px solid #000000;
+}*/
+.body6-top{
+	padding-top: 50px;
+}
+.body6-top,.body6-bottom{
+	width: 1080px;
+	height: 290px;
+	margin: 0 auto;
+}
+.body6-top-left{
+	width: 535px;
+	height: 290px;
+	float: left;
+}
+.body6-top-left:hover .body6-top-left-right-kuang{
+	border-bottom: 10px solid #FF3232;
+	border-right: 10px solid #FF3232;
+}
+.body6-top-left-left{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.body6-top-left-left h3{
+	text-align: right;
+	font-size: 28px;
+	padding-top: 70px;
+	font-weight: bold;
+}
+.body6-top-left-left p{
+	padding-top: 15px;
+	padding-left: 20px;
+	font-size: 24px;
+}
+.body6-top-left-right{
+	background: url(../img/separate-mistress/good-at-separating-img1.png) center center no-repeat;
+	width: 50%;
+	height: 100%;
+	float: right;
+	position: relative;
+}
+.body6-top-left-right-kuang{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	bottom: 6px;
+	right: 0;
+	text-align: center;
+	color: #F0F0F0;
+}
+
+
+.body6-top-right{
+	width: 535px;
+	height: 290px;
+	float: right;
+}
+.body6-top-right:hover .body6-top-right-left-kuang{
+	border-bottom: 10px solid #FF3232;
+	border-left: 10px solid #FF3232;
+}
+.body6-top-right-right{
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+.body6-top-right-right h3{
+	text-align: left;
+	font-size: 28px;
+	padding-top: 70px;
+	font-weight: bold;
+}
+.body6-top-right-right p{
+	padding-top: 15px;
+	padding-left: 0px;
+	font-size: 24px;
+}
+.body6-top-right-left{
+	background: url(../img/separate-mistress/good-at-separating-img2.png) center center no-repeat;
+	width: 50%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.body6-top-right-left-kuang{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	bottom: 6px;
+	left: 0;
+	text-align: center;
+	color: #F0F0F0;
+}
+
+/*
+ * 下
+ */
+.body6-bottom-left{
+	width: 535px;
+	height: 290px;
+	float: left;
+}
+.body6-bottom-left:hover .body6-bottom-left-right-kuang{
+	border-top: 10px solid #FF3232;
+	border-right: 10px solid #FF3232;
+}
+.body6-bottom-left-left{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.body6-bottom-left-left h3{
+	text-align: right;
+	font-size: 28px;
+	padding-top: 70px;
+	font-weight: bold;
+}
+.body6-bottom-left-left p{
+	padding-top: 15px;
+	padding-left: 20px;
+	font-size: 24px;
+}
+.body6-bottom-left-right{
+	background: url(../img/separate-mistress/good-at-separating-img3.png) center center no-repeat;
+	width: 50%;
+	height: 100%;
+	float: right;
+	position: relative;
+}
+.body6-bottom-left-right-kuang{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: 5px;
+	right: 0;
+	text-align: center;
+	color: #F0F0F0;
+}
+
+
+.body6-bottom-right{
+	width: 535px;
+	height: 290px;
+	float: right;
+}
+.body6-bottom-right:hover .body6-bottom-right-left-kuang{
+	border-top: 10px solid #FF3232;
+	border-left: 10px solid #FF3232;
+}
+.body6-bottom-right-right{
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+.body6-bottom-right-right h3{
+	text-align: left;
+	font-size: 28px;
+	padding-top: 70px;
+	font-weight: bold;
+}
+.body6-bottom-right-right p{
+	padding-top: 15px;
+	padding-left: 0px;
+	font-size: 24px;
+}
+.body6-bottom-right-left{
+	background: url(../img/separate-mistress/good-at-separating-img4.png) center center no-repeat;
+	width: 50%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.body6-bottom-right-left-kuang{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: 5px;
+	left: 0;
+	text-align: center;
+	color: #F0F0F0;
 }
