@@ -296,6 +296,25 @@ a:hover {
 }
 .child-page .module.module-05 .main {
   margin-top: 75px;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  background-color: #202020;
+}
+.child-page .module.module-05 .main .items-group {
+  display: flex;
+  justify-content: space-around;
+}
+.child-page .module.module-05 .main .items-group .item {
+  width: 334px;
+}
+.child-page .module.module-05 .main .items-group .item p {
+  font-size: 20px;
+  line-height: 31px;
+  color: #fff;
+  padding-top: 20px;
+}
+.child-page .module.module-05 .main .items-group:nth-child(2) {
+  padding-top: 41px;
 }
 .child-page .module.module-06 {
   margin-top: 122px;
