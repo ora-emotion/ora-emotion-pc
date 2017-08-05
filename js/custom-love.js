@@ -80,4 +80,25 @@ window.onload = function () {
         });
     }
     moduleSix();
+
+    // 获取模块八部分元素
+    //--> 获取每个 step 元素
+    var step = $(".module-08 .main .line .step");
+    // console.log(step);
+
+    /* 模块八动效 */
+    // function moduleEight() {
+    //     step.mouseover(function () {
+    //         //--> 获取当前元素的索引值
+    //         var stepIndex = $(this).index();
+    //
+    //         $(step[stepIndex]).children().css({
+    //             "color": "#fd3232"
+    //         }).parent().children(".num").css({
+    //             "color": "#fd3232"
+    //         });
+    //     });
+    //
+    // }
+    // moduleEight();
 };
