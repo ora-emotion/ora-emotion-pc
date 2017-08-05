@@ -407,6 +407,8 @@ a:hover {
 }
 .child-page .module.module-07 .main .row .txt .txt-item:last-child {
   padding-bottom: 0;
+  position: relative;
+  top: 52px;
 }
 .child-page .module.module-08 {
   margin-top: 122px;
