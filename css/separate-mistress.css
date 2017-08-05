@@ -539,7 +539,6 @@
 .body9{
 	width: 100%;
 	min-width: 1106px;
-	max-width: 1920px;
 	height: 950px;
 	background: url(../img/separate-mistress/mentor-team-bgimg.png) center center no-repeat;
 	background-size: 100%;
@@ -575,3 +574,29 @@
 	height: 100%;
 }
 
+@media only screen and (min-width: 1600px) and (max-width: 1910px) {
+	.body91{
+		padding-top: 150px;
+	}
+	.body9-left img{
+		width: 530px;
+		height: 650px;
+	}
+	.body9-right ul li img{
+		width: 213px;
+		height: 313px;
+	}
+}
+@media only screen and (max-width: 1599px) {
+	.body91{
+		padding-top: 180px;
+	}
+	.body9-left img{
+		width: 480px;
+		height: 600px;
+	}
+	.body9-right ul li img{
+		width: 193px;
+		height: 293px;
+	}
+}
