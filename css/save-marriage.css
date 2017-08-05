@@ -23,6 +23,15 @@ a:hover {
   background-color: #fd3232;
   color: #fff;
 }
+/* 前言部分 */
+.preface {
+  background: url("../img/save-marriage/preface-bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 885px;
+}
+/* /前言部分 */
 .child-page {
   margin-bottom: 1217px;
   /* 模块公共样式 */
