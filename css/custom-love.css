@@ -340,6 +340,28 @@ a:hover {
 }
 .child-page .module.module-06 .main {
   margin-top: 75px;
+  position: relative;
+  overflow: hidden;
+}
+.child-page .module.module-06 .main .img-lg {
+  background: url("../img/custom-love/m06-pic01-lg.png") no-repeat center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 100%;
+  height: 602px;
+}
+.child-page .module.module-06 .main .img-sm {
+  padding: 0;
+  margin: 0;
+}
+.child-page .module.module-06 .main .img-sm .row {
+  width: 56.9%;
+  display: flex;
+  justify-content: space-between;
+  padding: 34px 0;
+  position: absolute;
+  right: 8%;
+  bottom: -4.8%;
 }
 .child-page .module.module-07 {
   margin-top: 122px;
@@ -349,6 +371,40 @@ a:hover {
 .child-page .module.module-07 .module-title .txt {
   width: 322px;
   background: url("../img/custom-love/title-icon01.png") no-repeat center 8px;
+}
+.child-page .module.module-07 .main {
+  margin-top: 75px;
+  background-color: #e4e4e4;
+  width: 100%;
+  padding: 45px 0;
+}
+.child-page .module.module-07 .main .row img {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.child-page .module.module-07 .main .row .txt {
+  padding-bottom: 50px;
+}
+.child-page .module.module-07 .main .row .txt .txt-item {
+  display: flex;
+  padding-bottom: 100px;
+  position: relative;
+}
+.child-page .module.module-07 .main .row .txt .txt-item i.m07-icon {
+  width: 42px;
+  height: 42px;
+  background: url("../img/custom-love/m07-icon.png") no-repeat 1px 1px;
+}
+.child-page .module.module-07 .main .row .txt .txt-item p {
+  position: absolute;
+  top: -2px;
+  left: 41px;
+  font-size: 30px;
+  line-height: 52px;
+  padding-left: 18px;
+}
+.child-page .module.module-07 .main .row .txt .txt-item:last-child {
+  padding-bottom: 0;
 }
 .child-page .module.module-08 {
   margin-top: 122px;

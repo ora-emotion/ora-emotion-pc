@@ -59,4 +59,25 @@ window.onload = function () {
 
     }
     moduleOne();
+
+    // 获取模块二部分元素
+    //--> 获取缩略图
+    var smImg = $(".module-06 .main .img-sm img");
+    //--> 获取大图(背景)
+    var lgImgBg = $(".module-06 .main .img-lg");
+    console.log(lgImgBg);
+
+    /* 模块六动效 */
+    function moduleSix() {
+        smImg.mouseover(function () {
+            //--> 获取当前缩略图的索引值
+            var smImgIndex = $(this).index();
+            // console.log(smImgIndex);
+            lgImgBg.css({
+                "backgroundImage": "url('img/custom-love/m06-pic0" + (smImgIndex+1) + "-lg.png')"
+            });
+            // console.log(lgImgBg.css("backgroundImage"));
+        });
+    }
+    moduleSix();
 };
