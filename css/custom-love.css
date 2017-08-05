@@ -108,6 +108,8 @@ a:hover {
   line-height: 54px;
   padding-top: 35px;
   padding-bottom: 0;
+  position: relative;
+  top: 50px;
 }
 .child-page .module.module-01 {
   margin-top: 112px;
@@ -227,11 +229,16 @@ a:hover {
   line-height: 60px;
   height: 60px;
   padding-top: 16px;
+  position: relative;
+  left: 10px;
 }
 .child-page .module.module-02 .main .items-group .item .txt p {
   font-size: 24px;
   line-height: 42px;
   padding-bottom: 56px;
+  width: 340px;
+  position: relative;
+  left: 15px;
 }
 .child-page .module.module-03 {
   margin-top: 122px;
@@ -405,6 +412,8 @@ a:hover {
 }
 .child-page .module.module-07 .main .row .txt .txt-item:last-child {
   padding-bottom: 0;
+  position: relative;
+  top: 52px;
 }
 .child-page .module.module-08 {
   margin-top: 122px;
