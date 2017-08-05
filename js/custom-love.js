@@ -20,6 +20,16 @@ window.onload = function () {
             //--> 获取当前 li 元素的下标 listIndex
             var listIndex = $(this).parent().parent().index();
 
+            //--> 当前元素的兄弟元素恢复为原来的颜色
+            // $(moduleOneLi[listIndex]).siblings().find(".txt .title").animate({
+            //     "color": "#2d2d2d"
+            // }, 300);
+
+            //--> 当前元素的文字变为红色
+            // $(this).animate({
+            //     "color": "#fd3232"
+            // }, 300);
+
             //--> 当前 li 的兄弟元素下的小箭头隐藏 - 不透明度 0
             $(moduleOneLi[listIndex]).siblings().find("svg.arrow").animate({
                 "opacity": "0"
