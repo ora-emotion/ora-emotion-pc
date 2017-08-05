@@ -1,3 +1,12 @@
+/*
+*
+* created by smpower
+* email: bzsjxhywrf@outlook.com
+* GitHub: https://github.com/smpower/
+*
+* */
+
+
 // 获取模块一部分元素
 //--> 获取 li 元素
 var moduleOneLi = $(".module-01 .content li");
@@ -19,19 +28,19 @@ function moduleOne() {
         var listIndex = $(this).parent().parent().index();
 
         //--> 当前元素的兄弟元素恢复为原来的颜色
-        // $(moduleOneLi[listIndex]).siblings().find(".txt .title").animate({
-        //     "color": "#2d2d2d"
-        // }, 300);
+        moduleOneLi.find(".txt .title").css({
+            "color": "#2d2d2d"
+        });
 
         //--> 当前元素的文字变为红色
-        // $(this).animate({
-        //     "color": "#fd3232"
-        // }, 300);
-
+        $(this).css({
+            "color": "#fd3232"
+        });
         //--> 当前 li 的兄弟元素下的小箭头隐藏 - 不透明度 0
         $(moduleOneLi[listIndex]).siblings().find("svg.arrow").animate({
             "opacity": "0"
         }, 300);
+
 
         //--> 当前 li 下的小箭头显示 - 不透明度 1
         $(moduleOneLi[listIndex]).find("svg.arrow").animate({
@@ -39,7 +48,7 @@ function moduleOne() {
         }, 300);
 
 
-        console.log($(pic[listIndex]).siblings());
+        // console.log($(pic[listIndex]).siblings());
 
         $(pic[listIndex]).siblings().css({
             "display": "none"
@@ -63,7 +72,6 @@ moduleOne();
 var smImg = $(".module-06 .main .img-sm img");
 //--> 获取大图(背景)
 var lgImgBg = $(".module-06 .main .img-lg");
-console.log(lgImgBg);
 
 /* 模块六动效 */
 function moduleSix() {
@@ -79,3 +87,6 @@ function moduleSix() {
 }
 moduleSix();
 
+
+
+console.log("橘子情感，为爱而生。");
