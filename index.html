@@ -10,6 +10,7 @@
 		<meta name="keywords" content=橘子情感/>
 		<meta name="description" content=橘子情感/>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/head.css" />
 		<link rel="stylesheet" href="css/foot.css" />
@@ -19,6 +20,8 @@
 		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css' />
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/zepto.min.js"></script>
+        <script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
 		<script>
 			$(function() {
 				$(".erweiactive").hover($(".erweima").css("display", "block"));
@@ -292,70 +295,90 @@
 				<h2>导师团队</h2>
 				<p class="subtitle">MENTOR TEAM</p>
 			</div>
-			<div class="wrape homeone">
-				<!-- <div class="fallback"><img src="images/home_page_1_fallback.jpg" alt="" /></div> -->
-				<!--<div class="bg-service"></div>-->
-				<div id="obo_slider">
-					<div class="items">
-						<div class="oneByOne_item">
-							<a href="#"><img src="img/index/mentor01.png" class="wp1_3 wp1_left slide2_bot" alt="" /></a>
-							<div class="txt pull-right">
-								<h4 class="name">嘉伟</h4>
-								<div class="intro">橘子情感创始人、首席主导师</div>
-								<div class="des">导师寄语：每一段真挚的感情，都值得被祝福；感情中最可怕不是不爱了，而是爱错了方式，让双方抱憾终身。</div>
-								<button type="button">立刻咨询</button>
-							</div>
-						</div>
-						<div class="oneByOne_item">
-							<a href="#"><img src="img/index/mentor02.png" class="wp1_3 wp1_left slide2_bot" alt="" /></a>
-							<div class="txt">
-								<h4 class="name">千无</h4>
-								<div class="intro">国内首批情感挽回专家，权威进化心理学教授</div>
-								<div class="des">导师寄语：通向幸福的路也许有千万条，也许你认为每一条都荆棘满布，但我会用我的专业与真诚，引领你寻找到幸福的捷径。</div>
-								<button type="button">立刻咨询</button>
-							</div>
-						</div>
-						<div class="oneByOne_item">
-							<a href="#"><img src="img/index/mentor03.png" class="wp1_3 wp1_left slide2_bot" alt="" /></a>
-							<div class="txt">
-								<h4 class="name">杰妮</h4>
-								<div class="intro">资深情感专家，女性心理与行为侧写师</div>
-								<div class="des">导师寄语：不要做无用功，发现问题的本质才是解决问题的唯一方式。</div>
-								<button type="button">立刻咨询</button>
-							</div>
-						</div>
-						<div class="oneByOne_item">
-							<a href="#"><img src="img/index/mentor04.png" class="wp1_3 wp1_left slide2_bot" alt="" /></a>
-							<div class="txt">
-								<h4 class="name">阿苏</h4>
-								<div class="intro">首席挽回专家，浙江大学教育学博士</div>
-								<div class="des">导师寄语：走在路上，感触太多，累过，笑过，或许正是这份责任和被寄托的希望，才是我们不断前行的动力。</div>
-								<button type="button">立刻咨询</button>
-							</div>
-						</div>
-						<div class="oneByOne_item">
-							<a href="#"><img src="img/index/mentor05.png" class="wp1_3 wp1_left slide2_bot" alt="" /></a>
-							<div class="txt">
-								<h4 class="name">茉言</h4>
-								<div class="intro">前世纪佳缘金牌红娘，高级形象设计师</div>
-								<div class="des">导师寄语：因为每一次爱情都是刻骨铭心的，但是实际和幻想的偏差，是很多人一生无法逾越的鸿沟。你缺乏的不是缘分，而是方法。</div>
-								<button type="button">立刻咨询</button>
-							</div>
-						</div>
-						<div class="oneByOne_item">
-							<div class="img">
-								<a href="#"><img src="img/index/mentor06.png" class="wp1_3 wp1_left slide2_bot" alt="" /></a>
-							</div>
-							<div class="txt">
-								<h4 class="name">浩宇</h4>
-								<div class="intro">国家二级心理咨询师，长期关系维护专家</div>
-								<div class="des">导师寄语：表达想法的能力，和想法本身，一样重要。大道至简，知易行难，希望用我的知识和经验，带你走向本该属于你的幸福。</div>
-								<button type="button">立刻咨询</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper text-center">
+                    <div class="swiper-slide">
+                        <img src="img/index/1.png" alt="">
+                        <div class="txt text-left">
+                            <div class="name">嘉伟</div>
+                            <div class="info">橘子情感创始人、首席主导师</div>
+                            <div class="des">导师寄语：每一段真挚的感情，都值得被祝福；感情中最可怕不是不爱了，而是爱错了方式，让双方抱憾终生。</div>
+                            <div class="button_base b06_skewed_slide_in">
+                                <div>定制方案</div>
+                                <div></div>
+                                <div>定制方案</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/index/2.png" alt="">
+                        <div class="txt text-left">
+                            <div class="name">茉言</div>
+                            <div class="info">前世纪佳缘金牌红娘，高级形象设计师</div>
+                            <div class="des">导师寄语：因为每一次爱情都是刻骨铭心的，但是实际和幻想的偏差，是很多人一生无法逾越的鸿沟。你缺乏的不是缘分，而是方法。</div>
+                            <div class="button_base b06_skewed_slide_in">
+                                <div>定制方案</div>
+                                <div></div>
+                                <div>定制方案</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/index/3.png" alt="">
+                        <div class="txt text-left">
+                            <div class="name">阿苏</div>
+                            <div class="info">首席挽回专家，浙江大学教育学博士</div>
+                            <div class="des">导师寄语：走在路上，感触太多，累过，笑过，或许正是这份责任和被寄托的希望，才是我们不断前行的动力。</div>
+                            <div class="button_base b06_skewed_slide_in">
+                                <div>定制方案</div>
+                                <div></div>
+                                <div>定制方案</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/index/4.png" alt="">
+                        <div class="txt text-left">
+                            <div class="name">杰妮</div>
+                            <div class="info">资深情感专家，女性心理与行为侧写师</div>
+                            <div class="des">导师寄语：不要做无用功，发现问题的本质才是解决问题的唯一方式。</div>
+                            <div class="button_base b06_skewed_slide_in">
+                                <div>定制方案</div>
+                                <div></div>
+                                <div>定制方案</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/index/5.png" alt="">
+                        <div class="txt text-left">
+                            <div class="name">千芜</div>
+                            <div class="info">国内首批情感挽回专家，权威进化心理学教授</div>
+                            <div class="des">导师寄语：通向幸福的路也许有千万条，也许你认为每一条都荆棘满布，但我会用我的专业与真诚，引领你寻找到幸福的捷径。</div>
+                            <div class="button_base b06_skewed_slide_in">
+                                <div>定制方案</div>
+                                <div></div>
+                                <div>定制方案</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/index/6.png" alt="">
+                        <div class="txt text-left">
+                            <div class="name">浩宇</div>
+                            <div class="info">国家二级心理咨询师，长期关系维护专家</div>
+                            <div class="des">导师寄语：表达想法的能力，和想法本身，一样重要。大道至简，知易行难，希望用我的知识和经验，带你走向本该属于你的幸福。</div>
+                            <div class="button_base b06_skewed_slide_in">
+                                <div>定制方案</div>
+                                <div></div>
+                                <div>定制方案</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
 		</div>
 		<!-- /导师团队-->
 
@@ -805,6 +828,7 @@
 		<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 		<script type="text/javascript" src="js/Carousel.js"></script>
 		<script src="js/jquery.scrollbox.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
 		<script>
 			$(function() {
 				$('.demo1').scrollbox();
@@ -846,17 +870,14 @@
 		<!-- /javascript -->
 		<script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript">
-			$(function() {
-				$('#obo_slider').runbanner({
-					className: 'oneByOne1',
-					easeType: 'fadeInRight', //动画参数
-					/*
-					 "rollIn", "fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "fadeInRight", "bounceIn", "bounceInDown", "bounceInUp", "bounceInLeft",        "bounceInRight", "rotateIn", "rotateInDownLeft", "rotateInDownRight", "rotateInUpLeft", "rotateInUpRight" (18种动画类型可调用)
-					 */
-					slideShow: true //为false时不会自动播放
-				});
-			})
+            /* 导师团队轮播图 */
+            var mySwiper = new Swiper('.swiper-container', {
+                autoplay: 5000,
+                prevButton:'.swiper-button-prev',
+                nextButton:'.swiper-button-next',
+                loop: true,
+            });
 		</script>
-	</body>
 
+	</body>
 </html>
