@@ -340,6 +340,28 @@ a:hover {
 }
 .child-page .module.module-06 .main {
   margin-top: 75px;
+  position: relative;
+  overflow: hidden;
+}
+.child-page .module.module-06 .main .img-lg {
+  background: url("../img/custom-love/m06-pic01-lg.png") no-repeat center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 100%;
+  height: 602px;
+}
+.child-page .module.module-06 .main .img-sm {
+  padding: 0;
+  margin: 0;
+}
+.child-page .module.module-06 .main .img-sm .row {
+  width: 56.9%;
+  display: flex;
+  justify-content: space-between;
+  padding: 34px 0;
+  position: absolute;
+  right: 8%;
+  bottom: -4.8%;
 }
 .child-page .module.module-07 {
   margin-top: 122px;
