@@ -71,6 +71,8 @@ $(document).ready(function() {
 
 
 
+
+
     $(".li21").mouseover(function() {
 		$(".li11").css({
 			"border": "2px slide #FFFFFF",

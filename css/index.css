@@ -1142,125 +1142,94 @@ input:-webkit-autofill {
 
 /* 导师团队 */
 .team {
+    margin-top: 188px;
     width: 100%;
-    min-width: 1106px;
-    height: 710px;
-    background: url("../img/index/bg-team.png") no-repeat center fixed;
+    height: 708px;
+    background: url("../img/index/mentor-team-bg.png") no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
-    margin-top: 200px;
     position: relative;
 }
 
 .team .title {
-    position: absolute;
-    top: -150px;
-    left: 10%;
-    right: 10%;
+    position: relative;
+    top: -100px;
 }
 
-.team h2 {
-    font-weight: bold;
+.team .title h2,
+.team .title p {
+    color: #2d2d2d;
+}
+
+.team .title h2 {
     font-size: 34px;
-}
-
-.team p {
-    font-size: 1.2em;
-    color: #C0C0C0;
-}
-
-.team .mentor-item .inner .item {
-    position: relative;
-    display: none;
-}
-
-.team .mentor-item .inner .item.active {
-    display: block;
-}
-
-.team .mentor-item .inner .item .box {
-    width: 100%;
-    height: 489px;
-    border: 2px solid #2d2d2d;
-    border-top: none;
-    position: absolute;
-    top: 182px;
-}
-
-.team .mentor-item .inner .item .line-left {
-    width: 200px;
-    height: 2px;
-    background-color: #2d2d2d;
-    position: absolute;
-    top: 182px;
-}
-
-.team .mentor-item .inner .item .line-right {
-    width: 552px;
-    height: 2px;
-    background-color: #2d2d2d;
-    position: absolute;
-    top: 182px;
-    right: 0;
-}
-
-.team .mentor-item .inner .item img {
-    position: absolute;
-    top: -450px;
-    /*top: -90px;*/
-    left: 152px;
-}
-
-.team .mentor-item .inner .item .txt {
-    position: absolute;
-    top: 300px;
-    right: 0;
-    color: #2d2d2d;
-    width: 430px;
-    padding-right: 122px;
-}
-
-.team .mentor-item .inner .item .txt .name {
     font-weight: bold;
-    font-size: 28px;
 }
 
-.team .mentor-item .inner .item .txt .intro {
-    color: #fc3232;
-    font-size: 20px;
-    padding-bottom: 5px;
+.team .title p {
+    letter-spacing: 2px;
+    color: #C0C0C0;
+    font-size: 1.2em;
 }
 
-.team .mentor-item .inner .item .txt .des {
-    color: #2d2d2d;
-    font-size: 16px;
-    height: 110px;
-    overflow: hidden;
-}
-
-.team .mentor-item .inner .item .txt button {
-    background-color: #fc3232;
-    padding: 10px 20px;
-    color: #fff;
-}
-
-.team .control-item {
-    height: 100%;
-}
-
-.team .control-item .inner  {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.team .control-item img {
-    margin-top: 155px;
+.team .swiper-container {
     position: relative;
-    z-index: 1;
+    top: -120px;
 }
+
+.team .swiper-container .swiper-wrapper {
+    /*width: 1026px;*/
+    /*height: 718px;*/
+    margin: 0 auto;
+    /*padding-left: -200px;*/
+}
+
+.team .swiper-container .swiper-wrapper .swiper-slide img {
+    width: 1206px;
+    height: 718px;
+}
+
+.team .swiper-container .swiper-wrapper .swiper-slide .txt {
+    width: 430px;
+    margin: 0 auto;
+    position: relative;
+    top: -380px;
+    left: 270px;
+}
+
+.team .swiper-container .swiper-wrapper .swiper-slide .txt .name {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.team .swiper-container .swiper-wrapper .swiper-slide .txt .info {
+    font-size: 24px;
+    color: #FD3232;
+    padding: 5px 0;
+}
+
+.team .swiper-container .swiper-wrapper .swiper-slide .txt .des {
+    font-size: 24px;
+}
+
+.team .swiper-container .swiper-wrapper .swiper-slide .txt .button_base {
+    margin-top: 40px;
+}
+
+.team .swiper-container .swiper-button-prev,
+.team .swiper-container .swiper-button-next {
+    top: 45%;
+}
+
+.team .swiper-container .swiper-button-prev {
+    left: 372px;
+}
+
+.team .swiper-container .swiper-button-next {
+    right: 372px;
+}
+
+
 
 .wrape.homeone {
     position: relative;
