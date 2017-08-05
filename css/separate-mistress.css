@@ -484,6 +484,11 @@
 	background: url(../img/separate-mistress/service-delivery-bgimg.png) center center no-repeat;
 	background-size: 100%;
 }
+
+
+/*
+ * 成功案例CSS
+ */
 .body8{
 	width: 100%;
 	min-width: 1106px;
@@ -529,7 +534,7 @@
 
 
 /*
- * 导师团队
+ * 导师团队CSS
  */
 .body9{
 	width: 100%;
