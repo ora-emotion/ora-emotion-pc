@@ -72,11 +72,11 @@ window.onload = function () {
         smImg.mouseover(function () {
             //--> 获取当前缩略图的索引值
             var smImgIndex = $(this).index();
-            console.log(smImgIndex);
+            // console.log(smImgIndex);
             lgImgBg.css({
                 "backgroundImage": "url('img/custom-love/m06-pic0" + (smImgIndex+1) + "-lg.png')"
             });
-            console.log(lgImgBg.css("backgroundImage"));
+            // console.log(lgImgBg.css("backgroundImage"));
         });
     }
     moduleSix();
