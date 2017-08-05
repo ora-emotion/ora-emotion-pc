@@ -170,6 +170,18 @@ header .inner .pull-right .txt p:last-child {
 }
 /* /导航栏 */
 
+/*
+ * 页面头图
+ */
+.save-love-top-img{
+	width: 1920px;
+	height: 100%;
+}
+.save-love-top-img img{
+	width: 100%;
+	height: 100%;
+}
+
 /* 二级菜单 */
 .nav1 {
     position: relative;
