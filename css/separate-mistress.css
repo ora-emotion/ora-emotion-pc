@@ -33,7 +33,7 @@
 	font-weight: bold;
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+/*@media only screen and (min-width: 1200px) and (max-width: 1500px) {
 	.biaoti span {
 		font-size: 30px;
 	}
@@ -49,7 +49,7 @@
 	.biaoti p {
 		font-size: 0.7em;
 	}
-}
+}*/
 
 .biaoti p {
 	color: #CCCCCC;
@@ -158,13 +158,14 @@
 	color: #F0F0F0;
 	text-align: center;
 	font-weight: 500;
+	padding-left: 50px;
 }
 
 .body3 ul li p:nth-child(2) {
 	margin-top: 20px;
 }
 
-@media only screen and (max-width: 1300px) {
+/*@media only screen and (max-width: 1300px) {
 	.body3 ul li img {
 		width: 80%;
 		height: 20%;
@@ -176,13 +177,12 @@
 		font-weight: 500;
 		margin-left: -20px;
 	}
-}
+}*/
 
 
 /*
  * 错误应对方式CSS
  */
-
 .body4 {
 	width: 100%;
 	min-width: 1106px;
@@ -204,13 +204,17 @@
 	margin: 0;
 	display: -webkit-flex;
 	justify-content: space-around;
+	margin-left: 210px;
 }
 
 .scroll-img ul li {
 	display: inline-block;
 	margin: 10px 0 10px 10px;
 }
-
+.scroll-img ul li img{
+	width: 320px;
+	height: 480px;
+}
 #demo5.scroll-img ul {
 	width: 1550px;
 }
@@ -218,9 +222,13 @@
 #demo5-btn {
 	padding-top: 10px;
 }
+.body4-left img{
+	width: 250px;
+	height: 480px;
+}
 .body4-right img{
-	width: 370px;
-	height: 525px;
+	width: 310px;
+	height: 480px;
 }
 /*@media only screen and (max-width: 1700px) {
 	.scroll-img {
@@ -302,21 +310,27 @@
 	border-bottom: 10px solid #FF3232;
 	border-right: 10px solid #FF3232;
 }
+.body6-top-left:hover .body6-top-left-left{
+	color: #000000;
+}
 .body6-top-left-left{
-	width: 50%;
+	width: 35%;
 	height: 100%;
 	float: left;
+	margin-left: 80px;
+	color: #58595B;
 }
 .body6-top-left-left h3{
 	text-align: right;
-	font-size: 28px;
+	font-size: 22px;
 	padding-top: 70px;
 	font-weight: bold;
+	margin-right: 10px;
 }
 .body6-top-left-left p{
 	padding-top: 15px;
 	padding-left: 20px;
-	font-size: 24px;
+	font-size: 17px;
 }
 .body6-top-left-right{
 	background: url(../img/separate-mistress/good-at-separating-img1.png) center center no-repeat;
@@ -346,21 +360,26 @@
 	border-bottom: 10px solid #FF3232;
 	border-left: 10px solid #FF3232;
 }
+.body6-top-right:hover .body6-top-right-right{
+	color: #000000;
+}
 .body6-top-right-right{
-	width: 50%;
+	width: 35%;
 	height: 100%;
 	float: right;
+	margin-right: 80px;
+	color: #58595B;
 }
 .body6-top-right-right h3{
 	text-align: left;
-	font-size: 28px;
+	font-size: 22px;
 	padding-top: 70px;
 	font-weight: bold;
 }
 .body6-top-right-right p{
 	padding-top: 15px;
 	padding-left: 0px;
-	font-size: 24px;
+	font-size: 17px;
 }
 .body6-top-right-left{
 	background: url(../img/separate-mistress/good-at-separating-img2.png) center center no-repeat;
@@ -392,21 +411,27 @@
 	border-top: 10px solid #FF3232;
 	border-right: 10px solid #FF3232;
 }
+.body6-bottom-left:hover .body6-bottom-left-left{
+	color: #000000;
+}
 .body6-bottom-left-left{
-	width: 50%;
+	width: 35%;
 	height: 100%;
 	float: left;
+	margin-left: 80px;
+	color: #58595B;
 }
 .body6-bottom-left-left h3{
 	text-align: right;
-	font-size: 28px;
+	font-size: 22px;
 	padding-top: 70px;
 	font-weight: bold;
+	margin-right: 10px;
 }
 .body6-bottom-left-left p{
 	padding-top: 15px;
 	padding-left: 20px;
-	font-size: 24px;
+	font-size: 17px;
 }
 .body6-bottom-left-right{
 	background: url(../img/separate-mistress/good-at-separating-img3.png) center center no-repeat;
@@ -436,21 +461,26 @@
 	border-top: 10px solid #FF3232;
 	border-left: 10px solid #FF3232;
 }
+.body6-bottom-right:hover .body6-bottom-right-right{
+	color: #000000;
+}
 .body6-bottom-right-right{
-	width: 50%;
+	width: 35%;
 	height: 100%;
 	float: right;
+	margin-right: 80px;
+	color: #58595B;
 }
 .body6-bottom-right-right h3{
 	text-align: left;
-	font-size: 28px;
+	font-size: 22px;
 	padding-top: 70px;
 	font-weight: bold;
 }
 .body6-bottom-right-right p{
 	padding-top: 15px;
 	padding-left: 0px;
-	font-size: 24px;
+	font-size: 17px;
 }
 .body6-bottom-right-left{
 	background: url(../img/separate-mistress/good-at-separating-img4.png) center center no-repeat;
@@ -469,6 +499,7 @@
 	color: #F0F0F0;
 	padding-top: 10px;
 }
+
 
 /*
  * 能够提供的分离小三的服务CSS
@@ -501,13 +532,13 @@
 	
 }
 .body8 div h2{
-	font-size: 28px;
+	font-size: 22px;
 	font-weight: 600;
 	text-align: center;
 }
 .body8 div p{
 	margin-top: 20px;
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 35px;
 }
 .body8 div p a{
@@ -516,17 +547,17 @@
 }
 .body8-left{
 	position: absolute;
-	width: 480px;
+	width: 430px;
 	height: 250px;
 	bottom: 80px;
-	left: 390px;
+	left: 320px;
 }
 .body8-right{
 	position: absolute;
-	width: 480px;
+	width: 400px;
 	height: 250px;
 	bottom: 80px;
-	right: 380px;
+	right: 310px;
 }
 
 
@@ -542,7 +573,7 @@
 	position: relative;
 }
 .body91{
-	width: 77%;
+	width: 70%;
 	margin: 0 auto;
 	padding-top: 100px;
 	height: 950px;
@@ -608,6 +639,14 @@
 	width: 80%;
 	height: 1px;
 	border-bottom: 2px solid #2D2D2D;
+	position: absolute;
+	top: 322px;
+	left: 155px;
+}
+.body10-xian{
+	widows: initial;
+	height: 1px;
+	border-bottom: 10px solid #000000;
 	position: absolute;
 	top: 322px;
 	left: 155px;
