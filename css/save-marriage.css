@@ -374,10 +374,19 @@ a:hover {
   top: 108px;
   padding-left: -10px;
 }
+.child-page .module.module-04 .main .item-group:first-child .item:nth-child(2) p:first-child {
+  padding-right: 10px;
+}
 .child-page .module.module-04 .main .item-group:last-child {
   top: 404px;
   padding-left: -20px;
   padding-right: 10px;
+}
+.child-page .module.module-04 .main .item-group:last-child .item:nth-child(2) p:first-child {
+  padding-right: 30px;
+}
+.child-page .module.module-04 .main .item-group:last-child .item:nth-child(3) p:first-child {
+  padding-right: 30px;
 }
 .child-page .module.module-05 {
   position: relative;
