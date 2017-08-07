@@ -56,6 +56,18 @@
 }
 
 
+
+/*
+ * 页面头图
+ */
+.save-love-top-img{
+	background: url(../img/save-love/save-love-top-img.jpg) center center no-repeat;
+	width: 100%;
+	height: 885px;
+	background-size: cover;
+}
+
+
 /*
  * 分手状态部分CSS
  */
