@@ -337,43 +337,6 @@ input:-webkit-autofill {
     position: relative;
     left: 52px;
 }
-/*.zixun4{*/
-	/*width: 100%;*/
-	/*height: 350px;*/
-	/*margin-top: -120px;*/
-	/*float: left;*/
-	/*background-color: #2D2D2D;*/
-/*}*/
-/*.zixun4 .tu4{*/
-	/*height: 421px;*/
-
-/*}*/
-/*.zixun4 .tu4 img{*/
-	/*float: left;*/
-	/*width: 700px;*/
-	/*height: 350px;*/
-	/*margin-left: 170px;*/
-/*}*/
-
-/*.zixun4 .wen4{*/
-	/*width: 390px;*/
-	/*float: right;*/
-	/*color: #F0F0F0;*/
-	/*height: 350px;*/
-	/*border: 2px solid #000;*/
-
-/*}*/
-/*.zixun4 .wen4 h2{*/
-	/*!*margin-top: -100%;*!*/
-	/*!*margin-left: -60%;*!*/
-/*}*/
-/*.zixun4 .wen4 p{*/
-	/*!*margin-left: -60%;*!*/
-	/*width: 380px;*/
-	/*margin-top: 20px;*/
-/*}*/
-
-/* biaoti 1 */
 .biaoti1{
     padding: 50px 0;
 	text-align: center;
@@ -714,7 +677,7 @@ input:-webkit-autofill {
 /* 右侧部分 */
 .service-guarantee .service-top .right {
     height: 100%;
-    width: 855px;
+    width: 900px;
     background-color: #fe3233;
 }
 
