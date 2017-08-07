@@ -671,12 +671,6 @@
 	margin-left: 10px;
 }
 
-@media (max-width: 1500px) {
-    .body9-right {
-        max-width: 31.2%;
-    }
-}
-
 .body9-right {
 	float: right;
 	/*margin-right: 415px;*/
