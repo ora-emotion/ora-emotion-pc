@@ -112,21 +112,25 @@ a:hover {
   line-height: 28px;
   padding-top: 15px;
 }
+.child-page .module.module-03 .main .page .item-group .item .txt .btn {
+  padding: 0;
+  text-align: left;
+}
 .child-page .module.module-03 .main .page .item-group .item .txt .btn button {
   font-size: 14px;
-  width: 69px;
-  height: 17px;
-  line-height: 17px;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
   border: 1px solid #2d2d2d;
   background-color: #fff;
   color: #2d2d2d;
-  margin-top: 87px;
+  margin-top: 30px;
 }
 .child-page .module.module-03 .main .page .item-group .item .txt .btn button:nth-child(2) {
   background-color: #fd3232;
   border: 1px solid #fd3232;
   color: #fff;
-  margin-left: 30px;
+  margin-left: 15px;
 }
 .child-page .module.module-03 .main .page .item-group:nth-child(2) {
   padding-bottom: 86px;
