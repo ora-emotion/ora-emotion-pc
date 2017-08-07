@@ -78,3 +78,90 @@ a:hover {
   width: 403px;
   background: url("../img/focus-team/title-icon03.png") no-repeat center 8px;
 }
+.child-page .module.module-03 .main .page {
+  margin-top: 75px;
+  background: url("../img/focus-team/m03-bg.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: none;
+}
+.child-page .module.module-03 .main .page .item-group {
+  display: flex;
+  justify-content: space-around;
+  padding: 84px 358px 0;
+}
+.child-page .module.module-03 .main .page .item-group .item {
+  display: flex;
+  width: 545px;
+  height: 348px;
+}
+.child-page .module.module-03 .main .page .item-group .item .txt {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 18px;
+  width: 256px;
+}
+.child-page .module.module-03 .main .page .item-group .item .txt .name {
+  font-size: 24px;
+  font-weight: bold;
+}
+.child-page .module.module-03 .main .page .item-group .item .txt .des {
+  font-size: 20px;
+  width: 225px;
+  line-height: 28px;
+  padding-top: 15px;
+}
+.child-page .module.module-03 .main .page .item-group .item .txt .btn button {
+  font-size: 14px;
+  width: 69px;
+  height: 17px;
+  line-height: 17px;
+  border: 1px solid #2d2d2d;
+  background-color: #fff;
+  color: #2d2d2d;
+  margin-top: 87px;
+}
+.child-page .module.module-03 .main .page .item-group .item .txt .btn button:nth-child(2) {
+  background-color: #fd3232;
+  border: 1px solid #fd3232;
+  color: #fff;
+  margin-left: 30px;
+}
+.child-page .module.module-03 .main .page .item-group:nth-child(2) {
+  padding-bottom: 86px;
+}
+.child-page .module.module-03 .main .page.active:nth-child(1) {
+  display: block;
+}
+.child-page .module.module-03 .page-control {
+  display: flex;
+  justify-content: center;
+  color: #fd3232;
+}
+.child-page .module.module-03 .page-control div {
+  border: 1px solid #c1c1c1;
+  margin-right: 3px;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+.child-page .module.module-03 .page-control .first-page.active {
+  color: #c1c1c1;
+}
+.child-page .module.module-03 .page-control .prev-page.active {
+  color: #c1c1c1;
+}
+.child-page .module.module-03 .page-control .page-num {
+  border: none;
+  padding: 0;
+}
+.child-page .module.module-03 .page-control .page-num span {
+  display: inline-block;
+  border: 1px solid #c1c1c1;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+.child-page .module.module-03 .page-control .total-page {
+  border: 1px solid #fd3232;
+}
