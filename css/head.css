@@ -40,7 +40,8 @@ ol,li,ul{list-style:none;}
 
 /* 页面头部 */
 header {
-    width: 100%;
+    min-width: 1500px;
+    /*width: 100%;*/
     height: 145px;
 }
 
