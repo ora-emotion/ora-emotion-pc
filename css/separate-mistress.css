@@ -77,6 +77,17 @@
 
 
 /*
+ * 首页头部背景图CSS
+ */
+.separate-mistress-top-bgimg{
+	width: 100%;
+	height: 885px;
+	background: url(../img/separate-mistress/head-bgimg.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+
+/*
  * 头部背景图CSS
  */
 
