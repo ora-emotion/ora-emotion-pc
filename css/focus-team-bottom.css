@@ -83,7 +83,6 @@ a:hover {
   background: url("../img/focus-team/m03-bg.png") no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;
-  display: none;
 }
 .child-page .module.module-03 .main .page .item-group {
   display: flex;
@@ -132,7 +131,10 @@ a:hover {
 .child-page .module.module-03 .main .page .item-group:nth-child(2) {
   padding-bottom: 86px;
 }
-.child-page .module.module-03 .main .page.active:nth-child(1) {
+.child-page .module.module-03 .main .page {
+  display: none;
+}
+.child-page .module.module-03 .main .page.active {
   display: block;
 }
 .child-page .module.module-03 .page-control {
@@ -161,6 +163,11 @@ a:hover {
   border: 1px solid #c1c1c1;
   padding: 3px 8px;
   cursor: pointer;
+}
+.child-page .module.module-03 .page-control .page-num span.active {
+  color: #fff;
+  background-color: #fd3232;
+  border: 1px solid #fd3232;
 }
 .child-page .module.module-03 .page-control .total-page {
   border: 1px solid #fd3232;
