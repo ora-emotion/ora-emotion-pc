@@ -10,6 +10,7 @@
 	margin-top: 50px;
 	text-align: center;
 	position: relative;
+	text-transform: uppercase;
 }
 
 .biaoti img {
@@ -137,18 +138,20 @@
 	color: #F0F0F0;
 }
 .body2-zhuti h2{
+	text-align: center;
+	line-height: 60px;
+	height: 60px;
 	border: 1px solid #F0F0F0;
-	padding: 10px 15px;
 	width: 280px;
 	margin: 0 auto;
+	color: #F0F0F0;
 }
 .body2-zhuti p{
-	font-size: 18px;
-	width: 1000px;
+	font-size: 16px;
+	width: 900px;
 	margin: 20px auto;
 	line-height: 35px;
 	letter-spacing: 2px;
 	text-indent: 36px;
+	color: #F0F0F0;
 }
-
-
