@@ -46,6 +46,16 @@ function splitPage() {
         lastPageBtn.css({
             "color": "#fd3232"
         });
+        pageOne.css({
+            "color": "#fff",
+            "border": "1px solid #fd3232",
+            "backgroundColor": "#fd3232"
+        });
+        pageTwo.css({
+            "color": "#fd3232",
+            "backgroundColor": "#fff",
+            "border": "1px solid #c1c1c1"
+        });
         $(pageNum[0]).addClass("active").siblings().removeClass("active");
     });
 
@@ -67,6 +77,16 @@ function splitPage() {
             "color": "#c1c1c1",
             "border": "1px solid #c1c1c1"
         });
+        pageOne.css({
+            "color": "#fff",
+            "border": "1px solid #fd3232",
+            "backgroundColor": "#fd3232"
+        });
+        pageTwo.css({
+            "color": "#fd3232",
+            "border": "1px solid #c1c1c1",
+            "backgroundColor": "#fff"
+        });
     });
 
     //--> 点击‘下一页’按钮
@@ -86,6 +106,16 @@ function splitPage() {
         lastPageBtn.css({
             "color": "#c1c1c1",
             "border": "1px solid #c1c1c1"
+        });
+        pageOne.css({
+            "color": "#fd3232",
+            "border": "1px solid #c1c1c1",
+            "backgroundColor": "#fff"
+        });
+        pageTwo.css({
+            "color": "#fff",
+            "border": "1px solid #fd3232",
+            "backgroundColor": "#fd3232"
         });
     });
 
@@ -107,6 +137,16 @@ function splitPage() {
         nextPageBtn.css({
             "color": "#c1c1c1",
             "border": "1px solid #c1c1c1"
+        });
+        pageOne.css({
+            "color": "#fd3232",
+            "border": "1px solid #c1c1c1",
+            "backgroundColor": "#fff"
+        });
+        pageTwo.css({
+            "color": "#fff",
+            "border": "1px solid #fd3232",
+            "backgroundColor": "#fd3232"
         });
         $(pageNum[1]).addClass("active").siblings().removeClass("active");
     });
@@ -140,6 +180,9 @@ function splitPage() {
         lastPageBtn.css({
             "color": "#fd3232"
         });
+        pageTwo.css({
+            "color": "#fd3232"
+        });
     });
 
     //--> 点击页码 2
@@ -164,6 +207,9 @@ function splitPage() {
             "color": "#fd3232"
         });
         prevPageBtn.css({
+            "color": "#fd3232"
+        });
+        pageOne.css({
             "color": "#fd3232"
         });
     });
