@@ -10,10 +10,7 @@
 	margin-top: 50px;
 	text-align: center;
 	position: relative;
-<<<<<<< HEAD
-=======
 	text-transform: uppercase;
->>>>>>> 4b7c6838cddbbb706524e25dec1f0856a4133463
 }
 
 .biaoti img {
@@ -64,17 +61,21 @@
  * banner图CSS
  */
 .head-bgimg{
-	background: url(../img/focus-team/head-bgimg.png) no-repeat center center;
+	background: url(../img/focus-team/authority-banner.png) no-repeat center center;
  	-webkit-background-size: cover;
   	background-size: cover;
   	width: 100%;
   	height: 885px;
   	overflow: hidden;
-<<<<<<< HEAD
 }
-=======
+.body-bgimg{
+	background: url(../img/focus-team/head-bgimg.png) no-repeat center center;
+ 	-webkit-background-size: cover;
+  	background-size: cover;
+  	width: 100%;
+  	height: 782px;
+  	overflow: hidden;
 }
-
 /*
  * 专注卓越CSS
  */
@@ -84,7 +85,73 @@
 	-webkit-background-size: cover;
   	background-size: cover;
   	width: 100%;
-  	height: 500px;
+  	height: 600px;
   	overflow: hidden;
 }
->>>>>>> 4b7c6838cddbbb706524e25dec1f0856a4133463
+.body1-zhuti{
+	width: 1200px;
+	margin: 50px auto;
+	height: 100%;
+}
+.body1-zhuti ul{
+	display: flex;
+	justify-content: space-between;
+}
+.body1-zhuti ul li{
+	width: 340px;
+}
+.body1-zhuti ul li h2{
+	text-align: center;
+	font-size: 28px;
+	font-weight: 600;
+}
+.body1-zhuti ul li p{
+	font-size: 20px;
+}
+.body1-zhuti ul li p:nth-child(3){
+	margin-top: 20px;
+	/*letter-spacing: 1px;*/
+	line-height: 40px;
+}
+.body1-zhuti ul li p:nth-child(4){
+	margin-top: 20px;
+	text-align: center;
+	color: #FF3232;
+	font-weight: bold;
+}
+
+
+/*
+ * 橘子情感导师团队CSS
+ */
+.body2{
+	background: url(../img/focus-team/mentor-team-bgimg.png) center center no-repeat;
+	-webkit-background-size: cover;
+  	background-size: cover;
+  	width: 100%;
+  	height: 600px;
+  	overflow: hidden;
+}
+.body2-zhuti{
+	width: 1200px;
+	margin: 50px auto;
+	color: #F0F0F0;
+}
+.body2-zhuti h2{
+	text-align: center;
+	line-height: 60px;
+	height: 60px;
+	border: 1px solid #F0F0F0;
+	width: 280px;
+	margin: 0 auto;
+	color: #F0F0F0;
+}
+.body2-zhuti p{
+	font-size: 16px;
+	width: 900px;
+	margin: 20px auto;
+	line-height: 35px;
+	letter-spacing: 2px;
+	text-indent: 36px;
+	color: #F0F0F0;
+}

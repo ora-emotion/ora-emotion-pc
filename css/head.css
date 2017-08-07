@@ -169,6 +169,10 @@ header .inner .pull-right .txt p:last-child {
 .nav .inner ul li:hover {
     background-color: #ff3232;
 }
+.nav .inner ul li a:link,a:visited,a:hover,a:active{
+	color: #FFFFFF;
+	text-decoration: none;
+}
 /* /导航栏 */
 
 /*

@@ -33,6 +33,7 @@
 	font-weight: bold;
 }
 
+
 /*@media only screen and (min-width: 1200px) and (max-width: 1500px) {
 	.biaoti span {
 		font-size: 30px;
@@ -150,7 +151,7 @@
 }
 
 .body3 ul li {
-	width: 15%;
+	width: 12.5%;
 	padding-top: 150px;
 }
 
@@ -165,6 +166,7 @@
 .body3 ul li p:nth-child(2) {
 	margin-top: 20px;
 }
+
 
 /*@media only screen and (max-width: 1300px) {
 	.body3 ul li img {
@@ -184,6 +186,7 @@
 /*
  * 错误应对方式CSS
  */
+
 .body4 {
 	width: 100%;
 	min-width: 1106px;
@@ -205,17 +208,19 @@
 	margin: 0;
 	display: -webkit-flex;
 	justify-content: space-around;
-	margin-left: 210px;
+	margin-left: 420px;
 }
 
 .scroll-img ul li {
 	display: inline-block;
 	margin: 10px 0 10px 10px;
 }
-.scroll-img ul li img{
-	width: 320px;
-	height: 480px;
+
+.scroll-img ul li img {
+	width: 390px;
+	height: 550px;
 }
+
 #demo5.scroll-img ul {
 	width: 1550px;
 }
@@ -223,14 +228,18 @@
 #demo5-btn {
 	padding-top: 10px;
 }
-.body4-left img{
-	width: 250px;
-	height: 480px;
+
+.body4-left img {
+	width: 350px;
+	height: 550px;
 }
-.body4-right img{
-	width: 310px;
-	height: 480px;
+
+.body4-right img {
+	width: 350px;
+	height: 550px;
 }
+
+
 /*@media only screen and (max-width: 1700px) {
 	.scroll-img {
 		width: 900px;
@@ -273,7 +282,7 @@
  * 橘子情感优势CSS
  */
 
-.body5{
+.body5 {
 	width: 100%;
 	min-width: 1106px;
 	max-width: 1920px;
@@ -286,7 +295,8 @@
 /*
  * 擅长分离的小三类型CSS
  */
-.body6{
+
+.body6 {
 	width: 100%;
 	min-width: 1106px;
 	max-width: 1920px;
@@ -294,53 +304,64 @@
 	background: url(../img/separate-mistress/good-at-separating-bgimg.png) center center no-repeat;
 	background-size: 100%;
 }
-.body6-top{
+
+.body6-top {
 	padding-top: 50px;
 }
-.body6-top,.body6-bottom{
+
+.body6-top,
+.body6-bottom {
 	width: 1080px;
 	height: 290px;
 	margin: 0 auto;
 }
-.body6-top-left{
+
+.body6-top-left {
 	width: 535px;
 	height: 290px;
 	float: left;
 }
-.body6-top-left:hover .body6-top-left-right-kuang{
+
+.body6-top-left:hover .body6-top-left-right-kuang {
 	border-bottom: 10px solid #FF3232;
 	border-right: 10px solid #FF3232;
 }
-.body6-top-left:hover .body6-top-left-left{
+
+.body6-top-left:hover .body6-top-left-left {
 	color: #000000;
 }
-.body6-top-left-left{
+
+.body6-top-left-left {
 	width: 35%;
 	height: 100%;
 	float: left;
 	margin-left: 80px;
 	color: #58595B;
 }
-.body6-top-left-left h3{
+
+.body6-top-left-left h3 {
 	text-align: right;
 	font-size: 22px;
 	padding-top: 70px;
 	font-weight: bold;
 	margin-right: 10px;
 }
-.body6-top-left-left p{
+
+.body6-top-left-left p {
 	padding-top: 15px;
 	padding-left: 20px;
 	font-size: 17px;
 }
-.body6-top-left-right{
+
+.body6-top-left-right {
 	background: url(../img/separate-mistress/good-at-separating-img1.png) center center no-repeat;
 	width: 50%;
 	height: 100%;
 	float: right;
 	position: relative;
 }
-.body6-top-left-right-kuang{
+
+.body6-top-left-right-kuang {
 	width: 70px;
 	height: 70px;
 	position: absolute;
@@ -351,45 +372,51 @@
 	padding-top: 5px;
 }
 
-
-.body6-top-right{
+.body6-top-right {
 	width: 535px;
 	height: 290px;
 	float: right;
 }
-.body6-top-right:hover .body6-top-right-left-kuang{
+
+.body6-top-right:hover .body6-top-right-left-kuang {
 	border-bottom: 10px solid #FF3232;
 	border-left: 10px solid #FF3232;
 }
-.body6-top-right:hover .body6-top-right-right{
+
+.body6-top-right:hover .body6-top-right-right {
 	color: #000000;
 }
-.body6-top-right-right{
+
+.body6-top-right-right {
 	width: 35%;
 	height: 100%;
 	float: right;
 	margin-right: 80px;
 	color: #58595B;
 }
-.body6-top-right-right h3{
+
+.body6-top-right-right h3 {
 	text-align: left;
 	font-size: 22px;
 	padding-top: 70px;
 	font-weight: bold;
 }
-.body6-top-right-right p{
+
+.body6-top-right-right p {
 	padding-top: 15px;
 	padding-left: 0px;
 	font-size: 17px;
 }
-.body6-top-right-left{
+
+.body6-top-right-left {
 	background: url(../img/separate-mistress/good-at-separating-img2.png) center center no-repeat;
 	width: 50%;
 	height: 100%;
 	float: left;
 	position: relative;
 }
-.body6-top-right-left-kuang{
+
+.body6-top-right-left-kuang {
 	width: 70px;
 	height: 70px;
 	position: absolute;
@@ -400,48 +427,57 @@
 	padding-top: 5px;
 }
 
+
 /*
  * 下
  */
-.body6-bottom-left{
+
+.body6-bottom-left {
 	width: 535px;
 	height: 290px;
 	float: left;
 }
-.body6-bottom-left:hover .body6-bottom-left-right-kuang{
+
+.body6-bottom-left:hover .body6-bottom-left-right-kuang {
 	border-top: 10px solid #FF3232;
 	border-right: 10px solid #FF3232;
 }
-.body6-bottom-left:hover .body6-bottom-left-left{
+
+.body6-bottom-left:hover .body6-bottom-left-left {
 	color: #000000;
 }
-.body6-bottom-left-left{
+
+.body6-bottom-left-left {
 	width: 35%;
 	height: 100%;
 	float: left;
 	margin-left: 80px;
 	color: #58595B;
 }
-.body6-bottom-left-left h3{
+
+.body6-bottom-left-left h3 {
 	text-align: right;
 	font-size: 22px;
 	padding-top: 70px;
 	font-weight: bold;
 	margin-right: 10px;
 }
-.body6-bottom-left-left p{
+
+.body6-bottom-left-left p {
 	padding-top: 15px;
 	padding-left: 20px;
 	font-size: 17px;
 }
-.body6-bottom-left-right{
+
+.body6-bottom-left-right {
 	background: url(../img/separate-mistress/good-at-separating-img3.png) center center no-repeat;
 	width: 50%;
 	height: 100%;
 	float: right;
 	position: relative;
 }
-.body6-bottom-left-right-kuang{
+
+.body6-bottom-left-right-kuang {
 	width: 70px;
 	height: 70px;
 	position: absolute;
@@ -452,45 +488,51 @@
 	padding-top: 10px;
 }
 
-
-.body6-bottom-right{
+.body6-bottom-right {
 	width: 535px;
 	height: 290px;
 	float: right;
 }
-.body6-bottom-right:hover .body6-bottom-right-left-kuang{
+
+.body6-bottom-right:hover .body6-bottom-right-left-kuang {
 	border-top: 10px solid #FF3232;
 	border-left: 10px solid #FF3232;
 }
-.body6-bottom-right:hover .body6-bottom-right-right{
+
+.body6-bottom-right:hover .body6-bottom-right-right {
 	color: #000000;
 }
-.body6-bottom-right-right{
+
+.body6-bottom-right-right {
 	width: 35%;
 	height: 100%;
 	float: right;
 	margin-right: 80px;
 	color: #58595B;
 }
-.body6-bottom-right-right h3{
+
+.body6-bottom-right-right h3 {
 	text-align: left;
 	font-size: 22px;
 	padding-top: 70px;
 	font-weight: bold;
 }
-.body6-bottom-right-right p{
+
+.body6-bottom-right-right p {
 	padding-top: 15px;
 	padding-left: 0px;
 	font-size: 17px;
 }
-.body6-bottom-right-left{
+
+.body6-bottom-right-left {
 	background: url(../img/separate-mistress/good-at-separating-img4.png) center center no-repeat;
 	width: 50%;
 	height: 100%;
 	float: left;
 	position: relative;
 }
-.body6-bottom-right-left-kuang{
+
+.body6-bottom-right-left-kuang {
 	width: 70px;
 	height: 70px;
 	position: absolute;
@@ -505,7 +547,8 @@
 /*
  * 能够提供的分离小三的服务CSS
  */
-.body7{
+
+.body7 {
 	width: 100%;
 	min-width: 1106px;
 	max-width: 1920px;
@@ -518,127 +561,159 @@
 /*
  * 成功案例CSS
  */
-.body8{
+
+.body8 {
 	width: 100%;
-	min-width: 1106px;
+	min-width: 1500px;
 	max-width: 1920px;
 	height: 860px;
 	background: url(../img/separate-mistress/successful-case-bgimg.png) center center no-repeat;
 	background-size: 100%;
 	position: relative;
 }
-.body8 div{
+
+.body8 div {
 	/*border: 3px solid #FF3232;*/
 	color: #F0F0F0;
-	
 }
-.body8 div h2{
+
+.body8 div h2 {
 	font-size: 22px;
 	font-weight: 600;
 	text-align: center;
 }
-.body8 div p{
+
+.body8 div p {
 	margin-top: 20px;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 35px;
 }
-.body8 div p a{
+
+.body8 div p a {
 	float: right;
 	color: #FF3232;
 }
-.body8-left{
+
+.body8-left {
 	position: absolute;
-	width: 350px;
+	width: 380px;
 	height: 250px;
 	bottom: 80px;
-	left: 320px;
+	left: 430px;
 }
-.body8-right{
+
+.body8-right {
 	position: absolute;
-	width: 360px;
+	width: 380px;
 	height: 250px;
 	bottom: 80px;
-	right: 320px;
+	right: 430px;
+}
+
+@media only screen and (max-width: 1699px) {
+	.body8 div h2 {
+		font-size: 18px;
+		font-weight: 600;
+		text-align: center;
+	}
+	.body8 div p {
+		margin-top: 20px;
+		font-size: 14px;
+		line-height: 35px;
+	}
+	.body8 div p a {
+		float: right;
+		color: #FF3232;
+	}
+	.body8-left {
+		position: absolute;
+		width: 350px;
+		height: 250px;
+		bottom: 80px;
+		left: 320px;
+	}
+	.body8-right {
+		position: absolute;
+		width: 350px;
+		height: 250px;
+		bottom: 80px;
+		right: 320px;
+	}
 }
 
 
 /*
  * 导师团队CSS
  */
-.body9{
+
+.body9 {
 	width: 100%;
-	min-width: 1106px;
 	height: 950px;
 	background: url(../img/separate-mistress/mentor-team-bgimg.png) center center no-repeat;
 	background-size: 100%;
 	position: relative;
 }
-.body91{
-	width: 1500px;
+
+.body91 {
+	max-width: 1920px;
 	margin: 0 auto;
 	padding-top: 100px;
-	height: 950px;
+	height: 100%;
 	/*min-width: 1106px;*/
 }
-.body9-left{
+
+.body9-left {
 	float: left;
-	margin-left: 200px;
+	margin-left: 230px;
 }
-.body9-left img{
+
+.body9-left img {
 	width: 100%;
 	height: 100%;
 }
 
-.body9-right{
+.body9-right {
 	float: right;
-	margin-right: 200px;
+	margin-right: 220px;
 }
-.body9-right-ul2 li{
+
+.body9-right-ul2 li {
 	padding-top: 15px;
 }
-.body9-right ul li{
+
+.body9-right ul li {
 	float: left;
 	margin-left: 10px;
 }
-.body9-right ul li img{
+
+.body9-right ul li img {
 	width: 100%;
 	height: 100%;
 }
 
-@media only screen and (min-width: 1600px) and (max-width: 1910px) {
-	.body91{
-		padding-top: 150px;
-	}
-	.body9-left img{
-		width: 530px;
-		height: 650px;
-	}
-	.body9-right ul li img{
-		width: 213px;
-		height: 313px;
-	}
-}
-@media only screen and (max-width: 1599px) {
-	.body91{
+@media only screen and (max-width: 1699px) {
+	.body91 {
 		padding-top: 180px;
 	}
-	.body9-left img{
-		width: 480px;
-		height: 600px;
+	.body9-left img {
+		width: 450px;
+		height: 550px;
 	}
-	.body9-right ul li img{
-		width: 193px;
-		height: 293px;
+	.body9-right ul li img {
+		width: 183px;
+		height: 263px;
 	}
 }
-.body10{
+
+.body10 {
 	width: 100%;
 	min-width: 1106px;
 	height: 500px;
 	background-color: #F5F5F5;
 	position: relative;
 }
-.body10-xian{
+
+.body10-xian {
 	width: 80%;
 	height: 1px;
 	border-bottom: 2px solid #2D2D2D;
@@ -646,7 +721,8 @@
 	top: 322px;
 	left: 155px;
 }
-.body10-xian{
+
+.body10-xian {
 	widows: initial;
 	height: 1px;
 	border-bottom: 10px solid #000000;
@@ -654,29 +730,34 @@
 	top: 322px;
 	left: 155px;
 }
-.body10 ul{
+
+.body10 ul {
 	width: 80%;
 	height: 100%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-around;
 }
-.body10 ul li{
+
+.body10 ul li {
 	width: 210px;
 	height: 340px;
 	float: left;
 	margin-top: 110px;
 }
-.body10 ul li div:nth-child(1){
+
+.body10 ul li div:nth-child(1) {
 	text-align: center;
 	line-height: 250px;
 	color: #FFFFFF;
 }
-.body10-dian{
+
+.body10-dian {
 	width: 100%;
 	height: 10px;
 }
-.body10-dian div{
+
+.body10-dian div {
 	width: 8px;
 	height: 8px;
 	border-radius: 10px;
@@ -685,36 +766,40 @@
 	margin-left: 98px;
 }
 
-.body10-li1-img{
+.body10-li1-img {
 	width: 100%;
 	height: 60%;
 	background: url(../img/separate-mistress/service-flow-img1.png) center center no-repeat;
 }
 
-.body10-li1-wen{
+.body10-li1-wen {
 	margin-top: 10px;
 	width: 100%;
 	height: 100px;
 	text-align: center;
 	font-size: 20px;
 }
-.body10-li1:hover .body10-li1-img{
+
+.body10-li1:hover .body10-li1-img {
 	background: url(../img/separate-mistress/service-flow-img1c.png) center center no-repeat;
 	color: #FF3232;
 }
-.body10-li1:hover .body10-dian div{
+
+.body10-li1:hover .body10-dian div {
 	background-color: #FF3232;
 }
-.body10-li1:hover .body10-li1-wen{
+
+.body10-li1:hover .body10-li1-wen {
 	color: #FF3232;
 }
 
-.body10-li2-img{
+.body10-li2-img {
 	width: 100%;
 	height: 60%;
 	background: url(../img/separate-mistress/service-flow-img2.png) center center no-repeat;
 }
-.body10-li2-wen{
+
+.body10-li2-wen {
 	margin-top: 10px;
 	width: 100%;
 	height: 100px;
@@ -722,23 +807,26 @@
 	font-size: 20px;
 }
 
-.body10-li2:hover .body10-li2-img{
+.body10-li2:hover .body10-li2-img {
 	background: url(../img/separate-mistress/service-flow-img2c.png) center center no-repeat;
 	color: #FF3232;
 }
-.body10-li2:hover .body10-dian div{
+
+.body10-li2:hover .body10-dian div {
 	background-color: #FF3232;
 }
-.body10-li2:hover .body10-li2-wen{
+
+.body10-li2:hover .body10-li2-wen {
 	color: #FF3232;
 }
 
-.body10-li3-img{
+.body10-li3-img {
 	width: 100%;
 	height: 60%;
 	background: url(../img/separate-mistress/service-flow-img3.png) center center no-repeat;
 }
-.body10-li3-wen{
+
+.body10-li3-wen {
 	margin-top: 10px;
 	width: 100%;
 	height: 100px;
@@ -746,23 +834,26 @@
 	font-size: 20px;
 }
 
-.body10-li3:hover .body10-li3-img{
+.body10-li3:hover .body10-li3-img {
 	background: url(../img/separate-mistress/service-flow-img3c.png) center center no-repeat;
 	color: #FF3232;
 }
-.body10-li3:hover .body10-dian div{
+
+.body10-li3:hover .body10-dian div {
 	background-color: #FF3232;
 }
-.body10-li3:hover .body10-li3-wen{
+
+.body10-li3:hover .body10-li3-wen {
 	color: #FF3232;
 }
 
-.body10-li4-img{
+.body10-li4-img {
 	width: 100%;
 	height: 60%;
 	background: url(../img/separate-mistress/service-flow-img4.png) center center no-repeat;
 }
-.body10-li4-wen{
+
+.body10-li4-wen {
 	margin-top: 10px;
 	width: 100%;
 	height: 100px;
@@ -770,23 +861,26 @@
 	font-size: 20px;
 }
 
-.body10-li4:hover .body10-li4-img{
+.body10-li4:hover .body10-li4-img {
 	background: url(../img/separate-mistress/service-flow-img4c.png) center center no-repeat;
 	color: #FF3232;
 }
-.body10-li4:hover .body10-dian div{
+
+.body10-li4:hover .body10-dian div {
 	background-color: #FF3232;
 }
-.body10-li4:hover .body10-li4-wen{
+
+.body10-li4:hover .body10-li4-wen {
 	color: #FF3232;
 }
 
-.body10-li5-img{
+.body10-li5-img {
 	width: 100%;
 	height: 60%;
 	background: url(../img/separate-mistress/service-flow-img5.png) center center no-repeat;
 }
-.body10-li5-wen{
+
+.body10-li5-wen {
 	margin-top: 10px;
 	width: 100%;
 	height: 100px;
@@ -794,23 +888,26 @@
 	font-size: 20px;
 }
 
-.body10-li5:hover .body10-li5-img{
+.body10-li5:hover .body10-li5-img {
 	background: url(../img/separate-mistress/service-flow-img5c.png) center center no-repeat;
 	color: #FF3232;
 }
-.body10-li5:hover .body10-dian div{
+
+.body10-li5:hover .body10-dian div {
 	background-color: #FF3232;
 }
-.body10-li5:hover .body10-li5-wen{
+
+.body10-li5:hover .body10-li5-wen {
 	color: #FF3232;
 }
 
-.body10-li6-img{
+.body10-li6-img {
 	width: 100%;
 	height: 60%;
 	background: url(../img/separate-mistress/service-flow-img6.png) center center no-repeat;
 }
-.body10-li6-wen{
+
+.body10-li6-wen {
 	margin-top: 10px;
 	width: 100%;
 	height: 100px;
@@ -818,13 +915,15 @@
 	font-size: 20px;
 }
 
-.body10-li6:hover .body10-li6-img{
+.body10-li6:hover .body10-li6-img {
 	background: url(../img/separate-mistress/service-flow-img6c.png) center center no-repeat;
 	color: #FF3232;
 }
-.body10-li6:hover .body10-dian div{
+
+.body10-li6:hover .body10-dian div {
 	background-color: #FF3232;
 }
-.body10-li6:hover .body10-li6-wen{
+
+.body10-li6:hover .body10-li6-wen {
 	color: #FF3232;
 }
