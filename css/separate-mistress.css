@@ -112,8 +112,9 @@
 .body2 ul li h3 {
 	margin-top: 50px;
 	font-weight: bold;
-	text-align: center;
+	/*text-align: center;*/
 	font-size: 22px;
+	padding-left: 50px;
 }
 
 .body2 ul li p {
@@ -547,17 +548,17 @@
 }
 .body8-left{
 	position: absolute;
-	width: 430px;
+	width: 350px;
 	height: 250px;
 	bottom: 80px;
 	left: 320px;
 }
 .body8-right{
 	position: absolute;
-	width: 400px;
+	width: 360px;
 	height: 250px;
 	bottom: 80px;
-	right: 310px;
+	right: 320px;
 }
 
 
@@ -573,14 +574,15 @@
 	position: relative;
 }
 .body91{
-	width: 70%;
+	width: 1500px;
 	margin: 0 auto;
 	padding-top: 100px;
 	height: 950px;
-	min-width: 1106px;
+	/*min-width: 1106px;*/
 }
 .body9-left{
 	float: left;
+	margin-left: 200px;
 }
 .body9-left img{
 	width: 100%;
@@ -589,6 +591,7 @@
 
 .body9-right{
 	float: right;
+	margin-right: 200px;
 }
 .body9-right-ul2 li{
 	padding-top: 15px;
