@@ -20,10 +20,6 @@ li {
 a:hover {
   color: #fff;
 }
-.page-inner {
-  width: 1220px;
-  margin: 0 auto;
-}
 .nav .inner ul li.active {
   background-color: #fd3232;
   color: #fff;
@@ -68,11 +64,15 @@ a:hover {
   font-size: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: #ccc;
 }
 /* 模块公共样式 */
 .child-page {
   /* 模块三：橘子情感首席导师 */
   /* 模块三：橘子情感首席导师 */
+}
+.child-page .module.module-03 {
+  min-width: 1200px;
 }
 .child-page .module.module-03 .module-title .txt {
   width: 403px;
