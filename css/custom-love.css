@@ -4,7 +4,7 @@
 }
 html,
 body {
-  min-width: 1106px;
+  min-width: 1500px;
 }
 h1,
 h2,
@@ -33,6 +33,11 @@ a:hover {
   overflow: hidden;
 }
 /* /banner 图区域 */
+.wrap {
+  min-width: 1500px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
 .child-page {
   min-width: 1106px;
   /* 模块公共样式 */
@@ -191,6 +196,9 @@ a:hover {
   font-size: 24px;
   line-height: 41px;
   width: 576px;
+}
+.child-page .module.module-01 .main .content .module01-list li:first-child .title {
+  color: #fd3232;
 }
 .child-page .module.module-01 .main .content .module01-list li:first-child svg.arrow {
   opacity: 1;
