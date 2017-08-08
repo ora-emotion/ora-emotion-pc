@@ -60,18 +60,10 @@
  * banner图CSS
  */
 .head-bgimg{
-	background: url(../img/focus-team/authority-banner.png) no-repeat center center;
+	background: url(../img/course/authority-banner.png) no-repeat center center;
  	-webkit-background-size: cover;
   	background-size: cover;
   	width: 100%;
   	height: 885px;
-  	overflow: hidden;
-}
-.body-bgimg{
-	background: url(../img/focus-team/head-bgimg.jpg) no-repeat center center;
- 	-webkit-background-size: cover;
-  	background-size: cover;
-  	width: 100%;
-  	height: 720px;
   	overflow: hidden;
 }
