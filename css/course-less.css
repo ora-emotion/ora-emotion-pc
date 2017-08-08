@@ -71,6 +71,8 @@ a:hover {
   /* /模块二：橘子总结的经验 */
   /* 模块四：视频课程 */
   /* /模块四：视频课程 */
+  /* 模块六：首席主导师 */
+  /* /模块六：首席主导师 */
   /* 模块八：给您的保障 */
   /* /模块八：给您的保障 */
 }
@@ -165,6 +167,144 @@ a:hover {
   top: 220px;
   left: 325px;
 }
+.child-page .module.module-07 {
+  margin-top: 67px;
+}
+.child-page .module.module-07 .module-title .txt {
+  width: 403px;
+  background: url("../img/course/title-icon06.png") no-repeat center 8px;
+}
+.child-page .module.module-07 .main {
+  margin-top: 67px;
+  background: url("../img/course/m06-bg.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 820px;
+}
+.child-page .module.module-07 .main .team-group {
+  display: flex;
+  position: relative;
+}
+.child-page .module.module-07 .main .team-group .pic {
+  position: relative;
+}
+.child-page .module.module-07 .main .team-group .pic p.pic-modal {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: skew(-15deg);
+  height: 0;
+  opacity: 0;
+  transition: all .3s;
+}
+.child-page .module.module-07 .main .team-group .pic p.txt {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 0;
+  height: 0;
+  transition: all .3s;
+}
+.child-page .module.module-07 .main .team-group .pic:hover p.pic-modal {
+  opacity: 1;
+  height: 45px;
+}
+.child-page .module.module-07 .main .team-group .pic:hover p.txt {
+  height: 45px;
+  opacity: 1;
+}
+.child-page .module.module-07 .main .team-group .pic-one {
+  width: 583px;
+  height: 479px;
+  top: 139px;
+  left: 295px;
+}
+.child-page .module.module-07 .main .team-group .pic-one img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.child-page .module.module-07 .main .team-group .pic-one p.pic-modal {
+  width: 462px;
+}
+.child-page .module.module-07 .main .team-group .pic-one p.txt {
+  left: 25%;
+  right: 30%;
+}
+.child-page .module.module-07 .main .team-group .pic-one:hover p.pic-modal {
+  left: 5px;
+}
+.child-page .module.module-07 .main .team-group .pic-one:hover p.txt {
+  left: 30%;
+}
+.child-page .module.module-07 .main .team-group .pic-md {
+  position: absolute;
+  width: 289px;
+  height: 239px;
+}
+.child-page .module.module-07 .main .team-group .pic-md p.pic-modal {
+  width: 230px;
+  height: 0;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.child-page .module.module-07 .main .team-group .pic-md p.txt {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  height: 0;
+  left: 15%;
+  right: 20%;
+  bottom: 0;
+}
+.child-page .module.module-07 .main .team-group .pic-md:hover p.pic-modal {
+  height: 45px;
+  left: 5px;
+}
+.child-page .module.module-07 .main .team-group .pic-md:hover p.txt {
+  height: 45px;
+  left: 20%;
+}
+.child-page .module.module-07 .main .team-group .pic-two {
+  top: 334px;
+  left: 786px;
+}
+.child-page .module.module-07 .main .team-group .pic-three {
+  top: 88px;
+  left: 1082px;
+}
+.child-page .module.module-07 .main .team-group .pic-four {
+  top: 334px;
+  left: 1021px;
+}
+.child-page .module.module-07 .main .team-group .pic-five {
+  top: 580px;
+  left: 960px;
+}
+.child-page .module.module-07 .main .team-group .pic-six {
+  top: 88px;
+  left: 1318px;
+}
+.child-page .module.module-07 .main .team-group .pic-seven {
+  top: 334px;
+  left: 1255px;
+}
+.child-page .module.module-07 .main .team-group .pic-eight {
+  top: 88px;
+  left: 1555px;
+}
+.child-page .module.module-07 .main .team-group .pic-nine {
+  top: 435px;
+  left: 1465px;
+}
 .child-page .module.module-08 {
   margin-top: 67px;
 }
@@ -178,10 +318,8 @@ a:hover {
   -webkit-background-size: cover;
   background-size: cover;
   width: 100%;
-  height: 1081px;
 }
 .child-page .module.module-08 .main .txt-list {
-	position: relative;
   padding: 72px 0 72px 498px;
 }
 .child-page .module.module-08 .main .txt-list .list-item {
@@ -208,19 +346,4 @@ a:hover {
 }
 .child-page .module.module-08 .main .txt-list .list-item:last-child p {
   width: 682px;
-}
-.txt-list-div1{
-	position: absolute;
-	right: -80%;
-	top: 150px;
-}
-.txt-list-div2{
-	position: absolute;
-	right: -80%;
-	top: 460px;
-}
-.txt-list-div3{
-	position: absolute;
-	right: -80%;
-	top: 750px;
 }
