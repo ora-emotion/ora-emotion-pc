@@ -101,3 +101,7 @@ Progress.prototype = {
         // body...
     }
 };
+
+
+var myVideo = document.getElementsByTagName("video");
+console.log(myVideo);
