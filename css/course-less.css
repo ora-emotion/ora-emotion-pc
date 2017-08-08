@@ -3,7 +3,118 @@
 * email: bzsjxhywrf@outlook.com
 * GitHub: https://github.com/smpower/
 **/
+/*
+ * created by smpower
+ * email: bzsjxhywrf@outlook.com
+ * GitHub: https://github.com/smpower/
+ */
 * {
   padding: 0;
   margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  color: #2d2d2d;
+}
+a:hover {
+  color: #fff;
+}
+.nav .inner ul li.active {
+  background-color: #fd3232;
+  color: #fff;
+}
+/* 模块公共样式 */
+.module .title {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #2d2d2d;
+}
+.module .title h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+.module .title .subtitle {
+  font-size: 14px;
+  letter-spacing: 2.5px;
+}
+.module-title .line {
+  width: 100%;
+  border-top: 2px solid #d6d5d5;
+  position: relative;
+  top: 66px;
+}
+.module-title .txt {
+  margin: 0 auto;
+  position: relative;
+  bottom: -38px;
+  color: #2d2d2d;
+}
+.module-title .txt h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 14px;
+}
+.module-title .txt p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ccc;
+}
+/* 模块公共样式 */
+.child-page {
+  /* 模块二：橘子总结的经验 */
+  /* /模块二：橘子总结的经验 */
+  /* 模块四：橘子视频 */
+  /* /模块四：橘子视频 */
+}
+.child-page .module.module-02 .module-title .txt {
+  width: 403px;
+  background: url("../img/course/title-icon02.png") no-repeat center 8px;
+}
+.child-page .module.module-02 .main {
+  background: url("../img/course/m02-bg.jpg") no-repeat 0 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+.child-page .module.module-02 .main .top.txt {
+  width: 1200px;
+  margin: 68px auto 0;
+}
+.child-page .module.module-02 .main .top.txt .para {
+  font-size: 24px;
+  line-height: 36px;
+}
+.child-page .module.module-02 .main .top.txt .para:last-child {
+  padding-top: 14px;
+  padding-bottom: 68px;
+}
+.child-page .module.module-02 .main .bot.progress-circle {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.child-page .module.module-02 .main .bot.progress-circle .item {
+  padding-bottom: 60px;
+}
+.child-page .module.module-02 .main .bot.progress-circle .item p.intro {
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 45px;
+}
+.child-page .module.module-04 .module-title .txt {
+  width: 403px;
+  background: url("../img/course/title-icon04.png") no-repeat center 8px;
 }
