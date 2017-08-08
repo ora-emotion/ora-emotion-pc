@@ -284,3 +284,145 @@
 	font-size: 18px;
 	margin-top: 10px;
 }
+
+
+/*
+ * 橘子情感导师团队
+ */
+
+.body5 {
+	background: url(../img/course/mentor-team-bgimg.png) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 947px;
+	overflow: hidden;
+}
+
+
+
+
+/*
+ * 服务步骤CSS
+ */
+
+.body7 {
+    background: url(../img/course/service-step-bgimg.png) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 485px;
+    overflow: hidden;
+}
+
+.body7 ul {
+    width: 1370px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.body7 ul li {
+    width: 238px;
+    height: 250px;
+}
+
+.body7 ul li p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.body7 ul li p:nth-child(1) {
+    color: #2D2D2D;
+    padding-top: 170px;
+}
+
+.body7-li1 {
+    background: url(../img/course/service-step-img1.png) center -10px no-repeat;
+}
+
+.body7-li1:hover {
+    transition: background 1s;
+    -moz-transition: background 1s;
+    /* Firefox 4 */
+    -webkit-transition: background 1s;
+    /* Safari 和 Chrome */
+    -o-transition: background 1s;
+    /* Opera */
+    background: url(../img/course/service-step-img01.png) center -10px no-repeat;
+}
+
+.body7-li2 {
+    background: url(../img/course/service-step-img2.png) center -10px no-repeat;
+}
+
+.body7-li2:hover {
+    transition: background 1s;
+    -moz-transition: background 1s;
+    /* Firefox 4 */
+    -webkit-transition: background 1s;
+    /* Safari 和 Chrome */
+    -o-transition: background 1s;
+    /* Opera */
+    background: url(../img/course/service-step-img02.png) center -10px no-repeat;
+}
+
+.body7-li3 {
+    background: url(../img/course/service-step-img3.png) center -10px no-repeat;
+}
+
+.body7-li3:hover {
+    transition: background 1s;
+    -moz-transition: background 1s;
+    /* Firefox 4 */
+    -webkit-transition: background 1s;
+    /* Safari 和 Chrome */
+    -o-transition: background 1s;
+    /* Opera */
+    background: url(../img/course/service-step-img03.png) center -10px no-repeat;
+}
+
+.body7-li4 {
+    background: url(../img/course/service-step-img4.png) center -10px no-repeat;
+}
+
+.body7-li4:hover {
+    transition: background 1s;
+    -moz-transition: background 1s;
+    /* Firefox 4 */
+    -webkit-transition: background 1s;
+    /* Safari 和 Chrome */
+    -o-transition: background 1s;
+    /* Opera */
+    background: url(../img/course/service-step-img04.png) center -10px no-repeat;
+}
+
+.body7-li5 {
+    background: url(../img/course/service-step-img5.png) center -10px no-repeat;
+}
+
+.body7-li5:hover {
+    transition: background 1s;
+    -moz-transition: background 1s;
+    /* Firefox 4 */
+    -webkit-transition: background 1s;
+    /* Safari 和 Chrome */
+    -o-transition: background 1s;
+    /* Opera */
+    background: url(../img/course/service-step-img05.png) center -10px no-repeat;
+}
+
+.body7-li6 {
+    background: url(../img/course/service-step-img6.png) center -10px no-repeat;
+}
+
+.body7-li6:hover {
+    transition: background 1s;
+    -moz-transition: background 1s;
+    /* Firefox 4 */
+    -webkit-transition: background 1s;
+    /* Safari 和 Chrome */
+    -o-transition: background 1s;
+    /* Opera */
+    background: url(../img/course/service-step-img06.png) center -10px no-repeat;
+}
