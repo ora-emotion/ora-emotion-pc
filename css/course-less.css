@@ -12,16 +12,6 @@
   padding: 0;
   margin: 0;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-li {
-  color: #2d2d2d;
-}
 a:hover {
   color: #fff;
 }
@@ -83,6 +73,9 @@ a:hover {
   /* /模块四：视频课程 */
   /* 模块八：给您的保障 */
   /* /模块八：给您的保障 */
+}
+.child-page .module.module-02 {
+  margin-top: 67px;
 }
 .child-page .module.module-02 .module-title .txt {
   width: 403px;
