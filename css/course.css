@@ -113,20 +113,28 @@
 .body1-ul {
 	width: 1200px;
 	margin: 50px auto;
+	position: relative;
 }
-
+.body1-ul li{
+	margin-left: 150px;
+}
 .body1-ul p {
 	display: block;
 	margin-top: 20px;
 }
 
 .body1-ul1 {
+	position: absolute;
+	left: -160%;
 	display: flex;
 	justify-content: space-around;
 	height: 320px;
 }
 
 .body1-ul2 {
+	margin-top: 300px;
+	position: absolute;
+	right: -160%;
 	display: flex;
 	justify-content: space-around;
 }
@@ -169,6 +177,7 @@
 .body3-ul {
 	width: 1500px;
 	margin: 200px auto;
+	position: relative;
 }
 
 .body3-ul p {
@@ -281,6 +290,8 @@
 	height: 350px;
 	width: 1200px;
 	margin-left: 150px;
+	position: absolute;
+	left: 120%;
 }
 
 .body3-ul2 {
@@ -288,6 +299,9 @@
 	justify-content: space-around;
 	height: 350px;
 	width: 1500px;
+	position: absolute;
+	right: 120%;
+	margin-top: 300px;
 }
 
 
@@ -318,6 +332,7 @@
 	width: 1200px;
 	display: flex;
 	justify-content: space-around;
+	position: relative;
 }
 
 .body4-wen ul li {
@@ -333,8 +348,21 @@
 	font-size: 18px;
 	margin-top: 10px;
 }
-
-
+.body4-wen-li1{
+	position: absolute;
+	left: 7%;
+	bottom: -900px;
+}
+.body4-wen-li2{
+	position: absolute;
+	left: 41.5%;
+	bottom: -900px;
+}
+.body4-wen-li3{
+	position: absolute;
+	right: 6.5%;
+	bottom: -900px;
+}
 /*
  * 橘子情感导师团队
  */
@@ -348,142 +376,131 @@
 	overflow: hidden;
 }
 
-
 /*
- * 首席主导师
- */
-
-.body6 {
-	background: url(../img/course/chef-mentor-bgimg.png) no-repeat center center;
-	-webkit-background-size: cover;
-	background-size: cover;
-	width: 100%;
-	height: 820px;
-	overflow: hidden;
-}
-
-
-/*
- * 服务步骤
+ * 服务步骤CSS
  */
 
 .body7 {
-	background: url(../img/course/service-step-bgimg.png) no-repeat center center;
-	-webkit-background-size: cover;
-	background-size: cover;
-	width: 100%;
-	height: 485px;
-	overflow: hidden;
+    background: url(../img/course/service-step-bgimg.png) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 485px;
+    overflow: hidden;
+    position: relative;
 }
 
 .body7 ul {
-	width: 1370px;
-	margin: 80px auto;
-	display: flex;
-	justify-content: space-around;
+	position: absolute;
+    width: 1370px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-around;
+    left: -80%;
 }
 
 .body7 ul li {
-	width: 238px;
-	height: 250px;
+    width: 238px;
+    height: 250px;
 }
 
 .body7 ul li p {
-	font-size: 20px;
-	text-align: center;
+    font-size: 20px;
+    text-align: center;
 }
 
 .body7 ul li p:nth-child(1) {
-	color: #2D2D2D;
-	padding-top: 170px;
+    color: #2D2D2D;
+    padding-top: 170px;
 }
 
 .body7-li1 {
-	background: url(../img/course/service-step-img1.png) center -10px no-repeat;
+	 -moz-transition: background 1s;
+    /* Firefox 4 */
+    -webkit-transition: background 1s;
+    /* Safari 和 Chrome */
+    -o-transition: background 1s;
+    /* Opera */
+  	 transition: background 1s;
+    background: url(../img/course/service-step-img1.png) center -10px no-repeat;
 }
 
 .body7-li1:hover {
-	transition: background 1s;
-	-moz-transition: background 1s;
-	/* Firefox 4 */
-	-webkit-transition: background 1s;
-	/* Safari 和 Chrome */
-	-o-transition: background 1s;
-	/* Opera */
-	background: url(../img/course/service-step-img01.png) center -10px no-repeat;
+   
+    background: url(../img/course/service-step-img01.png) center -10px no-repeat;
 }
 
 .body7-li2 {
-	background: url(../img/course/service-step-img2.png) center -10px no-repeat;
+		 -moz-transition: background 1s;
+    /* Firefox 4 */
+    -webkit-transition: background 1s;
+    /* Safari 和 Chrome */
+    -o-transition: background 1s;
+    /* Opera */
+  	 transition: background 1s;
+    background: url(../img/course/service-step-img2.png) center -10px no-repeat;
 }
 
 .body7-li2:hover {
-	transition: background 1s;
-	-moz-transition: background 1s;
-	/* Firefox 4 */
-	-webkit-transition: background 1s;
-	/* Safari 和 Chrome */
-	-o-transition: background 1s;
-	/* Opera */
-	background: url(../img/course/service-step-img02.png) center -10px no-repeat;
+    background: url(../img/course/service-step-img02.png) center -10px no-repeat;
 }
 
 .body7-li3 {
-	background: url(../img/course/service-step-img3.png) center -10px no-repeat;
+		 -moz-transition: background 1s;
+    /* Firefox 4 */
+    -webkit-transition: background 1s;
+    /* Safari 和 Chrome */
+    -o-transition: background 1s;
+    /* Opera */
+  	 transition: background 1s;
+    background: url(../img/course/service-step-img3.png) center -10px no-repeat;
 }
 
 .body7-li3:hover {
-	transition: background 1s;
-	-moz-transition: background 1s;
-	/* Firefox 4 */
-	-webkit-transition: background 1s;
-	/* Safari 和 Chrome */
-	-o-transition: background 1s;
-	/* Opera */
-	background: url(../img/course/service-step-img03.png) center -10px no-repeat;
+    background: url(../img/course/service-step-img03.png) center -10px no-repeat;
 }
 
 .body7-li4 {
-	background: url(../img/course/service-step-img4.png) center -10px no-repeat;
+		 -moz-transition: background 1s;
+    /* Firefox 4 */
+    -webkit-transition: background 1s;
+    /* Safari 和 Chrome */
+    -o-transition: background 1s;
+    /* Opera */
+  	 transition: background 1s;
+    background: url(../img/course/service-step-img4.png) center -10px no-repeat;
 }
 
 .body7-li4:hover {
-	transition: background 1s;
-	-moz-transition: background 1s;
-	/* Firefox 4 */
-	-webkit-transition: background 1s;
-	/* Safari 和 Chrome */
-	-o-transition: background 1s;
-	/* Opera */
-	background: url(../img/course/service-step-img04.png) center -10px no-repeat;
+    background: url(../img/course/service-step-img04.png) center -10px no-repeat;
 }
 
 .body7-li5 {
-	background: url(../img/course/service-step-img5.png) center -10px no-repeat;
+		 -moz-transition: background 1s;
+    /* Firefox 4 */
+    -webkit-transition: background 1s;
+    /* Safari 和 Chrome */
+    -o-transition: background 1s;
+    /* Opera */
+  	 transition: background 1s;
+    background: url(../img/course/service-step-img5.png) center -10px no-repeat;
 }
 
 .body7-li5:hover {
-	transition: background 1s;
-	-moz-transition: background 1s;
-	/* Firefox 4 */
-	-webkit-transition: background 1s;
-	/* Safari 和 Chrome */
-	-o-transition: background 1s;
-	/* Opera */
-	background: url(../img/course/service-step-img05.png) center -10px no-repeat;
+    background: url(../img/course/service-step-img05.png) center -10px no-repeat;
 }
 
 .body7-li6 {
-	background: url(../img/course/service-step-img6.png) center -10px no-repeat;
+		 -moz-transition: background 1s;
+    /* Firefox 4 */
+    -webkit-transition: background 1s;
+    /* Safari 和 Chrome */
+    -o-transition: background 1s;
+    /* Opera */
+  	 transition: background 1s;
+    background: url(../img/course/service-step-img6.png) center -10px no-repeat;
 }
 
 .body7-li6:hover {
-	transition: background 1s;
-	-moz-transition: background 1s;
-	/* Firefox 4 */
-	-webkit-transition: background 1s;
-	/* Safari 和 Chrome */
-	-o-transition: background 1s;
-	/* Opera */
-	background: url(../img/course/service-step-img06.png) center -10px no-repeat;
+    background: url(../img/course/service-step-img06.png) center -10px no-repeat;
 }
