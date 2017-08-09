@@ -1,0 +1,104 @@
+/*
+* created by smpower
+* email: bzsjxhywrf@outlook.com
+* github: https://github.com/smpower/
+*/
+* {
+  padding: 0;
+  margin: 0;
+}
+a:hover {
+  color: #fff;
+}
+.nav .inner ul li.active {
+  background-color: #fd3232;
+  color: #fff;
+}
+/* 模块公共样式 */
+.module .title {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #2d2d2d;
+}
+.module .title h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+.module .title .subtitle {
+  font-size: 14px;
+  letter-spacing: 2.5px;
+}
+.module-title .line {
+  width: 100%;
+  border-top: 2px solid #d6d5d5;
+  position: relative;
+  top: 66px;
+}
+.module-title .txt {
+  margin: 0 auto;
+  position: relative;
+  bottom: -38px;
+  color: #2d2d2d;
+}
+.module-title .txt h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 14px;
+}
+.module-title .txt p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ccc;
+}
+.main-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* 模块公共样式 */
+.child-page {
+  max-width: 1920px;
+  /* 模块三：橘子环境 */
+  /* /模块三：橘子环境 */
+}
+.child-page .module.module-03 .module-title .txt {
+  width: 403px;
+  background: url("../img/about-us/title-icon03.png") no-repeat center 8px;
+}
+.child-page .module.module-03 .main {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.child-page .module.module-03 .main img.left,
+.child-page .module.module-03 .main img.right {
+  width: 545px;
+  height: 486px;
+}
+.child-page .module.module-03 .main .left {
+  margin-right: 10px;
+}
+.child-page .module.module-03 .main .right {
+  margin-left: 10px;
+}
+.child-page .module.module-03 .main .swiper-container {
+  width: 819px;
+  height: 486px;
+  margin: 0 auto;
+}
+.child-page .module.module-03 .main .btn {
+  position: absolute;
+  top: 50%;
+}
+.child-page .module.module-03 .main .swiper-button-prev {
+  left: 520px;
+}
+.child-page .module.module-03 .main .swiper-button-next {
+  right: 520px;
+}
