@@ -1,71 +1,71 @@
 $(document).ready(function() {
+    // 元素到可视区域时再显示
+	(function () {
+        function lazyLoad() {
+            /**
+             * Created by smpower on 2017/8/3.
+             * email: bzsjxhywrf@outlook.com
+             * GitHub: https://github.com/smpower/
+             */
 
-	// 元素到可视区域时再显示
-	(function() {
-		function lazyLoad() {
-			/**
-			 * Created by smpower on 2017/8/3.
-			 * email: bzsjxhywrf@outlook.com
-			 * GitHub: https://github.com/smpower/
-			 */
+            // 显示微信二维码
+            function qrcodeWechat() {
+                // 淡入
+                function wechatFadeIn() {
+                    $(".wechat").fadeIn(300);
+                }
+                // 淡出
+                function wechatFadeOut() {
+                    $(".wechat").fadeOut(300);
+                }
+                // 划过图标显示
+                $(".qrcode-wechat img").mouseover(function () {
+                    wechatFadeIn();
+                });
+                $(".qrcode-wechat img").mouseout(function () {
+                    wechatFadeOut();
+                });
+                // 划过文字显示
+                $(".pull-right .txt p:first-child").mouseover(function () {
+                    wechatFadeIn();
+                });
+                $(".pull-right .txt p:first-child").mouseout(function () {
+                    wechatFadeOut();
+                });
+            }
+            qrcodeWechat();
 
-			// 显示微信二维码
-			function qrcodeWechat() {
-				// 淡入
-				function wechatFadeIn() {
-					$(".wechat").fadeIn(300);
-				}
-				// 淡出
-				function wechatFadeOut() {
-					$(".wechat").fadeOut(300);
-				}
-				// 划过图标显示
-				$(".qrcode-wechat img").mouseover(function() {
-					wechatFadeIn();
-				});
-				$(".qrcode-wechat img").mouseout(function() {
-					wechatFadeOut();
-				});
-				// 划过文字显示
-				$(".pull-right .txt p:first-child").mouseover(function() {
-					wechatFadeIn();
-				});
-				$(".pull-right .txt p:first-child").mouseout(function() {
-					wechatFadeOut();
-				});
-			}
-			qrcodeWechat();
 
-			// 获取当前文档高度
-			var documentHeight = $(document).height();
-			// 获取当前屏幕高度
-			var windowHeight = $(window).height();
-			// 获取第七个模块距离屏幕顶端的高度
-			var moduleSevenOffsetTop = $(".module-07 .main").offset().top;
-			//          console.log(moduleSevenOffsetTop);
+            // 获取当前文档高度
+            var documentHeight = $(document).height();
+            // 获取当前屏幕高度
+            var windowHeight = $(window).height();
+            // 获取第七个模块距离屏幕顶端的高度
+            var moduleSevenOffsetTop = $(".module-07 .main").offset().top;
+            console.log(moduleSevenOffsetTop);
 
-			$(window).scroll(function() {
-				// 获取滚动条滚动的距离
-				var scrollTop = $(window).scrollTop();
-				console.log(scrollTop);
+            $(window).scroll(function () {
+                // 获取滚动条滚动的距离
+                var scrollTop = $(window).scrollTop();
+                // console.log(scrollTop);
 
-				if(scrollTop > (moduleSevenOffsetTop - windowHeight / 3)) {
-					// alert("ok");
-					$(".module-07 .main .top").animate({
-						left: "13.5%", 
-						opacity: "1"
-					}, 1000);
-					$(".module-07 .main .bot").animate({
-						left: "0",
-						opacity: "1"
-					}, 1000);
-				}
-			});
-		}
-		lazyLoad();
-	})();
+                if (scrollTop > (moduleSevenOffsetTop - windowHeight/3)) {
+                    // alert("ok");
+                    $(".module-07 .main .top").animate({
+                        left: "13.5%",
+                        opacity: "1"
+                    }, 1000);
+                    $(".module-07 .main .bot").animate({
+                        left: "0",
+                        opacity: "1"
+                    }, 1000);
+                }
+            });
+        }
+        lazyLoad();
+    })();
 
-	$(".li21").mouseover(function() {
+    $(".li21").mouseover(function() {
 		$(".li11").css({
 			"border": "2px slide #FFFFFF",
 			"box-shadow": "0 5px 10px #FFFFFF",

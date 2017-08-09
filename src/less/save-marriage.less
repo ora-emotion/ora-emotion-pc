@@ -387,10 +387,12 @@ a {
         display: flex;
         justify-content: space-between;
         .item {
+          padding-top: 20px;            // 该模块滚动到视口可视区域时 --> padding-top: 0;
           p {
             color: #fff;
             font-size: 18px;
             width: 299px;
+            opacity: 0;                 // 该模块滚动到视口可视区域时 --> opacity: 1;
           }
           p:first-child {
             padding-top: 10px;

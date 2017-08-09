@@ -355,10 +355,14 @@ a:hover {
     width: 768px;
   }
 }
+.child-page .module.module-04 .main .item-group .item {
+  padding-top: 20px;
+}
 .child-page .module.module-04 .main .item-group .item p {
   color: #fff;
   font-size: 18px;
   width: 299px;
+  opacity: 0;
 }
 .child-page .module.module-04 .main .item-group .item p:first-child {
   padding-top: 10px;
