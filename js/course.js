@@ -200,14 +200,17 @@ $(document).ready(function() {
 		if(scrollTop4 > (moduleSevenOffsetTop4 - windowHeight + 500)) {
 			// alert("ok");
 			$(".txt-list-div1").animate({
+				alert("111");
 				right: "12%",
 				opacity: "1"
 			}, 1000);
 			$(".txt-list-div2").animate({
+				alert("222");
 				right: "14%",
 				opacity: "1"
 			}, 1500);
 			$(".txt-list-div3").animate({
+				alert("333");
 				right: "15%",
 				opacity: "1"
 			}, 2000);

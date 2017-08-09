@@ -450,7 +450,7 @@
                             <div class="video">
                                 <div class="bg">
                                     <div class="position"></div>
-                                    <video id="preVideo" class="video-js" controls preload="auto" width="752" height="462"
+                                    <video id="preVideo" class="video-js" controls="controls" width="752" height="462"
                                            poster="img/course/m04-video-poster.jpg" data-setup="{}">
                                         <source src="media/preview.mp4">
                                         <p class="vjs-no-js">
@@ -480,6 +480,72 @@
                 </div>
                 <div class="body5"></div>
 
+
+                <!-- 模块六：首席主导师 -->
+                <div class="module module-07">
+                    <!-- 模块六标题 -->
+                    <div class="module-title">
+                        <div class="line"></div>
+                        <div class="txt text-center">
+                            <h2>首席主导师</h2>
+                            <p>Chief mentor</p>
+                        </div>
+                    </div>
+                    <!-- /模块六标题 -->
+
+                    <!-- 模块七主体 -->
+                    <div class="main">
+                        <div class="team-group">
+                            <div class="pic pic-one">
+                                <img src="img/course/m06-pic01.png" alt="">
+                                <p class="pic-modal"></p>
+                                <p class="txt">嘉伟导师</p>
+                            </div>
+                            <div class="pic pic-md pic-two">
+                                <img src="img/course/m06-pic02.png" alt="">
+                                <p class="pic-modal"></p>
+                                <p class="txt">千无导师</p>
+                            </div>
+                            <div class="pic pic-md pic-three">
+                                <img src="img/course/m06-pic03.png" alt="">
+                                <p class="pic-modal"></p>
+                                <p class="txt">路加导师</p>
+                            </div>
+                            <div class="pic pic-md pic-four">
+                                <img src="img/course/m06-pic04.png" alt="">
+                                <p class="pic-modal"></p>
+                                <p class="txt">源一导师</p>
+                            </div>
+                            <div class="pic pic-md pic-five">
+                                <img src="img/course/m06-pic05.png" alt="">
+                                <p class="pic-modal"></p>
+                                <p class="txt">杰妮导师</p>
+                            </div>
+                            <div class="pic pic-md pic-six">
+                                <img src="img/course/m06-pic06.png" alt="">
+                                <p class="pic-modal"></p>
+                                <p class="txt">阿苏导师</p>
+                            </div>
+                            <div class="pic pic-md pic-seven">
+                                <img src="img/course/m06-pic07.png" alt="">
+                                <p class="pic-modal"></p>
+                                <p class="txt">查尔斯导师</p>
+                            </div>
+                            <div class="pic pic-md pic-eight">
+                                <img src="img/course/m06-pic08.png" alt="">
+                                <p class="pic-modal"></p>
+                                <p class="txt">浩宇导师</p>
+                            </div>
+                            <div class="pic pic-md pic-nine">
+                                <img src="img/course/m06-pic09.png" alt="">
+                                <p class="pic-modal"></p>
+                                <p class="txt">沫言导师</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /模块七主体 -->
+                </div>
+                <!-- /模块六：首席主导师 -->
 
                 <!--
                 	作者：706861648@qq.com
@@ -659,12 +725,13 @@
             progress.circle(cvsOne, 240, 0.926, "#e5e5e5", "#fd3232", 1);
             progress.circle(cvsTwo, 240, 0.070, "#e5e5e5", "#fd3232", 0);
             progress.circle(cvsThree, 240, 0.967, "#e5e5e5", "#2d98fc", 1);
+            
 
             /* 模块四视频 */
             var myPlayer = videojs('preVideo');
             videojs('preVideo').ready(function(){
                 var myPlayer = this;
-                myPlayer.play();
+//                myPlayer.play();
             });
 
         </script>
