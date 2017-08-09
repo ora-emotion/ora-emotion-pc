@@ -65,6 +65,12 @@ a:hover {
   max-width: 1920px;
   /* 模块三：橘子环境 */
   /* /模块三：橘子环境 */
+  /* 模块六：服务步骤 */
+  /* /模块六：服务步骤 */
+}
+.child-page .main-inner {
+  width: 1200px;
+  margin: 0 auto;
 }
 .child-page .module.module-03 .module-title .txt {
   width: 403px;
@@ -101,4 +107,62 @@ a:hover {
 }
 .child-page .module.module-03 .main .swiper-button-next {
   right: 520px;
+}
+.child-page .module.module-06 .module-title .txt {
+  width: 403px;
+  background: url("../img/about-us/title-icon03.png") no-repeat center 8px;
+}
+.child-page .module.module-06 .main .top {
+  background: url("../img/about-us/m06-bg-top.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.child-page .module.module-06 .main .top .main-inner {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+.child-page .module.module-06 .main .top .main-inner .item .icon {
+  width: 130px;
+  height: 141px;
+  margin: 0 auto;
+  background-position-x: center;
+  background-position-y: 0;
+}
+.child-page .module.module-06 .main .top .main-inner .item p {
+  height: 0;
+  transition: all .3s;
+}
+.child-page .module.module-06 .main .top .main-inner .item p.title {
+  line-height: 29px;
+  height: 29px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 6px 0;
+}
+.child-page .module.module-06 .main .top .main-inner .item p.des {
+  font-size: 18px;
+  line-height: 21px;
+}
+.child-page .module.module-06 .main .top .main-inner .item:hover p {
+  color: #fd3232;
+}
+.child-page .module.module-06 .main .top .main-inner .item:nth-child(1) .icon {
+  background: url("../img/about-us/m06-icon01-top.png") no-repeat;
+}
+.child-page .module.module-06 .main .top .main-inner .item:nth-child(2) .icon {
+  background: url("../img/about-us/m06-icon02-top.png") no-repeat;
+}
+.child-page .module.module-06 .main .top .main-inner .item:nth-child(3) .icon {
+  background: url("../img/about-us/m06-icon03-top.png") no-repeat;
+}
+.child-page .module.module-06 .main .top .main-inner .item:nth-child(4) .icon {
+  background: url("../img/about-us/m06-icon04-top.png") no-repeat;
+}
+.child-page .module.module-06 .main .top .main-inner .item:nth-child(5) .icon {
+  background: url("../img/about-us/m06-icon05-top.png") no-repeat;
+}
+.child-page .module.module-06 .main .top .main-inner .item:nth-child(6) .icon {
+  background: url("../img/about-us/m06-icon06-top.png") no-repeat;
 }
