@@ -72,6 +72,7 @@ input:-webkit-autofill {
     justify-content: space-around;
     line-height: 150px;
     margin-left: -200px;
+    position: relative;
 }
 .wailian .inner ul:nth-child(1) {
     margin-top: 200px;
@@ -94,54 +95,90 @@ input:-webkit-autofill {
 .wailian ul li:hover a{
 	color: #FD3232;
 }
-.wailian ul li:nth-child(1){
+.ma-left1{
+ 
 	background: url(../img/index/icon-heart-broken-white.png) no-repeat center center;
 }
-.wailian ul li:nth-child(1):hover{
+.ma-left1:hover{
 	background: url(../img/index/icon-heart-broken-red.png) no-repeat center center;
 }
-.wailian ul li:nth-child(2){
+.ma-left2{
+ 
 	background: url(../img/index/icon-paramour-white.png) no-repeat center center;
 }
-.wailian ul li:nth-child(2):hover{
+.ma-left2:hover{
 	background: url(../img/index/icon-paramour-red.png ) no-repeat center center;
 }
-.wailian ul li:nth-child(3){
+.mb-right1{
 	background: url(../img/index/icon-circle-white.png) no-repeat center center;
 }
-.wailian ul li:nth-child(3):hover{
+.mb-right1:hover{
 	background: url(../img/index/icon-circle-red.png) no-repeat center center;
 }
-.wailian ul li:nth-child(4){
+.mb-right2{
 	background: url(../img/index/icon-quarrel-white.png) no-repeat center center;
 }
-.wailian ul li:nth-child(4):hover{
+.mb-right2:hover{
 	background: url(../img/index/icon-quarrel-red.png) no-repeat center center;
 }
-.wailian ul li:nth-child(5){
+.mc-left1{
 	background: url(../img/index/national-white.png) no-repeat center center;
 }
-.wailian ul li:nth-child(5):hover{
+.mc-left1:hover{
 	background: url(../img/index/national-red.png) no-repeat center center;
 }
-.wailian ul li:nth-child(6){
+.mc-left2{
 	background: url(../img/index/icon-heart-white.png) no-repeat center center;
 }
-.wailian ul li:nth-child(6):hover{
+.mc-left2:hover{
 	background: url(../img/index/icon-heart-red.png) no-repeat center center;
 }
-.wailian ul li:nth-child(7){
+.md-right1{
 	background: url(../img/index/icon-against-white.png) no-repeat center center;
 }
-.wailian ul li:nth-child(7):hover{
+.md-right1:hover{
 	background: url(../img/index/icon-against-red.png) no-repeat center center;
 }
-.wailian ul li:nth-child(8){
+.md-right2{
 	background: url(../img/index/icon-problem-white.png) no-repeat center center;
 }
-.wailian ul li:nth-child(8):hover{
+.md-right2:hover{
 	background: url(../img/index/icon-problem-red.png) no-repeat center center;
 }
+
+/*.ma-left1{
+	position: absolute;
+	left: -800px;
+}
+.ma-left2{
+	position: absolute;
+	left: -800px;
+}
+.mb-right1{
+	position: absolute;
+	right: -800px;
+}
+.mb-right2{
+	position: absolute;
+	right: -800px;
+}
+.mc-left1{
+	position: absolute;
+	bottom: -850px;
+}
+.mc-left2{
+	position: absolute;
+	bottom: -850px;
+}
+.md-right1{
+	position: absolute;
+	bottom: -850px;
+}
+.md-right2{
+	position: absolute;
+	bottom: -850px;
+}*/
+
 .biaoti2{
 	margin: 50px auto;
 	width: 100%;
@@ -509,18 +546,27 @@ input:-webkit-autofill {
 }
 .body2 .right1 {
     float: left;
-    background-color: #d2d2d2;
-    padding-bottom: 70px;
-    margin-left: 8%;
+    background-color: #CCCCCC;
+    height: 100%;
+    width: 600px;
+    margin-left: 7%;
+   
+    margin-top: -1px;
+}
+.body2 .right1:hover{
+	 box-shadow: 0 10px 10px #000000;
 }
 .body2 .right1 h1{
 	margin-top: 150px;
+	padding-left: 50px;
 }
 .body2 .right1 p{
 	font-size: 1.4em;
 	color: #2D2D2D;
 	margin-top: 50px;
 	padding-bottom: 20px;
+	padding-left: 50px;
+	line-height: 35px;
 }
 .gundong{
 	width: 500px;
@@ -529,6 +575,7 @@ input:-webkit-autofill {
     border-top: 1px solid #666;
 	color: #2D2D2D;
 	font-size: 1.2em;
+	margin-left: 50px;
 }
 
 .gundong:last-child {

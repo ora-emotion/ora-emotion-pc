@@ -29,7 +29,9 @@
 	transition: all .5s ease;
 	overflow: hidden;
 }
-
+.yb_bar ul li:hover{
+	cursor: pointer;
+}
 .yb_bar .yb_top {
 	background: #FD3232 url(../img/index/icon-nav-right.png) no-repeat 0 0;
 }

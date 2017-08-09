@@ -1,6 +1,4 @@
 $(document).ready(function() {
-
-
     // 元素到可视区域时再显示
 	(function () {
         function lazyLoad() {
@@ -66,13 +64,6 @@ $(document).ready(function() {
         }
         lazyLoad();
     })();
-
-
-
-
-
-
-
 
     $(".li21").mouseover(function() {
 		$(".li11").css({
@@ -164,52 +155,93 @@ $(document).ready(function() {
 			"box-shadow": "none"
 		});
 	});
+});
 
-	/* 导师部分 - 轮播图 */
-    // (function () {
-    //     var n = 0;                                          // 记录索引
-    //     var mentorItem = $(".mentor-item .inner .item");
-    //     var prevBtn = $("#prevTeam");
-    //     var nextBtn = $("#nextTeam");
-    //     var timer = setInterval(run, 3000);
-    //
-    //     // run();
-    //
-    //     function run(num) {
-    //         n++;
-    //         if (n == mentorItem.length) {
-    //             n = 0;
-    //         }
-    //
-    //         $(mentorItem[n]).siblings().removeClass("active");
-    //         $(mentorItem[n]).addClass("active");
-    //         $(mentorItem[n]).find("img").animate({
-    //             top: "-45px"
-    //         }, "fast");
-    //     }
-    //     // 点击按钮向前翻页
-    //     prevBtn.click(function () {
-    //         n--;
-    //         if (n < 0) {
-    //             n = mentorItem.length - 1;
-    //             $(mentorItem[n]).addClass("active").siblings().removeClass("active");
-    //         } else {
-    //             $(mentorItem[n]).addClass("active").siblings().removeClass("active");
-    //         }
-    //         // console.log(n);
-    //     });
-    //
-    //     // 点击按钮，向后翻页
-    //     nextBtn.click(function () {
-    //         n++;
-    //         console.log(n);
-    //         if (n === mentorItem.length) {
-    //             n = 0;
-    //             $(mentorItem[n]).addClass("active").siblings().removeClass("active");
-    //         }
-    //         $(mentorItem[n]).addClass("active").siblings().removeClass("active");
-    //         // console.log(n);
-    //     })
-    //
-    // })();
+
+$(document).ready(function() {
+	// 获取当前文档高度
+	var documentHeight = $(document).height();
+	// 获取当前屏幕高度
+	var windowHeight = $(window).height();
+	// 获取为什么失去爱情模块距离屏幕顶端的高度
+	var moduleSevenOffsetTop1 = $(".wailian-ul").offset().top;
+	//获取橘子总结的经验模块距离屏幕顶端的高度
+	var moduleSevenOffsetTop2 = $(".body3-ul").offset().top;
+	//获取橘子总结底部的经验模块距离屏幕顶端的高度
+	var moduleSevenOffsetTop3 = $(".body4-wen").offset().top;
+	//获取给您的保障模块距离屏幕顶端的高度
+	var moduleSevenOffsetTop4 = $(".txt-list").offset().top;
+//	console.log(moduleSevenOffsetTop);
+	$(window).scroll(function() {
+		// 获取滚动条滚动的距离
+		var scrollTop1 = $(window).scrollTop();
+	
+		//高级方案模块
+		if(scrollTop1 > (moduleSevenOffsetTop1 - windowHeight + 500)) {
+			// alert("ok");
+			$(".ma-left1").animate({
+				left: "100px",
+				opacity: "1"
+			}, 1000);
+		}
+		
+	});
+	$(window).scroll(function() {
+		// 获取滚动条滚动的距离
+		var scrollTop2 = $(window).scrollTop();
+	
+		//高级方案模块
+		if(scrollTop2 > (moduleSevenOffsetTop2 - windowHeight + 500)) {
+			// alert("ok");
+			$(".body3-ul1").animate({
+				left: "0%",
+				opacity: "1"
+			}, 1000);
+			$(".body3-ul2").animate({
+				right: "0%",
+				opacity: "1"
+			}, 1000);
+		}
+	});
+	$(window).scroll(function() {
+		// 获取滚动条滚动的距离
+		var scrollTop3 = $(window).scrollTop();
+	
+		//高级方案模块
+		if(scrollTop3 > (moduleSevenOffsetTop3 - windowHeight + 500)) {
+			// alert("ok");
+			$(".body4-wen-li1").animate({
+				bottom: "-100px",
+				opacity: "1"
+			}, 1500);
+			$(".body4-wen-li2").animate({
+				bottom: "-100px",
+				opacity: "1"
+			}, 1000);
+			$(".body4-wen-li3").animate({
+				bottom: "-100px",
+				opacity: "1"
+			}, 1500);
+		}
+	});
+	$(window).scroll(function() {
+		// 获取滚动条滚动的距离
+		var scrollTop4 = $(window).scrollTop();
+	
+		//高级方案模块
+		if(scrollTop4 > (moduleSevenOffsetTop4 - windowHeight + 500)) {
+			$(".txt-list-div1").animate({
+				right: "12%",
+				opacity: "1"
+			}, 1000);
+			$(".txt-list-div2").animate({
+				right: "14%",
+				opacity: "1"
+			}, 1500);
+			$(".txt-list-div3").animate({
+				right: "15%",
+				opacity: "1"
+			}, 2000);
+		}
+	});
 });
