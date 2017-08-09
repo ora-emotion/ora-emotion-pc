@@ -196,7 +196,6 @@ $(document).ready(function() {
 	
 		//高级方案模块
 		if(scrollTop4 > (moduleSevenOffsetTop4 - windowHeight + 500)) {
-			// alert("ok");
 			$(".txt-list-div1").animate({
 				right: "12%",
 				opacity: "1"
