@@ -98,8 +98,21 @@ Progress.prototype = {
 	}
 };
 
-var myVideo = document.getElementsByTagName("video");
-console.log(myVideo);
+var cvsOne = document.getElementById("cvsOne");
+var cvsTwo = document.getElementById("cvsTwo");
+var cvsThree = document.getElementById("cvsThree");
+
+var progress = new Progress();
+
+progress.circle(cvsOne, 240, 0.926, "#e5e5e5", "#fd3232", 1);
+progress.circle(cvsTwo, 240, 0.070, "#e5e5e5", "#fd3232", 0);
+progress.circle(cvsThree, 240, 0.967, "#e5e5e5", "#2d98fc", 1);
+
+
+// 当圆环进度条进入当前窗口可视区域时，调用圆环进度条对象绘制圆环精度条
+var cvs = document.getElementsByTagName("canvas");
+console.log(cvs);
+
 
 
 
