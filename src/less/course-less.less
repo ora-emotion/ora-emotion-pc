@@ -1,0 +1,409 @@
+/*
+* created by smpower
+* email: bzsjxhywrf@outlook.com
+* GitHub: https://github.com/smpower/
+**/
+
+/*
+ * created by smpower
+ * email: bzsjxhywrf@outlook.com
+ * GitHub: https://github.com/smpower/
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+//h1, h2, h3, h4, h5, h6, p, li {
+//  color: #2d2d2d;
+//}
+
+a {
+  &:hover {
+    color: #fff;
+  }
+}
+
+@font-color: #2d2d2d;
+@letter-spacing: 2.5px;
+
+.background-size (@method) {
+  -webkit-background-size: @method;
+  background-size: @method;
+}
+
+.nav .inner ul li.active {
+  background-color: #fd3232;
+  color: #fff;
+}
+/* 模块公共样式 */
+.module {
+  .title {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: @font-color;
+    h2 {
+      font-weight: bold;
+      font-size: 40px;
+    }
+    .subtitle {
+      font-size: 14px;
+      letter-spacing: @letter-spacing;
+    }
+  }
+}
+//--> 标题部分公共样式
+.module-title {
+  .line {
+    width: 100%;
+    border-top: 2px solid #d6d5d5;
+    position: relative;
+    top: 66px;
+  }
+  .txt {
+    margin: 0 auto;
+    position: relative;
+    bottom: -38px;
+    color: #2d2d2d;
+    h2 {
+      font-size: 40px;
+      font-weight: bold;
+      padding-bottom: 14px;
+    }
+    p {
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #ccc;
+    }
+  }
+}
+.main-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* 模块公共样式 */
+
+.child-page {
+
+  /* 模块二：橘子总结的经验 */
+  .module.module-02 {
+    margin-top: 67px;
+    //--> 模块二标题
+    .module-title {
+      .txt {
+        width: 403px;
+        background: url("../img/course/title-icon02.png") no-repeat center 8px;
+      }
+    }
+
+    //--> 模块二主体
+    .main {
+      background: url("../img/course/m02-bg.jpg") no-repeat 0 0;
+      -webkit-background-size: cover;
+      background-size: cover;
+      width: 100%;
+
+      .top.txt {
+        width: 1200px;
+        margin: 68px auto 0;
+        .para {
+          font-size: 24px;
+          line-height: 36px;
+        }
+        .para:last-child {
+          padding-top: 14px;
+          padding-bottom: 68px;
+        }
+      }
+      .bot.progress-circle {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        .item {
+          padding-bottom: 60px;
+          p.intro {
+            font-size: 22px;
+            font-weight: bold;
+            padding-top: 45px;
+          }
+        }
+      }
+    }
+  }
+  /* /模块二：橘子总结的经验 */
+
+  /* 模块四：视频课程 */
+  .module.module-04 {
+    margin-top: 67px;
+    //--> 模块二标题
+    .module-title {
+      .txt {
+        width: 403px;
+        background: url("../img/course/title-icon04.png") no-repeat center 8px;
+      }
+    }
+
+    //--> 模块四主体
+    .main {
+      margin-top: 77px;
+      background: url("../img/course/m04-bg.png") no-repeat center center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      width: 100%;
+      .main-inner {
+        .title {
+          font-size: 30px;
+          font-weight: bold;
+          height: 45px;
+          line-height: 45px;
+          padding: 64px 0 30px 0;
+        }
+        p {
+          font-size: 24px;
+          height: 42px;
+          line-height: 42px;
+          a {
+            color: #fd3232;
+          }
+        }
+        .video {
+          position: relative;
+          .bg {
+            background: url("../img/course/m04-video-bg.png") no-repeat 0 5px;
+            width: 997px;
+            height: 596px;
+            margin: 130px auto 0;
+            position: relative;
+            .position {
+              height: 35px;
+            }
+          }
+          .video-js {
+            padding-top: 35px;
+            width: 752px;
+            height: 462px;
+            margin: 0 auto;
+          }
+          button.vjs-big-play-button {
+            top: 220px;
+            left: 325px;
+          }
+        }
+      }
+    }
+  }
+  /* /模块四：视频课程 */
+
+  /* 模块六：首席主导师 */
+  .module.module-07 {
+    margin-top: 67px;
+    //--> 模块二标题
+    .module-title {
+      .txt {
+        width: 403px;
+        background: url("../img/course/title-icon06.png") no-repeat center 8px;
+      }
+    }
+
+    //--> 模块六主体
+    .main {
+      margin-top: 67px;
+      background: url("../img/course/m06-bg.png") no-repeat center center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      width: 100%;
+      height: 820px;
+      .team-group {
+        display: flex;
+        position: relative;
+        .pic {
+          position: relative;
+          p.pic-modal {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, .5);
+            transform: skew(-15deg);
+            height: 0;
+            opacity: 0;
+            transition: all .3s;
+          }
+          p.txt {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            opacity: 0;
+            height: 0;
+            transition: all .3s;
+          }
+          &:hover {
+            p.pic-modal {
+              opacity: 1;
+              height: 45px;
+            }
+            p.txt {
+              height: 45px;
+              opacity: 1;
+            }
+          }
+        }
+        .pic-one {
+          width: 583px;
+          height: 479px;
+          top: 139px;
+          left: 295px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          p.pic-modal {
+            width: 462px;
+
+          }
+          p.txt {
+            left: 25%;
+            right: 30%;
+
+          }
+          &:hover {
+            p.pic-modal {
+              left: 5px;
+            }
+            p.txt {
+              left: 30%;
+            }
+          }
+        }
+        .pic-md {
+          position: absolute;
+          width: 289px;
+          height: 239px;
+          p.pic-modal {
+            width: 230px;
+            height: 0;
+            background: rgba(0, 0, 0, .7);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+          }
+          p.txt {
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            position: absolute;
+            height: 0;
+            left: 15%;
+            right: 20%;
+            bottom: 0;
+          }
+          &:hover {
+            p.pic-modal {
+              height: 45px;
+              left: 5px;
+            }
+            p.txt {
+              height: 45px;
+              left: 20%;
+            }
+          }
+        }
+        .pic-two {
+          top: 334px;
+          left: 786px;
+        }
+        .pic-three {
+          top: 88px;
+          left: 1082px;
+        }
+        .pic-four {
+          top: 334px;
+          left: 1021px;
+        }
+        .pic-five {
+          top: 580px;
+          left: 960px;
+        }
+        .pic-six {
+          top: 88px;
+          left: 1318px;
+        }
+        .pic-seven {
+          top: 334px;
+          left: 1255px;
+        }
+        .pic-eight {
+          top: 88px;
+          left: 1555px;
+        }
+        .pic-nine {
+          top: 435px;
+          left: 1465px;
+        }
+      }
+    }
+  }
+  /* /模块六：首席主导师 */
+
+  /* 模块八：给您的保障 */
+  .module.module-08 {
+    margin-top: 67px;
+    //--> 模块八标题
+    .module-title {
+      .txt {
+        width: 403px;
+        background: url("../img/course/title-icon08.png") no-repeat center 8px;
+      }
+    }
+
+    //--> 模块八主体
+    .main {
+      margin-top: 77px;
+      background: url("../img/course/m08-bg.png") no-repeat center center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      width: 100%;
+      .txt-list {
+        padding: 72px 0 72px 498px;
+        .list-item {
+          padding-bottom: 167px;
+          display: flex;
+          p {
+            font-size: 30px;
+            color: #fff;
+            line-height: 48px;
+            padding-top: 40px;
+            width: 1000px;
+            margin-left: 14px;
+          }
+        }
+        .list-item:nth-child(2) {
+          padding-left: 90px;
+          p {
+            width: 890px;
+          }
+        }
+        .list-item:last-child {
+          padding-left: 300px;
+          padding-bottom: 0;
+          p {
+            width: 682px;
+          }
+        }
+      }
+    }
+  }
+  /* /模块八：给您的保障 */
+
+}
