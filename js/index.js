@@ -49,7 +49,7 @@ $(document).ready(function() {
             $(window).scroll(function () {
                 // 获取滚动条滚动的距离
                 var scrollTop = $(window).scrollTop();
-                console.log(scrollTop);
+                // console.log(scrollTop);
 
                 if (scrollTop > (moduleSevenOffsetTop - windowHeight/3)) {
                     // alert("ok");
