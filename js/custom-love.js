@@ -88,5 +88,41 @@ function moduleSix() {
 moduleSix();
 
 
+/* 模块七动效 */
+function moduleSeven() {
+    // 获取当前文档高度
+    var documentHeight = $(document).height();
+    // 获取当前屏幕高度
+    var windowHeight = $(window).height();
+    // 获取第七个模块距离屏幕顶端的高度
+    var moduleSevenOffsetTop = $(".module-07 .main").offset().top;
+    console.log(moduleSevenOffsetTop);
+
+    $(window).scroll(function () {
+
+        // 获取滚动条滚动的距离
+        var scrollTop = $(window).scrollTop();
+        console.log(scrollTop);
+
+        if (scrollTop > (moduleSevenOffsetTop - windowHeight/2)) {
+            $(".module-07 .main .row img").animate({
+                "left": "0",
+                "opacity": "1"
+            }, 1000);
+            $(".module-07 .main .row .txt").animate({
+                "right": "0",
+                "opacity": "1"
+            }, 1000);
+            $(".module-07 .main").animate({
+                "opacity": "1"
+            }, 1000);
+        }
+
+    });
+
+}
+moduleSeven();
+
+
 
 console.log("橘子情感，为爱而生。");
