@@ -1,0 +1,137 @@
+/*
+* created by smpower
+* email: bzsjxhywrf@outlook.com
+* github: https://github.com/smpower/
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  &:hover {
+    color: #fff;
+  }
+}
+
+@font-color: #2d2d2d;
+@letter-spacing: 2.5px;
+
+.background-size (@method) {
+  -webkit-background-size: @method;
+  background-size: @method;
+}
+
+.nav .inner ul li.active {
+  background-color: #fd3232;
+  color: #fff;
+}
+
+/* 模块公共样式 */
+.module {
+  .title {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: @font-color;
+    h2 {
+      font-weight: bold;
+      font-size: 40px;
+    }
+    .subtitle {
+      font-size: 14px;
+      letter-spacing: @letter-spacing;
+    }
+  }
+}
+//--> 标题部分公共样式
+.module-title {
+  .line {
+    width: 100%;
+    border-top: 2px solid #d6d5d5;
+    position: relative;
+    top: 66px;
+  }
+  .txt {
+    margin: 0 auto;
+    position: relative;
+    bottom: -38px;
+    color: #2d2d2d;
+    h2 {
+      font-size: 40px;
+      font-weight: bold;
+      padding-bottom: 14px;
+    }
+    p {
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #ccc;
+    }
+  }
+}
+.main-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* 模块公共样式 */
+
+
+.child-page {
+
+  max-width: 1920px;
+
+  /* 模块三：橘子环境 */
+  .module.module-03 {
+
+    //--> 模块三标题
+    .module-title {
+      .txt {
+        width: 403px;
+        background: url("../img/about-us/title-icon03.png") no-repeat center 8px;
+      }
+    }
+
+    //--> 模块三主体
+    .main {
+      margin-top: 75px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      img.left,
+      img.right {
+        width: 545px;
+        height: 486px;
+      }
+      .left {
+        margin-right: 10px;
+      }
+      .right {
+        margin-left: 10px;
+      }
+      .swiper-container {
+        width: 819px;
+        height: 486px;
+        margin: 0 auto;
+      }
+      .btn {
+        position: absolute;
+        top: 50%;
+      }
+      .swiper-button-prev {
+        left: 520px;
+      }
+      .swiper-button-next {
+        right: 520px;
+      }
+    }
+
+  }
+  /* /模块三：橘子环境 */
+
+}
