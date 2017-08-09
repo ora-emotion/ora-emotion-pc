@@ -1,0 +1,658 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  min-width: 1500px;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  color: #2d2d2d;
+}
+
+a {
+  &:hover {
+    color: #fff;
+  }
+}
+
+@font-color: #2d2d2d;
+@letter-spacing: 2.5px;
+
+.background-size (@method) {
+  -webkit-background-size: @method;
+  background-size: @method;
+}
+
+
+
+.nav .inner ul li.active {
+  background-color: #fd3232;
+  color: #fff;
+}
+
+
+/* banner 图区域 */
+.banner {
+  background: url("../img/custom-love/banner.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 885px;
+  overflow: hidden;
+}
+/* /banner 图区域 */
+
+
+.wrap {
+  min-width: 1500px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.child-page {
+
+  min-width: 1106px;
+
+  //margin-bottom: 1217px;
+
+  /* 模块公共样式 */
+  .module {
+    .title {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 90px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: @font-color;
+      h2 {
+        font-weight: bold;
+        font-size: 40px;
+      }
+      .subtitle {
+        font-size: 14px;
+        letter-spacing: @letter-spacing;
+      }
+    }
+  }
+  //--> 标题部分公共样式
+  .module-title {
+    .line {
+      width: 100%;
+      border-top: 2px solid #d6d5d5;
+      position: relative;
+      top: 66px;
+    }
+    .txt {
+      margin: 0 auto;
+      position: relative;
+      bottom: -38px;
+      color: #2d2d2d;
+      h2 {
+        font-size: 40px;
+        font-weight: bold;
+        padding-bottom: 14px;
+      }
+      p {
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  /* 模块公共样式 */
+
+
+
+  /* 前言部分 */
+  .preface {
+    .bg {
+      background: url("../img/custom-love/preface-bg.png") no-repeat center center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      width: 100%;
+      height: 476px;
+    }
+    p.para {
+      font-size: 31px;
+      line-height: 54px;
+      padding-top: 35px;
+      padding-bottom: 0;
+      position: relative;
+      top: 50px;
+    }
+  }
+  /* /前言部分 */
+
+  /* 模块一：单身原因 */
+  .module.module-01 {
+    margin-top: 112px;
+    /* 模块一标题 */
+    .module-title {
+      .txt {
+        width: 322px;
+        background: url("../img/custom-love/title-icon01.png") no-repeat center 8px;
+      }
+    }
+    /* /模块一标题 */
+
+    //--> 模块一主体
+    .main {
+      position: relative;
+      top: 75px;
+      .bg {
+        width: 360px;
+        height: 863px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background: url("../img/custom-love/m01-bg.png") no-repeat center center;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+      .content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        .pics-group {
+          width: 717px;
+          height: 863px;
+          img {
+            width: 100%;
+            height: 100%;
+            display: none;
+            opacity: 0;
+          }
+          img:nth-child(1) {
+            display: block;
+            opacity: 1;
+          }
+        }
+        .module01-list {
+          padding-right: 54px;
+          display: flex;
+          flex-direction: column;
+          li {
+            display: flex;
+            height: 147px;
+            svg.arrow {
+              opacity: 0;
+            }
+            svg.triangle {
+              position: relative;
+              left: 36px;
+            }
+            div.txt {
+              position: relative;
+              left: 48px;
+              div.title {
+                width: 130px;
+                font-size: 30px;
+                font-weight: bold;
+                line-height: 28px;
+                height: 28px;
+                padding-top: 5px;
+                padding-bottom: 8px;
+                transition: color .3s;
+                &:hover {
+                  color: #fd3232;
+                }
+              }
+              div.para {
+                font-size: 24px;
+                line-height: 41px;
+                width: 576px;
+              }
+            }
+          }
+          li:first-child .title {
+            color: #fd3232;
+          }
+          li:first-child svg.arrow {
+            opacity: 1;
+          }
+          li:nth-child(5) {
+            div.txt {
+              div.title {
+                width: 200px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* /模块一：单身原因 */
+
+  /* 模块二：错误做法导致后果 */
+  .module.module-02 {
+    margin-top: 122px;
+    /* 模块二标题 */
+    .module-title {
+      .txt {
+        width: 402px;
+        background: url("../img/custom-love/title-icon02.png") no-repeat center 8px;
+      }
+    }
+    /* /模块二标题 */
+
+    //--> 模块二主体
+    .main {
+      margin-top: 75px;
+      width: 100%;
+      background: url("../img/custom-love/m02-bg.png") no-repeat center center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      .items-group {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 50px;
+        overflow: hidden;
+        .item {
+          .txt {
+            width: 334px;
+            .title {
+              font-size: 30px;
+              font-weight: bold;
+              line-height: 60px;
+              height: 60px;
+              padding-top: 16px;
+              position: relative;
+              left: 10px;
+            }
+            p {
+              font-size: 24px;
+              line-height: 42px;
+              padding-bottom: 56px;
+              width: 340px;
+              position: relative;
+              left: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* /模块二：错误做法导致后果 */
+
+  /* 模块三：橘子情感订制服务 */
+  .module.module-03 {
+    margin-top: 122px;
+    /* 模块三标题 */
+    .module-title {
+      .txt {
+        width: 402px;
+        background: url("../img/custom-love/title-icon02.png") no-repeat center 8px;
+      }
+    }
+    /* /模块三标题 */
+
+    //--> 模块三主体
+    .main {
+      margin-top: 75px;
+      width: 100%;
+      height: 1129px;
+      background: url("../img/custom-love/m03-bg.png") no-repeat center center;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+  }
+  /* /模块三：橘子情感订制服务 */
+
+  /* 模块四：成功案例 */
+  .module.module-04 {
+    margin-top: 122px;
+    /* 模块四标题 */
+    .module-title {
+      .txt {
+        width: 322px;
+        background: url("../img/custom-love/title-icon01.png") no-repeat center 8px;
+      }
+    }
+    /* /模块四标题 */
+
+    //--> 模块四主体
+    .main {
+      margin-top: 75px;
+      background: url("../img/custom-love/m04-bg.png") no-repeat center center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      .list-content {
+        padding-left: 38%;
+        padding-top: 63px;
+        li {
+          display: flex;
+          padding-left: 23px;
+          .txt {
+            width: 712px;
+            margin-left: 36px;
+            padding-bottom: 64px;
+            .title {
+              font-size: 30px;
+              font-weight: bold;
+              line-height: 28px;
+              height: 28px;
+              padding-bottom: 10px;
+            }
+            .para {
+              font-size: 24px;
+              line-height: 40px;
+              a {
+                color: #fd3232;
+              }
+            }
+          }
+        }
+        li:nth-child(2) {
+          padding-left: 100px;
+        }
+        li:nth-child(3) {
+          padding-left: 200px;
+        }
+      }
+    }
+  }
+  /* /模块四：成功案例 */
+
+  /* 模块五：橘子优势 */
+  .module.module-05 {
+    margin-top: 122px;
+    /* 模块五标题 */
+    .module-title {
+      .txt {
+        width: 322px;
+        background: url("../img/custom-love/title-icon01.png") no-repeat center 8px;
+      }
+    }
+    /* /模块五标题 */
+
+    //--> 模块五主体
+    .main {
+      margin-top: 75px;
+      padding-top: 52px;
+      padding-bottom: 52px;
+      background-color: #202020;
+      .items-group {
+        display: flex;
+        justify-content: space-around;
+        .item {
+          width: 334px;
+          p {
+            font-size: 20px;
+            line-height: 31px;
+            color: #fff;
+            padding-top: 20px;
+          }
+        }
+      }
+      .items-group:nth-child(2) {
+        padding-top: 41px;
+      }
+    }
+  }
+  /* /模块五：橘子优势 */
+
+  /* 模块六：导师团队 */
+  .module.module-06 {
+    margin-top: 122px;
+    /* 模块六标题 */
+    .module-title {
+      .txt {
+        width: 322px;
+        background: url("../img/custom-love/title-icon01.png") no-repeat center 8px;
+      }
+    }
+    /* /模块六标题 */
+
+    //--> 模块六主体
+    .main {
+      margin-top: 75px;
+      position: relative;
+      overflow: hidden;
+      .img-lg {
+        background: url("../img/custom-love/m06-pic01-lg.png") no-repeat center center;
+        -webkit-background-size: contain;
+        background-size: contain;
+        width: 100%;
+        height: 602px;
+      }
+      .img-sm {
+        padding: 0;
+        margin: 0;
+        .row {
+          //width: 1093px;
+          width: 56.9%;
+          display: flex;
+          justify-content: space-between;
+          padding: 34px 0;
+          position: absolute;
+          right: 8%;
+          //bottom: -29px;
+          bottom: -4.8%;
+        }
+      }
+    }
+  }
+  /* /模块六：导师团队 */
+
+  /* 模块七：橘子承诺 */
+  .module.module-07 {
+    margin-top: 122px;
+    /* 模块七标题 */
+    .module-title {
+      .txt {
+        width: 322px;
+        background: url("../img/custom-love/title-icon01.png") no-repeat center 8px;
+      }
+    }
+    /* /模块七标题 */
+
+    //--> 模块七主体
+    .main {
+      margin-top: 75px;
+      background-color: #e4e4e4;
+      width: 100%;
+      padding: 45px 0;
+      .row {
+        img {
+          padding-top: 20px;
+          padding-right: 20px;
+        }
+        .txt {
+          padding-bottom: 50px;
+          .txt-item {
+            display: flex;
+            padding-bottom: 100px;
+            position: relative;
+            i.m07-icon {
+              width: 42px;
+              height: 42px;
+              background: url("../img/custom-love/m07-icon.png") no-repeat 1px 1px;
+            }
+            p {
+              position: absolute;
+              top: -2px;
+              left: 41px;
+              font-size: 30px;
+              line-height: 52px;
+              padding-left: 18px;
+            }
+          }
+          .txt-item:last-child {
+            padding-bottom: 0;
+            position: relative;
+            top: 52px;
+          }
+        }
+
+      }
+    }
+  }
+  /* /模块七：橘子承诺 */
+
+  /* 模块八：服务流程 */
+  .module.module-08 {
+    margin-top: 122px;
+    /* 模块八标题 */
+    .module-title {
+      .txt {
+        width: 322px;
+        background: url("../img/custom-love/title-icon01.png") no-repeat center 8px;
+      }
+    }
+    /* /模块八标题 */
+
+    //--> 模块八主体
+    .main {
+      margin-top: 75px;
+      background: url("../img/custom-love/m08-bg.png") no-repeat center center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      width: 100%;
+      height: 692px;
+      display: flex;
+      align-items: center;
+      .line {
+        background: url("../img/custom-love/m08-bg-line.png") no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        width: 1284px;
+        height: 332px;
+        margin: 0 auto;
+        position: relative;
+        left: 74px;
+        .step {
+          position: absolute;
+          .num {
+            font-size: 84px;
+            line-height: 0;
+            height: 70px;
+            padding-bottom: 22px;
+            transition: color .3s;
+          }
+          .title {
+            font-size: 30px;
+            font-weight: bold;
+            height: 27px;
+            line-height: 0;
+            padding-bottom: 12px;
+            transition: color .3s;
+          }
+          .para {
+            font-size: 30px;
+            line-height: 38px;
+            transition: color .3s;
+          }
+        }
+        .step.one {
+          top: 0;
+          left: -148px;
+          &:hover {
+            .num {
+              color: #fd3232;
+            }
+            .title {
+              color: #fd3232;
+            }
+            .para {
+              color: #fd3232;
+            }
+          }
+        }
+        .step.two {
+          top: 0;
+          left: 342px;
+          .num {
+            color: #868686;
+            &:hover {
+              color: #fd3232;
+            }
+          }
+          &:hover {
+            .num {
+              color: #fd3232;
+            }
+            .title {
+              color: #fd3232;
+            }
+            .para {
+              color: #fd3232;
+            }
+          }
+        }
+        .step.three {
+          top: 0;
+          left: 790px;
+          &:hover {
+            .num {
+              color: #fd3232;
+            }
+            .title {
+              color: #fd3232;
+            }
+            .para {
+              color: #fd3232;
+            }
+          }
+        }
+        .step.four {
+          top: 320px;
+          left: 825px;
+          .num {
+            color: #868686;
+          }
+          &:hover {
+            .num {
+              color: #fd3232;
+            }
+            .title {
+              color: #fd3232;
+            }
+            .para {
+              color: #fd3232;
+            }
+          }
+        }
+        .step.five {
+          top: 320px;
+          left: 290px;
+          &:hover {
+            .num {
+              color: #fd3232;
+            }
+            .title {
+              color: #fd3232;
+            }
+            .para {
+              color: #fd3232;
+            }
+          }
+        }
+        .step.six {
+          top: 320px;
+          left: -172px;
+          .num {
+            color: #868686;
+          }
+          &:hover {
+            .num {
+              color: #fd3232;
+            }
+            .title {
+              color: #fd3232;
+            }
+            .para {
+              color: #fd3232;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* /模块八：服务流程 */
+
+}
