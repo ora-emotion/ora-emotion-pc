@@ -129,7 +129,7 @@ $(document).ready(function() {
 		if(scrollTop > (moduleSevenOffsetTop - windowHeight + 300)) {
 			// alert("ok");
 			$(".body7 ul").animate({
-				left: "10%",
+				left: "9%",
 				opacity: "1"
 			}, 1000);
 		}
