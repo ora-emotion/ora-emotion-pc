@@ -103,10 +103,14 @@ a:hover {
   top: 50%;
 }
 .child-page .module.module-03 .main .swiper-button-prev {
-  left: 520px;
+  left: 518px;
+  background: url("../img/about-us/prev.png") no-repeat center center rgba(0, 0, 0, 0.3);
+  cursor: default;
 }
 .child-page .module.module-03 .main .swiper-button-next {
-  right: 520px;
+  right: 517px;
+  background: url("../img/about-us/next.png") no-repeat center center rgba(0, 0, 0, 0.3);
+  cursor: default;
 }
 .child-page .module.module-06 .module-title .txt {
   width: 403px;
