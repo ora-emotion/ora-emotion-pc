@@ -315,6 +315,7 @@ a:hover {
   background-size: cover;
   width: 100%;
   height: 1081px;
+  overflow: hidden;
 }
 .child-page .module.module-08 .main .txt-list {
   padding: 72px 0 72px 498px;
