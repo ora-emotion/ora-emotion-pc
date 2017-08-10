@@ -130,10 +130,14 @@ a {
         top: 50%;
       }
       .swiper-button-prev {
-        left: 520px;
+        left: 518px;
+        background: url("../img/about-us/prev.png") no-repeat center center rgba(0, 0, 0, .3);
+        cursor: default;
       }
       .swiper-button-next {
-        right: 520px;
+        right: 517px;
+        background: url("../img/about-us/next.png") no-repeat center center rgba(0, 0, 0, .3);
+        cursor: default;
       }
     }
 
@@ -226,7 +230,48 @@ a {
       }
       
       .bot {
-        
+        margin-top: 8px;
+        background: url("../img/about-us/m06-bg-bot.png") no-repeat center center;
+        -webkit-background-size: cover;
+        background-size: cover;
+        .main-inner {
+          display: flex;
+          justify-content: space-between;
+          .item {
+            padding-top: 31px;
+            .content {
+              background: url("../img/about-us/m06-icon-bot.png") no-repeat center center;
+              -webkit-background-size: cover;
+              background-size: cover;
+              width: 265px;
+              height: 430px;
+              .title {
+                font-size: 30px;
+                font-weight: bold;
+                color: #252525;
+              }
+              .para {
+                font-size: 20px;
+                padding: 70px 18px 0;
+                line-height: 43px;
+                color: #fff;
+              }
+            }
+            .btn {
+              margin: 24px 0;
+              width: 265px;
+              .button_base {
+                margin: 0 auto;
+                div:nth-child(1) {
+                  cursor: pointer;
+                }
+                div:nth-child(3) {
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
       }
     }
 

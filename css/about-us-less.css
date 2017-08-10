@@ -103,10 +103,14 @@ a:hover {
   top: 50%;
 }
 .child-page .module.module-03 .main .swiper-button-prev {
-  left: 520px;
+  left: 518px;
+  background: url("../img/about-us/prev.png") no-repeat center center rgba(0, 0, 0, 0.3);
+  cursor: default;
 }
 .child-page .module.module-03 .main .swiper-button-next {
-  right: 520px;
+  right: 517px;
+  background: url("../img/about-us/next.png") no-repeat center center rgba(0, 0, 0, 0.3);
+  cursor: default;
 }
 .child-page .module.module-06 .module-title .txt {
   width: 403px;
@@ -165,4 +169,48 @@ a:hover {
 }
 .child-page .module.module-06 .main .top .main-inner .item:nth-child(6) .icon {
   background: url("../img/about-us/m06-icon06-top.png") no-repeat;
+}
+.child-page .module.module-06 .main .bot {
+  margin-top: 8px;
+  background: url("../img/about-us/m06-bg-bot.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.child-page .module.module-06 .main .bot .main-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.child-page .module.module-06 .main .bot .main-inner .item {
+  padding-top: 31px;
+}
+.child-page .module.module-06 .main .bot .main-inner .item .content {
+  background: url("../img/about-us/m06-icon-bot.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 265px;
+  height: 430px;
+}
+.child-page .module.module-06 .main .bot .main-inner .item .content .title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #252525;
+}
+.child-page .module.module-06 .main .bot .main-inner .item .content .para {
+  font-size: 20px;
+  padding: 70px 18px 0;
+  line-height: 43px;
+  color: #fff;
+}
+.child-page .module.module-06 .main .bot .main-inner .item .btn {
+  margin: 24px 0;
+  width: 265px;
+}
+.child-page .module.module-06 .main .bot .main-inner .item .btn .button_base {
+  margin: 0 auto;
+}
+.child-page .module.module-06 .main .bot .main-inner .item .btn .button_base div:nth-child(1) {
+  cursor: pointer;
+}
+.child-page .module.module-06 .main .bot .main-inner .item .btn .button_base div:nth-child(3) {
+  cursor: pointer;
 }

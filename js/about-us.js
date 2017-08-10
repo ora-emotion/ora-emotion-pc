@@ -137,6 +137,18 @@ function moduleSix() {
     }
     changeIcons();
 
+
+    var item = $(".module-06 .main .bot .main-inner .item");
+
+    // function addShadow() {
+    //     item.mouseover(function () {
+    //         $(this).children("div").animate({
+    //
+    //         });
+    //     });
+    // }
+    // addShadow();
+
 }
 moduleSix();
 /* /模块六：服务步骤 */
