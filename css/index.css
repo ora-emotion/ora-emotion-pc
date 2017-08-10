@@ -146,39 +146,6 @@ input:-webkit-autofill {
 	background: url(../img/index/icon-problem-red.png) no-repeat center center;
 }
 
-/*.ma-left1{
-	position: absolute;
-	left: -800px;
-}
-.ma-left2{
-	position: absolute;
-	left: -800px;
-}
-.mb-right1{
-	position: absolute;
-	right: -800px;
-}
-.mb-right2{
-	position: absolute;
-	right: -800px;
-}
-.mc-left1{
-	position: absolute;
-	bottom: -850px;
-}
-.mc-left2{
-	position: absolute;
-	bottom: -850px;
-}
-.md-right1{
-	position: absolute;
-	bottom: -850px;
-}
-.md-right2{
-	position: absolute;
-	bottom: -850px;
-}*/
-
 .biaoti2{
 	margin: 50px auto;
 	width: 100%;
@@ -1243,13 +1210,24 @@ input:-webkit-autofill {
     top: 45%;
 }
 
-.team .swiper-container .swiper-button-prev {
-    left: 372px;
+@media (max-width: 1199px) {
+	.team .swiper-container .swiper-button-prev {
+		left: 190px;
+	}
+	.team .swiper-container .swiper-button-next {
+		right: 190px;
+	}
 }
 
-.team .swiper-container .swiper-button-next {
-    right: 372px;
+@media (min-width: 1200px) {
+	.team .swiper-container .swiper-button-prev {
+		left: 372px;
+	}
+	.team .swiper-container .swiper-button-next {
+		right: 372px;
+	}
 }
+
 
 
 

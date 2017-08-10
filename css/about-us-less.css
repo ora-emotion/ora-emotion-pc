@@ -84,10 +84,40 @@ a:hover {
   justify-content: space-between;
   position: relative;
 }
-.child-page .module.module-03 .main img.left,
-.child-page .module.module-03 .main img.right {
-  width: 545px;
-  height: 486px;
+@media (max-width: 1199px) {
+  .child-page .module.module-03 .main img.left,
+  .child-page .module.module-03 .main img.right {
+    width: 0;
+    height: 0;
+  }
+  .child-page .module.module-03 .main .swiper-button-prev {
+    left: 310px;
+    background: url("../img/about-us/prev.png") no-repeat center center rgba(0, 0, 0, 0.3);
+    cursor: default;
+  }
+  .child-page .module.module-03 .main .swiper-button-next {
+    right: 310px;
+    background: url("../img/about-us/next.png") no-repeat center center rgba(0, 0, 0, 0.3);
+    cursor: default;
+  }
+}
+@media (min-width: 1200px) {
+  .child-page .module.module-03 .main img.left,
+  .child-page .module.module-03 .main img.right {
+    width: 545px;
+    height: 486px;
+    display: block;
+  }
+  .child-page .module.module-03 .main .swiper-button-prev {
+    left: 518px;
+    background: url("../img/about-us/prev.png") no-repeat center center rgba(0, 0, 0, 0.3);
+    cursor: default;
+  }
+  .child-page .module.module-03 .main .swiper-button-next {
+    right: 517px;
+    background: url("../img/about-us/next.png") no-repeat center center rgba(0, 0, 0, 0.3);
+    cursor: default;
+  }
 }
 .child-page .module.module-03 .main .left {
   margin-right: 10px;
@@ -103,16 +133,6 @@ a:hover {
 .child-page .module.module-03 .main .btn {
   position: absolute;
   top: 50%;
-}
-.child-page .module.module-03 .main .swiper-button-prev {
-  left: 518px;
-  background: url("../img/about-us/prev.png") no-repeat center center rgba(0, 0, 0, 0.3);
-  cursor: default;
-}
-.child-page .module.module-03 .main .swiper-button-next {
-  right: 517px;
-  background: url("../img/about-us/next.png") no-repeat center center rgba(0, 0, 0, 0.3);
-  cursor: default;
 }
 .child-page .module.module-06 .module-title .txt {
   width: 403px;

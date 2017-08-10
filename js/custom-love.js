@@ -102,7 +102,7 @@ function moduleSeven() {
 
         // 获取滚动条滚动的距离
         var scrollTop = $(window).scrollTop();
-        console.log(scrollTop);
+        // console.log(scrollTop);
 
         if (scrollTop > (moduleSevenOffsetTop - windowHeight/2)) {
             $(".module-07 .main .row img").animate({
