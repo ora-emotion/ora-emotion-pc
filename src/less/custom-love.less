@@ -143,9 +143,19 @@ a {
     .main {
       position: relative;
       top: 75px;
+      @media (max-width: 1199px) {
+        .bg {
+          width: 0;
+          height: 0;
+        }
+      }
+      @media (min-width: 1200px) {
+        .bg {
+          width:  360px;
+          height:  863px;
+        }
+      }
       .bg {
-        width: 360px;
-        height: 863px;
         position: absolute;
         z-index: 1;
         top: 0;

@@ -129,9 +129,19 @@ a:hover {
   position: relative;
   top: 75px;
 }
+@media (max-width: 1199px) {
+  .child-page .module.module-01 .main .bg {
+    width: 0;
+    height: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .child-page .module.module-01 .main .bg {
+    width: 360px;
+    height: 863px;
+  }
+}
 .child-page .module.module-01 .main .bg {
-  width: 360px;
-  height: 863px;
   position: absolute;
   z-index: 1;
   top: 0;
