@@ -469,11 +469,11 @@
 
 .body6-zhuti ul li:hover {}
 
-/*@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 	.body6-zhuti {
 		float: right;
-		padding-right: 20%;
-		margin-top: 25%;
+		padding-right: 18%;
+		margin-top: 10%;
 		color: #F5F5F5;
 	}
 	.body6-zhuti ul {
@@ -482,9 +482,10 @@
 	.body6-zhuti ul li {
 		line-height: 35px;
 		font-size: 16px;
+		margin-top: 20px;
 	}
 }
-
+/*
 @media only screen and (min-width: 1201px) and (max-width: 1500px) {
 	.body6-zhuti {
 		float: right;
