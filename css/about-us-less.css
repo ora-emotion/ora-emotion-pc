@@ -67,6 +67,8 @@ a:hover {
   /* /模块三：橘子环境 */
   /* 模块六：服务步骤 */
   /* /模块六：服务步骤 */
+  /* 模块七：合作媒体 */
+  /* /模块七：合作媒体 */
 }
 .child-page .main-inner {
   width: 1200px;
@@ -213,4 +215,16 @@ a:hover {
 }
 .child-page .module.module-06 .main .bot .main-inner .item .btn .button_base div:nth-child(3) {
   cursor: pointer;
+}
+.child-page .module.module-07 .module-title .txt {
+  width: 403px;
+  background: url("../img/about-us/title-icon03.png") no-repeat center 8px;
+}
+.child-page .module.module-07 .main {
+  margin: 75px auto 0;
+  background: url("../img/about-us/page-bot.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 1061px;
+  height: 155px;
 }
