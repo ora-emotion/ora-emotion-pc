@@ -160,6 +160,12 @@
 	margin-left: 800px;
 }
 
+@media only screen and (max-width: 1199px) {
+	.body3-head {
+		margin-left: 600px;
+	}
+}
+
 .body3-head-h2 {
 	text-align: center;
 	font-weight: bold;
@@ -398,7 +404,11 @@
     justify-content: space-around;
     left: -80%;
 }
-
+@media only screen and (max-width: 1199px) {
+	.body7 ul {
+    	left: -100%;
+	}
+}
 .body7 ul li {
     width: 238px;
     height: 250px;
