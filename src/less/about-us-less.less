@@ -109,10 +109,40 @@ a {
       display: flex;
       justify-content: space-between;
       position: relative;
-      img.left,
-      img.right {
-        width: 545px;
-        height: 486px;
+      @media (max-width: 1199px) {
+        img.left,
+        img.right {
+          width: 0;
+          height: 0;
+        }
+        .swiper-button-prev {
+          left: 310px;
+          background: url("../img/about-us/prev.png") no-repeat center center rgba(0, 0, 0, .3);
+          cursor: default;
+        }
+        .swiper-button-next {
+          right: 310px;
+          background: url("../img/about-us/next.png") no-repeat center center rgba(0, 0, 0, .3);
+          cursor: default;
+        }
+      }
+      @media (min-width: 1200px) {
+        img.left,
+        img.right {
+          width: 545px;
+          height: 486px;
+          display: block;
+        }
+        .swiper-button-prev {
+          left: 518px;
+          background: url("../img/about-us/prev.png") no-repeat center center rgba(0, 0, 0, .3);
+          cursor: default;
+        }
+        .swiper-button-next {
+          right: 517px;
+          background: url("../img/about-us/next.png") no-repeat center center rgba(0, 0, 0, .3);
+          cursor: default;
+        }
       }
       .left {
         margin-right: 10px;
@@ -128,16 +158,6 @@ a {
       .btn {
         position: absolute;
         top: 50%;
-      }
-      .swiper-button-prev {
-        left: 518px;
-        background: url("../img/about-us/prev.png") no-repeat center center rgba(0, 0, 0, .3);
-        cursor: default;
-      }
-      .swiper-button-next {
-        right: 517px;
-        background: url("../img/about-us/next.png") no-repeat center center rgba(0, 0, 0, .3);
-        cursor: default;
       }
     }
 

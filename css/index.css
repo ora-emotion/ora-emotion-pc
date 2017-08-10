@@ -1243,13 +1243,24 @@ input:-webkit-autofill {
     top: 45%;
 }
 
-.team .swiper-container .swiper-button-prev {
-    left: 372px;
+@media (max-width: 1199px) {
+	.team .swiper-container .swiper-button-prev {
+		left: 190px;
+	}
+	.team .swiper-container .swiper-button-next {
+		right: 190px;
+	}
 }
 
-.team .swiper-container .swiper-button-next {
-    right: 372px;
+@media (min-width: 1200px) {
+	.team .swiper-container .swiper-button-prev {
+		left: 372px;
+	}
+	.team .swiper-container .swiper-button-next {
+		right: 372px;
+	}
 }
+
 
 
 
