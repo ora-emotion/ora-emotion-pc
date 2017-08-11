@@ -7,6 +7,10 @@
   padding: 0;
   margin: 0;
 }
+html,
+body {
+  font-family: "Microsoft YaHei";
+}
 a:hover {
   color: #fff;
 }
@@ -96,4 +100,44 @@ a:link {
 }
 .child-page .module.module-01 .main .para p:last-child {
   padding-bottom: 0;
+}
+.child-page .module.module-01 .main .book-list {
+  padding-top: 16px;
+}
+.child-page .module.module-01 .main .book-list .item {
+  padding: 42px 120px;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+}
+.child-page .module.module-01 .main .book-list .item .left-pic {
+  width: 263px;
+  height: 331px;
+}
+.child-page .module.module-01 .main .book-list .item .left-pic img {
+  width: 100%;
+}
+.child-page .module.module-01 .main .book-list .item .right-txt {
+  width: 666px;
+  padding: 0 106px 0 54px;
+}
+.child-page .module.module-01 .main .book-list .item .right-txt p {
+  color: #2d2d2d;
+}
+.child-page .module.module-01 .main .book-list .item .right-txt p.topic {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fd3232;
+  height: 36px;
+  line-height: 36px;
+  padding-top: 4px;
+}
+.child-page .module.module-01 .main .book-list .item .right-txt p.des {
+  padding-top: 27px;
+  padding-left: 12px;
+  font-size: 24px;
+  line-height: 36px;
+}
+.child-page .module.module-01 .main .book-list .item:last-child {
+  border-bottom: 0;
 }
