@@ -65,7 +65,7 @@ a:link {
 }
 /* 模块公共样式 */
 .banner {
-  background: url("../img/emotion-forum/banner.png") no-repeat center center;
+  background: url("../img/views/forum-banner.png") no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;
   width: 100%;
