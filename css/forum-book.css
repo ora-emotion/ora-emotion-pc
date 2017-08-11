@@ -87,3 +87,12 @@ a:link {
   min-width: 1200px;
   width: 1200px;
 }
+.child-page .module.module-01 .main .para p {
+  color: #2d2d2d;
+  font-size: 24px;
+  line-height: 36px;
+  padding-bottom: 30px;
+}
+.child-page .module.module-01 .main .para p:last-child {
+  padding-bottom: 0;
+}
