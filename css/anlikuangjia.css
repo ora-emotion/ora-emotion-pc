@@ -49,10 +49,10 @@ h3{
 	margin-bottom: 30;
 	letter-spacing:1px;
 	text-align: center;
-	color: #FF6C9E;
+	color: #FF3232;
 }
 .left1 h2:hover{
-	color: #FF9617;
+	color: #FF3232;
 }
 .left1 h3{
 	margin-top: 30px;
@@ -64,18 +64,24 @@ h3{
 	color: #646464;
 }
 .left1 div{
-	margin-left: 20px;
+	margin-left: 30px;
     padding-top: 18px;
-    width: 175px;
+    width: 100%;
     height: 51px;
     margin-top: 20px;
     margin-bottom: 20px;
-    line-height: 51px;
-    text-align: center;
+    line-height: 60px;
     font-size: 18px;
     font-weight: bold;
     color: #434343;
-    background: url("../images/cis_a.png") no-repeat center center;
+   /* background: url("../img/cis/cis_a.jpg") no-repeat 10px 35px;*/
+}
+.left1 div .hong{
+	height: 20px;
+	width: 10px;
+	background-color: #FF3232;
+	float: left;
+	margin-right: 10px;
 }
 .left1 img{
     display: block;
@@ -94,7 +100,7 @@ h3{
     padding-top: 18px;
     width: 175px;
     height: 51px;
-      margin-top: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     line-height: 51px;
     text-align: center;
@@ -113,9 +119,9 @@ h3{
 		letter-spacing:1px;
 }
 .right1 a{
-	color: #FF8635;
+	color: #FF3232;
 		letter-spacing:1px;
 }
 .right1 a:hover{
-	color: #FF6C9E;
+	color: #FF3232;
 }
