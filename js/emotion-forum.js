@@ -5,7 +5,7 @@
 * */
 
 var emotionForumBanner = new Swiper(".swiper-container", {
-    autoplay: 5000,
+    autoplay: 3000,
     pagination: ".swiper-pagination",
     paginationClickable: true,
     loop: true,

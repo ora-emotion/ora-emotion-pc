@@ -14,6 +14,9 @@ a {
     color: #fff;
   }
 }
+a:link {
+  text-decoration: none;
+}
 
 @font-color: #2d2d2d;
 @letter-spacing: 2.5px;
@@ -101,7 +104,7 @@ a {
   }
 
   .module.module-01 {
-    margin-top: 122px;
+    margin-top: 75px;
     //--> 模块一标题
     .module-title {
       .txt {
@@ -118,9 +121,21 @@ a {
         margin: 0;
         padding: 0;
         .row {
+          width: 1200px;
+          display: flex;
+          justify-content: space-between;
+
+          @media (max-width: 1200px) {
+            padding: 0 40px;
+          }
+
           //--> 左侧轮播图部分
           .left-banner {
             padding: 0;
+            @media (max-width: 1200px) {
+              position: relative;
+              right: 20px;
+            }
             .swiper-container {
               width: 693px;
               margin: 0;
@@ -184,10 +199,6 @@ a {
             .pic {
               width: 413px;
               height: 235px;
-              //--> 当手机端时，右侧新闻列表上面的图片隐藏
-              @media (max-width: 1200px) {
-                display: none;
-              }
               img {
                 width: 100%;
               }
@@ -207,7 +218,7 @@ a {
             }
             .link {
               a {
-                display: inline-block;
+                display: block;
                 color: #2d2d2d;
                 font-size: 20px;
                 height: 46px;
@@ -219,14 +230,88 @@ a {
               }
             }
           }
+
+          @media (min-width: 1200px) and (max-width: 1920px) {
+            .left-banner {
+              position: relative;
+              right: 30px;
+            }
+            .right-news {
+              position: relative;
+              left: 30px;
+            }
+          }
         }
       }
       .bot {
+        margin-top: 45px;
         .part {
+          @media (max-width: 1200px) {
+            width: 95%;
+            margin: 0 auto;
+          }
           .title {
-            p {
-              color: #2d2d2d;
+            color: #2d2d2d;
+            font-size: 30px;
+            font-weight: bold;
+            height: 28px;
+            line-height: 28px;
+            border-left: 12px solid #fd3232;
+            padding-left: 10px;
+            margin-bottom: 12px;
+          }
+          .item-group {
+            .item {
+              display: flex;
+              justify-content: space-between;
+              padding-bottom: 82px;
+              .left-pic {
+                position: relative;
+                .pic-hidden {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  opacity: 0;
+                  transition: opacity .5s;
+                }
+                &:hover {
+                  .pic-hidden {
+                    opacity: 1;
+                  }
+                }
+              }
+              .right-txt {
+                width: 56%;
+                p, a {
+                  color: #2d2d2d;
+                  border-left: none;
+                  padding-left: 0;
+                }
+                .title {
+                  font-size: 24px;
+                  line-height: 45px;
+                  height: 45px;
+                  color: #2d2d2d;
+                  transition: color .3s;
+                  &:hover {
+                    color: #fd3232;
+                  }
+                }
+                .para {
+                  font-size: 20px;
+                  line-height: 35px;
+                }
+              }
             }
+            .item:last-child {
+              border-bottom: 1px solid #e5e5e5;
+              margin-bottom: 82px;
+            }
+          }
+        }
+        .part:last-child {
+          .item:last-child {
+            border-bottom: none;
           }
         }
       }
