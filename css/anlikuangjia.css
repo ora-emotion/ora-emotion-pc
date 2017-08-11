@@ -113,15 +113,22 @@ h3{
 .right1 ul li{
 	margin-left: 70px;
 	line-height: 2em;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+.jieshao{
+	width: 370px;
+	margin-left: 60px;
 }
 .jieshao span{
-	margin-left: 50px;
-		letter-spacing:1px;
+	letter-spacing:1px;
+	font-size: 18px;
 }
 .right1 a{
 	color: #FF3232;
-		letter-spacing:1px;
+	letter-spacing:1px;
 }
 .right1 a:hover{
-	color: #FF3232;
+	color: #2D2D2D;
 }
