@@ -1,0 +1,186 @@
+/*
+* created by smpower
+* email: bzsjxhywrf@outlook.com
+* github: https://github.com/smpower/
+*/
+* {
+  padding: 0;
+  margin: 0;
+}
+a:hover {
+  color: #fff;
+}
+.nav .inner ul li.active {
+  background-color: #fd3232;
+  color: #fff;
+}
+/* 模块公共样式 */
+.module .title {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #2d2d2d;
+}
+.module .title h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+.module .title .subtitle {
+  font-size: 14px;
+  letter-spacing: 2.5px;
+}
+.module-title .line {
+  width: 100%;
+  border-top: 2px solid #d6d5d5;
+  position: relative;
+  top: 66px;
+}
+.module-title .txt {
+  margin: 0 auto;
+  position: relative;
+  bottom: -38px;
+  color: #2d2d2d;
+}
+.module-title .txt h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 14px;
+}
+.module-title .txt p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ccc;
+}
+.main-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* 模块公共样式 */
+.banner {
+  background: url("../img/emotion-forum/banner.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 885px;
+}
+.child-page .main-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+.child-page .module.module-01 {
+  margin-top: 122px;
+}
+.child-page .module.module-01 .module-title .txt {
+  width: 403px;
+  background: url("../img/emotion-forum/title-icon03.png") no-repeat center 8px;
+}
+.child-page .module.module-01 .main {
+  margin: 75px auto 0;
+  min-width: 1200px;
+  width: 1200px;
+}
+.child-page .module.module-01 .main .top {
+  margin: 0;
+  padding: 0;
+}
+.child-page .module.module-01 .main .top .row .left-banner {
+  padding: 0;
+}
+.child-page .module.module-01 .main .top .row .left-banner .swiper-container {
+  width: 693px;
+  margin: 0;
+}
+.child-page .module.module-01 .main .top .row .left-banner .swiper-container .swiper-wrapper {
+  position: relative;
+}
+.child-page .module.module-01 .main .top .row .left-banner .swiper-container .swiper-wrapper .des {
+  font-size: 22px;
+  padding-left: 15px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 45px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  opacity: 0;
+  transition: all .3s;
+}
+.child-page .module.module-01 .main .top .row .left-banner .swiper-container .swiper-pagination {
+  bottom: 0;
+  width: 693px;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.child-page .module.module-01 .main .top .row .left-banner .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #d6d6d6;
+  position: relative;
+  left: 35%;
+  bottom: 45px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  transition: bottom .3s;
+}
+.child-page .module.module-01 .main .top .row .left-banner .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #fd3232;
+}
+.child-page .module.module-01 .main .top .row .left-banner .swiper-container:hover .swiper-wrapper .des {
+  height: 45px;
+  opacity: 1;
+}
+.child-page .module.module-01 .main .top .row .left-banner .swiper-container:hover .swiper-pagination {
+  height: 45px;
+}
+.child-page .module.module-01 .main .top .row .left-banner .swiper-container:hover .swiper-pagination .swiper-pagination-bullet {
+  bottom: 0;
+}
+.child-page .module.module-01 .main .top .row .right-news {
+  padding: 0;
+}
+.child-page .module.module-01 .main .top .row .right-news .pic {
+  width: 413px;
+  height: 235px;
+}
+@media (max-width: 1200px) {
+  .child-page .module.module-01 .main .top .row .right-news .pic {
+    display: none;
+  }
+}
+.child-page .module.module-01 .main .top .row .right-news .pic img {
+  width: 100%;
+}
+.child-page .module.module-01 .main .top .row .right-news .txt {
+  border-left: 12px solid #fd3232;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+.child-page .module.module-01 .main .top .row .right-news .txt .title {
+  color: #2d2d2d;
+  font-size: 24px;
+  font-weight: bold;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 6px;
+}
+.child-page .module.module-01 .main .top .row .right-news .link a {
+  display: inline-block;
+  color: #2d2d2d;
+  font-size: 20px;
+  height: 46px;
+  line-height: 46px;
+  transition: color .3s;
+}
+.child-page .module.module-01 .main .top .row .right-news .link a:hover {
+  color: #fd3232;
+}
+.child-page .module.module-01 .main .bot .part .title p {
+  color: #2d2d2d;
+}

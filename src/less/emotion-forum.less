@@ -1,0 +1,236 @@
+/*
+* created by smpower
+* email: bzsjxhywrf@outlook.com
+* github: https://github.com/smpower/
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  &:hover {
+    color: #fff;
+  }
+}
+
+@font-color: #2d2d2d;
+@letter-spacing: 2.5px;
+
+.background-size (@method) {
+  -webkit-background-size: @method;
+  background-size: @method;
+}
+
+.nav .inner ul li.active {
+  background-color: #fd3232;
+  color: #fff;
+}
+
+/* 模块公共样式 */
+.module {
+  .title {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: @font-color;
+    h2 {
+      font-weight: bold;
+      font-size: 40px;
+    }
+    .subtitle {
+      font-size: 14px;
+      letter-spacing: @letter-spacing;
+    }
+  }
+}
+//--> 标题部分公共样式
+.module-title {
+  .line {
+    width: 100%;
+    border-top: 2px solid #d6d5d5;
+    position: relative;
+    top: 66px;
+  }
+  .txt {
+    margin: 0 auto;
+    position: relative;
+    bottom: -38px;
+    color: #2d2d2d;
+    h2 {
+      font-size: 40px;
+      font-weight: bold;
+      padding-bottom: 14px;
+    }
+    p {
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #ccc;
+    }
+  }
+}
+.main-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* 模块公共样式 */
+
+
+.banner {
+  background: url("../img/emotion-forum/banner.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 885px;
+}
+
+
+
+.child-page {
+
+  //--> 页面 1200px 并居中于页面
+  .main-inner {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .module.module-01 {
+    margin-top: 122px;
+    //--> 模块一标题
+    .module-title {
+      .txt {
+        width: 403px;
+        background: url("../img/emotion-forum/title-icon03.png") no-repeat center 8px;
+      }
+    }
+    //-> 模块一主体
+    .main {
+      margin: 75px auto 0;
+      min-width: 1200px;
+      width: 1200px;
+      .top {
+        margin: 0;
+        padding: 0;
+        .row {
+          //--> 左侧轮播图部分
+          .left-banner {
+            padding: 0;
+            .swiper-container {
+              width: 693px;
+              margin: 0;
+              .swiper-wrapper {
+                position: relative;
+                .des {
+                  font-size: 22px;
+                  padding-left: 15px;
+                  letter-spacing: 2px;
+                  font-weight:bold;
+                  line-height: 45px;
+                  height: 0;
+                  position: absolute;
+                  bottom: 0;
+                  color: #fff;
+                  opacity: 0;
+                  transition: all .3s;
+                }
+              }
+              .swiper-pagination {
+                bottom: 0;
+                width: 693px;
+                height: 0;
+                background-color: rgba(0, 0, 0, .2);
+                .swiper-pagination-bullet {
+                  width: 15px;
+                  height: 15px;
+                  border-radius: 50%;
+                  background-color: #d6d6d6;
+                  position: relative;
+                  left: 35%;
+                  bottom: 45px;
+                  margin-top: 15px;
+                  margin-bottom: 10px;
+                  transition: bottom .3s;
+                }
+                .swiper-pagination-bullet-active {
+                  background-color: #fd3232;
+                }
+              }
+              &:hover {
+                .swiper-wrapper {
+                  .des {
+                    height: 45px;
+                    opacity: 1;
+                  }
+                }
+                .swiper-pagination {
+                  height: 45px;
+                  .swiper-pagination-bullet {
+                    bottom: 0;
+                  }
+                }
+              }
+            }
+          }
+
+          //--> 右侧新闻
+          .right-news {
+            padding: 0;
+            .pic {
+              width: 413px;
+              height: 235px;
+              //--> 当手机端时，右侧新闻列表上面的图片隐藏
+              @media (max-width: 1200px) {
+                display: none;
+              }
+              img {
+                width: 100%;
+              }
+            }
+            .txt {
+              border-left: 12px solid #fd3232;
+              margin-top: 30px;
+              margin-bottom: 5px;
+              .title {
+                color: #2d2d2d;
+                font-size: 24px;
+                font-weight: bold;
+                height: 28px;
+                line-height: 28px;
+                padding-left: 6px;
+              }
+            }
+            .link {
+              a {
+                display: inline-block;
+                color: #2d2d2d;
+                font-size: 20px;
+                height: 46px;
+                line-height: 46px;
+                transition: color .3s;
+                &:hover {
+                  color: #fd3232;
+                }
+              }
+            }
+          }
+        }
+      }
+      .bot {
+        .part {
+          .title {
+            p {
+              color: #2d2d2d;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
