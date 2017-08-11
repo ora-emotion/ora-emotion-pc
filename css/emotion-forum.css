@@ -181,6 +181,15 @@ a:hover {
 .child-page .module.module-01 .main .top .row .right-news .link a:hover {
   color: #fd3232;
 }
-.child-page .module.module-01 .main .bot .part .title p {
+.child-page .module.module-01 .main .bot {
+  margin-top: 45px;
+}
+.child-page .module.module-01 .main .bot .part .title {
   color: #2d2d2d;
+  font-size: 30px;
+  font-weight: bold;
+  height: 28px;
+  line-height: 28px;
+  border-left: 12px solid #fd3232;
+  padding-left: 10px;
 }
