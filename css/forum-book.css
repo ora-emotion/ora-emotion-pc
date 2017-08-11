@@ -7,6 +7,10 @@
   padding: 0;
   margin: 0;
 }
+html,
+body {
+  font-family: "Microsoft YaHei";
+}
 a:hover {
   color: #fff;
 }
@@ -65,7 +69,7 @@ a:link {
 }
 /* 模块公共样式 */
 .banner {
-  background: url("../img/emotion-forum/banner.png") no-repeat center center;
+  background: url("../img/views/forum-banner.png") no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;
   width: 100%;
@@ -86,4 +90,54 @@ a:link {
   margin: 75px auto 0;
   min-width: 1200px;
   width: 1200px;
+  padding: 10px 20px;
+}
+.child-page .module.module-01 .main .para p {
+  color: #2d2d2d;
+  font-size: 24px;
+  line-height: 36px;
+  padding-bottom: 30px;
+}
+.child-page .module.module-01 .main .para p:last-child {
+  padding-bottom: 0;
+}
+.child-page .module.module-01 .main .book-list {
+  padding-top: 16px;
+}
+.child-page .module.module-01 .main .book-list .item {
+  padding: 42px 120px;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+}
+.child-page .module.module-01 .main .book-list .item .left-pic {
+  width: 263px;
+  height: 331px;
+}
+.child-page .module.module-01 .main .book-list .item .left-pic img {
+  width: 100%;
+}
+.child-page .module.module-01 .main .book-list .item .right-txt {
+  width: 720px;
+  padding: 0 0 0 54px;
+}
+.child-page .module.module-01 .main .book-list .item .right-txt p {
+  color: #2d2d2d;
+}
+.child-page .module.module-01 .main .book-list .item .right-txt p.topic {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fd3232;
+  height: 36px;
+  line-height: 36px;
+  padding-top: 4px;
+}
+.child-page .module.module-01 .main .book-list .item .right-txt p.des {
+  padding-top: 27px;
+  padding-left: 12px;
+  font-size: 24px;
+  line-height: 36px;
+}
+.child-page .module.module-01 .main .book-list .item:last-child {
+  border-bottom: 0;
 }

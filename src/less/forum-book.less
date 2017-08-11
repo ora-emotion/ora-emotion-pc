@@ -9,6 +9,11 @@
   margin: 0;
 }
 
+html,
+body {
+  font-family: "Microsoft YaHei";
+}
+
 a {
   &:hover {
     color: #fff;
@@ -86,7 +91,7 @@ a:link {
 
 
 .banner {
-  background: url("../img/emotion-forum/banner.png") no-repeat center center;
+  background: url("../img/views/forum-banner.png") no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;
   width: 100%;
@@ -117,6 +122,61 @@ a:link {
       margin: 75px auto 0;
       min-width: 1200px;
       width: 1200px;
+      padding: 10px 20px;
+
+      .para {
+        p {
+          color: #2d2d2d;
+          font-size: 24px;
+          line-height: 36px;
+          padding-bottom: 30px;
+        }
+        p:last-child {
+          padding-bottom: 0;
+        }
+      }
+
+      .book-list {
+        padding-top: 16px;
+        .item {
+          padding: 42px 120px;
+          border-bottom: 1px solid #e5e5e5;
+          display: flex;
+          justify-content: space-between;
+          .left-pic {
+            width: 263px;
+            height: 331px;
+            img {
+              width: 100%;
+            }
+          }
+          .right-txt {
+            width: 720px;
+            padding: 0 0 0 54px;
+            p {
+              color: #2d2d2d;
+            }
+            p.topic {
+              font-size: 30px;
+              font-weight: bold;
+              color: #fd3232;
+              height: 36px;
+              line-height: 36px;
+              padding-top: 4px;
+            }
+            p.des {
+              padding-top: 27px;
+              padding-left: 12px;
+              font-size: 24px;
+              line-height: 36px;
+            }
+          }
+        }
+        .item:last-child {
+          border-bottom: 0;
+        }
+      }
+
     }
   }
 
