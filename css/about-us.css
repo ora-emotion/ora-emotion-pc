@@ -76,6 +76,16 @@
   margin-top: 50px;
   font-size: 24px;
 }
+@media only screen and (max-width: 1199px) {
+  .child-page .body1 .left ul {
+    margin-top: 50px;
+    margin-left: 350px;
+  }
+  .child-page .body1 .left ul li {
+    margin-top: 34px;
+    font-size: 24px;
+  }
+}
 .child-page .body1 .right {
   float: right;
 }
@@ -90,6 +100,20 @@
 .child-page .body1 .right ul li img {
   width: 100%;
   height: 100%;
+}
+@media only screen and (max-width: 1199px) {
+  .child-page .body1 .right ul {
+    margin-top: 20px;
+    margin-right: 300px;
+  }
+  .child-page .body1 .right ul li {
+    width: 600px;
+    height: 400px;
+  }
+  .child-page .body1 .right ul li img {
+    width: 100%;
+    height: 100%;
+  }
 }
 .child-page .body2 {
   width: 100%;
