@@ -126,7 +126,7 @@ $(document).ready(function() {
 
 //		console.log(scrollTop);
 		//服务步骤模块
-		if(scrollTop > (moduleSevenOffsetTop - windowHeight + 300)) {
+		if(scrollTop > (moduleSevenOffsetTop - windowHeight+200)) {
 			// alert("ok");
 			$(".body7 ul").animate({
 				left: "9%",
@@ -139,7 +139,7 @@ $(document).ready(function() {
 		var scrollTop1 = $(window).scrollTop();
 	
 		//高级方案模块
-		if(scrollTop1 > (moduleSevenOffsetTop1 - windowHeight + 300)) {
+		if(scrollTop1 > (moduleSevenOffsetTop1 - windowHeight+200)) {
 			// alert("ok");
 			$(".body1-ul1").animate({
 				left: "-16.5%",
@@ -157,7 +157,7 @@ $(document).ready(function() {
 		var scrollTop2 = $(window).scrollTop();
 	
 		//高级方案模块
-		if(scrollTop2 > (moduleSevenOffsetTop2 - windowHeight + 300)) {
+		if(scrollTop2 > (moduleSevenOffsetTop2 - windowHeight+200)) {
 			// alert("ok");
 			$(".body3-ul1").animate({
 				left: "0%",
@@ -174,7 +174,7 @@ $(document).ready(function() {
 		var scrollTop3 = $(window).scrollTop();
 	
 		//高级方案模块
-		if(scrollTop3 > (moduleSevenOffsetTop3 - windowHeight + 300)) {
+		if(scrollTop3 > (moduleSevenOffsetTop3 - windowHeight+200)) {
 			// alert("ok");
 			$(".body4-wen-li1").animate({
 				bottom: "-100px",
@@ -195,7 +195,7 @@ $(document).ready(function() {
 		var scrollTop4 = $(window).scrollTop();
 	
 		//高级方案模块
-		if(scrollTop4 > (moduleSevenOffsetTop4 - windowHeight + 300)) {
+		if(scrollTop4 > (moduleSevenOffsetTop4 - windowHeight+100)) {
 			$(".txt-list-div1").animate({
 				right: "12%",
 				opacity: "1"
