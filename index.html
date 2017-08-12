@@ -809,40 +809,52 @@
 					<li class="li21">
 						<div class="back">
 							<div class="button_base b06_skewed_slide_in">
-								<div>马上咨询</div>
+								<div style="cursor: pointer">马上咨询</div>
 								<div></div>
-								<div>马上咨询</div>
+								<div style="cursor: pointer;">马上咨询</div>
 							</div>
 						</div>
 					</li>
 					<li class="li22">
 						<div class="back">
-							<div class="button_base b06_skewed_slide_in">
-								<div>预约专家</div>
+							<div class="button_base b06_skewed_slide_in" onclick="window.open('./focus-team.html')">
+								<div style="cursor: pointer;">预约专家</div>
 								<div></div>
-								<div>预约专家</div>
+								<div style="cursor: pointer;">预约专家</div>
 							</div>
 						</div>
 					</li>
 					<li class="li23">
 						<div class="back">
 							<div class="button_base b06_skewed_slide_in">
-								<div>定制方案</div>
+								<div style="cursor: pointer;">定制方案</div>
 								<div></div>
-								<div>定制方案</div>
+								<div style="cursor: pointer;">定制方案</div>
 							</div>
 						</div>
 					</li>
 					<li class="li24">
 						<div class="back">
-							<div class="button_base b06_skewed_slide_in">
-								<div>咨询保障</div>
-								<div></div>
-								<div>咨询保障</div>
+							<!--<div class="button_base b06_skewed_slide_in">-->
+								<!--<div style="cursor: pointer">咨询保障</div>-->
+								<!--<div></div>-->
+								<!--<div style="cursor: pointer">咨询保障</div>-->
+							<!--</div>-->
+							<!-- 模态框 -->
+							<div type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">咨询保障</div>
+
+							<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<img src="./img/modal.png" alt="">
+									</div>
+								</div>
 							</div>
+							<!-- /模态框 -->
 						</div>
 					</li>
 				</ul>
+
 			</div>
 		</div>
 
