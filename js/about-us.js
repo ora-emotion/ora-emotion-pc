@@ -140,14 +140,12 @@ function moduleSix() {
 
     var item = $(".module-06 .main .bot .main-inner .item");
 
-    // function addShadow() {
-    //     item.mouseover(function () {
-    //         $(this).children("div").animate({
-    //
-    //         });
-    //     });
-    // }
-    // addShadow();
+    //--> 获取‘立刻咨询’按钮
+    var askBtn = $(".button_base div");
+    //--> 点击‘立刻咨询’按钮打开‘权威专家’页面
+    askBtn.click(function () {
+        window.open("./focus-team.html");
+    });
 
 }
 moduleSix();
