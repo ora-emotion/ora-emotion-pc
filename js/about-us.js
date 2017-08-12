@@ -124,13 +124,13 @@ function moduleSix() {
     var moduleSixTopItem = $(".module-06 .main .top .main-inner .item");
 
     function changeIcons() {
-        moduleSixTopItem.mouseover(function (event) {
-            $(this).children("div.icon").animate({
+        moduleSixTopItem.children("div.icon").mouseover(function (event) {
+            $(this).animate({
                 "backgroundPositionY": "-142px"
             }, 300);
         });
-        moduleSixTopItem.mouseleave(function () {
-            $(this).children("div.icon").animate({
+        moduleSixTopItem.children("div.icon").mouseleave(function () {
+            $(this).animate({
                 "backgroundPositionY": "0"
             }, 300);
         });
