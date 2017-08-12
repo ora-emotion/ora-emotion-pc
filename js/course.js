@@ -67,7 +67,7 @@ Progress.prototype = {
 				ctx.beginPath(); // 开始绘制圆环路径
 				ctx.strokeStyle = circleStrokeStyle; // 为活动进度条填充颜色
 				ctx.arc(x, y, r, start, end); // 绘制 1/4 进度条
-				ctx.lineCap = "round"; // 设置进度条两端为圆弧形样式
+				ctx.lineCap = "butt"; // 设置进度条两端为圆弧形样式
 				ctx.stroke(); // 描边
 				ctx.closePath(); // 结束路径
 			};
