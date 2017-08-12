@@ -1,0 +1,29 @@
+/* created by smpower on 2017.08.12 */
+.modal-btn.btn-primary {
+  background: #fff;
+  color: #2d2d2d;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  font-size: 17px;
+  padding: 13px 10px;
+  width: 150px;
+}
+.modal-content {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  top: 80px;
+}
+.modal-content .close-btn {
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  right: 51px;
+  bottom: 54px;
+}
