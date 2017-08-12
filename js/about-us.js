@@ -9,7 +9,10 @@ $(document).ready(function() {
 	$(".rli4").css("display","none");
 	$(".rli5").css("display","none");
 	$(".rli6").css("display","none");
-	$(".lli1").css("color","#FF3232");
+    $(".body1 .left ul li").css({
+        "color": "#fff"
+    });
+    $(".lli1").css("color","#FF3232");
 	$(".lli1").mouseover(function(){
 		$(".rli1").css("display","block");
 		$(".rli2").css("display","none");
