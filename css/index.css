@@ -1179,9 +1179,19 @@ input:-webkit-autofill {
     margin-top: 40px;
 }
 
+.team .swiper-container .swiper-button-prev {
+	background: url("../img/index/icon-prev.png") no-repeat center center;
+}
+
+.team .swiper-container .swiper-button-next {
+	background: url("../img/index/icon-next.png") no-repeat center center;
+}
+
 .team .swiper-container .swiper-button-prev,
 .team .swiper-container .swiper-button-next {
-    top: 45%;
+	width: 62px;
+	height: 62px;
+    top: 43%;
 }
 
 @media (max-width: 1199px) {
