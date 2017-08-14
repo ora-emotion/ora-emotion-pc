@@ -13,14 +13,22 @@
 }
 
 .body-bgimg {
-	background: url(../img/course/head-bgimg.png) no-repeat 1px -541px;
+	background: url(../img/course/head-bgimg.png) no-repeat 1px -635px;
 	-webkit-background-size: cover;
 	background-size: cover;
 	width: 100%;
 	height: 800px;
 	overflow: hidden;
 }
-
+.body-bgimg p{
+	text-align: center;
+	font-size: 24px;
+	color: #2D2D2D;
+	margin-top: 20px;
+}
+.body-bgimg p:nth-child(1){
+	margin-top: 500px;
+}
 
 /*
  * 橘子高级方案CSS
