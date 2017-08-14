@@ -17,8 +17,40 @@
 		<link rel="stylesheet" href="css/anniu/anniu1.css" />
         <link rel="stylesheet" href="css/focus-team.css" />
         <link rel="stylesheet" href="css/focus-team-bottom.css" />
+		<!--<link rel="stylesheet" href="css/modal-btn.css">-->
 		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<!-- 模态框按钮样式 -->
+		<style type="text/css">
+			.modal-content {
+				border: none;
+				box-shadow: none;
+				background: transparent;
+				top: 80px;
+			}
+			.close-btn {
+				width: 36px;
+				height: 36px;
+				background-color: transparent;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+				position: relative;
+				right: 88px;
+				bottom: -151px;
+				cursor: pointer;
+				z-index: 2;
+				transition: all .3s;
+				font-size: 28px;
+				color: #000;
+			}
+			.close-btn:hover {
+				background-color: rgba(255, 255, 255, .2);
+			}
+		</style>
+		<!-- /模态框按钮样式 -->
+
 	</head>
 
 	<body>
@@ -238,7 +270,9 @@
                                         </p>
                                         <div class="btn">
                                             <button type="button" onclick="window.open('./views/page1.html')">了解详情</button>
-                                            <button type="button">联系咨询</button>
+											<!-- 模态框按钮 -->
+											<button type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">联系咨询</button>
+											<!-- /模态框按钮 -->
                                         </div>
                                     </div>
                                 </div>
@@ -253,7 +287,9 @@
                                         </p>
                                         <div class="btn">
                                             <button type="button" onclick="window.open('./views/page7.html')">了解详情</button>
-                                            <button type="button">联系咨询</button>
+											<!-- 模态框按钮 -->
+											<button type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">联系咨询</button>
+											<!-- /模态框按钮 -->
                                         </div>
                                     </div>
                                 </div>
@@ -272,7 +308,9 @@
                                         </p>
                                         <div class="btn">
                                             <button type="button" onclick="window.open('./views/page5.html')">了解详情</button>
-                                            <button type="button">联系咨询</button>
+											<!-- 模态框按钮 -->
+											<button type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">联系咨询</button>
+											<!-- /模态框按钮 -->
                                         </div>
                                     </div>
                                 </div>
@@ -287,7 +325,9 @@
                                         </p>
                                         <div class="btn">
                                             <button type="button" onclick="window.open('./views/page6.html')">了解详情</button>
-                                            <button type="button">联系咨询</button>
+											<!-- 模态框按钮 -->
+											<button type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">联系咨询</button>
+											<!-- /模态框按钮 -->
                                         </div>
                                     </div>
                                 </div>
@@ -311,7 +351,9 @@
                                         </p>
                                         <div class="btn">
                                             <button type="button" onclick="window.open('./views/page8.html')">了解详情</button>
-                                            <button type="button">联系咨询</button>
+											<!-- 模态框按钮 -->
+											<button type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">联系咨询</button>
+											<!-- /模态框按钮 -->
                                         </div>
                                     </div>
                                 </div>
@@ -326,7 +368,9 @@
                                         </p>
                                         <div class="btn">
                                             <button type="button" onclick="window.open('./views/page4.html')">了解详情</button>
-                                            <button type="button">联系咨询</button>
+											<!-- 模态框按钮 -->
+											<button type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">联系咨询</button>
+											<!-- /模态框按钮 -->
                                         </div>
                                     </div>
                                 </div>
@@ -345,7 +389,9 @@
                                         </p>
                                         <div class="btn">
                                             <button type="button" onclick="window.open('./views/page3.html')">了解详情</button>
-                                            <button type="button">联系咨询</button>
+											<!-- 模态框按钮 -->
+											<button type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">联系咨询</button>
+											<!-- /模态框按钮 -->
                                         </div>
                                     </div>
                                 </div>
@@ -360,7 +406,9 @@
                                         </p>
                                         <div class="btn">
                                             <button type="button" onclick="window.open('./views/page2.html')">了解详情</button>
-                                            <button type="button">联系咨询</button>
+											<!-- 模态框按钮 -->
+											<button type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">联系咨询</button>
+											<!-- /模态框按钮 -->
                                         </div>
                                     </div>
                                 </div>
@@ -387,6 +435,17 @@
 
 			</div>
 			<!-- /子页面主体区域 -->
+
+			<!-- 模态框 -->
+			<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content text-center">
+						<img src="./img/modal.png" alt="">
+						<button type="button" class="close-btn close" data-dismiss="modal" aria-label="Close"></button>
+					</div>
+				</div>
+			</div>
+			<!-- /模态框 -->
 
 			<!-- 页面底部 -->
 			<footer>
