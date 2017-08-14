@@ -33,12 +33,61 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1106px #fff inset;
 }
 
+/* 头部轮播部分 */
 .header-banner {
     background: url("../img/index/banner.jpg") no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
     width: 100%;
     height: 885px;
+}
+
+/* 前言部分背景图 */
+.preface {
+    background: url("../img/index/bg.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 1087px;
+    position: relative;
+}
+
+/* 前言部分背景图文字 */
+.preface .txt {
+    position: absolute;
+    left: 290px;
+    bottom: 172px;
+}
+
+.preface .txt p {
+    color: #2d2d2d;
+}
+
+.preface .txt .title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 56px;
+    height: 56px;
+    text-align: center;
+}
+
+.preface .txt .subtitle {
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    color: #fd3232;
+    text-align: center;
+}
+
+.preface .txt .para {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.preface .txt .para p {
+    height: 40px;
+    line-height: 20px;
 }
 
 /* 页面主体 */
