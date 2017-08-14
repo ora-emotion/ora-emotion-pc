@@ -92,29 +92,6 @@ a:hover {
   font-size: 32px;
   line-height: 52px;
 }
-.child-page .module.module-01 .module-title .line {
-  width: 100%;
-  border-top: 2px solid #d6d5d5;
-  position: relative;
-  top: 66px;
-}
-.child-page .module.module-01 .module-title .txt {
-  width: 323px;
-  margin: 0 auto;
-  position: relative;
-  bottom: -38px;
-  color: #2d2d2d;
-  background: url("../img/save-marriage/title-icon01.png") no-repeat center 8px;
-}
-.child-page .module.module-01 .module-title .txt h2 {
-  font-size: 40px;
-  font-weight: bold;
-  padding-bottom: 14px;
-}
-.child-page .module.module-01 .module-title .txt p {
-  font-size: 14px;
-  letter-spacing: 2px;
-}
 .child-page .module.module-01 .bg.bot {
   width: 100%;
   border: 3px solid #2d2d2d;
