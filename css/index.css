@@ -1369,12 +1369,12 @@ input:-webkit-autofill {
 	height: 200px;
 	overflow: hidden;
 	padding:3px;
+    border: 2px solid #c1c1c1;
 }
 .scroll-text-long ul {
 	width: 800px;
 	height: 240px;
 	overflow: hidden;
-	margin: 0;
 }
 .scroll-text-long ul li {
 	height: 1.5em;
