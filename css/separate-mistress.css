@@ -702,6 +702,33 @@
 	height: 100%;
 }
 
+.body9-right-ul1 li,
+.body9-right-ul2 li {
+	position: relative;
+}
+
+.body9-right-ul1 li .tip,
+.body9-right-ul2 li .tip {
+	font-size: 24px;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	width: 261px;
+	height: 0;
+	line-height: 45px;
+	background: rgba(0, 0, 0, .3);
+	opacity: 0;
+	transition: all .3s;
+}
+
+.body9-right-ul1 li:hover .tip,
+.body9-right-ul2 li:hover .tip {
+	height: 45px;
+	opacity: 1;
+}
+
 @media only screen and (max-width: 1699px) {
 	.body91 {
 		padding-top: 180px;

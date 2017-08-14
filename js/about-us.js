@@ -9,7 +9,10 @@ $(document).ready(function() {
 	$(".rli4").css("display","none");
 	$(".rli5").css("display","none");
 	$(".rli6").css("display","none");
-	$(".lli1").css("color","#FF3232");
+    $(".body1 .left ul li").css({
+        "color": "#fff"
+    });
+    $(".lli1").css("color","#FF3232");
 	$(".lli1").mouseover(function(){
 		$(".rli1").css("display","block");
 		$(".rli2").css("display","none");
@@ -124,13 +127,13 @@ function moduleSix() {
     var moduleSixTopItem = $(".module-06 .main .top .main-inner .item");
 
     function changeIcons() {
-        moduleSixTopItem.mouseover(function (event) {
-            $(this).children("div.icon").animate({
+        moduleSixTopItem.children("div.icon").mouseover(function (event) {
+            $(this).animate({
                 "backgroundPositionY": "-142px"
             }, 300);
         });
-        moduleSixTopItem.mouseleave(function () {
-            $(this).children("div.icon").animate({
+        moduleSixTopItem.children("div.icon").mouseleave(function () {
+            $(this).animate({
                 "backgroundPositionY": "0"
             }, 300);
         });
@@ -140,14 +143,12 @@ function moduleSix() {
 
     var item = $(".module-06 .main .bot .main-inner .item");
 
-    // function addShadow() {
-    //     item.mouseover(function () {
-    //         $(this).children("div").animate({
-    //
-    //         });
-    //     });
-    // }
-    // addShadow();
+    //--> 获取‘立刻咨询’按钮
+    var askBtn = $(".button_base div");
+    //--> 点击‘立刻咨询’按钮打开‘权威专家’页面
+    askBtn.click(function () {
+        window.open("./focus-team.html");
+    });
 
 }
 moduleSix();

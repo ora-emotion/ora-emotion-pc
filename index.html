@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="css/lianxi.css" />
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/anniu/anniu1.css" />
+		<link rel="stylesheet" href="css/modal-btn.css">
 		<style type="text/css">
 			@media (max-width: 1190px) {
 				footer {
@@ -334,7 +335,7 @@
 								<div class="name">嘉伟</div>
 								<div class="info">橘子情感创始人、首席主导师</div>
 								<div class="des">导师寄语：每一段真挚的感情，都值得被祝福；感情中最可怕不是不爱了，而是爱错了方式，让双方抱憾终生。</div>
-								<div class="button_base b06_skewed_slide_in">
+								<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page1.html')">
 									<div>定制方案</div>
 									<div></div>
 									<div>定制方案</div>
@@ -347,7 +348,7 @@
 								<div class="name">茉言</div>
 								<div class="info">前世纪佳缘金牌红娘，高级形象设计师</div>
 								<div class="des">导师寄语：因为每一次爱情都是刻骨铭心的，但是实际和幻想的偏差，是很多人一生无法逾越的鸿沟。你缺乏的不是缘分，而是方法。</div>
-								<div class="button_base b06_skewed_slide_in">
+								<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page2.html')">
 									<div>定制方案</div>
 									<div></div>
 									<div>定制方案</div>
@@ -360,7 +361,7 @@
 								<div class="name">阿苏</div>
 								<div class="info">首席挽回专家，浙江大学教育学博士</div>
 								<div class="des">导师寄语：走在路上，感触太多，累过，笑过，或许正是这份责任和被寄托的希望，才是我们不断前行的动力。</div>
-								<div class="button_base b06_skewed_slide_in">
+								<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page4.html')">
 									<div>定制方案</div>
 									<div></div>
 									<div>定制方案</div>
@@ -373,7 +374,7 @@
 								<div class="name">杰妮</div>
 								<div class="info">资深情感专家，女性心理与行为侧写师</div>
 								<div class="des">导师寄语：不要做无用功，发现问题的本质才是解决问题的唯一方式。</div>
-								<div class="button_base b06_skewed_slide_in">
+								<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page7.html')">
 									<div>定制方案</div>
 									<div></div>
 									<div>定制方案</div>
@@ -383,10 +384,10 @@
 						<div class="swiper-slide">
 							<img src="img/index/5.png" alt="">
 							<div class="txt text-left">
-								<div class="name">千芜</div>
+								<div class="name">千无</div>
 								<div class="info">国内首批情感挽回专家，权威进化心理学教授</div>
 								<div class="des">导师寄语：通向幸福的路也许有千万条，也许你认为每一条都荆棘满布，但我会用我的专业与真诚，引领你寻找到幸福的捷径。</div>
-								<div class="button_base b06_skewed_slide_in">
+								<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page6.html')">
 									<div>定制方案</div>
 									<div></div>
 									<div>定制方案</div>
@@ -399,7 +400,7 @@
 								<div class="name">浩宇</div>
 								<div class="info">国家二级心理咨询师，长期关系维护专家</div>
 								<div class="des">导师寄语：表达想法的能力，和想法本身，一样重要。大道至简，知易行难，希望用我的知识和经验，带你走向本该属于你的幸福。</div>
-								<div class="button_base b06_skewed_slide_in">
+								<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page3.html')">
 									<div>定制方案</div>
 									<div></div>
 									<div>定制方案</div>
@@ -540,11 +541,11 @@
 						<ul>
 							<li>
 								<img src="img/index/02.png" />
-								<a href="##" target="_blank" style="margin-left: 10px;">青岛市南区区长，亲临视察工作</a>
+								<a href="news/new3.html" target="_blank" style="margin-left: 10px;">青岛市南区区长，亲临视察工作</a>
 							</li>
 							<li>
 								<img src="img/index/02.png" />
-								<a href="##" target="_blank" style="margin-left: 10px;">青岛市南区区长，亲临视察工作</a>
+								<a href="news/new3.html" target="_blank" style="margin-left: 10px;">青岛市南区区长，亲临视察工作</a>
 							</li>
 						</ul>
 					</div>
@@ -812,43 +813,47 @@
 				<ul class="ul2">
 					<li class="li21">
 						<div class="back">
-							<div class="button_base b06_skewed_slide_in">
-								<div>马上咨询</div>
-								<div></div>
-								<div>马上咨询</div>
-							</div>
+							<!-- 模态框按钮 -->
+							<div type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">马上咨询</div>
+							<!-- /模态框按钮 -->
 						</div>
 					</li>
 					<li class="li22">
 						<div class="back">
-							<div class="button_base b06_skewed_slide_in">
-								<div>预约专家</div>
-								<div></div>
-								<div>预约专家</div>
-							</div>
+							<!-- 模态框按钮 -->
+							<div type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">定制方案</div>
+							<!-- /模态框按钮 -->
 						</div>
 					</li>
 					<li class="li23">
 						<div class="back">
-							<div class="button_base b06_skewed_slide_in">
-								<div>定制方案</div>
-								<div></div>
-								<div>定制方案</div>
-							</div>
+							<!-- 模态框按钮 -->
+							<div type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">定制方案</div>
+							<!-- /模态框按钮 -->
 						</div>
 					</li>
 					<li class="li24">
 						<div class="back">
-							<div class="button_base b06_skewed_slide_in">
-								<div>咨询保障</div>
-								<div></div>
-								<div>咨询保障</div>
-							</div>
+							<!-- 模态框按钮 -->
+							<div type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">咨询保障</div>
+							<!-- /模态框按钮 -->
 						</div>
 					</li>
 				</ul>
+
 			</div>
 		</div>
+
+		<!-- 模态框 -->
+		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content text-center">
+					<img src="./img/modal.png" alt="">
+					<button type="button" class="close-btn close" data-dismiss="modal" aria-label="Close"></button>
+				</div>
+			</div>
+		</div>
+		<!-- /模态框 -->
 
 		<!-- 页面底部 -->
 		<footer>
@@ -892,7 +897,7 @@
 		</div>
 		<!-- javascript -->
 		<!--<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>-->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
 		<script type="text/javascript" src="js/jquery-runbanner.js"></script>
 		<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 		<script type="text/javascript" src="js/Carousel.js"></script>
@@ -910,24 +915,6 @@
 			});
 		</script>
 		<script type="text/javascript">
-			/* 右侧导航 */
-			$(function() {
-				// 悬浮窗口
-				$(".yb_conct").hover(function() {
-					$(".yb_conct").css("right", "5px");
-					$(".yb_bar .yb_ercode").css('height', '200px');
-				}, function() {
-					$(".yb_conct").css("right", "-127px");
-					$(".yb_bar .yb_ercode").css('height', '53px');
-				});
-				// 返回顶部
-				$(".yb_top").click(function() {
-					$("html,body").animate({
-						'scrollTop': '0px'
-					}, 300)
-				});
-			});
-
 			/* 轮播图 */
 			$(document).ready(function() {
 				$('.flexslider').flexslider({
@@ -937,11 +924,12 @@
 			});
 		</script>
 		<!-- /javascript -->
+        <script type="text/javascript" src="js/common.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript">
 			/* 导师团队轮播图 */
 			var mySwiper = new Swiper('.swiper-container', {
-				autoplay: 5000,
+				autoplay: 10000,
 				prevButton: '.swiper-button-prev',
 				nextButton: '.swiper-button-next',
 				loop: true,
