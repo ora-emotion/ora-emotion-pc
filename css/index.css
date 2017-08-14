@@ -654,6 +654,10 @@ input:-webkit-autofill {
     margin-bottom: 120px;
 }
 
+.service-guarantee .service-top .mid .list {
+	height: 300px;
+}
+
 .service-guarantee .service-top .mid .list p {
     color: #2d2d2d;
     font-size: 20px;
