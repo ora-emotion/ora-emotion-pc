@@ -18,6 +18,22 @@
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/anniu/anniu1.css" />
 		<link rel="stylesheet" href="css/modal-btn.css">
+
+        <style type="text/css">
+            .modal-btn {
+                margin: 0 50px 0 0;
+                border: 1px solid #2d2d2d;
+            }
+            /* 橘子冬天链接样式 */
+            .txt-hover a {
+                color: #fff;
+                transition: color .3s;
+            }
+            .txt-hover:hover a {
+                color: #fd3232;
+            }
+        </style>
+
 		<style type="text/css">
 			@media (max-width: 1190px) {
 				footer {
@@ -268,8 +284,10 @@
 							<h3 style="margin-top: 0px;">挽回爱情</h3>
 							<p>你时候曾经因为自己的过失，而失去爱情，想放弃，是因为对方决绝的样子让你无能为力。想挽回，却又无从下手。</p>
 							<div class="btn text-center">
-								<button type="button">立刻咨询</button>
-								<a href="save-love.html"><button type="button">了解详情</button></a>
+                                <!-- 模态框按钮 -->
+                                <div type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">立刻咨询</div>
+                                <!-- /模态框按钮 -->
+                                <div type="button" class="modal-btn" onclick="window.open('./save-love.html')">了解详情</div>
 							</div>
 						</div>
 					</div>
@@ -281,8 +299,10 @@
 							<h3>挽救婚姻</h3>
 							<p>婚姻，不是个人人性的舞台，而是一份责任，是一生的牵绊。而如今，婚姻生活频频出现危机。婚姻保卫战，就此打响。</p>
 							<div class="btn">
-								<button type="button">立刻咨询</button>
-								<a href="save-marriage.html"><button type="button">了解详情</button></a>
+                                <!-- 模态框按钮 -->
+                                <div type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">立刻咨询</div>
+                                <!-- /模态框按钮 -->
+                                <div type="button" class="modal-btn" onclick="window.open('./save-marriage.html')">了解详情</div>
 							</div>
 						</div>
 					</div>
@@ -294,8 +314,10 @@
 									<p>原本拥有甜蜜未来的二人世界，却因为对方的一时冲动，因为一个不和谐因素的介入，荡然无存。你歇斯底里，孤立无助，都无法回到过去。</p>
 								</div>
 								<div class="btn">
-									<button type="button">立刻咨询</button>
-									<a href="separate-mistress.html"><button type="button">了解详情</button></a>
+                                    <!-- 模态框按钮 -->
+                                    <div type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">立刻咨询</div>
+                                    <!-- /模态框按钮 -->
+                                    <div type="button" class="modal-btn" onclick="window.open('./separate-mistress.html')">了解详情</div>
 								</div>
 							</div>
 						</div>
@@ -311,8 +333,10 @@
 							<h3>定制爱情</h3>
 							<p>你寻寻觅觅终于遇到那个让你心动的 TA，激起了你心底里那份对幸福的憧憬。但你却因为不知道怎么追，担心白白错过一生的幸福。</p>
 							<div class="btn">
-								<button type="button">立刻咨询</button>
-								<a href="custom-love.html"><button type="button">了解详情</button></a>
+                                <!-- 模态框按钮 -->
+                                <div type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">立刻咨询</div>
+                                <!-- /模态框按钮 -->
+                                <div type="button" class="modal-btn" onclick="window.open('./custom-love.html')">了解详情</div>
 							</div>
 						</div>
 					</div>
@@ -475,19 +499,19 @@
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox">
 							<div class="item active">
-								<img src="img/index/01dtlb.png" alt="暖爱计划" />
+								<img src="img/index/01dtlb.png" style="cursor:pointer;" onclick="window.open('./news/new6.html')" alt="暖爱计划" />
 								<div class="carousel-caption">
 
 								</div>
 							</div>
 							<div class="item">
-								<img src="img/index/02dtlb.png" alt="市南区区长视察工作" />
+								<img src="img/index/02dtlb.png" style="cursor: pointer;" onclick="window.open('./news/new3.html')" alt="市南区区长视察工作" />
 								<div class="carousel-caption">
 
 								</div>
 							</div>
 							<div class="item">
-								<img src="img/index/03dtlb.png" alt="媒体采访" />
+								<img src="img/index/03dtlb.png" style="cursor: pointer;" onclick="window.open('./news/new5.html')" alt="媒体采访" />
 								<div class="carousel-caption">
 
 								</div>
@@ -498,29 +522,29 @@
 						<div class="inner">
 							<ul>
 								<li class="xinwen-li1">
-									<a href="##"><img src="img/index/1.jpg" /></a>
-									<div class="txt">
-										<h2><a href="##">业内导师交流培训会</a></h2>
+									<a href="./news/new9.html"><img src="img/index/1.jpg" /></a>
+									<div class="txt txt-hover">
+										<h2><a href="./news/new9.html" target="_blank">社会各界人士交流会</a></h2>
 										<p>
-											<a href="##">"国家婚恋咨询师培植讲堂"交流会</a>
+											<a href="./news/new9.html" target="_blank">"国家婚恋咨询师培植讲堂"交流会</a>
 										</p>
 									</div>
 								</li>
 								<li class="xinwen-li2">
-									<a href="##"><img src="img/index/2.jpg" /></a>
-									<div class="txt">
-										<h2><a href="##">十大杰出诚信企业表彰大会</a></h2>
+									<a href="./news/new2.html"><img src="img/index/2.jpg" /></a>
+									<div class="txt txt-hover">
+										<h2><a href="./news/new2.html" target="_blank">十大杰出诚信企业</a></h2>
 										<p>
-											<a href="##">被评为十大杰出诚信企业</a>
+											<a href="./news/new2.html" target="_blank">被评为十大杰出诚信企业</a>
 										</p>
 									</div>
 								</li>
 								<li class="xinwen-li3">
-									<a href="##"><img src="img/index/3.jpg" /></a>
-									<div class="txt">
-										<h2><a href="##">"暖爱计划"全国公益巡讲</a></h2>
+									<a href="./news/new6.html"><img src="img/index/3.jpg" /></a>
+									<div class="txt txt-hover">
+										<h2><a href="./news/new6.html" target="_blank">“暖爱计划”婚恋知识公益讲座报道</a></h2>
 										<p>
-											<a href="##">"暖爱计划"全国公益巡讲--上海站</a>
+											<a href="./news/new6.html" target="_blank">"暖爱计划"全国公益巡讲--上海站</a>
 										</p>
 									</div>
 								</li>
@@ -553,11 +577,11 @@
 						<ul>
 							<li>
 								<img src="img/index/02.png" />
-								<a href="##" target="_blank" style="margin-left: 10px;">主导师团队分析学院情况以及制定方案</a>
+								<a href="news/new13.html" target="_blank" style="margin-left: 10px;">主导师团队分析学院情况以及制定方案</a>
 							</li>
 							<li>
 								<img src="img/index/02.png" />
-								<a href="##" target="_blank" style="margin-left: 10px;">主导师团队分析学院情况以及制定方案</a>
+								<a href="news/new13.html" target="_blank" style="margin-left: 10px;">主导师团队分析学院情况以及制定方案</a>
 							</li>
 						</ul>
 					</div>
@@ -565,11 +589,11 @@
 						<ul>
 							<li>
 								<img src="img/index/02.png" />
-								<a href="##" target="_blank" style="margin-left: 10px;">学员赵女士送来锦旗以及最诚挚的感谢</a>
+								<a href="news/new8.html" target="_blank" style="margin-left: 10px;">学员赵女士送来锦旗以及最诚挚的感谢</a>
 							</li>
 							<li>
 								<img src="img/index/02.png" />
-								<a href="##" target="_blank" style="margin-left: 10px;">学员赵女士送来锦旗以及最诚挚的感谢</a>
+								<a href="news/new8.html" target="_blank" style="margin-left: 10px;">学员赵女士送来锦旗以及最诚挚的感谢</a>
 							</li>
 						</ul>
 					</div>

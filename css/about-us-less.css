@@ -234,14 +234,8 @@ a:hover {
   margin: 24px 0;
   width: 265px;
 }
-.child-page .module.module-06 .main .bot .main-inner .item .btn .button_base {
+.child-page .module.module-06 .main .bot .main-inner .item .btn .modal-btn {
   margin: 0 auto;
-}
-.child-page .module.module-06 .main .bot .main-inner .item .btn .button_base div:nth-child(1) {
-  cursor: pointer;
-}
-.child-page .module.module-06 .main .bot .main-inner .item .btn .button_base div:nth-child(3) {
-  cursor: pointer;
 }
 .child-page .module.module-07 .module-title .txt {
   width: 403px;
