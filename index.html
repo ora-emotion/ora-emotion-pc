@@ -897,7 +897,7 @@
 		</div>
 		<!-- javascript -->
 		<!--<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>-->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
 		<script type="text/javascript" src="js/jquery-runbanner.js"></script>
 		<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 		<script type="text/javascript" src="js/Carousel.js"></script>
@@ -915,24 +915,6 @@
 			});
 		</script>
 		<script type="text/javascript">
-			/* 右侧导航 */
-			$(function() {
-				// 悬浮窗口
-				$(".yb_conct").hover(function() {
-					$(".yb_conct").css("right", "5px");
-					$(".yb_bar .yb_ercode").css('height', '200px');
-				}, function() {
-					$(".yb_conct").css("right", "-127px");
-					$(".yb_bar .yb_ercode").css('height', '53px');
-				});
-				// 返回顶部
-				$(".yb_top").click(function() {
-					$("html,body").animate({
-						'scrollTop': '0px'
-					}, 300)
-				});
-			});
-
 			/* 轮播图 */
 			$(document).ready(function() {
 				$('.flexslider').flexslider({
@@ -942,6 +924,7 @@
 			});
 		</script>
 		<!-- /javascript -->
+        <script type="text/javascript" src="js/common.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript">
 			/* 导师团队轮播图 */
