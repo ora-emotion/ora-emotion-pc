@@ -33,6 +33,13 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1106px #fff inset;
 }
 
+.header-banner {
+    background: url("../img/index/banner.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 885px;
+}
 
 /* 页面主体 */
 
