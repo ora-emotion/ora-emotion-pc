@@ -12,8 +12,6 @@
 var moduleOneLi = $(".module-01 .content li");
 //--> 列表标题 moduleOneListTitle
 var moduleOneListTitle = $(".module-01 .content .txt .title");
-//--> 列表段落
-var moduleOneListPara = $(".module-01 .content .txt .para");
 //--> 图片右边的箭头 moduleOneArrow
 var moduleOneArrow = $(".module-01 .content li svg.arrow");
 //--> 列表前面的数字符号 moduleOnelistNum
@@ -25,44 +23,41 @@ var pic = $(".module-01 .content .pics-group img");
 
 /* 模块一动效 */
 function moduleOne() {
-    // moduleOneListTitle
-    moduleOneLi.mouseover(function () {
+    moduleOneListTitle.mouseover(function () {
         //--> 获取当前 li 元素的下标 listIndex
-        var listIndex = $(this).index();
+        var listIndex = $(this).parent().parent().index();
 
         //--> 当前元素的兄弟元素恢复为原来的颜色
-        $(this).siblings().find(".txt .title").css({
+        moduleOneLi.find(".txt .title").css({
             "color": "#2d2d2d"
         });
 
-        //--> 当前元素中标题的文字变为红色
-        $(this).find(".txt .title").css({
+        //--> 当前元素的文字变为红色
+        $(this).css({
             "color": "#fd3232"
         });
         //--> 当前 li 的兄弟元素下的小箭头隐藏 - 不透明度 0
-        $(this).siblings().find("svg.arrow").animate({
+        $(moduleOneLi[listIndex]).siblings().find("svg.arrow").animate({
             "opacity": "0"
         }, 300);
 
+
         //--> 当前 li 下的小箭头显示 - 不透明度 1
-        $(this).find("svg.arrow").animate({
+        $(moduleOneLi[listIndex]).find("svg.arrow").animate({
             "opacity": "1"
         }, 300);
+
+
+        // console.log($(pic[listIndex]).siblings());
 
         $(pic[listIndex]).siblings().css({
             "display": "none"
         });
-        $(pic[listIndex+1]).css({
+        $(pic[listIndex]).css({
             "display": "block",
             "opacity": "1"
         });
-    });
 
-    moduleOneListTitle.mouseover(function (event) {
-        event.stopPropagation();
-    });
-    moduleOneListPara.mouseover(function (event) {
-        event.stopPropagation();
     });
 
 }
