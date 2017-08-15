@@ -1,0 +1,7 @@
+{
+  "recommendList": "橘子推荐",
+  "img": [
+    {"src": "../img/emotion-forum/news-pic.jpg"},
+    {"class": "pic-right"}
+  ]
+}
