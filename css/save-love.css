@@ -90,7 +90,11 @@
 	padding-top: 100px;
 	padding-left: 9%;
 }
-
+@media only screen and (max-width: 1199px) {
+	.body2 .body2_1 ul {
+		padding-top: 20px;
+	}
+}
 .body2 .body2_1 ul li {
 	float: left;
 	width: 18%;
@@ -392,6 +396,11 @@
 	padding-right: 25%;
 	margin-top: 5%;
 	color: #F5F5F5;
+}
+@media only screen and (max-width: 1199px) {
+	.body6-zhuti {
+		padding-top: 50px;
+	}
 }
 
 .body6-zhuti h4 {
