@@ -132,3 +132,32 @@ h3{
 .right1 a:hover{
 	color: #2D2D2D;
 }
+
+
+
+.pic-right {
+	margin-bottom: 10px;
+}
+.bold {
+	font-weight: bold;
+}
+.jieshao img {
+	display: block;
+	width: 340px;
+}
+header .pull-right .txt {
+	position: relative;
+	top: -10px;
+	margin-left: 0;
+}
+header .pull-right .txt p {
+	color: #2d2d2d;
+	height: 0;
+}
+header .pull-right .txt p:first-child {
+	line-height: 0;
+	font-size: 16px;
+}
+header .pull-right .txt p:nth-child(2) {
+	font-size: 16px;
+}

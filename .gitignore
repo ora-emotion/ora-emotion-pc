@@ -22,4 +22,7 @@ media/
 
 node_modules/
 
+data/
+
 progress.md
+prepare.md
