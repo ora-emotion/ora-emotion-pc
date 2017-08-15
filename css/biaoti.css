@@ -15,6 +15,7 @@
   width: 45%;
   top: 10px;
 }
+
 .biaoti4 img:nth-child(1) {
   left: 0;
   margin-right: 10px;
@@ -251,4 +252,38 @@
 .biaoti11 p {
   color: #CCCCCC;
   letter-spacing: 2px;
+}
+
+
+
+
+
+/*
+ * 手机端样式
+ */
+@media only screen and (max-width: 1199px) {
+	.biaoti4 img{
+  		width: 43.5%;
+	}
+	.biaoti5 img{
+  		width: 42%;
+	}
+	.biaoti6 img{
+  		width: 41%;
+	}
+	.biaoti7 img{
+  		width: 40%;
+	}
+	.biaoti8 img{
+  		width: 38%;
+	}
+	.biaoti9 img{
+  		width: 37%;
+	}
+	.biaoti10 img{
+  		width: 35.5%;
+	}
+	.biaoti11 img{
+  		width: 34%;
+	}
 }

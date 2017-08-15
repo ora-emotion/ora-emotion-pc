@@ -88,8 +88,9 @@
 }
 
 .body3 ul li {
-	width: 12.5%;
-	padding-top: 150px;
+	width: 15.3%;
+	height: 400px;
+	margin-top: 150px;
 }
 
 .body3 ul li p {
@@ -97,9 +98,12 @@
 	color: #F0F0F0;
 	text-align: center;
 	font-weight: 500;
-	padding-left: 50px;
 }
-
+@media only screen and (max-width: 1199px) {
+	.body3 ul li p {
+		padding-left: 50px;
+	}
+}
 .body3 ul li p:nth-child(2) {
 	margin-top: 20px;
 }
