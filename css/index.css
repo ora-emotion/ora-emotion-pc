@@ -54,9 +54,18 @@ input:-webkit-autofill {
 
 /* 前言部分背景图文字 */
 .preface .txt {
-    position: absolute;
-    left: 290px;
-    bottom: 172px;
+	position: absolute;
+	bottom: 172px;
+}
+@media (max-width: 1199px) {
+	.preface .txt {
+		left: 90px;
+	}
+}
+@media (min-width: 1200px) {
+	.preface .txt {
+		left: 290px;
+	}
 }
 
 .preface .txt p {
