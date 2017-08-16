@@ -558,13 +558,28 @@ input:-webkit-autofill {
     display: flex;
 }
 .xinwen-li1{
-	padding-top: 20px;
-}
-.xinwen-li2{
 	margin-top: -30px;
 }
+.xinwen-li2{
+	margin-top: -80px;
+}
 .xinwen-li3{
-	margin-top: -40px;
+	margin-top: -90px;
+}
+@media only screen and (max-width: 1199px) {
+	.xinwen-li1{
+		margin-top: 50px;
+	}
+	.xinwen-li2{
+		margin-top: 30px;
+	}
+	.xinwen-li3{
+		margin-top: 30px;
+	}
+	.body2 .left1 .xinwen .inner ul li .txt h2{
+   		padding-left: 0px;
+    	font-size: 26px;
+	}
 }
 .body2 .left1 .xinwen .inner ul li .txt {
     padding-left: 20px;

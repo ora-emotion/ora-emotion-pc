@@ -291,9 +291,13 @@
 .body6-top-left-left p {
 	padding-top: 15px;
 	padding-left: 20px;
-	font-size: 17px;
+	font-size: 18px;
 }
-
+.body6-top-left-left p span{
+	display: block;
+	width: 100%;
+	padding-left: 17px;
+}
 .body6-top-left-right {
 	background: url(../img/separate-mistress/good-at-separating-img1.png) center center no-repeat;
 	width: 50%;
@@ -346,7 +350,7 @@
 .body6-top-right-right p {
 	padding-top: 15px;
 	padding-left: 0px;
-	font-size: 17px;
+	font-size: 18px;
 }
 
 .body6-top-right-left {
@@ -407,9 +411,15 @@
 .body6-bottom-left-left p {
 	padding-top: 15px;
 	padding-left: 20px;
-	font-size: 17px;
+	font-size: 18px;
 }
-
+.body6-bottom-left-left p .span1{
+	width: 100%;
+}
+.body6-bottom-left-left p .span2{
+	display: block;
+	margin-right: 0;
+}
 .body6-bottom-left-right {
 	background: url(../img/separate-mistress/good-at-separating-img3.png) center center no-repeat;
 	width: 50%;
@@ -462,7 +472,7 @@
 .body6-bottom-right-right p {
 	padding-top: 15px;
 	padding-left: 0px;
-	font-size: 17px;
+	font-size: 18px;
 }
 
 .body6-bottom-right-left {
