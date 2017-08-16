@@ -22,5 +22,7 @@ media/
 
 node_modules/
 
+md/
+
 progress.md
 prepare.md
