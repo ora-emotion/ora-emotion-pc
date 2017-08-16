@@ -221,6 +221,9 @@ a:link {
   padding-left: 10px;
   margin-bottom: 12px;
 }
+.child-page .module.module-01 .main .bot .part .item-group {
+  display: none;
+}
 .child-page .module.module-01 .main .bot .part .item-group .item {
   display: flex;
   justify-content: space-between;
@@ -265,6 +268,9 @@ a:link {
 .child-page .module.module-01 .main .bot .part .item-group .item:last-child {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 82px;
+}
+.child-page .module.module-01 .main .bot .part .item-group.active {
+  display: block;
 }
 .child-page .module.module-01 .main .bot .part:last-child .item:last-child {
   border-bottom: none;
