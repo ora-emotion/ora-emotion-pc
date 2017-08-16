@@ -151,7 +151,6 @@ a:hover {
   background-size: cover;
 }
 .child-page .module.module-06 .main .top .main-inner {
-  margin-top: 75px;
   display: flex;
   justify-content: space-between;
   padding: 80px 0;
@@ -242,7 +241,7 @@ a:hover {
   background: url("../img/about-us/title-icon03.png") no-repeat center 8px;
 }
 .child-page .module.module-07 .main {
-  margin: 75px auto 0;
+  margin: 0 auto;
   background: url("../img/about-us/page-bot.jpg") no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;
