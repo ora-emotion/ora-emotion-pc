@@ -39,6 +39,10 @@ function cisRight() {
 
             //--> 插入图片
             var imgWrap = $(".right1 .jieshao span");
+            var picLink = $(".right1 .jieshao span a");
+
+            $(picLink).attr("href", "../course.html");  // 设置 a 标签链接为 "../course.html"
+
             var imgSrc = data.img[0].src;               // 获取图片路径
             var imgClass = data.img[1].class;           // 获取图片类名
 
