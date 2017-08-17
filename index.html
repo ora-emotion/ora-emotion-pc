@@ -950,7 +950,7 @@
 		<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
 
 		<!-- 引入 json 数据 -->
-		<script type="text/javascript" src="js/json/json.js"></script>
+        <script type="text/javascript" src="js/json/json.js"></script>
 
 		<script type="text/javascript" src="js/jquery-runbanner.js"></script>
 		<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
@@ -988,6 +988,10 @@
 				nextButton: '.swiper-button-next',
 				loop: true,
 			});
+
+			/* 二级导航菜单 */
+			var navList = new Ora();
+			navList.navList();
 		</script>
 
 	</body>
