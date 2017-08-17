@@ -4,7 +4,7 @@
 
 function Ora() {
 
-    // 生成二级导航菜单
+    /* 生成二级导航菜单 */
     Ora.prototype.navList = function () {
         // 获取二级菜单列表
         var navList = $(".nav .nav-block li");
@@ -22,4 +22,20 @@ function Ora() {
         });
     };
 
+    /* 页面底部微信公众平台 */
+    Ora.prototype.wechatPlatformTxt = function () {
+        var wechatPlatformTxt = $("footer .main .bot .left p>.wechat-num");
+        $.ajax({
+            type: "GET",
+            url: "data/footer.json",
+            success: function (data) {
+                wechatPlatformTxt.text(data.wechatPlatformTxt);
+            }
+        });
+    }
+
 }
+
+/* 页面底部微信公众平台 */
+var wechatPlatformTxt = new Ora();
+wechatPlatformTxt.wechatPlatformTxt();

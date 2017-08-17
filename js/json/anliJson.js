@@ -56,3 +56,20 @@ function cisRight() {
     });
 }
 cisRight();
+
+function Ora() {
+    /* 页面底部微信公众平台 */
+    Ora.prototype.wechatPlatformTxt = function () {
+        var wechatPlatformTxt = $("footer .main .bot .left p>.wechat-num");
+        $.ajax({
+            type: "GET",
+            url: "../data/footer.json",
+            success: function (data) {
+                wechatPlatformTxt.text(data.wechatPlatformTxt);
+            }
+        });
+    }
+}
+
+var wechatPlatformTxt = new Ora();
+wechatPlatformTxt.wechatPlatformTxt();
