@@ -62,7 +62,7 @@ a:hover {
 }
 /* 模块公共样式 */
 .banner {
-  background: url("../img/about-us/authority-banner.jpg") no-repeat center center;
+  background: url("../img/about-us/authority-banner.png") no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;
   width: 100%;

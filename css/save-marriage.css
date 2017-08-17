@@ -170,6 +170,7 @@ a:hover {
   text-transform: uppercase;
 }
 .child-page .module.module-02 .main {
+  background-color: #FAFAFA;
   position: relative;
 }
 .child-page .module.module-02 .main .content {
