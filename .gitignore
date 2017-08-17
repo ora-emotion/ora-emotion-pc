@@ -16,9 +16,20 @@ js/video/
 
 index-old.html
 images/
-img/
 
 media/
+img/about-us/
+img/cis/
+img/course/
+img/custom-love/
+img/emotion-forum/
+img/focus-team/
+img/index/
+img/news/
+img/save-love/
+img/save-marriage/
+img/separate-mistress
+img/views/
 
 node_modules/
 
@@ -26,3 +37,5 @@ md/
 
 progress.md
 prepare.md
+
+test.html
