@@ -16,7 +16,6 @@ js/video/
 
 index-old.html
 images/
-img/
 
 media/
 
@@ -26,3 +25,5 @@ md/
 
 progress.md
 prepare.md
+
+test.html
