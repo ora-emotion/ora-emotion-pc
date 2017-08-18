@@ -15,6 +15,7 @@ function fixedNav() {
                 "position": "fixed",
                 "top": 0,
                 "z-index": 3,
+                "height": 100,
                 "box-shadow": "2px 2px 2px rgba(0, 0, 0, .5)"
             });
         } else {
