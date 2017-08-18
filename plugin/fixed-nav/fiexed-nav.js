@@ -14,11 +14,13 @@ function fixedNav() {
             $(".nav").css({
                 "position": "fixed",
                 "top": 0,
-                "z-index": 2
+                "z-index": 3,
+                "box-shadow": "2px 2px 2px rgba(0, 0, 0, .5)"
             });
         } else {
             $(".nav").css({
-                "position": ""
+                "position": "",
+                "box-shadow": ""
             });
         }
 
