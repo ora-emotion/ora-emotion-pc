@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="zh-CN">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equivmetahttp-equiv="x-ua-compatible" content="IE=7" />
+    <title>橘子情感--橘子视频</title>
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content=橘子情感/>
+    <meta name="description" content=橘子情感/>
+    <link rel="shortcut icon" href="../img/ora.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/head.css" />
+    <link rel="stylesheet" href="../css/foot.css" />
+    <link rel="stylesheet" href="../css/lianxi.css" />
+    <link rel="stylesheet" href="../css/biaoti.css">
+    <link rel="stylesheet" href="../css/anniu/anniu1.css" />
+
+    <style type="text/css">
+        .video-module {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .video-module .videolist-wrap ul {
+            width: 285px;
+            margin-left: 10px;
+        }
+        .video-module .videolist-wrap li {
+            width: 100%;
+            height: 54.5px;
+            line-height: 55px;
+            border-top: 1px solid #6a6a6a;
+            border-bottom: 1px solid #6a6a6a;
+            background-color: #2d2d2d;
+            color: #585858;
+            cursor: pointer;
+        }
+        .video-module .videolist-wrap .active {
+            color: #fd3232;
+        }
+        .video-module .videolist-wrap li .icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-left: 10px;
+            margin-right: 12px;
+            background: url("../img/video/icon-triangle-gray.png") no-repeat center center;
+        }
+        .video-module .videolist-wrap li.active .icon {
+            background: url("../img/video/icon-triangle-red.png") no-repeat center center;
+        }
+
+        .video-module .video-player {
+            margin-right: 10px;
+        }
+        .video-module .video-player .player {
+            display: none;
+        }
+        .video-module .video-player .player.active {
+            display: block;
+        }
+
+    </style>
+
+    <script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<!-- 页面头部 -->
+<header>
+    <div class="inner">
+        <div class="pull-left">
+            <img src="../img/index/logo-word.jpg" alt="logo" class="img-responsive">
+        </div>
+        <div class="pull-right">
+            <div class="icon">
+                <div class="qrcode-wechat">
+                    <img src="../img/index/icon-wechat-red.jpg" alt="微信二维码">
+                </div>
+                <div class="num-phone">
+                    <img src="../img/index/icon-phone-red.jpg" alt="热线电话">
+                </div>
+            </div>
+            <div class="txt">
+                <p>官方二维码</p>
+                <p>免费情感热线电话</p>
+                <p>4006-299-520</p>
+            </div>
+        </div>
+        <div class="wechat">
+            <img src="../img/index/erwei.jpg" alt="微信二维码">
+        </div>
+    </div>
+</header>
+<!-- /页面头部 -->
+
+<!-- 右侧菜单 -->
+<div class="yb_conct">
+    <div class="yb_bar">
+        <ul>
+            <li class="yb_top">返回顶部</li>
+            <li class="yb_phone">4006-299-520</li>
+            <li class="yb_QQ">
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1301841354&amp;site=qq&amp;menu=yes&amp;from=message&amp;isappinstalled=0" title="即刻发送您的需求">在线咨询</a>
+            </li>
+            <li class="yb_ercode" style="height:53px;">微信公众号 <br>
+                <img class="hd_qr" src="../img/index/weixin.gif" width="180" alt="">
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- /右侧菜单 -->
+
+<!-- 导航菜单-->
+<div class="nav">
+    <div class="inner text-center">
+        <ul class="nav-block">
+            <li>
+                <a href="../index.html">橘子首页</a>
+            </li>
+            <li>
+                <a href="../save-love.html">挽回爱情</a>
+            </li>
+            <li>
+                <a href="../save-marriage.html">挽救婚姻</a>
+            </li>
+            <li>
+                <a href="../separate-mistress.html">分离小三</a>
+            </li>
+            <li>
+                <a href="../custom-love.html">定制爱情</a>
+            </li>
+            <li>
+                <a href="../emotion-forum.html">情感课堂</a>
+            </li>
+            <li>
+                <a href="../focus-team.html">权威专家</a>
+            </li>
+            <li>
+                <a href="../course.html">课程介绍</a>
+            </li>
+            <li class="no">
+                <a href="../about-us.html">关于我们</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- /导航菜单 -->
+
+<!-- 子页面主体区域 -->
+<div class="child-page">
+
+    <!-- 模块标题 -->
+    <div class="biaoti4">
+        <img src="../img/biaoti-left.png" alt="">
+        <span>橘子视频</span>
+        <img src="../img/biaoti-right.png" alt="">
+        <p>Orange videos</p>
+    </div>
+    <!-- /模块标题 -->
+
+    <!-- 模块主体 -->
+    <div class="video-module">
+
+        <!-- 视频列表 -->
+        <div class="videolist-wrap">
+            <ul class="videolist">
+                <li class="active"><i class="icon"></i>预防和分离第三者</li>
+                <li><i class="icon"></i>相亲的注意事项</li>
+                <li><i class="icon"></i>和女生相处时的常见问题</li>
+                <li><i class="icon"></i>挽回的具体操作和技巧</li>
+                <li><i class="icon"></i>挽回心态和心法</li>
+                <li><i class="icon"></i>关于形象建设</li>
+                <li><i class="icon"></i>异地恋处理事项</li>
+                <li><i class="icon"></i>展示面实例讲解</li>
+                <li><i class="icon"></i>长期关系保鲜</li>
+            </ul>
+        </div>
+
+        <!-- 视频 -->
+        <div class="video-player">
+            <div class="video">
+                <video class="player active" width="870" height="490" controls="controls" poster="../img/video/preview.png">
+                    <source src="../media/third-party-intervention.mp4"  type="video/mp4">
+                </video>
+                <video class="player" width="870" height="490" controls="controls">
+                    <source src="../media/about-blind.mp4"  type="video/mp4">
+                </video>
+                <video class="player" width="870" height="490" controls="controls">
+                    <source src="../media/normal-question.mp4"  type="video/mp4">
+                </video>
+                <video class="player" width="870" height="490" controls="controls">
+                    <source src="../media/skills.mp4"  type="video/mp4">
+                </video>
+                <video class="player" width="870" height="490" controls="controls">
+                    <source src="../media/methods.mp4"  type="video/mp4">
+                </video>
+                <video class="player" width="870" height="490" controls="controls">
+                    <source src="../media/face.mp4"  type="video/mp4">
+                </video>
+                <video class="player" width="870" height="490" controls="controls">
+                    <source src="../media/long-distance-love.mp4"  type="video/mp4">
+                </video>
+                <video class="player" width="870" height="490" controls="controls">
+                    <source src="../media/example.mp4"  type="video/mp4">
+                </video>
+                <video class="player" width="870" height="490" controls="controls">
+                    <source src="../media/fresh.mp4"  type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+    </div>
+    <!-- /模块主体 -->
+
+</div>
+<!-- /子页面主体区域 -->
+
+<!-- 页面底部 -->
+<footer>
+    <div class="inner">
+        <div class="triangle">
+            <div class="triangle-outer"></div>
+            <div class="triangle-inner"></div>
+        </div>
+        <div class="main">
+            <div class="footer-logo left"></div>
+            <div class="txt mid">
+                <div class="footer-top">
+							<span class="icon phone footer-mid-left">
+                                        <img src="../img/index/icon-phone-red.png" alt="热线电话">
+                                    </span>
+                    <span class="txt footer-mid-right">
+                                        <p class="phone-txt">橘子情感热线</p>
+                                        <p class="phone-num">4006-299-520</p>
+                                </span>
+                </div>
+                <div class="bot">
+                    <div class="left pull-left">
+                        <p>橘子微信公众平台：<span class="wechat-num">juziqinggan</span></p>
+                        <p>青岛橘子创想文化传播有限公司</p>
+                    </div>
+                    <div class="right pull-right">
+                        <p>公司地址：<span class="address">青岛市市南区银川西路 67 号动漫产业园 A 座 212B</span></p>
+                        <p>备案号：<span class="record-num">鲁 ICP 备 17023741 号</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon qrcode text-center">
+                <div class="qrcode right"></div>
+                <span class="txt">扫一扫关注我们</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /页面底部 -->
+
+<script type="text/javascript" src="../js/common.js"></script>
+<!-- 引入 json 数据 -->
+<!--<script type="text/javascript" src="../js/json/json.js"></script>-->
+<script type="text/javascript">
+    /* 二级导航菜单 */
+    var navList = new Ora();
+    navList.navList();
+
+    /* 橘子视频 */
+    var aLi = $(".videolist li");
+    var videoItem = $("video");
+
+    aLi.click(function () {
+
+        $(this).addClass("active").siblings().removeClass("active");
+        var _index = $(this).index();
+        console.log(_index);
+
+        // 显示当前视频隐藏其他视频
+        $($(videoItem)[_index]).addClass("active").siblings().removeClass("active");
+
+
+        // 播放当前视频，暂停其他视频
+        for (var i = 0; i < videoItem.length; i++) {
+            $(videoItem)[i].pause();
+            $(videoItem)[_index].play();
+        }
+
+    });
+
+    function Ora() {
+
+        /* 生成二级导航菜单 */
+        Ora.prototype.navList = function () {
+            // 获取二级菜单列表
+            var navList = $(".nav .nav-block li");
+            $.ajax({
+                type: "GET",
+                url: "../data/nav.json",
+                success: function (data) {
+                    var i = 0;
+                    // 依次将获取到的对象的属性值插入到 li 元素中的 a 标签里
+                    for (var titleName in data) {
+                        $(navList[i]).children("a").text(data[titleName]);  // 通过方括号语法来访问对象的属性值
+                        i++;
+                    }
+                }
+            });
+        };
+
+        /* 页面底部微信公众平台 */
+        Ora.prototype.wechatPlatformTxt = function () {
+            var wechatPlatformTxt = $("footer .main .bot .left p>.wechat-num");
+            $.ajax({
+                type: "GET",
+                url: "data/footer.json",
+                success: function (data) {
+                    wechatPlatformTxt.text(data.wechatPlatformTxt);
+                }
+            });
+        }
+
+    }
+
+    /* 页面底部微信公众平台 */
+    var wechatPlatformTxt = new Ora();
+    wechatPlatformTxt.wechatPlatformTxt();
+
+</script>
+</body>
+</html>
