@@ -52,6 +52,56 @@ function cisRight() {
 }
 cisRight();
 
+
+
+/* 创建隐藏的二级导航菜单 */
+function createSecNav() {
+
+    // 创建并插入元素
+    var secNavOut = document.createElement("div");
+    $(secNavOut).addClass("sec-nav-hide");
+    $("body").append(secNavOut);
+    // 创建并插入元素
+    var secNavInner = document.createElement("div");
+    $(secNavInner).addClass("sec-nav-inner");
+    $(secNavOut).append(secNavInner);
+    // 创建并插入元素
+    for (var i = 0; i < 9; i++) {
+        $(secNavInner).append(document.createElement("a"));
+    }
+
+    // 获取 a 元素
+    var secNavItem = $(".sec-nav-hide .sec-nav-inner a");
+
+    // 获取 json 数据插入到 a 元素中
+    $.ajax({
+        type: "GET",
+        url: "../data/nav.json",
+        success: function (data) {
+
+            var i = 0;
+            var j = 0;
+
+            for (var titleName in data.navTitle) {
+                $(secNavItem[i]).text(data.navTitle[titleName]);
+                i++;
+            }
+            for (var navSrc in data.src) {
+                $(secNavItem[j]).attr("href", "..\/" + data.src[navSrc]);
+                j++;
+            }
+
+        },
+        error: function () {
+            alert("请求失败");
+        }
+    });
+
+}
+createSecNav();
+
+
+
 function Ora() {
     /* 页面底部微信公众平台 */
     Ora.prototype.wechatPlatformTxt = function () {
@@ -71,25 +121,19 @@ wechatPlatformTxt.wechatPlatformTxt();
 
 
 
+/* 页面滚动到指定位置显示隐藏的二级导航菜单 */
 function fixedNav() {
-    // alert("ok");
     $(window).scroll(function () {
-        // 获取滚动条滚动的距离
+
         var scrollTop = $(window).scrollTop();
 
-        console.log(scrollTop);
-
-        if (scrollTop > 145) {
-            $(".nav").css({
-                "position": "fixed",
-                "top": 0,
-                "z-index": 3,
-                "box-shadow": "2px 2px 2px rgba(0, 0, 0, .5)"
+        if (scrollTop > 300) {
+            $(".sec-nav-hide").css({
+                opacity: 1
             });
         } else {
-            $(".nav").css({
-                "position": "",
-                "box-shadow": ""
+            $(".sec-nav-hide").css({
+                opacity: 0
             });
         }
 
