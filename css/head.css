@@ -1,3 +1,8 @@
+/* 引入页面右侧菜单样式 */
+@import url(../component/css/right-nav.css);
+
+
+
 /* 样式预设 */
 html, body, h1, h2, h3, h4, h5, h6, p ,ol, ul, li, pre, code, address, variable, form, fieldset, blockquote, div, dd, dl, dt, apan, ol, ul, span,input {
     margin:0;
