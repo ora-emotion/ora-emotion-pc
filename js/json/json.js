@@ -122,7 +122,10 @@ fixedNav();
 
 /* 页面右侧菜单 */
 function rightNav() {
+
+    // 移除页面现有菜单
     $(".yb_conct").remove();
+
     var rightNavWrap = document.createElement("div");
     $(rightNavWrap).addClass("floating_ck");
     $("body>div:first-child").append(rightNavWrap);
