@@ -1038,14 +1038,15 @@ input:-webkit-autofill {
 }
 
 .service .item:first-child .left img {
-    -webkit-transform: scale(.95);
-    -moz-transform: scale(.95);
-    -ms-transform: scale(.95);
-    -o-transform: scale(.95);
-    transform: scale(.95);
-    position: absolute;
-    bottom: -9px;
-    right: -13px;
+	-webkit-transform: scale(.95);
+	-moz-transform: scale(.95);
+	-ms-transform: scale(.95);
+	-o-transform: scale(.95);
+	transform: scale(.95);
+	position: absolute;
+	bottom: -9px;
+	right: -13px;
+	transition: all .3s;
 }
 
 .service .item:first-child .right {

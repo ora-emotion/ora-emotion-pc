@@ -122,14 +122,17 @@ fixedNav();
 
 /* 页面右侧菜单 */
 function rightNav() {
+
+    // 移除页面现有菜单
     $(".yb_conct").remove();
+
     var rightNavWrap = document.createElement("div");
     $(rightNavWrap).addClass("floating_ck");
     $("body>div:first-child").append(rightNavWrap);
 
     $.ajax({
         type: "GET",
-        url: "component/right-nav.html",
+        url: "component/right-nav/right-nav.html",
         success: function (data) {
             $(".floating_ck").append(data);
         },

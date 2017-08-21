@@ -87,6 +87,7 @@
 }
 .child-page .body2 .ul1 li a {
   color: #2D2D2D;
+  transition: color .3s;
 }
 .child-page .body2 .ul1 li:nth-child(1):hover a {
   color: #FF3232;
