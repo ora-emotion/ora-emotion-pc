@@ -132,7 +132,7 @@ function rightNav() {
 
     $.ajax({
         type: "GET",
-        url: "component/right-nav.html",
+        url: "component/right-nav/right-nav.html",
         success: function (data) {
             $(".floating_ck").append(data);
         },
