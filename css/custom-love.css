@@ -337,12 +337,72 @@ a:hover {
 }
 .child-page .module.module-05 .main .items-group .item {
   width: 334px;
+  position: relative;
+}
+.child-page .module.module-05 .main .items-group .item .img-wrap {
+  width: 304px;
+  height: 213px;
+  overflow: hidden;
+}
+.child-page .module.module-05 .main .items-group .item .img-wrap .img-modal {
+  width: 304px;
+  height: 213px;
+  position: absolute;
+  z-index: 2;
+  background-color: #000;
+  opacity: 0;
+  transition: all .5s;
+}
+.child-page .module.module-05 .main .items-group .item .img-wrap img {
+  transition: all .5s;
+}
+.child-page .module.module-05 .main .items-group .item .img-wrap .txt-split {
+  width: 0;
+  height: 1px;
+  background-color: #f9f9f9;
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  z-index: 3;
+  transition: all .5s;
+}
+.child-page .module.module-05 .main .items-group .item .img-wrap .txt {
+  position: absolute;
+  top: 20px;
+  left: 20%;
+  right: 15%;
+  z-index: 3;
+  text-align: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.child-page .module.module-05 .main .items-group .item .img-wrap .txt p.title {
+  font-size: 24px;
+}
+.child-page .module.module-05 .main .items-group .item .img-wrap .txt p.info {
+  font-size: 18px;
+  position: relative;
+  bottom: 10px;
 }
 .child-page .module.module-05 .main .items-group .item p {
   font-size: 20px;
   line-height: 31px;
   color: #fff;
   padding-top: 20px;
+}
+.child-page .module.module-05 .main .items-group .item:hover .img-wrap .txt-split {
+  left: 9%;
+  width: 80%;
+}
+.child-page .module.module-05 .main .items-group .item:hover .img-wrap .txt {
+  opacity: 1;
+}
+.child-page .module.module-05 .main .items-group .item:hover .img-wrap .img-modal {
+  opacity: .5;
+}
+.child-page .module.module-05 .main .items-group .item:hover .img-wrap img {
+  transform: scale(1.1);
 }
 .child-page .module.module-05 .main .items-group:nth-child(2) {
   padding-top: 41px;
