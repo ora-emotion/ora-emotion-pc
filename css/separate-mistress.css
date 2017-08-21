@@ -692,21 +692,14 @@
 }
 
 .body10-xian {
-	width: 80%;
+	width: 78%;
 	height: 1px;
 	border-bottom: 2px solid #2D2D2D;
 	position: absolute;
 	top: 322px;
-	left: 155px;
-}
-
-.body10-xian {
+	left: 200px;
 	widows: initial;
-	height: 1px;
-	border-bottom: 10px solid #000000;
-	position: absolute;
-	top: 322px;
-	left: 155px;
+	border-bottom: 4px solid #000000;
 }
 
 .body10 ul {
