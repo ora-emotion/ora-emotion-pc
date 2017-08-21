@@ -245,3 +245,4 @@ $(document).ready(function() {
 		}
 	});
 });
+
