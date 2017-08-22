@@ -14,6 +14,11 @@
 
 .ih-item a {
     color: #333;
+    cursor: pointer;
+}
+
+.ih-item h3, p {
+    cursor: pointer;
 }
 
 .ih-item a:hover {
@@ -46,6 +51,7 @@
     text-align: center;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    cursor: pointer;
 }
 
 
