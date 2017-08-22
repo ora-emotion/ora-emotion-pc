@@ -88,20 +88,15 @@
 
 .body2 .body2_1 ul {
 	padding-top: 100px;
-	padding-left: 9%;
-}
-@media only screen and (max-width: 1199px) {
-	.body2 .body2_1 ul {
-		padding-top: 20px;
-	}
-}
-.body2 .body2_1 ul li {
-	float: left;
-	width: 18%;
-	height: 300px;
-	margin-left: 9%;
+	padding-left: 10%;
 }
 
+.body2 .body2_1 ul li {
+	float: left;
+	width: 17.5%;
+	height: 300px;
+	margin-left: 8%;
+}
 .body2 .body2_1 ul li img {
 	width: 100%;
 }
@@ -111,23 +106,30 @@
 	font-size: 1.6em;
 	padding-top: 10px;
 	display: block;
+	width: 100%;
 }
-
-/*@media only screen and (max-width: 1500px) {
-	.body1 {
-		height: 1350px;
-	}
-	.body2 {
-		height: 500px;
+@media only screen and (max-width: 1199px) {
+	.body2 .body2_1 ul {
+		padding-top: 50px;
+		padding-left: 13%;
 	}
 	.body2 .body2_1 ul li {
-		width: 18%;
-		height: 200px;
+		float: left;
+		width: 17.5%;
+		height: 260px;
+		margin-left: 8%;
 	}
+	.body2 .body2_1 ul li img {
+		width: 75%;
+	}
+
 	.body2 .body2_1 ul li span {
-		font-size: 1.1em;
+		font-size: 1em;
+		text-align: center;
+		padding-top: 1px;
 	}
-}*/
+}
+
 
 
 /*
@@ -741,17 +743,12 @@
     text-decoration: none;
 }
 
-.ih-item img {
-    width: 100%;
-    height: 100%;
-}
 
 .ih-item.square {
     position: relative;
     width: 316px;
     height: 200px;
 }
-
 .ih-item.square .info {
     position: absolute;
     top: 0;
@@ -762,7 +759,12 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
+@media only screen and (max-width: 1199px) {
+	.ih-item.square .info {
+    bottom: 30px;
+    right: 63px;
+	}
+}
 
 .ih-item.square.effect6 {
     overflow: hidden;
