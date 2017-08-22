@@ -343,41 +343,77 @@
 	display: flex;
 	justify-content: space-around;
 }
+@keyframes biaoti
+{
+	0%   {color:#750000;}
+	25%  {color:#AE0000;}
+	50%  {color:#CE0000;}
+	100% {color:#FF3232;}
+}
 
+@-moz-keyframes biaoti /* Firefox */
+{
+	0%   {color:#750000;}
+	25%  {color:#AE0000;}
+	50%  {color:#CE0000;}
+	100% {color:#FF3232;}
+}
+
+@-webkit-keyframes biaoti /* Safari and Chrome */
+{
+	0%   {color:#750000;}
+	25%  {color:#AE0000;}
+	50%  {color:#CE0000;}
+	100% {color:#FF3232;}
+}
+
+@-o-keyframes biaoti /* Opera */
+{
+	0%   {color:#750000;}
+	25%  {color:#AE0000;}
+	50%  {color:#CE0000;}
+	100% {color:#FF3232;}
+}
 .body5-ul ul li {
 	margin: 50px 0;
 	width: 18%;
 	float: left;
 	height: 450px;
 	background-color: #2D2D2D;
-	/*margin-left: 80px;*/
 	color: #E9E9E9;
 }
-
+.body5-ul ul li:hover h3{
+	-moz-animation:biaoti .4s;
+	-ms-animation:biaoti .4s;
+	-webkit-animation:biaoti .4s;
+	-moz-animation:biaoti .4s;
+	color: #FD3232;
+}
+.body5-ul ul li:hover p{
+	color: #FFFFFF;
+}
 .body5-ul ul li img {
 	width: 100%;
 	height: 50%;
 	padding: 10px;
 }
 
-.body5-ul ul li img:hover {
+/*.body5-ul ul li img:hover {
 	animation: myfirst 0.5s;
 	-moz-animation: myfirst 0.5s;
-	/* Firefox */
 	-webkit-animation: myfirst 0.5s;
-	/* Safari 和 Chrome */
 	-o-animation: myfirst 0.5s;
-	/* Opera */
-}
+}*/
 
 .body5-ul ul li h3 {
-	padding: 15px 15px 5px 15px;
+	padding: 35px 15px 5px 15px;
 	font-size: 24px;
+	text-align: center;
 }
 
 .body5-ul ul li p {
 	line-height: 30px;
-	padding: 15px;
+	padding: 25px 15px 5px 15px;
 	font-size: 18px;
 }
 
