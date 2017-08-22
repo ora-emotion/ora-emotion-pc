@@ -231,6 +231,11 @@ a:link {
 }
 .child-page .module.module-01 .main .bot .part .item-group .item .left-pic {
   position: relative;
+  width: 396px;
+  height: 234px;
+}
+.child-page .module.module-01 .main .bot .part .item-group .item .left-pic img {
+  width: 100%;
 }
 .child-page .module.module-01 .main .bot .part .item-group .item .left-pic .pic-hidden {
   position: absolute;

@@ -663,6 +663,14 @@
 	transition: all .3s;
 }
 
+/* 小屏幕下动效 */
+@media (max-width: 996px) {
+    .body9-right-ul1 li .tip,
+    .body9-right-ul2 li .tip {
+        width: 183px;
+    }
+}
+
 .body9-right-ul1 li:hover .tip,
 .body9-right-ul2 li:hover .tip {
 	height: 45px;
