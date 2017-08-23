@@ -1,4 +1,3 @@
-window.onload = function () {
     // 显示微信二维码
     function qrcodeWechat() {
         // 淡入
@@ -38,9 +37,10 @@ window.onload = function () {
         });
         // 返回顶部
         $(".yb_top").click(function() {
+//      	alert("ok");
             $("html,body").animate({
                 'scrollTop': '0px'
-            }, 300)
+            }, 300);
         });
     });
-};
+
