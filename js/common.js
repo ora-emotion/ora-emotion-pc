@@ -30,7 +30,7 @@ window.onload = function () {
     $(function() {
         // 悬浮窗口
         $(".yb_conct").hover(function() {
-            $(".yb_conct").css("right", "5px");
+            $(".yb_conct").css("right", "0");
             $(".yb_bar .yb_ercode").css('height', '200px');
         }, function() {
             $(".yb_conct").css("right", "-127px");
