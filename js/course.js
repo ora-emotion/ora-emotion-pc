@@ -109,7 +109,7 @@ $(document).ready(function() {
 	var documentHeight = $(document).height();
 	// 获取当前屏幕高度
 	var windowHeight = $(window).height();
-	// 获取当前屏幕高度
+	// 获取当前屏幕宽度
 	var windowWidth = $(window).width();
 	// 获取服务步骤模块距离屏幕顶端的高度
 	var moduleSevenOffsetTop = $(".body7 ul").offset().top;
