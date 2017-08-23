@@ -18,6 +18,34 @@
     <link rel="stylesheet" href="../css/anniu/anniu1.css" />
 
     <style type="text/css">
+        *{ margin:0; padding:0}
+        .videolist-wrap {
+            width:300px;
+            height:500px;
+            overflow:hidden;
+            position:relative;
+        }
+        .cont{
+            position:absolute;
+            margin-right:10px;
+        }
+        .scroll{
+            width:5px;
+            height:50px;
+            position:absolute;
+            top:0;
+            right:0;
+            background:#6a6a6a;
+            transition: width .5s;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .scroll:hover {
+            width: 10px;
+        }
+
         .video-module {
             width: 1200px;
             margin: 0 auto;
@@ -63,6 +91,11 @@
         }
         .video-module .video-player .player.active {
             display: block;
+        }
+
+        embed.player {
+            width: 870px;
+            height: 490px;
         }
 
     </style>
@@ -181,24 +214,57 @@
                 <li><i class="icon"></i>线下搭讪认识女生</li>
                 <li><i class="icon"></i>线上收集资源</li>
                 <li><i class="icon"></i>聊天理论</li>
+
+                <li><i class="icon"></i>聊天案例分析</li>
+                <li><i class="icon"></i>与妹子相处时的常见问题</li>
+                <li><i class="icon"></i>如何与女生约会</li>
+                <li><i class="icon"></i>处理asd及发生亲密行为</li>
+                <li><i class="icon"></i>长期关系</li>
+                <li><i class="icon"></i>挽回心态和心法</li>
+                <li><i class="icon"></i>挽回的具体操作和技巧</li>
+
+                <li><i class="icon"></i>狙击真命</li>
+                <li><i class="icon"></i>同性恋挽回</li>
+                <li><i class="icon"></i>异地恋注意事项</li>
+                <li><i class="icon"></i>关于相亲</li>
+                <li><i class="icon"></i>婚后生活中长期关系的维护和保鲜</li>
+                <li><i class="icon"></i>AboutSxx</li>
+                <li><i class="icon"></i>预防和分离第三者</li>
+
             </ul>
         </div>
 
         <!-- 视频 -->
         <div class="video-player">
-            <div class="video">
-                <embed class="player active" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MjkxNzU0OA==/v.swf' quality='high' width='870' height='490' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                <embed class="player" src='http://player.youku.com/player.php/sid/XMjc3Mjk2MTMyNA==/v.swf' allowFullScreen='true' quality='high' width='870' height='490' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
-                <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3Mzc0MDAzMg==/v.swf' quality='high' width='870' height='490' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3Mjk5Mjc5Mg==/v.swf' quality='high' width='870' height='490' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzA3NTExNg==/v.swf' quality='high' width='870' height='490' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzE4NzYzNg==/v.swf' quality='high' width='870' height='490' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzMyNjc2NA==/v.swf' quality='high' width='870' height='490' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzM4MTAwMA==/v.swf' quality='high' width='870' height='490' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzQyNDI4OA==/v.swf' quality='high' width='870' height='490' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-            </div>
-        </div>
+                    <div class="video">
+                        <embed class="player active" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MjkxNzU0OA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/sid/XMjc3Mjk2MTMyNA==/v.swf' allowFullScreen='true' quality='high' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3Mzc0MDAzMg==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3Mjk5Mjc5Mg==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzA3NTExNg==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzE4NzYzNg==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzMyNjc2NA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzM4MTAwMA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzQyNDI4OA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
 
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzU1ODE2MA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzgxODUxNg==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3Mzg1NDcwMA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzkwMDM0OA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzkzMDcwMA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3Mzk2NzQ4NA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3NDAxMTA4NA==/v.swf' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3NDA1MDkwMA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3NDA5NTAwMA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjgyODExNzY4OA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjgyODEwNjMwOA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjgyODEwNjMwMA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjkyMzkyNTg4NA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjgyODExNzc2OA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+
+                    </div>
+                </div>
     </div>
     <!-- /模块主体 -->
 
@@ -245,6 +311,11 @@
 <!-- /页面底部 -->
 
 <script type="text/javascript" src="../js/common.js"></script>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/hxsd_tools.js"></script>
+<script src="js/hxsd_widget.js"></script>
+
 <!-- 引入 json 数据 -->
 <!--<script type="text/javascript" src="../js/json/anlijson.js"></script>-->
 <script type="text/javascript">
@@ -367,6 +438,93 @@
             window.setTimeout(run, stime);
         }
     }
+
+
+
+    var scrollSelf = (function () {
+
+        //判断内容是否超出
+        var oBox=$('.videolist-wrap');
+        var oBox_h=oBox.height();//盒子高度
+
+        var oBox_cont_h=oBox.prop("scrollHeight");//内容高度
+        console.log(oBox_h,oBox_cont_h);
+
+        if(oBox_cont_h>oBox_h){
+            oBox.children().wrap('<div class="cont"></div>');
+            var scrollBox=$('<div class="scroll"></div>');
+            oBox.append(scrollBox);
+
+            var n_oBox_cont_h=oBox.prop("scrollHeight"); //重新计算盒子内容高度
+            //console.log(oBox_h,n_oBox_cont_h);
+
+            //计算比例
+            var h_rate=oBox_h/n_oBox_cont_h;
+
+            var scrollBox_h=oBox_h*h_rate;//手柄高度
+
+            if(scrollBox_h<50){//限制手柄的最小高度
+                scrollBox_h=50;
+            }
+            //设定手柄的高度
+            scrollBox.height(scrollBox_h);
+
+            //拖拽------------------------------------------------
+            scrollBox.mousedown(function(ev){
+                var disY=ev.pageY-scrollBox.offset().top;	//鼠标相对手柄偏移
+//			var disY=ev.pageY-scrollBox.position().
+                $(document).mousemove(function(ev){
+                    var t=ev.pageY-oBox.offset().top-disY; //盒子偏移  -鼠标相对手柄偏移
+//				var t=ev.pageY-disY;
+                    move(t);
+                });
+                $(document).mouseup(function(){
+                    $(document).unbind('mousemove');
+                });
+
+                return false;//阻止默认事件
+            });
+
+
+
+            function move(t){
+                if(t<0){
+                    t=0;
+                }
+
+                if(t>oBox_h-scrollBox_h){
+                    t=oBox_h-scrollBox_h
+                }
+
+                //计算移动比率
+                var move_rate=t/(oBox_h-scrollBox_h);
+
+                var tt=(n_oBox_cont_h-oBox_h)*move_rate;//内容要移动的距离
+
+
+                oBox.children('.cont').css('top',-tt);
+                scrollBox.css('top',t);
+            }
+
+
+            //滚轮-----------------------------------------
+            oBox.mouseWheel(function(drt){
+                var t=0;
+                // ↓ true   ↑ false
+
+                if(drt){
+                    t=scrollBox.position().top+10;
+                    move(t)
+                }else{
+                    t=scrollBox.position().top-10;
+                    move(t)
+                }
+            });
+        }
+
+    }());
+
+
 
 </script>
 </body>
