@@ -33,20 +33,20 @@
 	cursor: pointer;
 }
 .yb_bar .yb_top {
-	background: #FD3232 url(../img/index/icon-nav-right.png) no-repeat 0 0;
+	background: #FD3232 url(../img/icon-nav-right.png) no-repeat 0 0;
 }
 
 .yb_bar .yb_phone {
-	background: #FD3232 url(../img/index/icon-nav-right.png) no-repeat 0 -57px;
+	background: #FD3232 url(../img/icon-nav-right.png) no-repeat 0 -57px;
 }
 
 .yb_bar .yb_QQ {
 	text-indent: 0;
-	background: #FD3232 url(../img/index/icon-nav-right.png) no-repeat 0 -113px;
+	background: #FD3232 url(../img/icon-nav-right.png) no-repeat 0 -113px;
 }
 
 .yb_bar .yb_ercode {
-	background: #FD3232 url(../img/index/icon-nav-right.png) no-repeat 0 -169px;
+	background: #FD3232 url(../img/icon-nav-right.png) no-repeat 0 -169px;
 }
 
 .hd_qr {

@@ -145,54 +145,30 @@ fixedNav();
 
 
 /* 页面右侧菜单 */
-function rightNav() {
+var rightNav = (function () {
+
+    // 移除页面现有菜单
     $(".yb_conct").remove();
+
+
+
     var rightNavWrap = document.createElement("div");
-    $(rightNavWrap).addClass("floating_ck");
+    $(rightNavWrap).addClass("yb_conct");
     $("body").append(rightNavWrap);
 
     $.ajax({
         type: "GET",
-        url: "../component/right-nav.html",
+        url: "../component/right-nav/right-nav.html",
         success: function (data) {
-            $(".floating_ck").append(data);
+            console.log(data);
+            $(".yb_conct").append(data);
+
+            $(".yb_ercode img").attr("src", "../img/weixin.gif");
+
         },
         error: function () {
             console.log("数据请求失败！");
         }
-    })
+    });
 
-}
-rightNav();
-// 右侧菜单返回顶部按钮
-function gotoTop(acceleration,stime) {
-    acceleration = acceleration || 0.1;
-    stime = stime || 10;
-    var x1 = 0;
-    var y1 = 0;
-    var x2 = 0;
-    var y2 = 0;
-    var x3 = 0;
-    var y3 = 0;
-    if (document.documentElement) {
-        x1 = document.documentElement.scrollLeft || 0;
-        y1 = document.documentElement.scrollTop || 0;
-    }
-    if (document.body) {
-        x2 = document.body.scrollLeft || 0;
-        y2 = document.body.scrollTop || 0;
-    }
-    var x3 = window.scrollX || 0;
-    var y3 = window.scrollY || 0;
-
-    var x = Math.max(x1, Math.max(x2, x3));
-    var y = Math.max(y1, Math.max(y2, y3));
-
-    var speeding = 1 + acceleration;
-    window.scrollTo(Math.floor(x / speeding), Math.floor(y / speeding));
-
-    if(x > 0 || y > 0) {
-        var run = "gotoTop(" + acceleration + ", " + stime + ")";
-        window.setTimeout(run, stime);
-    }
-}
+}());
