@@ -20,7 +20,7 @@
     <style type="text/css">
         *{ margin:0; padding:0}
         .videolist-wrap {
-            width:300px;
+            width:310px;
             height:500px;
             overflow:hidden;
             position:relative;
@@ -34,9 +34,9 @@
             height:50px;
             position:absolute;
             top:0;
-            right:0;
-            background:#FF0000;
-            transition: width .5s;
+            right: 10px;
+            background:#6a6a6a;
+            transition: all .3s;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             border-bottom-left-radius: 5px;
@@ -44,6 +44,7 @@
         }
         .scroll:hover {
             width: 10px;
+            right: 5px;
         }
 
         .video-module {
@@ -98,7 +99,7 @@
             width: 870px;
             height: 490px;
         }
-
+        
     </style>
 
     <script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
@@ -208,6 +209,7 @@
         <!-- 视频列表 -->
         <div class="videolist-wrap">
             <ul class="videolist">
+<<<<<<< HEAD
                 <li class="active"><i class="icon"></i>(一)视频总览</li>
                 <li><i class="icon"></i>(二)正确认识你和女生的关系</li>
                 <li><i class="icon"></i>(三)男女分类系统</li>
@@ -234,12 +236,40 @@
                 <li><i class="icon"></i>(二十二)AboutSxx</li>
                 <li><i class="icon"></i>(二十三)预防和分离第三者</li>
 
+=======
+                <li class="active"><i class="icon"></i>视频总览</li>
+                <li><i class="icon"></i>正确认识你和女生的关系</li>
+                <li><i class="icon"></i>男女分类系统</li>
+                <li><i class="icon"></i>形象建设</li>
+                <li><i class="icon"></i>朋友圈建设</li>
+                <li><i class="icon"></i>展示面实例讲解</li>
+                <li><i class="icon"></i>线下搭讪认识女生</li>
+                <li><i class="icon"></i>线上收集资源</li>
+                <li><i class="icon"></i>聊天理论</li>
+
+                <li><i class="icon"></i>聊天案例分析</li>
+                <li><i class="icon"></i>与妹子相处时的常见问题</li>
+                <li><i class="icon"></i>如何与女生约会</li>
+                <li><i class="icon"></i>处理asd及发生亲密行为</li>
+                <li><i class="icon"></i>长期关系</li>
+                <li><i class="icon"></i>挽回心态和心法</li>
+                <li><i class="icon"></i>挽回的具体操作和技巧</li>
+
+                <li><i class="icon"></i>狙击真命</li>
+                <li><i class="icon"></i>同性恋挽回</li>
+                <li><i class="icon"></i>异地恋注意事项</li>
+                <li><i class="icon"></i>关于相亲</li>
+                <li><i class="icon"></i>婚后生活中长期关系的维护和保鲜</li>
+                <li><i class="icon"></i>AboutSxx</li>
+                <li><i class="icon"></i>预防和分离第三者</li>
+>>>>>>> c3657f3cefd98152abf20cfab8f7d783f712ed88
             </ul>
         </div>
 
         <!-- 视频 -->
         <div class="video-player">
                     <div class="video">
+
                         <embed class="player active" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MjkxNzU0OA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
                         <embed class="player" src='http://player.youku.com/player.php/sid/XMjc3Mjk2MTMyNA==/v.swf' allowFullScreen='true' quality='high' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
                         <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3Mzc0MDAzMg==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
@@ -320,7 +350,7 @@
 <script src="js/hxsd_widget.js"></script>
 
 <!-- 引入 json 数据 -->
-<!--<script type="text/javascript" src="../js/json/anlijson.js"></script>-->
+<script type="text/javascript" src="../js/json/anlijson.js"></script>
 <script type="text/javascript">
     /* 二级导航菜单 */
     var navList = new Ora();
@@ -385,62 +415,6 @@
     /* 页面底部微信公众平台 */
     var wechatPlatformTxt = new Ora();
     wechatPlatformTxt.wechatPlatformTxt();
-
-    /* 页面右侧菜单 */
-    function rightNav() {
-
-        // 移除页面现有菜单
-        $(".yb_conct").remove();
-
-        var rightNavWrap = document.createElement("div");
-        $(rightNavWrap).addClass("floating_ck");
-        $("body").append(rightNavWrap);
-
-        $.ajax({
-            type: "GET",
-            url: "../component/right-nav/right-nav.html",
-            success: function (data) {
-                $(".floating_ck").append(data);
-            },
-            error: function () {
-                console.log("数据请求失败！");
-            }
-        })
-
-    }
-    rightNav();
-    // 右侧菜单返回顶部按钮
-    function gotoTop(acceleration,stime) {
-        acceleration = acceleration || 0.1;
-        stime = stime || 10;
-        var x1 = 0;
-        var y1 = 0;
-        var x2 = 0;
-        var y2 = 0;
-        var x3 = 0;
-        var y3 = 0;
-        if (document.documentElement) {
-            x1 = document.documentElement.scrollLeft || 0;
-            y1 = document.documentElement.scrollTop || 0;
-        }
-        if (document.body) {
-            x2 = document.body.scrollLeft || 0;
-            y2 = document.body.scrollTop || 0;
-        }
-        var x3 = window.scrollX || 0;
-        var y3 = window.scrollY || 0;
-
-        var x = Math.max(x1, Math.max(x2, x3));
-        var y = Math.max(y1, Math.max(y2, y3));
-
-        var speeding = 1 + acceleration;
-        window.scrollTo(Math.floor(x / speeding), Math.floor(y / speeding));
-
-        if(x > 0 || y > 0) {
-            var run = "gotoTop(" + acceleration + ", " + stime + ")";
-            window.setTimeout(run, stime);
-        }
-    }
 
 
 
