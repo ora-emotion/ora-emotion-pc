@@ -1,8 +1,8 @@
-
 /*
  * 首页头部背景图CSS
  */
-.separate-mistress-top-bgimg{
+
+.separate-mistress-top-bgimg {
 	width: 100%;
 	height: 885px;
 	background: url(../img/separate-mistress/head-bgimg.jpg) center center no-repeat;
@@ -44,8 +44,9 @@
 	width: 12%;
 	/*border: 1px solid #FF0000;*/
 }
-.body2 ul li img{
-}
+
+.body2 ul li img {}
+
 .body2 ul li h3 {
 	margin-top: 50px;
 	font-weight: bold;
@@ -99,11 +100,13 @@
 	text-align: center;
 	font-weight: 500;
 }
+
 @media only screen and (max-width: 1199px) {
 	.body3 ul li p {
 		padding-left: 50px;
 	}
 }
+
 .body3 ul li p:nth-child(2) {
 	margin-top: 20px;
 }
@@ -293,11 +296,13 @@
 	padding-left: 20px;
 	font-size: 18px;
 }
-.body6-top-left-left p span{
+
+.body6-top-left-left p span {
 	display: block;
 	width: 100%;
 	padding-left: 17px;
 }
+
 .body6-top-left-right {
 	background: url(../img/separate-mistress/good-at-separating-img1.png) center center no-repeat;
 	width: 50%;
@@ -413,13 +418,16 @@
 	padding-left: 20px;
 	font-size: 18px;
 }
-.body6-bottom-left-left p .span1{
+
+.body6-bottom-left-left p .span1 {
 	width: 100%;
 }
-.body6-bottom-left-left p .span2{
+
+.body6-bottom-left-left p .span2 {
 	display: block;
 	margin-right: 0;
 }
+
 .body6-bottom-left-right {
 	background: url(../img/separate-mistress/good-at-separating-img3.png) center center no-repeat;
 	width: 50%;
@@ -663,12 +671,14 @@
 	transition: all .3s;
 }
 
+
 /* 小屏幕下动效 */
+
 @media (max-width: 996px) {
-    .body9-right-ul1 li .tip,
-    .body9-right-ul2 li .tip {
-        width: 183px;
-    }
+	.body9-right-ul1 li .tip,
+	.body9-right-ul2 li .tip {
+		width: 183px;
+	}
 }
 
 .body9-right-ul1 li:hover .tip,
@@ -908,156 +918,153 @@
 }
 
 
-
-
 /*
  * 圆形图片遮罩样式
  */
 
-
 .ih-item {
-    position: relative;
-    -webkit-transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
+	position: relative;
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
 }
 
 .ih-item,
 .ih-item * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .ih-item a {
-    color: #333;
+	color: #333;
 }
 
 .ih-item a:hover {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .ih-item img {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .ih-item.circle {
-    position: relative;
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
+	position: relative;
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
 }
 
 .ih-item.circle .img {
-    position: relative;
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
+	position: relative;
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
 }
 
 .ih-item.circle .img:before {
-    position: absolute;
-    display: block;
-    content: '';
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.3);
-    -webkit-transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
+	position: absolute;
+	display: block;
+	content: '';
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
 }
 
 .ih-item.circle .img img {
-    border-radius: 50%;
+	border-radius: 50%;
 }
 
 .ih-item.circle .info {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    border-radius: 50%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	border-radius: 50%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 .ih-item.circle.effect1 .spinner {
-    width: 230px;
-    height: 230px;
-    border: 10px solid #FFFFFF;
-    border-right-color: #ff3232;
-    border-bottom-color: #ff3232;
-    border-radius: 50%;
-    -webkit-transition: all 0.8s ease-in-out;
-    -moz-transition: all 0.8s ease-in-out;
-    transition: all 0.8s ease-in-out;
+	width: 230px;
+	height: 230px;
+	border: 10px solid #FFFFFF;
+	border-right-color: #ff3232;
+	border-bottom-color: #ff3232;
+	border-radius: 50%;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
 }
 
 .ih-item.circle.effect1 .img {
-    position: absolute;
-    top: 10px;
-    bottom: 0;
-    left: 10px;
-    right: 0;
-    width: auto;
-    height: auto;
+	position: absolute;
+	top: 10px;
+	bottom: 0;
+	left: 10px;
+	right: 0;
+	width: auto;
+	height: auto;
 }
 
 .ih-item.circle.effect1 .img:before {
-    display: none;
+	display: none;
 }
 
 .ih-item.circle.effect1.colored .info {
-    background: #1a4a72;
-    background: rgba(26, 74, 114, 0.6);
+	background: #1a4a72;
+	background: rgba(26, 74, 114, 0.6);
 }
 
 .ih-item.circle.effect1 .info {
-    top: 10px;
-    bottom: 0;
-    left: 10px;
-    right: 0;
-    background: #333333;
-    background: rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    -webkit-transition: all 0.8s ease-in-out;
-    -moz-transition: all 0.8s ease-in-out;
-    transition: all 0.8s ease-in-out;
+	top: 10px;
+	bottom: 0;
+	left: 10px;
+	right: 0;
+	background: #333333;
+	background: rgba(0, 0, 0, 0.6);
+	opacity: 0;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
 }
 
 .ih-item.circle.effect1 .info h3 {
-    color: #fff;
-    text-transform: uppercase;
-    position: relative;
-    letter-spacing: 2px;
-    font-size: 22px;
-    margin: 0 30px;
-    padding: 55px 0 0 0;
-    height: 110px;
-    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin: 0 30px;
+	padding: 55px 0 0 0;
+	height: 110px;
+	text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .ih-item.circle.effect1 .info p {
-    color: #bbb;
-    padding: 10px 5px;
-    /*font-style: italic;*/
-    margin: 0 30px;
-    font-size: 12px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
+	color: #bbb;
+	padding: 10px 5px;
+	/*font-style: italic;*/
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .ih-item.circle.effect1 a:hover .spinner {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
 .ih-item.circle.effect1 a:hover .info {
-    opacity: 1;
+	opacity: 1;
 }

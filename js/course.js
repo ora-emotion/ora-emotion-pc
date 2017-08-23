@@ -109,6 +109,8 @@ $(document).ready(function() {
 	var documentHeight = $(document).height();
 	// 获取当前屏幕高度
 	var windowHeight = $(window).height();
+	// 获取当前屏幕宽度
+	var windowWidth = $(window).width();
 	// 获取服务步骤模块距离屏幕顶端的高度
 	var moduleSevenOffsetTop = $(".body7 ul").offset().top;
 	//获取橘子高级方案模块距离屏幕顶端的高度
@@ -123,15 +125,21 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		// 获取滚动条滚动的距离
 		var scrollTop = $(window).scrollTop();
-
 //		console.log(scrollTop);
 		//服务步骤模块
 		if(scrollTop > (moduleSevenOffsetTop - windowHeight+200)) {
 			// alert("ok");
+			if(windowWidth>980){
+				$(".body7 ul").animate({
+					left: "13%",
+					opacity: "1"
+				}, 1000);
+			}else{
 			$(".body7 ul").animate({
-				left: "9%",
-				opacity: "1"
-			}, 1000);
+					left: "5%",
+					opacity: "1"
+				}, 1000);
+			}
 		}
 	});
 	$(window).scroll(function() {
@@ -193,21 +201,35 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		// 获取滚动条滚动的距离
 		var scrollTop4 = $(window).scrollTop();
-	
 		//高级方案模块
 		if(scrollTop4 > (moduleSevenOffsetTop4 - windowHeight+100)) {
-			$(".txt-list-div1").animate({
-				right: "12%",
-				opacity: "1"
-			}, 1000);
-			$(".txt-list-div2").animate({
-				right: "14%",
-				opacity: "1"
-			}, 1500);
-			$(".txt-list-div3").animate({
-				right: "15%",
-				opacity: "1"
-			}, 2000);
+			if(windowWidth>980){
+				$(".txt-list-div1").animate({
+					right: "12%",
+					opacity: "1"
+				}, 1000);
+				$(".txt-list-div2").animate({
+					right: "14%",
+					opacity: "1"
+				}, 1500);
+				$(".txt-list-div3").animate({
+					right: "15%",
+					opacity: "1"
+				}, 2000);
+			}else{
+				$(".txt-list-div1").animate({
+					right: "7%",
+					opacity: "1"
+				}, 1000);
+				$(".txt-list-div2").animate({
+					right: "8%",
+					opacity: "1"
+				}, 1500);
+				$(".txt-list-div3").animate({
+					right: "11%",
+					opacity: "1"
+				}, 2000);
+			}
 		}
 	});
 });
