@@ -672,9 +672,72 @@
         <script type="text/javascript" src="js/about-us.js"></script>
 		<!-- 引入 json 数据 -->
 		<script type="text/javascript" src="js/json/json.js"></script>
+		<script type="text/javascript" src="../js/json/anlijson.js"></script>
 		<script type="text/javascript">
-			var navList = new Ora();
-			navList.navList();
+			/* 二级导航菜单 */
+            var navList = new Ora();
+            navList.navList();
+
+			/* 橘子视频 */
+            var aLi = $(".videolist li");
+            var videoItem = $("embed");
+
+            aLi.click(function () {
+
+                $(this).addClass("active").siblings().removeClass("active");
+                var _index = $(this).index();
+                console.log(_index);
+
+                // 显示当前视频隐藏其他视频
+                $($(videoItem)[_index]).addClass("active").siblings().removeClass("active");
+
+
+                // 播放当前视频，暂停其他视频
+                for (var i = 0; i < videoItem.length; i++) {
+                    $(videoItem)[i].pause();
+                    $(videoItem)[_index].play();
+                }
+
+            });
+
+            function Ora() {
+
+				/* 生成二级导航菜单 */
+                Ora.prototype.navList = function () {
+                    // 获取二级菜单列表
+                    var navList = $(".nav .nav-block li");
+                    $.ajax({
+                        type: "GET",
+                        url: "../data/nav.json",
+                        success: function (data) {
+                            var i = 0;
+                            // 依次将获取到的对象的属性值插入到 li 元素中的 a 标签里
+                            for (var titleName in data.navTitle) {
+                                $(navList[i]).children("a").text(data.navTitle[titleName]);  // 通过方括号语法来访问对象的属性值
+                                i++;
+                            }
+                        }
+                    });
+                };
+
+				/* 页面底部微信公众平台 */
+                Ora.prototype.wechatPlatformTxt = function () {
+                    var wechatPlatformTxt = $("footer .main .bot .left p>.wechat-num");
+                    $.ajax({
+                        type: "GET",
+                        url: "data/footer.json",
+                        success: function (data) {
+                            wechatPlatformTxt.text(data.wechatPlatformTxt);
+                        }
+                    });
+                }
+
+            }
+
+			/* 页面底部微信公众平台 */
+            var wechatPlatformTxt = new Ora();
+            wechatPlatformTxt.wechatPlatformTxt();
+
 		</script>
 
 	</body>
