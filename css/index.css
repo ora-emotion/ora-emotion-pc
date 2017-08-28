@@ -1044,8 +1044,8 @@ input:-webkit-autofill {
 	-o-transform: scale(.95);
 	transform: scale(.95);
 	position: absolute;
-	bottom: -16px;
-	right: -16px;
+	bottom: -9px;
+	right: -13px;
 	transition: all .3s;
 }
 
