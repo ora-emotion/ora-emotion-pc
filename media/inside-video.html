@@ -234,7 +234,6 @@
 				<!--<div class="top-btn">
 			<button>返回顶部</button>
 		</div>-->
-				<!-- 视频列表 -->
 				<div class="videolist-wrap table-wrap">
 					<ul class="videolist table-content">
 						<li class="active"><i class="icon"></i>(一)视频总览</li>
@@ -366,10 +365,10 @@
 				$($(videoItem)[_index]).addClass("active").siblings().removeClass("active");
 
 				// 播放当前视频，暂停其他视频
-				for(var i = 0; i < videoItem.length; i++) {
-					$(videoItem)[i].pause();
-					$(videoItem)[_index].play();
-				}
+//				for(var i = 0; i < videoItem.length; i++) {
+//					$(videoItem)[i].pause();
+//					$(videoItem)[_index].play();
+//				}
 
 			});
 
