@@ -9,6 +9,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="keywords" content=橘子情感/>
 		<meta name="description" content=橘子情感/>
+		<link rel="shortcut icon" href="img/ora.jpg" type="image/x-icon">
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -18,52 +19,110 @@
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/anniu/anniu1.css" />
 		<link rel="stylesheet" href="css/modal-btn.css">
-
-        <style type="text/css">
-            .modal-btn {
-                margin: 0 50px 0 0;
-                border: 1px solid #2d2d2d;
-            }
-            /* 橘子冬天链接样式 */
-            .txt-hover a {
-                color: #fff;
-                transition: color .3s;
-            }
-            .txt-hover:hover a {
-                color: #fd3232;
-            }
-        </style>
+		<link rel="stylesheet" href="css/emotion-forum.css">
 
 		<style type="text/css">
+			.modal-btn {
+				margin: 0 50px 0 0;
+				border: 1px solid #2d2d2d;
+			}
+			/* 橘子冬天链接样式 */
+			
+			.txt-hover a {
+				color: #fff;
+				transition: color .3s;
+			}
+			
+			.txt-hover:hover a {
+				color: #fd3232;
+			}
+			
 			@media (max-width: 1190px) {
 				footer {
 					width: 1500px;
 				}
 			}
+			
 			@media (min-width: 1200px) {
 				footer {
 					width: 100%;
 				}
 			}
-            footer {
-                margin-top: 0;
-                position: relative;
-                bottom: -151px;
-            }
-            .biaoti1 {
-                padding: 0 0 50px;
-                position: relative;
-                top: 100px;
-
-            }
-            div.navB {
-                position: relative;
-                top: 100px;
-            }
-            .body2 {
-                position: relative;
-                top: 100px;
-            }
+			
+			footer {
+				margin-top: 0;
+				position: relative;
+				bottom: -151px;
+			}
+			
+			.biaoti1 {
+				padding: 0 0 50px;
+				position: relative;
+				top: 100px;
+			}
+			
+			div.navB {
+				position: relative;
+				top: 100px;
+			}
+			
+			.body2 {
+				position: relative;
+				top: 100px;
+			}
+			/* 新闻列表轮播图 */
+			
+			.news-banner {
+				width: 100%;
+				overflow: hidden;
+			}
+			
+			.news-banner .swiper-container-news {
+				position: relative;
+			}
+			
+			.news-banner .swiper-slide img {
+				width: 100%;
+			}
+			
+			.news-banner .swiper-slide {
+				position: relative;
+			}
+			
+			.news-banner .swiper-slide .des {
+				width: 100%;
+				height: 45px;
+				line-height: 45px;
+				background: rgba(0, 0, 0, .5);
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				font-size: 24px;
+				padding-left: 15px;
+			}
+			
+			.swiper-container-horizontal>.swiper-pagination-bullets,
+			.swiper-pagination-custom,
+			.swiper-pagination-fraction {
+				position: absolute;
+				bottom: 10px;
+				left: 600px;
+				z-index: 2;
+			}
+			
+			.swiper-pagination-news .swiper-pagination-bullet {
+				width: 15px;
+				height: 15px;
+				background-color: #fff;
+			}
+			
+			.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+				margin: 0 10px;
+			}
+			
+			.swiper-pagination-bullet.swiper-pagination-bullet-active {
+				background-color: #fd3232;
+			}
 		</style>
 		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 		<!--<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css' />-->
@@ -75,12 +134,7 @@
 				$(".erweiactive").hover($(".erweima").css("display", "block"));
 			});
 		</script>
-		<!--
-            	作者：706861648@qq.com
-            	时间：2017-06-15
 
-            	描述：右边菜单的动画效果
-            -->
 	</head>
 
 	<body>
@@ -103,11 +157,11 @@
 						<div class="txt">
 							<p>官方二维码</p>
 							<p>免费情感热线电话</p>
-							<p>400-6299-520</p>
+							<p>4006-299-520</p>
 						</div>
 					</div>
 					<div class="wechat">
-						<img src="img/index/erwei.jpg" alt="微信二维码">
+						<img src="img/index/erwei.png" alt="微信二维码">
 					</div>
 				</div>
 			</header>
@@ -137,84 +191,44 @@
 			<div class="nav">
 				<div class="inner text-center">
 					<ul class="nav-block">
-						<li style="background-color: #FF3232;">
-							<a href="index.html">橘子首页</a>
+						<li style="background-color: #FF3232;" class="active">
+							<a href="index.html"></a>
 						</li>
 						<li>
-							<a href="save-love.html">挽回爱情</a>
+							<a href="save-love.html"></a>
 						</li>
 						<li>
-							<a href="save-marriage.html">挽救婚姻</a>
+							<a href="save-marriage.html"></a>
 						</li>
 						<li>
-							<a href="separate-mistress.html">分离小三</a>
+							<a href="separate-mistress.html"></a>
 						</li>
 						<li>
-							<a href="custom-love.html">定制爱情</a>
+							<a href="custom-love.html"></a>
 						</li>
 						<li>
-							<a href="emotion-forum.html">情感课堂</a>
+							<a href="emotion-forum.html"></a>
 						</li>
 						<li>
-							<a href="focus-team.html">权威专家</a>
+							<a href="focus-team.html"></a>
 						</li>
 						<li>
-							<a href="course.html">课程介绍</a>
+							<a href="course.html"></a>
 						</li>
+
 						<li class="no">
-							<a href="about-us.html">关于我们</a>
+							<a href="about-us.html"></a>
 						</li>
 					</ul>
 				</div>
 			</div>
+
 			<!-- /导航菜单 -->
 
-			<div id="carousel-example-generic" class="carousel slide lunbo1" data-ride="carousel">
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-				</ol>
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<img src="img/index/banner.jpg" style="min-width: 1106px;" alt="">
-						<div class="carousel-caption">
+			<!-- 头部 banner -->
+			<div class="header-banner"></div>
+			<!-- /头部 banner -->
 
-						</div>
-					</div>
-					<div class="item">
-						<img src="img/index/banner2.jpg" style="min-width: 1106px;" alt="">
-						<div class="carousel-caption">
-
-						</div>
-					</div>
-					<div class="item">
-						<img src="img/index/banner3.jpg" style="min-width: 1106px;" alt="">
-						<div class="carousel-caption">
-
-						</div>
-					</div>
-					<div class="item">
-						<img src="img/index/banner4.jpg" style="min-width: 1106px;" alt="">
-						<div class="carousel-caption">
-
-						</div>
-					</div>
-				</div>
-
-				<!-- Controls -->
-				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
 			<div class="nav1">
 				<div class="inner text-center">
 					<ul>
@@ -233,7 +247,25 @@
 					</ul>
 				</div>
 			</div>
-			<img src="img/index/bg.png" class="img-responsive img1" alt="Responsive image">
+			<!-- 前言部分 -->
+			<div class="preface">
+				<div class="txt">
+					<p class="title">橘子前言</p>
+					<p class="subtitle">你的爱情我来见证</p>
+					<div class="para">
+						<p>
+							一份真正的感情，需要彼此的珍惜；一份执着的守望，需要彼此的用心。
+						</p>
+						<p>
+							不是所有的等待，都能守候成美丽的风景，不是所有的感情，都能成为美丽的故事。
+						</p>
+						<p>
+							用心珍惜每一份爱，用心付出每一份情。爱，在珍惜里，温暖；情，在守候里，长久。
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- /前言部分 -->
 			<div class="wailian wailian-ul">
 				<div class="inner text-center">
 					<ul>
@@ -278,16 +310,18 @@
 						<div class="left">
 							<div class="form-left"></div>
 							<div class="form-right"></div>
-							<img src="img/index/service01.jpg" class="img-responsive pull-right">
+							<div class="item-left-img">
+								<img src="img/index/service01.png" class="img-responsive pull-right">
+							</div>
 						</div>
 						<div class="right">
 							<h3 style="margin-top: 0px;">挽回爱情</h3>
-							<p>你时候曾经因为自己的过失，而失去爱情，想放弃，是因为对方决绝的样子让你无能为力。想挽回，却又无从下手。</p>
+							<p>你是否曾经因为自己的过失，而失去爱情，想放弃，是因为对方决绝的样子让你无能为力。想挽回，却又无从下手。</p>
 							<div class="btn text-center">
-                                <!-- 模态框按钮 -->
-                                <div type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">立刻咨询</div>
-                                <!-- /模态框按钮 -->
-                                <div type="button" class="modal-btn" onclick="window.open('./save-love.html')">了解详情</div>
+								<!-- 模态框按钮 -->
+								<div type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">立刻咨询</div>
+								<!-- /模态框按钮 -->
+								<div type="button" class="modal-btn" onclick="window.open('./save-love.html')">了解详情</div>
 							</div>
 						</div>
 					</div>
@@ -299,10 +333,10 @@
 							<h3>挽救婚姻</h3>
 							<p>婚姻，不是个人人性的舞台，而是一份责任，是一生的牵绊。而如今，婚姻生活频频出现危机。婚姻保卫战，就此打响。</p>
 							<div class="btn">
-                                <!-- 模态框按钮 -->
-                                <div type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">立刻咨询</div>
-                                <!-- /模态框按钮 -->
-                                <div type="button" class="modal-btn" onclick="window.open('./save-marriage.html')">了解详情</div>
+								<!-- 模态框按钮 -->
+								<div type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">立刻咨询</div>
+								<!-- /模态框按钮 -->
+								<div type="button" class="modal-btn" onclick="window.open('./save-marriage.html')">了解详情</div>
 							</div>
 						</div>
 					</div>
@@ -314,10 +348,10 @@
 									<p>原本拥有甜蜜未来的二人世界，却因为对方的一时冲动，因为一个不和谐因素的介入，荡然无存。你歇斯底里，孤立无助，都无法回到过去。</p>
 								</div>
 								<div class="btn">
-                                    <!-- 模态框按钮 -->
-                                    <div type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">立刻咨询</div>
-                                    <!-- /模态框按钮 -->
-                                    <div type="button" class="modal-btn" onclick="window.open('./separate-mistress.html')">了解详情</div>
+									<!-- 模态框按钮 -->
+									<div type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">立刻咨询</div>
+									<!-- /模态框按钮 -->
+									<div type="button" class="modal-btn" onclick="window.open('./separate-mistress.html')">了解详情</div>
 								</div>
 							</div>
 						</div>
@@ -333,10 +367,10 @@
 							<h3>定制爱情</h3>
 							<p>你寻寻觅觅终于遇到那个让你心动的 TA，激起了你心底里那份对幸福的憧憬。但你却因为不知道怎么追，担心白白错过一生的幸福。</p>
 							<div class="btn">
-                                <!-- 模态框按钮 -->
-                                <div type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">立刻咨询</div>
-                                <!-- /模态框按钮 -->
-                                <div type="button" class="modal-btn" onclick="window.open('./custom-love.html')">了解详情</div>
+								<!-- 模态框按钮 -->
+								<div type="button" class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">立刻咨询</div>
+								<!-- /模态框按钮 -->
+								<div type="button" class="modal-btn" onclick="window.open('./custom-love.html')">了解详情</div>
 							</div>
 						</div>
 					</div>
@@ -351,89 +385,91 @@
 					<h2>导师团队</h2>
 					<p class="subtitle">MENTOR TEAM</p>
 				</div>
-				<div class="swiper-container">
-					<div class="swiper-wrapper text-center">
-						<div class="swiper-slide">
-							<img src="img/index/1.png" alt="">
-							<div class="txt text-left">
-								<div class="name">嘉伟</div>
-								<div class="info">橘子情感创始人、首席主导师</div>
-								<div class="des">导师寄语：每一段真挚的感情，都值得被祝福；感情中最可怕不是不爱了，而是爱错了方式，让双方抱憾终生。</div>
-								<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page1.html')">
-									<div>定制方案</div>
-									<div></div>
-									<div>定制方案</div>
+				<div class="team-banner">
+					<div class="swiper-container">
+						<div class="swiper-wrapper text-center">
+							<div class="swiper-slide">
+								<img src="img/index/1.png" alt="">
+								<div class="txt text-left">
+									<div class="name">嘉伟</div>
+									<div class="info">橘子情感创始人、首席主导师</div>
+									<div class="des">导师寄语：每一段真挚的感情，都值得被祝福；感情中最可怕不是不爱了，而是爱错了方式，让双方抱憾终生。</div>
+									<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page1.html')">
+										<div>了解导师</div>
+										<div></div>
+										<div>了解导师</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/index/2.png" alt="">
+								<div class="txt text-left">
+									<div class="name">茉言</div>
+									<div class="info">前世纪佳缘金牌红娘，高级形象设计师</div>
+									<div class="des">导师寄语：因为每一次爱情都是刻骨铭心的，但是实际和幻想的偏差，是很多人一生无法逾越的鸿沟。你缺乏的不是缘分，而是方法。</div>
+									<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page2.html')">
+										<div>了解导师</div>
+										<div></div>
+										<div>了解导师</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/index/3.png" alt="">
+								<div class="txt text-left">
+									<div class="name">阿苏</div>
+									<div class="info">首席挽回专家，高级两性心理学导师</div>
+									<div class="des">导师寄语：走在路上，感触太多，累过，笑过，或许正是这份责任和被寄托的希望，才是我们不断前行的动力。</div>
+									<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page4.html')">
+										<div>了解导师</div>
+										<div></div>
+										<div>了解导师</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/index/4.png" alt="">
+								<div class="txt text-left">
+									<div class="name">杰妮</div>
+									<div class="info">资深情感专家，女性心理与行为侧写师</div>
+									<div class="des">导师寄语：不要做无用功，发现问题的本质才是解决问题的唯一方式。</div>
+									<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page7.html')">
+										<div>了解导师</div>
+										<div></div>
+										<div>了解导师</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/index/5.png" alt="">
+								<div class="txt text-left">
+									<div class="name">千芜</div>
+									<div class="info">国内首批情感挽回专家，权威进化心理学教授</div>
+									<div class="des">导师寄语：通向幸福的路也许有千万条，也许你认为每一条都荆棘满布，但我会用我的专业与真诚，引领你寻找到幸福的捷径。</div>
+									<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page6.html')">
+										<div>了解导师</div>
+										<div></div>
+										<div>了解导师</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/index/6.png" alt="">
+								<div class="txt text-left">
+									<div class="name">浩宇</div>
+									<div class="info">国家二级心理咨询师，长期关系维护专家</div>
+									<div class="des">导师寄语：表达想法的能力，和想法本身，一样重要。大道至简，知易行难，希望用我的知识和经验，带你走向本该属于你的幸福。</div>
+									<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page3.html')">
+										<div>了解导师</div>
+										<div></div>
+										<div>了解导师</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<img src="img/index/2.png" alt="">
-							<div class="txt text-left">
-								<div class="name">茉言</div>
-								<div class="info">前世纪佳缘金牌红娘，高级形象设计师</div>
-								<div class="des">导师寄语：因为每一次爱情都是刻骨铭心的，但是实际和幻想的偏差，是很多人一生无法逾越的鸿沟。你缺乏的不是缘分，而是方法。</div>
-								<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page2.html')">
-									<div>定制方案</div>
-									<div></div>
-									<div>定制方案</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="img/index/3.png" alt="">
-							<div class="txt text-left">
-								<div class="name">阿苏</div>
-								<div class="info">首席挽回专家，浙江大学教育学博士</div>
-								<div class="des">导师寄语：走在路上，感触太多，累过，笑过，或许正是这份责任和被寄托的希望，才是我们不断前行的动力。</div>
-								<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page4.html')">
-									<div>定制方案</div>
-									<div></div>
-									<div>定制方案</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="img/index/4.png" alt="">
-							<div class="txt text-left">
-								<div class="name">杰妮</div>
-								<div class="info">资深情感专家，女性心理与行为侧写师</div>
-								<div class="des">导师寄语：不要做无用功，发现问题的本质才是解决问题的唯一方式。</div>
-								<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page7.html')">
-									<div>定制方案</div>
-									<div></div>
-									<div>定制方案</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="img/index/5.png" alt="">
-							<div class="txt text-left">
-								<div class="name">千无</div>
-								<div class="info">国内首批情感挽回专家，权威进化心理学教授</div>
-								<div class="des">导师寄语：通向幸福的路也许有千万条，也许你认为每一条都荆棘满布，但我会用我的专业与真诚，引领你寻找到幸福的捷径。</div>
-								<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page6.html')">
-									<div>定制方案</div>
-									<div></div>
-									<div>定制方案</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="img/index/6.png" alt="">
-							<div class="txt text-left">
-								<div class="name">浩宇</div>
-								<div class="info">国家二级心理咨询师，长期关系维护专家</div>
-								<div class="des">导师寄语：表达想法的能力，和想法本身，一样重要。大道至简，知易行难，希望用我的知识和经验，带你走向本该属于你的幸福。</div>
-								<div class="button_base b06_skewed_slide_in" onclick="window.open('./views/page3.html')">
-									<div>定制方案</div>
-									<div></div>
-									<div>定制方案</div>
-								</div>
-							</div>
-						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
 					</div>
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
 				</div>
 			</div>
 			<!-- /导师团队-->
@@ -488,45 +524,48 @@
 			<div class="body2">
 				<div class="space"></div>
 				<div class="left1">
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-						<!-- Indicators -->
-						<ol class="carousel-indicators">
-							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-						</ol>
 
-						<!-- Wrapper for slides -->
-						<div class="carousel-inner" role="listbox">
-							<div class="item active">
-								<img src="img/index/01dtlb.png" style="cursor:pointer;" onclick="window.open('./news/new6.html')" alt="暖爱计划" />
-								<div class="carousel-caption">
-
+					<!-- 新闻轮播图 -->
+					<div class="news-banner">
+						<div class="swiper-container-news">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="#" target="_blank"><img src="img/index/03dtlb.png" alt=""></a>
+									<p class="des">十大杰出诚信企业</p>
+								</div>
+								<div class="swiper-slide">
+									<a href="#"><img src="img/index/02dtlb.png" alt=""></a>
+									<p class="des">市南区区长参观</p>
+								</div>
+								<div class="swiper-slide">
+									<a href="#"><img src="img/index/01dtlb.png" alt=""></a>
+									<p class="des">“暖爱计划”婚恋知识公益讲座报道</p>
 								</div>
 							</div>
-							<div class="item">
-								<img src="img/index/02dtlb.png" style="cursor: pointer;" onclick="window.open('./news/new3.html')" alt="市南区区长视察工作" />
-								<div class="carousel-caption">
-
-								</div>
-							</div>
-							<div class="item">
-								<img src="img/index/03dtlb.png" style="cursor: pointer;" onclick="window.open('./news/new5.html')" alt="媒体采访" />
-								<div class="carousel-caption">
-
-								</div>
-							</div>
+							<div class="swiper-pagination-news"></div>
 						</div>
 					</div>
+					<script type="text/javascript">
+						/* 新闻列表轮播图 */
+						var newsBanner = new Swiper('.swiper-container-news', {
+							autoplay: 5000,
+							pagination: ".swiper-pagination-news",
+							paginationClickable: true,
+							slidesPerView: 1,
+							loop: true,
+						});
+					</script>
+					<!-- /新闻轮播图 -->
+
 					<div class="xinwen">
 						<div class="inner">
 							<ul>
 								<li class="xinwen-li1">
 									<a href="./news/new9.html"><img src="img/index/1.jpg" /></a>
 									<div class="txt txt-hover">
-										<h2><a href="./news/new9.html" target="_blank">社会各界人士交流会</a></h2>
+										<h2><a href="./news/new9.html" target="_blank">第六届情感导师行业交流指导会</a></h2>
 										<p>
-											<a href="./news/new9.html" target="_blank">"国家婚恋咨询师培植讲堂"交流会</a>
+											<a href="./news/new9.html" target="_blank">了解详情 >>></a>
 										</p>
 									</div>
 								</li>
@@ -535,7 +574,7 @@
 									<div class="txt txt-hover">
 										<h2><a href="./news/new2.html" target="_blank">十大杰出诚信企业</a></h2>
 										<p>
-											<a href="./news/new2.html" target="_blank">被评为十大杰出诚信企业</a>
+											<a href="./news/new2.html" target="_blank">了解详情 >>></a>
 										</p>
 									</div>
 								</li>
@@ -544,7 +583,7 @@
 									<div class="txt txt-hover">
 										<h2><a href="./news/new6.html" target="_blank">“暖爱计划”婚恋知识公益讲座报道</a></h2>
 										<p>
-											<a href="./news/new6.html" target="_blank">"暖爱计划"全国公益巡讲--上海站</a>
+											<a href="./news/new6.html" target="_blank">了解详情 >>></a>
 										</p>
 									</div>
 								</li>
@@ -747,7 +786,7 @@
 											们太靠谱了！
 										</li>
 										<li>
-											
+
 										</li>
 										<li>
 
@@ -827,8 +866,8 @@
 					</li>
 					<li class="li14">
 						<h2>
-                    用户保障
-                </h2>
+                    		用户保障
+               		 	</h2>
 						<p>
 							橘子情感作为行业的标杆，对行业的发展有着一份沉甸甸的责任。以身作则，将用户的权益放在首位，保障用户隐私以及情况解决。
 						</p>
@@ -867,7 +906,6 @@
 
 			</div>
 		</div>
-
 		<!-- 模态框 -->
 		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 			<div class="modal-dialog modal-lg" role="document">
@@ -895,17 +933,27 @@
                                 </span>
 							<span class="txt footer-mid-right">
                                     <p class="phone-txt">橘子情感热线</p>
-                                    <p class="phone-num">4006-299-520</p>
+                                    <p class="phone-num">
+                                    	4006-299-520
+                                    </p>
+                                    
                             </span>
 						</div>
 						<div class="bot">
 							<div class="left pull-left">
-								<p>橘子微信公众平台：<span class="wechat-num">juziqinggan_</span></p>
+								<p>橘子微信公众平台：<span class="wechat-num">juziqinggan</span></p>
 								<p>青岛橘子创想文化传播有限公司</p>
 							</div>
 							<div class="right pull-right">
 								<p>公司地址：<span class="address">青岛市市南区银川西路 67 号动漫产业园 A 座 212B</span></p>
-								<p>备案号：<span class="record-num">鲁 ICP 备 17023741 号</span></p>
+								<p>
+									备案号：<span class="record-num">鲁 ICP 备 17023741 号&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									<!--<script type="text/javascript">
+										var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+										document.write(unescape("%3Cspan id='cnzz_stat_icon_1263879655'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1263879655%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+									</script>-->
+									<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1263879655'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1263879655%26online%3D2' type='text/javascript'%3E%3C/script%3E"));</script>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -913,6 +961,10 @@
 						<div class="qrcode right"></div>
 						<span class="txt">扫一扫关注我们</span>
 					</div>
+					<!--<script type="text/javascript">
+			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+			document.write(unescape("%3Cspan id='cnzz_stat_icon_1263879655'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1263879655%26online%3D1' type='text/javascript'%3E%3C/script%3E"));
+		</script>-->
 				</div>
 			</div>
 		</footer>
@@ -922,6 +974,13 @@
 		<!-- javascript -->
 		<!--<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>-->
 		<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+
+		<!-- 引入 json 数据 -->
+		<script type="text/javascript" src="js/json/json.js"></script>
+
+		<!-- 引入固定导航栏的 js -->
+		<!--<script type="text/javascript" src="plugin/fixed-nav/fiexed-nav.js"></script>-->
+
 		<script type="text/javascript" src="js/jquery-runbanner.js"></script>
 		<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 		<script type="text/javascript" src="js/Carousel.js"></script>
@@ -948,18 +1007,21 @@
 			});
 		</script>
 		<!-- /javascript -->
-        <script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript">
 			/* 导师团队轮播图 */
-			var mySwiper = new Swiper('.swiper-container', {
+			var mySwiper = new Swiper('.team-banner .swiper-container', {
 				autoplay: 10000,
 				prevButton: '.swiper-button-prev',
 				nextButton: '.swiper-button-next',
 				loop: true,
 			});
-		</script>
 
+			/* 二级导航菜单 */
+			var navList = new Ora();
+			navList.navList();
+		</script>
 	</body>
 
 </html>

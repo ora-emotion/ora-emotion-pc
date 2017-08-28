@@ -86,7 +86,7 @@ a:link {
 
 
 .banner {
-  background: url("../img/emotion-forum/banner.png") no-repeat center center;
+  background: url("../img/emotion-forum/banner.jpg") no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;
   width: 100%;
@@ -104,7 +104,6 @@ a:link {
   }
 
   .module.module-01 {
-    margin-top: 75px;
     //--> 模块一标题
     .module-title {
       .txt {
@@ -114,7 +113,7 @@ a:link {
     }
     //-> 模块一主体
     .main {
-      margin: 75px auto 0;
+      margin: 0 auto;
       min-width: 1200px;
       width: 1200px;
       .top {
@@ -261,12 +260,19 @@ a:link {
             margin-bottom: 12px;
           }
           .item-group {
+            display: none;
             .item {
               display: flex;
               justify-content: space-between;
               padding-bottom: 82px;
               .left-pic {
                 position: relative;
+                width: 396px;
+                height: 234px;
+                img {
+                  width: 100%;
+                  //height: 100%;
+                }
                 .pic-hidden {
                   position: absolute;
                   top: 0;
@@ -307,6 +313,9 @@ a:link {
               border-bottom: 1px solid #e5e5e5;
               margin-bottom: 82px;
             }
+          }
+          .item-group.active {
+            display: block;
           }
         }
         .part:last-child {

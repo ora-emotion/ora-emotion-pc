@@ -1,61 +1,3 @@
-/*
- * 标题样式CSS
- */
-
-.biaoti {
-	width: 100%;
-	min-width: 1106px;
-	height: 100px;
-	margin-top: 50px;
-	text-align: center;
-	position: relative;
-	text-transform: uppercase;
-}
-
-.biaoti img {
-	position: absolute;
-	width: 42%;
-	top: 15px;
-}
-
-.biaoti img:nth-child(1) {
-	left: 0;
-	margin-right: 10px;
-}
-
-.biaoti img:nth-child(3) {
-	right: 0;
-	margin-left: 10px;
-}
-
-.biaoti span {
-	font-size: 40px;
-	font-weight: bold;
-}
-
-.biaoti p {
-	color: #CCCCCC;
-	letter-spacing: 2px;
-}
-
-.biaoti-long img {
-	position: absolute;
-	width: 40%;
-	top: 15px;
-}
-
-.biaoti-solong img {
-	position: absolute;
-	width: 36%;
-	top: 15px;
-}
-
-.biaoti-solong1 img {
-	position: absolute;
-	width: 34%;
-	top: 15px;
-}
-
 
 /*
  * banner图CSS
@@ -71,14 +13,32 @@
 }
 
 .body-bgimg {
-	background: url(../img/course/head-bgimg.png) no-repeat 1px -541px;
+	background: url(../img/course/head-bgimg.png) no-repeat 1px -635px;
 	-webkit-background-size: cover;
 	background-size: cover;
 	width: 100%;
 	height: 800px;
 	overflow: hidden;
 }
-
+@media only screen and (max-width: 1199px) {
+	.body-bgimg {
+		background: url(../img/course/head-bgimg.png) no-repeat 1px -505px;
+		-webkit-background-size: cover;
+		background-size: cover;
+		width: 100%;
+		height: 800px;
+		overflow: hidden;
+}
+}
+.body-bgimg p{
+	text-align: center;
+	font-size: 24px;
+	color: #2D2D2D;
+	margin-top: 20px;
+}
+.body-bgimg p:nth-child(1){
+	margin-top: 500px;
+}
 
 /*
  * 橘子高级方案CSS
@@ -318,7 +278,7 @@
 .body4 {
 	background-color: #2D2D2D;
 	width: 100%;
-	height: 800px;
+	height: 700px;
 	margin-top: 50px;
 }
 
@@ -398,7 +358,7 @@
 
 .body7 ul {
 	position: absolute;
-    width: 1370px;
+    width: 1350px;
     margin: 80px auto;
     display: flex;
     justify-content: space-around;

@@ -65,7 +65,7 @@ a:link {
 }
 /* 模块公共样式 */
 .banner {
-  background: url("../img/emotion-forum/banner.png") no-repeat center center;
+  background: url("../img/emotion-forum/banner.jpg") no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;
   width: 100%;
@@ -75,15 +75,12 @@ a:link {
   width: 1200px;
   margin: 0 auto;
 }
-.child-page .module.module-01 {
-  margin-top: 75px;
-}
 .child-page .module.module-01 .module-title .txt {
   width: 403px;
   background: url("../img/emotion-forum/title-icon03.png") no-repeat center 8px;
 }
 .child-page .module.module-01 .main {
-  margin: 75px auto 0;
+  margin: 0 auto;
   min-width: 1200px;
   width: 1200px;
 }
@@ -224,6 +221,9 @@ a:link {
   padding-left: 10px;
   margin-bottom: 12px;
 }
+.child-page .module.module-01 .main .bot .part .item-group {
+  display: none;
+}
 .child-page .module.module-01 .main .bot .part .item-group .item {
   display: flex;
   justify-content: space-between;
@@ -231,6 +231,11 @@ a:link {
 }
 .child-page .module.module-01 .main .bot .part .item-group .item .left-pic {
   position: relative;
+  width: 396px;
+  height: 234px;
+}
+.child-page .module.module-01 .main .bot .part .item-group .item .left-pic img {
+  width: 100%;
 }
 .child-page .module.module-01 .main .bot .part .item-group .item .left-pic .pic-hidden {
   position: absolute;
@@ -268,6 +273,9 @@ a:link {
 .child-page .module.module-01 .main .bot .part .item-group .item:last-child {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 82px;
+}
+.child-page .module.module-01 .main .bot .part .item-group.active {
+  display: block;
 }
 .child-page .module.module-01 .main .bot .part:last-child .item:last-child {
   border-bottom: none;

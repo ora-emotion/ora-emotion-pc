@@ -52,15 +52,11 @@ function moduleOne() {
 
         $(pic[listIndex]).siblings().css({
             "display": "none"
-        }).animate({
-            "opacity": "0"
-        }, 500);
+        });
         $(pic[listIndex]).css({
             "display": "block",
-            "opacity": "0"
-        }).animate({
             "opacity": "1"
-        }, 500);
+        });
 
     });
 

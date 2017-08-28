@@ -33,6 +33,71 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1106px #fff inset;
 }
 
+/* 头部轮播部分 */
+.header-banner {
+    background: url("../img/index/banner.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 885px;
+}
+
+/* 前言部分背景图 */
+.preface {
+    background: url("../img/index/bg.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 1087px;
+    position: relative;
+}
+
+/* 前言部分背景图文字 */
+.preface .txt {
+	position: absolute;
+	bottom: 172px;
+}
+@media (max-width: 1199px) {
+	.preface .txt {
+		left: 90px;
+	}
+}
+@media (min-width: 1200px) {
+	.preface .txt {
+		left: 290px;
+	}
+}
+
+.preface .txt p {
+    color: #2d2d2d;
+}
+
+.preface .txt .title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 56px;
+    height: 56px;
+    text-align: center;
+}
+
+.preface .txt .subtitle {
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    color: #fd3232;
+    text-align: center;
+}
+
+.preface .txt .para {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.preface .txt .para p {
+    height: 40px;
+    line-height: 20px;
+}
 
 /* 页面主体 */
 
@@ -493,13 +558,28 @@ input:-webkit-autofill {
     display: flex;
 }
 .xinwen-li1{
-	padding-top: 20px;
-}
-.xinwen-li2{
 	margin-top: -30px;
 }
+.xinwen-li2{
+	margin-top: -80px;
+}
 .xinwen-li3{
-	margin-top: -40px;
+	margin-top: -90px;
+}
+@media only screen and (max-width: 1199px) {
+	.xinwen-li1{
+		margin-top: 50px;
+	}
+	.xinwen-li2{
+		margin-top: 30px;
+	}
+	.xinwen-li3{
+		margin-top: 30px;
+	}
+	.body2 .left1 .xinwen .inner ul li .txt h2{
+   		padding-left: 0px;
+    	font-size: 26px;
+	}
 }
 .body2 .left1 .xinwen .inner ul li .txt {
     padding-left: 20px;
@@ -958,14 +1038,15 @@ input:-webkit-autofill {
 }
 
 .service .item:first-child .left img {
-    -webkit-transform: scale(.95);
-    -moz-transform: scale(.95);
-    -ms-transform: scale(.95);
-    -o-transform: scale(.95);
-    transform: scale(.95);
-    position: absolute;
-    bottom: -9px;
-    right: -13px;
+	-webkit-transform: scale(.95);
+	-moz-transform: scale(.95);
+	-ms-transform: scale(.95);
+	-o-transform: scale(.95);
+	transform: scale(.95);
+	position: absolute;
+	bottom: -16px;
+	right: -16px;
+	transition: all .3s;
 }
 
 .service .item:first-child .right {
@@ -1112,7 +1193,7 @@ input:-webkit-autofill {
     margin-top: 188px;
     width: 100%;
     height: 708px;
-    background: url("../img/index/bg-team.jpg") no-repeat center center;
+    background: url("../img/index/bg-team.png") no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
@@ -1310,18 +1391,22 @@ input:-webkit-autofill {
 }
 .scroll-text-long {
 	width: 400px;
-	height: 200px;
+	height: 300px;
 	overflow: hidden;
 	padding:3px;
+    border: 2px solid #c1c1c1;
 }
 .scroll-text-long ul {
 	width: 800px;
-	height: 240px;
+	height: 340px;
 	overflow: hidden;
-	margin: 0;
 }
 .scroll-text-long ul li {
-	height: 1.5em;
+	height: 2em;
 	font-size: 1.2em;
 	color: #F0F0F0;
 }
+
+
+
+/* 新闻列表轮播图 */

@@ -159,6 +159,7 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
+
 	// 获取当前文档高度
 	var documentHeight = $(document).height();
 	// 获取当前屏幕高度
@@ -171,7 +172,7 @@ $(document).ready(function() {
 	var moduleSevenOffsetTop3 = $(".body4-wen").offset().top;
 	//获取给您的保障模块距离屏幕顶端的高度
 	var moduleSevenOffsetTop4 = $(".txt-list").offset().top;
-//	console.log(moduleSevenOffsetTop);
+
 	$(window).scroll(function() {
 		// 获取滚动条滚动的距离
 		var scrollTop1 = $(window).scrollTop();
@@ -245,3 +246,4 @@ $(document).ready(function() {
 		}
 	});
 });
+

@@ -127,7 +127,7 @@ a:hover {
 }
 .child-page .module.module-01 .main {
   position: relative;
-  top: 75px;
+  top: 50px;
 }
 @media (max-width: 1199px) {
   .child-page .module.module-01 .main .bg {
@@ -217,7 +217,7 @@ a:hover {
   width: 200px;
 }
 .child-page .module.module-02 {
-  margin-top: 122px;
+  margin-top: 72px;
   /* 模块二标题 */
   /* /模块二标题 */
 }
@@ -226,7 +226,6 @@ a:hover {
   background: url("../img/custom-love/title-icon02.png") no-repeat center 8px;
 }
 .child-page .module.module-02 .main {
-  margin-top: 75px;
   width: 100%;
   background: url("../img/custom-love/m02-bg.png") no-repeat center center;
   -webkit-background-size: cover;
@@ -259,7 +258,6 @@ a:hover {
   left: 15px;
 }
 .child-page .module.module-03 {
-  margin-top: 122px;
   /* 模块三标题 */
   /* /模块三标题 */
 }
@@ -268,7 +266,6 @@ a:hover {
   background: url("../img/custom-love/title-icon02.png") no-repeat center 8px;
 }
 .child-page .module.module-03 .main {
-  margin-top: 75px;
   width: 100%;
   height: 1129px;
   background: url("../img/custom-love/m03-bg.png") no-repeat center center;
@@ -276,7 +273,6 @@ a:hover {
   background-size: cover;
 }
 .child-page .module.module-04 {
-  margin-top: 122px;
   /* 模块四标题 */
   /* /模块四标题 */
 }
@@ -285,7 +281,6 @@ a:hover {
   background: url("../img/custom-love/title-icon01.png") no-repeat center 8px;
 }
 .child-page .module.module-04 .main {
-  margin-top: 75px;
   background: url("../img/custom-love/m04-bg.png") no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;
@@ -324,7 +319,6 @@ a:hover {
   padding-left: 200px;
 }
 .child-page .module.module-05 {
-  margin-top: 122px;
   /* 模块五标题 */
   /* /模块五标题 */
 }
@@ -333,7 +327,6 @@ a:hover {
   background: url("../img/custom-love/title-icon01.png") no-repeat center 8px;
 }
 .child-page .module.module-05 .main {
-  margin-top: 75px;
   padding-top: 52px;
   padding-bottom: 52px;
   background-color: #202020;
@@ -344,6 +337,53 @@ a:hover {
 }
 .child-page .module.module-05 .main .items-group .item {
   width: 334px;
+  position: relative;
+}
+.child-page .module.module-05 .main .items-group .item .img-wrap {
+  width: 304px;
+  height: 213px;
+  overflow: hidden;
+}
+.child-page .module.module-05 .main .items-group .item .img-wrap .img-modal {
+  width: 304px;
+  height: 213px;
+  position: absolute;
+  z-index: 2;
+  background-color: #000;
+  opacity: 0;
+  transition: all .5s;
+}
+.child-page .module.module-05 .main .items-group .item .img-wrap img {
+  transition: all .5s;
+}
+.child-page .module.module-05 .main .items-group .item .img-wrap .txt-split {
+  width: 0;
+  height: 1px;
+  background-color: #f9f9f9;
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  z-index: 3;
+  transition: all .5s;
+}
+.child-page .module.module-05 .main .items-group .item .img-wrap .txt {
+  position: absolute;
+  top: 20px;
+  left: 20%;
+  right: 15%;
+  z-index: 3;
+  text-align: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.child-page .module.module-05 .main .items-group .item .img-wrap .txt p.title {
+  font-size: 24px;
+}
+.child-page .module.module-05 .main .items-group .item .img-wrap .txt p.info {
+  font-size: 18px;
+  position: relative;
+  bottom: 10px;
 }
 .child-page .module.module-05 .main .items-group .item p {
   font-size: 20px;
@@ -351,11 +391,23 @@ a:hover {
   color: #fff;
   padding-top: 20px;
 }
+.child-page .module.module-05 .main .items-group .item:hover .img-wrap .txt-split {
+  left: 9%;
+  width: 80%;
+}
+.child-page .module.module-05 .main .items-group .item:hover .img-wrap .txt {
+  opacity: 1;
+}
+.child-page .module.module-05 .main .items-group .item:hover .img-wrap .img-modal {
+  opacity: .5;
+}
+.child-page .module.module-05 .main .items-group .item:hover .img-wrap img {
+  transform: scale(1.1);
+}
 .child-page .module.module-05 .main .items-group:nth-child(2) {
   padding-top: 41px;
 }
 .child-page .module.module-06 {
-  margin-top: 122px;
   /* 模块六标题 */
   /* /模块六标题 */
 }
@@ -364,7 +416,6 @@ a:hover {
   background: url("../img/custom-love/title-icon01.png") no-repeat center 8px;
 }
 .child-page .module.module-06 .main {
-  margin-top: 75px;
   position: relative;
   overflow: hidden;
 }
@@ -389,7 +440,6 @@ a:hover {
   bottom: -4.8%;
 }
 .child-page .module.module-07 {
-  margin-top: 122px;
   overflow: hidden;
   /* 模块七标题 */
   /* /模块七标题 */
@@ -399,12 +449,14 @@ a:hover {
   background: url("../img/custom-love/title-icon01.png") no-repeat center 8px;
 }
 .child-page .module.module-07 .main {
-  margin-top: 75px;
   background-color: #e4e4e4;
   position: relative;
   width: 100%;
   opacity: 0;
   padding: 45px 0;
+}
+.child-page .module.module-07 .main .container {
+  width: 1100px;
 }
 .child-page .module.module-07 .main .row img {
   padding-top: 20px;
@@ -445,7 +497,6 @@ a:hover {
   top: 52px;
 }
 .child-page .module.module-08 {
-  margin-top: 122px;
   /* 模块八标题 */
   /* /模块八标题 */
 }
@@ -454,7 +505,6 @@ a:hover {
   background: url("../img/custom-love/title-icon01.png") no-repeat center 8px;
 }
 .child-page .module.module-08 .main {
-  margin-top: 75px;
   background: url("../img/custom-love/m08-bg.png") no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;

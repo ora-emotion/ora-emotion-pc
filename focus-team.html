@@ -9,15 +9,16 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="keywords" content=橘子情感/>
 		<meta name="description" content=橘子情感/>
+		<link rel="shortcut icon" href="img/ora.jpg" type="image/x-icon">
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/head.css" />
 		<link rel="stylesheet" href="css/foot.css" />
 		<link rel="stylesheet" href="css/lianxi.css" />
-		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/anniu/anniu1.css" />
         <link rel="stylesheet" href="css/focus-team.css" />
         <link rel="stylesheet" href="css/focus-team-bottom.css" />
 		<!--<link rel="stylesheet" href="css/modal-btn.css">-->
+		<link rel="stylesheet" href="css/biaoti.css" />
 		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
@@ -73,7 +74,7 @@
 						<div class="txt">
 							<p>官方二维码</p>
 							<p>免费情感热线电话</p>
-							<p>400-6299-520</p>
+							<p>4006-299-520</p>
 						</div>
 					</div>
 					<div class="wechat">
@@ -122,7 +123,7 @@
 						<li>
 							<a href="emotion-forum.html">情感课堂</a>
 						</li>
-						<li style="background-color: #FF3232;">
+						<li style="background-color: #FF3232;" class="active">
 							<a href="focus-team.html">权威专家</a>
 						</li>
 						<li>
@@ -180,10 +181,10 @@
                 	时间：2017-08-07
                 	描述：专注卓越模块
                 -->
-                <div class="biaoti" style="margin-top: -30px;">
-					<img src="img/save-love/biaoti-left.png" />
+                <div class="biaoti4" style="margin-top: -30px;">
+					<img src="img/biaoti-left.png" />
 					<span>专注卓越</span>
-					<img src="img/save-love/biaoti-right.png" />
+					<img src="img/biaoti-right.png" />
 					<p>focus on excellence</p>
 				</div>
 				<div class="body1">
@@ -220,10 +221,10 @@
                 	时间：2017-08-07
                 	描述：橘子情感导师团队
                 -->
-				<div class="biaoti biaoti-solong">
-					<img src="img/save-love/biaoti-left.png" />
+				<div class="biaoti8">
+					<img src="img/biaoti-left.png" />
 					<span>橘子情感导师团队</span>
-					<img src="img/save-love/biaoti-right.png" />
+					<img src="img/biaoti-right.png" />
 					<p>Orange emotion mentor team</p>
 				</div>
 				<div class="body2">
@@ -244,13 +245,12 @@
                 <!-- 模块三：橘子情感首席导师 -->
                 <div class="module module-03">
                     <!-- 模块二标题 -->
-                    <div class="module-title">
-                        <div class="line"></div>
-                        <div class="txt text-center">
-                            <h2>橘子情感首席导师</h2>
-                            <p>Orange emotion, chief instructor</p>
-                        </div>
-                    </div>
+                    <div class="biaoti8">
+                    	<img src="img/biaoti-left.png" />
+                    	<span>橘子情感首席导师</span>
+                    	<img src="img/biaoti-right.png" />
+                    	<p>Orange emotion, chief instructor</p>
+               		</div>
                     <!-- /模块二标题 -->
 
                     <!-- 模块三主体 -->
@@ -319,7 +319,7 @@
                                         <img src="img/focus-team/m03-page01-person04.png" alt="">
                                     </div>
                                     <div class="txt">
-                                        <div class="name">千无</div>
+                                        <div class="name">千芜</div>
                                         <p class="des">
                                             国内首批情感挽回专家，权威进化心理学教授，NLP国际认证导师
                                         </p>
@@ -468,7 +468,7 @@
 							</div>
 							<div class="bot">
 								<div class="left pull-left">
-									<p>橘子微信公众平台：<span class="wechat-num">juziqinggan_</span></p>
+									<p>橘子微信公众平台：<span class="wechat-num">juziqinggan</span></p>
 									<p>青岛橘子创想文化传播有限公司</p>
 								</div>
 								<div class="right pull-right">
@@ -488,6 +488,14 @@
 		</div>
 		<script type="text/javascript" src="js/common.js"></script>
         <script type="text/javascript" src="js/focus-team-bottom.js"></script>
+		<!-- 引入 json 数据 -->
+		<script type="text/javascript" src="js/json/json.js"></script>
+		<script type="text/javascript">
+			/* 二级导航菜单 */
+			var navList = new Ora();
+			navList.navList();
+		</script>
+
 	</body>
 
 </html>
