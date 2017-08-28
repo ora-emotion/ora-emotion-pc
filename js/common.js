@@ -1,3 +1,4 @@
+
 // 显示微信二维码
 function qrcodeWechat() {
     // 淡入

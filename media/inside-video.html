@@ -1,478 +1,494 @@
 <!DOCTYPE html>
 <html>
 
-<head lang="zh-CN">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equivmetahttp-equiv="x-ua-compatible" content="IE=7" />
-    <title>橘子情感--内部课程</title>
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content=橘子情感/>
-    <meta name="description" content=橘子情感/>
-    <link rel="shortcut icon" href="../img/ora.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/head.css" />
-    <link rel="stylesheet" href="../css/foot.css" />
-    <link rel="stylesheet" href="../css/lianxi.css" />
-    <link rel="stylesheet" href="../css/biaoti.css">
-    <link rel="stylesheet" href="../css/anniu/anniu1.css" />
+	<head lang="zh-CN">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equivmetahttp-equiv="x-ua-compatible" content="IE=7" />
+		<title>橘子情感--内部课程</title>
+		<meta name="msapplication-tap-highlight" content="no" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content=橘子情感/>
+		<meta name="description" content=橘子情感/>
+		<link rel="shortcut icon" href="../img/ora.jpg" type="image/x-icon">
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/head.css" />
+		<link rel="stylesheet" href="../css/foot.css" />
+		<link rel="stylesheet" href="../css/lianxi.css" />
+		<link rel="stylesheet" href="../css/biaoti.css">
+		<link rel="stylesheet" href="../css/anniu/anniu1.css" />
 
-    <style type="text/css">
-        *{ margin:0; padding:0}
-        .videolist-wrap {
-            width:300px;
-            height:500px;
-            overflow:hidden;
-            position:relative;
-        }
-        .cont{
-            position:absolute;
-            margin-right:10px;
-        }
-        .scroll{
-            width:5px;
-            height:50px;
-            position:absolute;
-            top:0;
-            right: 0;
-            background:#6a6a6a;
-            transition: width .3s;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-        }
-        .scroll:hover {
-            width: 10px;
-        }
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0
+			}
+			
+			.videolist-wrap {
+				width: 300px;
+				height: 500px;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			.cont {
+				position: absolute;
+				margin-right: 10px;
+			}
+			
+			.scroll {
+				width: 5px;
+				height: 50px;
+				position: absolute;
+				top: 0;
+				right: 0;
+				background: #6a6a6a;
+				transition: width .3s;
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+			}
+			
+			.scroll:hover {
+				width: 10px;
+			}
+			
+			.video-module {
+				width: 1200px;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+			}
+			
+			.video-module .videolist-wrap ul {
+				width: 285px;
+				margin-left: 10px;
+			}
+			
+			.video-module .videolist-wrap li {
+				width: 100%;
+				height: 54.5px;
+				line-height: 55px;
+				border-top: 1px solid #6a6a6a;
+				border-bottom: 1px solid #6a6a6a;
+				background-color: #2d2d2d;
+				color: #585858;
+				cursor: pointer;
+				overflow: hidden;
+			}
+			
+			.video-module .videolist-wrap .active {
+				color: #fd3232;
+			}
+			
+			.video-module .videolist-wrap li .icon {
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				vertical-align: middle;
+				margin-left: 30px;
+				margin-right: 12px;
+				background: url("../img/video/icon-triangle-gray.png") no-repeat center center;
+			}
+			
+			.video-module .videolist-wrap li.active .icon {
+				background: url("../img/video/icon-triangle-red.png") no-repeat center center;
+			}
+			
+			.video-module .video-player {
+				margin-right: 10px;
+			}
+			
+			.video-module .video-player .player {
+				display: none;
+			}
+			
+			.video-module .video-player .player.active {
+				display: block;
+			}
+			
+			iframe.player {
+				width: 870px;
+				height: 490px;
+			}
+			
+			.table-wrap {
+				width: 300px;
+				outline: none;
+				position: relative;
+				margin-bottom: 30px;
+			}
+			
+			.table-content {
+				height: 500px;
+				white-space: normal;
+				position: relative;
+				width: 100%;
+				overflow-x: auto;
+				overflow-y: scroll;
+				min-height: 0;
+			}
+		</style>
 
-        .video-module {
-            width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-        }
+		<script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	</head>
 
-        .video-module .videolist-wrap ul {
-            width: 285px;
-            margin-left: 10px;
-        }
-        .video-module .videolist-wrap li {
-            width: 100%;
-            height: 54.5px;
-            line-height: 55px;
-            border-top: 1px solid #6a6a6a;
-            border-bottom: 1px solid #6a6a6a;
-            background-color: #2d2d2d;
-            color: #585858;
-            cursor: pointer;
-            overflow: hidden;
-        }
-        .video-module .videolist-wrap .active {
-            color: #fd3232;
-        }
-        .video-module .videolist-wrap li .icon {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            vertical-align: middle;
-            margin-left: 30px;
-            margin-right: 12px;
-            background: url("../img/video/icon-triangle-gray.png") no-repeat center center;
-        }
-        .video-module .videolist-wrap li.active .icon {
-            background: url("../img/video/icon-triangle-red.png") no-repeat center center;
-        }
+	<body>
 
-        .video-module .video-player {
-            margin-right: 10px;
-        }
-        .video-module .video-player .player {
-            display: none;
-        }
-        .video-module .video-player .player.active {
-            display: block;
-        }
+		<!-- 页面头部 -->
+		<header>
+			<div class="inner">
+				<div class="pull-left">
+					<img src="../img/index/logo-word.jpg" alt="logo" class="img-responsive">
+				</div>
+				<div class="pull-right">
+					<div class="icon">
+						<div class="qrcode-wechat">
+							<img src="../img/index/icon-wechat-red.jpg" alt="微信二维码">
+						</div>
+						<div class="num-phone">
+							<img src="../img/index/icon-phone-red.jpg" alt="热线电话">
+						</div>
+					</div>
+					<div class="txt">
+						<p>官方二维码</p>
+						<p>免费情感热线电话</p>
+						<p>4006-299-520</p>
+					</div>
+				</div>
+				<div class="wechat">
+					<img src="../img/index/erwei.jpg" alt="微信二维码">
+				</div>
+			</div>
+		</header>
+		<!-- /页面头部 -->
 
-        embed.player {
-            width: 870px;
-            height: 490px;
-        }
-        
-    </style>
+		<!-- 右侧菜单 -->
+		<div class="yb_conct">
+			<div class="yb_bar">
+				<ul>
+					<li class="yb_top">返回顶部</li>
+					<li class="yb_phone">4006-299-520</li>
+					<li class="yb_QQ">
+						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1301841354&amp;site=qq&amp;menu=yes&amp;from=message&amp;isappinstalled=0" title="即刻发送您的需求">在线咨询</a>
+					</li>
+					<li class="yb_ercode" style="height:53px;">微信公众号 <br>
+						<img class="hd_qr" src="../img/index/weixin.gif" width="180" alt="">
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /右侧菜单 -->
 
-    <script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-</head>
+		<!-- 导航菜单-->
+		<div class="nav">
+			<div class="inner text-center">
+				<ul class="nav-block">
+					<li>
+						<a href="../index.html">橘子首页</a>
+					</li>
+					<li>
+						<a href="../save-love.html">挽回爱情</a>
+					</li>
+					<li>
+						<a href="../save-marriage.html">挽救婚姻</a>
+					</li>
+					<li>
+						<a href="../separate-mistress.html">分离小三</a>
+					</li>
+					<li>
+						<a href="../custom-love.html">定制爱情</a>
+					</li>
+					<li>
+						<a href="../emotion-forum.html">情感课堂</a>
+					</li>
+					<li>
+						<a href="../focus-team.html">权威专家</a>
+					</li>
+					<li>
+						<a href="../course.html">课程介绍</a>
+					</li>
+					<li class="no">
+						<a href="../about-us.html">关于我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /导航菜单 -->
 
-<body>
+		<!-- 子页面主体区域 -->
+		<div class="child-page">
 
-<!-- 页面头部 -->
-<header>
-    <div class="inner">
-        <div class="pull-left">
-            <img src="../img/index/logo-word.jpg" alt="logo" class="img-responsive">
-        </div>
-        <div class="pull-right">
-            <div class="icon">
-                <div class="qrcode-wechat">
-                    <img src="../img/index/icon-wechat-red.jpg" alt="微信二维码">
-                </div>
-                <div class="num-phone">
-                    <img src="../img/index/icon-phone-red.jpg" alt="热线电话">
-                </div>
-            </div>
-            <div class="txt">
-                <p>官方二维码</p>
-                <p>免费情感热线电话</p>
-                <p>4006-299-520</p>
-            </div>
-        </div>
-        <div class="wechat">
-            <img src="../img/index/erwei.jpg" alt="微信二维码">
-        </div>
-    </div>
-</header>
-<!-- /页面头部 -->
+			<!-- 模块标题 -->
+			<div class="biaoti8">
+				<img src="../img/biaoti-left.png" alt="">
+				<span>完整付费视频课程</span>
+				<img src="../img/biaoti-right.png" alt="">
+				<p>Full paid video course</p>
+			</div>
+			<!-- /模块标题 -->
 
-<!-- 右侧菜单 -->
-<div class="yb_conct">
-    <div class="yb_bar">
-        <ul>
-            <li class="yb_top">返回顶部</li>
-            <li class="yb_phone">4006-299-520</li>
-            <li class="yb_QQ">
-                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1301841354&amp;site=qq&amp;menu=yes&amp;from=message&amp;isappinstalled=0" title="即刻发送您的需求">在线咨询</a>
-            </li>
-            <li class="yb_ercode" style="height:53px;">微信公众号 <br>
-                <img class="hd_qr" src="../img/index/weixin.gif" width="180" alt="">
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- /右侧菜单 -->
-
-<!-- 导航菜单-->
-<div class="nav">
-    <div class="inner text-center">
-        <ul class="nav-block">
-            <li>
-                <a href="../index.html">橘子首页</a>
-            </li>
-            <li>
-                <a href="../save-love.html">挽回爱情</a>
-            </li>
-            <li>
-                <a href="../save-marriage.html">挽救婚姻</a>
-            </li>
-            <li>
-                <a href="../separate-mistress.html">分离小三</a>
-            </li>
-            <li>
-                <a href="../custom-love.html">定制爱情</a>
-            </li>
-            <li>
-                <a href="../emotion-forum.html">情感课堂</a>
-            </li>
-            <li>
-                <a href="../focus-team.html">权威专家</a>
-            </li>
-            <li>
-                <a href="../course.html">课程介绍</a>
-            </li>
-            <li class="no">
-                <a href="../about-us.html">关于我们</a>
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- /导航菜单 -->
-
-<!-- 子页面主体区域 -->
-<div class="child-page">
-
-    <!-- 模块标题 -->
-    <div class="biaoti8">
-        <img src="../img/biaoti-left.png" alt="">
-        <span>完整付费视频课程</span>
-        <img src="../img/biaoti-right.png" alt="">
-        <p>Full paid video course</p>
-    </div>
-    <!-- /模块标题 -->
-
-    <!-- 模块主体 -->
-    <div class="video-module">
-		<!--<div class="top-btn">
+			<!-- 模块主体 -->
+			<div class="video-module">
+				<!--<div class="top-btn">
 			<button>返回顶部</button>
 		</div>-->
-        <!-- 视频列表 -->
-        <div class="videolist-wrap">
-            <ul class="videolist">
-                <li class="active"><i class="icon"></i>(一)视频总览</li>
-                <li><i class="icon"></i>(二)正确认识你和女生的关系</li>
-                <li><i class="icon"></i>(三)男女分类系统</li>
-                <li><i class="icon"></i>(四)形象建设</li>
-                <li><i class="icon"></i>(五)朋友圈建设</li>
-                <li><i class="icon"></i>(六)展示面实例讲解</li>
-                <li><i class="icon"></i>(七)线下搭讪认识女生</li>
-                <li><i class="icon"></i>(八)线上收集资源</li>
-                <li><i class="icon"></i>(九)聊天理论</li>
+				<div class="videolist-wrap table-wrap">
+					<ul class="videolist table-content">
+						<li class="active"><i class="icon"></i>(一)视频总览</li>
+						<li><i class="icon"></i>(二)正确认识你和女生的关系</li>
+						<li><i class="icon"></i>(三)男女分类系统</li>
+						<li><i class="icon"></i>(四)形象建设</li>
+						<li><i class="icon"></i>(五)朋友圈建设</li>
+						<li><i class="icon"></i>(六)展示面实例讲解</li>
+						<li><i class="icon"></i>(七)线下搭讪认识女生</li>
+						<li><i class="icon"></i>(八)线上收集资源</li>
+						<li><i class="icon"></i>(九)聊天理论</li>
 
-                <li><i class="icon"></i>(十)聊天案例分析</li>
-                <li><i class="icon"></i>(十一)与妹子相处时的常见问题</li>
-                <li><i class="icon"></i>(十二)如何与女生约会</li>
-                <li><i class="icon"></i>(十三)处理asd及发生亲密行为</li>
-                <li><i class="icon"></i>(十四)长期关系</li>
-                <li><i class="icon"></i>(十五)挽回心态和心法</li>
-                <li><i class="icon"></i>(十六)挽回的具体操作和技巧</li>
+						<li><i class="icon"></i>(十)聊天案例分析</li>
+						<li><i class="icon"></i>(十一)与妹子相处时的常见问题</li>
+						<li><i class="icon"></i>(十二)如何与女生约会</li>
+						<li><i class="icon"></i>(十三)处理asd及发生亲密行为</li>
+						<li><i class="icon"></i>(十四)长期关系</li>
+						<li><i class="icon"></i>(十五)挽回心态和心法</li>
+						<li><i class="icon"></i>(十六)挽回的具体操作和技巧</li>
 
-                <li><i class="icon"></i>(十七)狙击真命</li>
-                <li><i class="icon"></i>(十八)同性恋挽回</li>
-                <li><i class="icon"></i>(十九)异地恋注意事项</li>
-                <li><i class="icon"></i>(二十)关于相亲</li>
-                <li title="(二十一)婚后生活中长期关系的维护和保鲜"><i class="icon"></i>(二十一)婚后生活中长期关系的维护和保鲜</li>
-                <li><i class="icon"></i>(二十二)AboutSxx</li>
-                <li><i class="icon"></i>(二十三)预防和分离第三者</li>
-            </ul>
-        </div>
+						<li><i class="icon"></i>(十七)狙击真命</li>
+						<li><i class="icon"></i>(十八)同性恋挽回</li>
+						<li><i class="icon"></i>(十九)异地恋注意事项</li>
+						<li><i class="icon"></i>(二十)关于相亲</li>
+						<li title="(二十一)婚后生活中长期关系的维护和保鲜"><i class="icon"></i>(二十一)婚后生活中长期关系的维护和保鲜</li>
+						<li><i class="icon"></i>(二十二)AboutSxx</li>
+						<li><i class="icon"></i>(二十三)预防和分离第三者</li>
+					</ul>
+				</div>
 
-        <!-- 视频 -->
-        <div class="video-player">
-                    <div class="video">
+				<!-- 视频 -->
+				<div class="video-player">
+					<div class="video">
 
-                        <embed class="player active" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MjkxNzU0OA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/sid/XMjc3Mjk2MTMyNA==/v.swf' allowFullScreen='true' quality='high' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3Mzc0MDAzMg==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3Mjk5Mjc5Mg==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzA3NTExNg==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzE4NzYzNg==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzMyNjc2NA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzM4MTAwMA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzQyNDI4OA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+						<iframe class="player active" src='http://player.youku.com/embed/XMjc3MjkxNzU0OA==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjc3Mjk2MTMyNA==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjc3Mzc0MDAzMg==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjc3Mjk5Mjc5Mg==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjc3MzA3NTExNg==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjc3MzE4NzYzNg==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjc3MzMyNjc2NA==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjc3MzM4MTAwMA==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjc3MzQyNDI4OA==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjc3MzU1ODE2MA==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjc3MzgxODUxNg==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjc3Mzg1NDcwMA==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjc3MzkwMDM0OA==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjc3MzkzMDcwMA==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjc3Mzk2NzQ4NA==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjc3NDAxMTA4NA==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjc3NDA1MDkwMA==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjc3NDA5NTAwMA==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjgyODExNzY4OA==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjgyODEwNjMwOA==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjgyODEwNjMwMA==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjkyMzkyNTg4NA==' frameborder=0 'allowfullscreen'></iframe>
+						<iframe class="player" src='http://player.youku.com/embed/XMjgyODExNzc2OA==' frameborder=0 'allowfullscreen'></iframe>
+					</div>
+				</div>
+			</div>
+			<!-- /模块主体 -->
 
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzU1ODE2MA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzgxODUxNg==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3Mzg1NDcwMA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzkwMDM0OA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3MzkzMDcwMA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3Mzk2NzQ4NA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3NDAxMTA4NA==/v.swf' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+		</div>
+		<!-- /子页面主体区域 -->
 
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3NDA1MDkwMA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjc3NDA5NTAwMA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjgyODExNzY4OA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjgyODEwNjMwOA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjgyODEwNjMwMA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjkyMzkyNTg4NA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-                        <embed class="player" src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjgyODExNzc2OA==/v.swf' quality='high' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
-
-                    </div>
-                </div>
-    </div>
-    <!-- /模块主体 -->
-
-</div>
-<!-- /子页面主体区域 -->
-
-<!-- 页面底部 -->
-<footer>
-    <div class="inner">
-        <div class="triangle">
-            <div class="triangle-outer"></div>
-            <div class="triangle-inner"></div>
-        </div>
-        <div class="main">
-            <div class="footer-logo left"></div>
-            <div class="txt mid">
-                <div class="footer-top">
+		<!-- 页面底部 -->
+		<footer>
+			<div class="inner">
+				<div class="triangle">
+					<div class="triangle-outer"></div>
+					<div class="triangle-inner"></div>
+				</div>
+				<div class="main">
+					<div class="footer-logo left"></div>
+					<div class="txt mid">
+						<div class="footer-top">
 							<span class="icon phone footer-mid-left">
                                         <img src="../img/index/icon-phone-red.png" alt="热线电话">
                                     </span>
-                    <span class="txt footer-mid-right">
+							<span class="txt footer-mid-right">
                                         <p class="phone-txt">橘子情感热线</p>
                                         <p class="phone-num">4006-299-520</p>
                                 </span>
-                </div>
-                <div class="bot">
-                    <div class="left pull-left">
-                        <p>橘子微信公众平台：<span class="wechat-num">jzqinggan</span></p>
-                        <p>青岛橘子创想文化传播有限公司</p>
-                    </div>
-                    <div class="right pull-right">
-                        <p>公司地址：<span class="address">青岛市市南区银川西路 67 号动漫产业园 A 座 212B</span></p>
-                        <p>备案号：<span class="record-num">鲁 ICP 备 17023741 号</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="icon qrcode text-center">
-                <div class="qrcode right"></div>
-                <span class="txt">扫一扫关注我们</span>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- /页面底部 -->
+						</div>
+						<div class="bot">
+							<div class="left pull-left">
+								<p>橘子微信公众平台：<span class="wechat-num">jzqinggan</span></p>
+								<p>青岛橘子创想文化传播有限公司</p>
+							</div>
+							<div class="right pull-right">
+								<p>公司地址：<span class="address">青岛市市南区银川西路 67 号动漫产业园 A 座 212B</span></p>
+								<p>备案号：<span class="record-num">鲁 ICP 备 17023741 号</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="icon qrcode text-center">
+						<div class="qrcode right"></div>
+						<span class="txt">扫一扫关注我们</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- /页面底部 -->
 
-<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
 
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/hxsd_tools.js"></script>
-<script src="js/hxsd_widget.js"></script>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/hxsd_tools.js"></script>
+		<script src="js/hxsd_widget.js"></script>
 
-<!-- 引入 json 数据 -->
-<script type="text/javascript" src="../js/json/anlijson.js"></script>
-<script type="text/javascript">
-    /* 二级导航菜单 */
-    var navList = new Ora();
-    navList.navList();
+		<!-- 引入 json 数据 -->
+		<script type="text/javascript" src="../js/json/anlijson.js"></script>
+		<script type="text/javascript">
+			/* 二级导航菜单 */
+			var navList = new Ora();
+			navList.navList();
 
-    /* 橘子视频 */
-    var aLi = $(".videolist li");
-    var videoItem = $("embed");
+			/* 橘子视频 */
+			var aLi = $(".videolist li");
+			var videoItem = $("iframe");
 
-    aLi.click(function () {
+			aLi.click(function() {
 
-        $(this).addClass("active").siblings().removeClass("active");
-        var _index = $(this).index();
-        console.log(_index);
+				$(this).addClass("active").siblings().removeClass("active");
+				var _index = $(this).index();
+				console.log(_index);
 
-        // 显示当前视频隐藏其他视频
-        $($(videoItem)[_index]).addClass("active").siblings().removeClass("active");
+				// 显示当前视频隐藏其他视频
+				$($(videoItem)[_index]).addClass("active").siblings().removeClass("active");
 
+				// 播放当前视频，暂停其他视频
+//				for(var i = 0; i < videoItem.length; i++) {
+//					$(videoItem)[i].pause();
+//					$(videoItem)[_index].play();
+//				}
 
-        // 播放当前视频，暂停其他视频
-        for (var i = 0; i < videoItem.length; i++) {
-            $(videoItem)[i].pause();
-            $(videoItem)[_index].play();
-        }
+			});
 
-    });
+			function Ora() {
 
-    function Ora() {
+				/* 生成二级导航菜单 */
+				Ora.prototype.navList = function() {
+					// 获取二级菜单列表
+					var navList = $(".nav .nav-block li");
+					$.ajax({
+						type: "GET",
+						url: "../data/nav.json",
+						success: function(data) {
+							var i = 0;
+							// 依次将获取到的对象的属性值插入到 li 元素中的 a 标签里
+							for(var titleName in data.navTitle) {
+								$(navList[i]).children("a").text(data.navTitle[titleName]); // 通过方括号语法来访问对象的属性值
+								i++;
+							}
+						}
+					});
+				};
 
-        /* 生成二级导航菜单 */
-        Ora.prototype.navList = function () {
-            // 获取二级菜单列表
-            var navList = $(".nav .nav-block li");
-            $.ajax({
-                type: "GET",
-                url: "../data/nav.json",
-                success: function (data) {
-                    var i = 0;
-                    // 依次将获取到的对象的属性值插入到 li 元素中的 a 标签里
-                    for (var titleName in data.navTitle) {
-                        $(navList[i]).children("a").text(data.navTitle[titleName]);  // 通过方括号语法来访问对象的属性值
-                        i++;
-                    }
-                }
-            });
-        };
+				/* 页面底部微信公众平台 */
+				Ora.prototype.wechatPlatformTxt = function() {
+					var wechatPlatformTxt = $("footer .main .bot .left p>.wechat-num");
+					$.ajax({
+						type: "GET",
+						url: "data/footer.json",
+						success: function(data) {
+							wechatPlatformTxt.text(data.wechatPlatformTxt);
+						}
+					});
+				}
 
-        /* 页面底部微信公众平台 */
-        Ora.prototype.wechatPlatformTxt = function () {
-            var wechatPlatformTxt = $("footer .main .bot .left p>.wechat-num");
-            $.ajax({
-                type: "GET",
-                url: "data/footer.json",
-                success: function (data) {
-                    wechatPlatformTxt.text(data.wechatPlatformTxt);
-                }
-            });
-        }
+			}
 
-    }
+			/* 页面底部微信公众平台 */
+			var wechatPlatformTxt = new Ora();
+			wechatPlatformTxt.wechatPlatformTxt();
 
-    /* 页面底部微信公众平台 */
-    var wechatPlatformTxt = new Ora();
-    wechatPlatformTxt.wechatPlatformTxt();
+			var scrollSelf = (function() {
 
+				//判断内容是否超出
+				var oBox = $('.videolist-wrap');
+				var oBox_h = oBox.height(); //盒子高度
 
+				var oBox_cont_h = oBox.prop("scrollHeight"); //内容高度
+				console.log(oBox_h, oBox_cont_h);
 
-    var scrollSelf = (function () {
+				if(oBox_cont_h > oBox_h) {
+					oBox.children().wrap('<div class="cont"></div>');
+					var scrollBox = $('<div class="scroll"></div>');
+					oBox.append(scrollBox);
 
-        //判断内容是否超出
-        var oBox=$('.videolist-wrap');
-        var oBox_h=oBox.height();//盒子高度
+					var n_oBox_cont_h = oBox.prop("scrollHeight"); //重新计算盒子内容高度
+					//console.log(oBox_h,n_oBox_cont_h);
 
-        var oBox_cont_h=oBox.prop("scrollHeight");//内容高度
-        console.log(oBox_h,oBox_cont_h);
+					//计算比例
+					var h_rate = oBox_h / n_oBox_cont_h;
 
-        if(oBox_cont_h>oBox_h){
-            oBox.children().wrap('<div class="cont"></div>');
-            var scrollBox=$('<div class="scroll"></div>');
-            oBox.append(scrollBox);
+					var scrollBox_h = oBox_h * h_rate; //手柄高度
 
-            var n_oBox_cont_h=oBox.prop("scrollHeight"); //重新计算盒子内容高度
-            //console.log(oBox_h,n_oBox_cont_h);
+					if(scrollBox_h < 50) { //限制手柄的最小高度
+						scrollBox_h = 50;
+					}
+					//设定手柄的高度
+					scrollBox.height(scrollBox_h);
 
-            //计算比例
-            var h_rate=oBox_h/n_oBox_cont_h;
+					//拖拽------------------------------------------------
+					scrollBox.mousedown(function(ev) {
+						var disY = ev.pageY - scrollBox.offset().top; //鼠标相对手柄偏移
+						//			var disY=ev.pageY-scrollBox.position().
+						$(document).mousemove(function(ev) {
+							var t = ev.pageY - oBox.offset().top - disY; //盒子偏移  -鼠标相对手柄偏移
+							//				var t=ev.pageY-disY;
+							move(t);
+						});
+						$(document).mouseup(function() {
+							$(document).unbind('mousemove');
+						});
 
-            var scrollBox_h=oBox_h*h_rate;//手柄高度
+						return false; //阻止默认事件
+					});
 
-            if(scrollBox_h<50){//限制手柄的最小高度
-                scrollBox_h=50;
-            }
-            //设定手柄的高度
-            scrollBox.height(scrollBox_h);
+					function move(t) {
+						if(t < 0) {
+							t = 0;
+						}
 
-            //拖拽------------------------------------------------
-            scrollBox.mousedown(function(ev){
-                var disY=ev.pageY-scrollBox.offset().top;	//鼠标相对手柄偏移
-//			var disY=ev.pageY-scrollBox.position().
-                $(document).mousemove(function(ev){
-                    var t=ev.pageY-oBox.offset().top-disY; //盒子偏移  -鼠标相对手柄偏移
-//				var t=ev.pageY-disY;
-                    move(t);
-                });
-                $(document).mouseup(function(){
-                    $(document).unbind('mousemove');
-                });
+						if(t > oBox_h - scrollBox_h) {
+							t = oBox_h - scrollBox_h
+						}
 
-                return false;//阻止默认事件
-            });
+						//计算移动比率
+						var move_rate = t / (oBox_h - scrollBox_h);
 
+						var tt = (n_oBox_cont_h - oBox_h) * move_rate; //内容要移动的距离
 
+						oBox.children('.cont').css('top', -tt);
+						scrollBox.css('top', t);
+					}
 
-            function move(t){
-                if(t<0){
-                    t=0;
-                }
+					//滚轮-----------------------------------------
+					oBox.mouseWheel(function(drt) {
+						var t = 0;
+						// ↓ true   ↑ false
 
-                if(t>oBox_h-scrollBox_h){
-                    t=oBox_h-scrollBox_h
-                }
+						if(drt) {
+							t = scrollBox.position().top + 10;
+							move(t)
+						} else {
+							t = scrollBox.position().top - 10;
+							move(t)
+						}
+					});
+				}
 
-                //计算移动比率
-                var move_rate=t/(oBox_h-scrollBox_h);
+			}());
+		</script>
+	</body>
 
-                var tt=(n_oBox_cont_h-oBox_h)*move_rate;//内容要移动的距离
-
-
-                oBox.children('.cont').css('top',-tt);
-                scrollBox.css('top',t);
-            }
-
-
-            //滚轮-----------------------------------------
-            oBox.mouseWheel(function(drt){
-                var t=0;
-                // ↓ true   ↑ false
-
-                if(drt){
-                    t=scrollBox.position().top+10;
-                    move(t)
-                }else{
-                    t=scrollBox.position().top-10;
-                    move(t)
-                }
-            });
-        }
-
-    }());
-
-
-
-</script>
-</body>
 </html>
