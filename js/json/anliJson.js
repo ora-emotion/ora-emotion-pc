@@ -7,15 +7,12 @@ function navJson() {
         type: "GET",
         url: "../data/nav.json",
         success: function (data) {
-            $(navList[0]).children("a").text(data.index);
-            $(navList[1]).children("a").text(data.saveLove);
-            $(navList[2]).children("a").text(data.saveMarriage);
-            $(navList[3]).children("a").text(data.separateMistress);
-            $(navList[4]).children("a").text(data.customLove);
-            $(navList[5]).children("a").text(data.emotionForum);
-            $(navList[6]).children("a").text(data.focusTeam);
-            $(navList[7]).children("a").text(data.course);
-            $(navList[8]).children("a").text(data.aboutUs);
+            var i = 0;
+            // 依次将获取到的对象的属性值插入到 li 元素中的 a 标签里
+            for (var titleName in data.navTitle) {
+                $(navList[i]).children("a").text(data.navTitle[titleName]);  // 通过方括号语法来访问对象的属性值
+                i++;
+            }
         }
     });
 }
