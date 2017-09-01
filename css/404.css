@@ -1,62 +1,9 @@
-body {
-  background:#222;
-  margin:0;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:12px;
+.module{
+	width: 100%;
 }
-
-img {
-  border:0;
+.main{
+	background: url(../img/404bgimg.jpg) center center no-repeat;
+	width: 100%;
+	height: 923px;
+	margin: 0 auto;
 }
-
-a, input {
-  outline:none !important;
-}
-
-.wrapper {
-  width:960px;
-  margin:0 auto;
-  position:relative;
-  text-align:center;
-}
-
-#whoops{
-  width:683px;
-  height:433px;
-  background:url(../img/404_dark.png) no-repeat;
-  margin:0 auto;
-}
-
-
-/* Content */
-
-.content {
-  text-align:center;
-  padding:30px 0 30px 0px;
-}
-.content p {
-  font-weight:bold;
-  font-size:14px;
-  font-family:arial, helvetica, sans-serif;
-  color:#888;line-height:20px;
-  margin:20px 0px 15px 0px;
-}
-
-#divider {
-  width:578px;height:30px;
-  background:url(../img/dark_line.png) no-repeat;
-  margin:0 auto;
-}
-
-a {
-  text-decoration:none;
-  color:#777;
-  line-height:20px;
-}
-
-a:hover {
-  text-decoration:none;
-  color:#888;
-  line-height:20px;
-}
-
