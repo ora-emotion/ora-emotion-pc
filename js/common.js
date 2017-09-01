@@ -65,3 +65,13 @@ function navJson() {
     });
 }
 navJson();
+
+$(document).ready(function(){
+	//获取当前屏幕宽度
+	var windowWidth = $(window).width();
+	
+	//判断移动端，跳转页面
+	if(windowWidth<=980){
+		self.location='../mobile/wap/index.html';
+	}
+});
