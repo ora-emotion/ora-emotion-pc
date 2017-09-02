@@ -607,6 +607,9 @@ input:-webkit-autofill {
 	margin-top: 150px;
 	padding-left: 50px;
 }
+.body2 .right1 h1 a{
+	color: #2D2D2D;
+}
 .body2 .right1 p{
 	font-size: 1.4em;
 	color: #2D2D2D;
