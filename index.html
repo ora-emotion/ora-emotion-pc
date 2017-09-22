@@ -27,68 +27,68 @@
 				border: 1px solid #2d2d2d;
 			}
 			/* 橘子冬天链接样式 */
-			
+
 			.txt-hover a {
 				color: #fff;
 				transition: color .3s;
 			}
-			
+
 			.txt-hover:hover a {
 				color: #fd3232;
 			}
-			
+
 			@media (max-width: 1190px) {
 				footer {
 					width: 1500px;
 				}
 			}
-			
+
 			@media (min-width: 1200px) {
 				footer {
 					width: 100%;
 				}
 			}
-			
+
 			footer {
 				margin-top: 0;
 				position: relative;
 				bottom: -151px;
 			}
-			
+
 			.biaoti1 {
 				padding: 0 0 50px;
 				position: relative;
 				top: 100px;
 			}
-			
+
 			div.navB {
 				position: relative;
 				top: 100px;
 			}
-			
+
 			.body2 {
 				position: relative;
 				top: 100px;
 			}
 			/* 新闻列表轮播图 */
-			
+
 			.news-banner {
 				width: 100%;
 				overflow: hidden;
 			}
-			
+
 			.news-banner .swiper-container-news {
 				position: relative;
 			}
-			
+
 			.news-banner .swiper-slide img {
 				width: 100%;
 			}
-			
+
 			.news-banner .swiper-slide {
 				position: relative;
 			}
-			
+
 			.news-banner .swiper-slide .des {
 				width: 100%;
 				height: 45px;
@@ -100,7 +100,7 @@
 				font-size: 24px;
 				padding-left: 15px;
 			}
-			
+
 			.swiper-container-horizontal>.swiper-pagination-bullets,
 			.swiper-pagination-custom,
 			.swiper-pagination-fraction {
@@ -109,17 +109,17 @@
 				left: 600px;
 				z-index: 2;
 			}
-			
+
 			.swiper-pagination-news .swiper-pagination-bullet {
 				width: 15px;
 				height: 15px;
 				background-color: #fff;
 			}
-			
+
 			.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
 				margin: 0 10px;
 			}
-			
+
 			.swiper-pagination-bullet.swiper-pagination-bullet-active {
 				background-color: #fd3232;
 			}
@@ -130,6 +130,12 @@
 		<script type="text/javascript" src="js/zepto.min.js"></script>
 		<script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
 		<script>
+			var deviceWidth = document.documentElement.clientWidth;
+
+			if (deviceWidth <= 980) {
+					window.location.href = "http://www.jvziqinggan.com/mobile/wap/";
+			}
+
 			$(function() {
 				$(".erweiactive").hover($(".erweima").css("display", "block"));
 			});
@@ -939,7 +945,7 @@
                                     <p class="phone-num">
                                     	4006-299-520
                                     </p>
-                                    
+
                             </span>
 						</div>
 						<div class="bot">
@@ -989,9 +995,9 @@
 				$('.demo1').scrollbox();
 				$('.demo2').scrollbox({
 					linear: true,
-					step: 1, //每次移动的像素点
-					delay: 0, //滚动到最后的停止时间
-					speed: 100 //移动速度
+					step  : 1,   //每次移动的像素点
+					delay : 0,   //滚动到最后的停止时间
+					speed : 100  //移动速度
 				});
 			});
 		</script>
