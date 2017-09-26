@@ -67,16 +67,16 @@
  * 橘子情感导师团队CSS
  */
 .body2{
-	background: url(../img/focus-team/mentor-team-bgimg.jpg) center center no-repeat;
+	background: url(../img/focus-team/mentor-team-bgimg.png) center center no-repeat;
 	-webkit-background-size: cover;
   	background-size: cover;
   	width: 100%;
-  	height: 600px;
+  	height: 750px;
   	overflow: hidden;
 }
 .body2-zhuti{
 	width: 1200px;
-	margin: 50px auto;
+	margin: 70px auto;
 	color: #F0F0F0;
 }
 .body2-zhuti h2{
