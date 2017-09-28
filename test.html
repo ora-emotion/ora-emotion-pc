@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>分页</title>
+    <style media="screen">
+      /* 分页器样式表 */
+      .pagination-content {
+        width: 1200px;
+        height: 300px;
+        background: lightgreen;
+        margin: 0 auto;
+      }
+      .pagination-content .page {
+        display: none;
+      }
+      .pagination-content .page.active {
+        display: block;
+      }
+      .pagination-container {
+        display: flex;
+        justify-content: center;
+        height: 30px;
+        line-height: 30px;
+      }
+      .pagination-container span {
+        cursor: pointer;
+      }
+
+      .first-page,
+      .prev-page,
+      .pages,
+      .next-page,
+      .last-page {
+        display: inline-block;
+      }
+
+      .pages {
+        display: flex;
+        justify-content: center;
+      }
+      .pages .page-item {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border: 1px solid #898989;
+        border-left: none;
+      }
+      .pages .page-item.active {
+        border-color: #fd3232;
+        background: #fd3232;
+        color: #fff;
+        border-left: none;
+      }
+
+      .first-page,
+      .prev-page,
+      .next-page,
+      .last-page {
+        padding: 0 10px;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid #898989;
+        border-left: none;
+      }
+      .first-page {
+        border-left: 1px solid #898989;
+      }
+      .prev-page {
+        border-left: none;
+      }
+      /* 分页器样式表 */
+
+    </style>
+    <script src="js/jquery-3.1.0.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="pagination">
+      <!-- 页面内容 -->
+      <div class="pagination-content">
+        <div class="page active">第一页</div>
+        <div class="page">第二页</div>
+        <div class="page">第三页</div>
+        <div class="page">第四页</div>
+        <div class="page">第五页</div>
+      </div>
+      <!-- 分页器 -->
+      <div class="pagination-container">
+        <span class="first-page">首页</span>
+        <span class="prev-page">上一页</span>
+        <div class="pages">
+          <span class="page-item active">1</span>
+          <span class="page-item">2</span>
+          <span class="page-item">3</span>
+          <span class="page-item">4</span>
+          <span class="page-item">5</span>
+        </div>
+        <span class="next-page">下一页</span>
+        <span class="last-page">尾页</span>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var pagination = (function (){
+        //------------------------ 作用域内可用的变量 ---------------------------
+        var
+          stateMap = {
+            $container : null
+          },
+          jqueryMap = {},
+          setJqueryMap,  onClickPagination,
+          togglePageNum, togglePageBtn,     initModule;
+
+        //--------------------------- 非 DOM 操作 ------------------------------
+        // setJqueryMap()
+        // 作用 ： 用于缓存 jQuery 集合
+        setJqueryMap = function () {
+          var $container = stateMap.$container;
+          jqueryMap = {
+            $container  : $container,
+            $page_num   : $container.find('.pagination-container .page-item'),
+            $first_page : $container.find('.pagination-container .first-page'),
+            $prev_page  : $container.find('.pagination-container .prev-page'),
+            $next_page  : $container.find('.pagination-container .next-page'),
+            $last_page  : $container.find('.pagination-container .last-page'),
+            $page       : $container.find('.pagination-content .page')
+          };
+        };
+
+        //----------------------------- DOM 操作 -------------------------------
+        // togglePage()
+        // 作用 ： 点击分页器数字，跳转到对应页面
+        //
+        togglePageNum = function () {
+          jqueryMap.$page_num.click(function () {
+            var
+              that  = $(this),
+              index = that.index(),
+              page  = jqueryMap.$page;
+
+            that.addClass('active')
+              .siblings().removeClass('active');
+            $(page[index]).addClass('active')
+              .siblings().removeClass('active');
+          });
+        };
+
+        // togglePageBtn()
+        // 作用 ： 点击上下页及首尾页，跳转到相应页面
+        //
+        togglePageBtn = function () {
+          var
+            $container  = jqueryMap.$container,
+            $next_page  = jqueryMap.$next_page,
+            $prev_page  = jqueryMap.$prev_page,
+            $first_page = jqueryMap.$first_page,
+            $last_page  = jqueryMap.$last_page;
+
+          // 下一页
+          $next_page.click(function (){
+            var
+              $current_page_num_ac = $container.find('.page-item.active'),
+              $current_page        = $container.find('.page.active'),
+              index                = $current_page_num_ac.index(),
+              $current_page_num    = $container.find('.page-item'),
+              $page_item           = jqueryMap.$page_item,
+              $page                = jqueryMap.$page;
+
+            // 下一页按钮
+            $($current_page_num[index+1]).addClass('active')
+              .siblings().removeClass('active');
+            // 下一页对应的内容
+            $($page[index+1]).addClass('active')
+              .siblings().removeClass('active');
+          });
+
+          // 上一页
+          $prev_page.click(function (){
+            var
+              $current_page_num_ac = $container.find('.page-item.active'),
+              $current_page        = $container.find('.page.active'),
+              index                = $current_page_num_ac.index(),
+              $current_page_num    = $container.find('.page-item'),
+              $page_item           = jqueryMap.$page_item,
+              $page                = jqueryMap.$page;
+
+            // 上一页按钮
+            $($current_page_num[index-1]).addClass('active')
+              .siblings().removeClass('active');
+            // 上一页对应的内容
+            $($page[index-1]).addClass('active')
+              .siblings().removeClass('active');
+          });
+
+          // 首页
+          $first_page.click(function (){
+            $(jqueryMap.$page_num[0]).addClass('active')
+              .siblings().removeClass('active');
+            $(jqueryMap.$page[0]).addClass('active')
+              .siblings().removeClass('active');
+          });
+
+          // 尾页
+          $last_page.click(function (){
+            var page_length = jqueryMap.$page_num.length;
+            $(jqueryMap.$page_num[page_length-1]).addClass('active')
+              .siblings().removeClass('active');
+            $(jqueryMap.$page[page_length-1]).addClass('active')
+              .siblings().removeClass('active');
+          });
+
+          return false;
+        };
+
+        //------------------------ jQuery 事件处理程序 --------------------------
+        // onClickPagination()
+        //
+        onClickPagination = function (event) {
+          togglePageNum();
+          togglePageBtn();
+          return false;
+        };
+
+        //----------------------------- 公开方法 -------------------------------
+        // initModule()
+        initModule = function ($container) {
+          stateMap.$container = $container;
+          setJqueryMap();
+          onClickPagination();
+        };
+
+        // 导出公开方法
+        return { initModule : initModule };
+      }());
+
+      pagination.initModule( $('#pagination') );
+
+    </script>
+  </body>
+</html>
