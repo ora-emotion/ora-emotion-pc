@@ -20,115 +20,11 @@
 		<link rel="stylesheet" href="css/anniu/anniu1.css" />
 		<link rel="stylesheet" href="css/modal-btn.css">
 		<link rel="stylesheet" href="css/emotion-forum.css">
-
-		<style type="text/css">
-			.modal-btn {
-				margin: 0 50px 0 0;
-				border: 1px solid #2d2d2d;
-			}
-			/* 橘子冬天链接样式 */
-
-			.txt-hover a {
-				color: #fff;
-				transition: color .3s;
-			}
-
-			.txt-hover:hover a {
-				color: #fd3232;
-			}
-
-			@media (max-width: 1190px) {
-				footer {
-					width: 1500px;
-				}
-			}
-
-			@media (min-width: 1200px) {
-				footer {
-					width: 100%;
-				}
-			}
-
-			footer {
-				margin-top: 0;
-				position: relative;
-				bottom: -151px;
-			}
-
-			.biaoti1 {
-				padding: 0 0 50px;
-				position: relative;
-				top: 100px;
-			}
-
-			div.navB {
-				position: relative;
-				top: 100px;
-			}
-
-			.body2 {
-				position: relative;
-				top: 100px;
-			}
-			/* 新闻列表轮播图 */
-
-			.news-banner {
-				width: 100%;
-				overflow: hidden;
-			}
-
-			.news-banner .swiper-container-news {
-				position: relative;
-			}
-
-			.news-banner .swiper-slide img {
-				width: 100%;
-			}
-
-			.news-banner .swiper-slide {
-				position: relative;
-			}
-
-			.news-banner .swiper-slide .des {
-				width: 100%;
-				height: 45px;
-				line-height: 45px;
-				background: rgba(0, 0, 0, .5);
-				position: absolute;
-				left: 0;
-				bottom: 0;
-				font-size: 24px;
-				padding-left: 15px;
-			}
-
-			.swiper-container-horizontal>.swiper-pagination-bullets,
-			.swiper-pagination-custom,
-			.swiper-pagination-fraction {
-				position: absolute;
-				bottom: 10px;
-				left: 600px;
-				z-index: 2;
-			}
-
-			.swiper-pagination-news .swiper-pagination-bullet {
-				width: 15px;
-				height: 15px;
-				background-color: #fff;
-			}
-
-			.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-				margin: 0 10px;
-			}
-
-			.swiper-pagination-bullet.swiper-pagination-bullet-active {
-				background-color: #fd3232;
-			}
-		</style>
 		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-		<!--<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css' />-->
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/zepto.min.js"></script>
 		<script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
+		<script type="text/javascript" src="js/swiper/swiper.min.js"></script>
 		<script>
 			var deviceWidth = document.documentElement.clientWidth;
 
@@ -228,7 +124,6 @@
 					</ul>
 				</div>
 			</div>
-
 			<!-- /导航菜单 -->
 
 			<!-- 头部 banner -->
@@ -526,126 +421,83 @@
 				<h1>橘子动态</h1>
 				<p>ORANGE&nbsp;DYNAMICS</p>
 			</div>
-
-			<div class="body2">
-				<div class="space"></div>
-				<div class="left1">
-
-					<!-- 新闻轮播图 -->
-					<div class="news-banner">
-						<div class="swiper-container-news">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<!--<a href="##" target="_blank"><img src="img/index/03dtlb.png" alt=""></a>-->
-									<img src="img/index/03dtlb.png" alt="">
-									<p class="des">十大杰出诚信企业</p>
-								</div>
-								<div class="swiper-slide">
-									<!--<a href="##"><img src="img/index/02dtlb.png" alt=""></a>-->
-									<img src="img/index/02dtlb.png" alt="">
-									<p class="des">市南区区长参观</p>
-								</div>
-								<div class="swiper-slide">
-									<!--<a href="##"><img src="img/index/01dtlb.png" alt=""></a>-->
-									<img src="img/index/01dtlb.png" alt="">
-									<p class="des">“暖爱计划”婚恋知识公益讲座报道</p>
-								</div>
+			<div class="ora-dynamic-wrap">
+        <div class="ora-dynamic">
+          <div class="ora-dynamic-left">
+            <div class="ora-dynamic-left-banner">
+							<div class="swiper-container">
+							    <div class="swiper-wrapper">
+							        <div class="swiper-slide">
+												<img src="img/index/module04-pic01-big.png">
+												<span class="img-title">挽爱计划全国公益巡讲</span>
+											</div>
+							        <div class="swiper-slide">
+												<img src="img/index/module04-pic02-big.png">
+												<span class="img-title">青岛市市南区区长，亲临视察工作</span>
+											</div>
+							        <div class="swiper-slide">
+												<img src="img/index/module04-pic03-big.png">
+												<span class="img-title">十大杰出诚信企业</span>
+											</div>
+							    </div>
+							    <div class="swiper-pagination"></div>
 							</div>
-							<div class="swiper-pagination-news"></div>
+            </div>
+						<span class="ora-dynamic-left-title">行业标杆的情感导师培植计划</span>
+						<p class="ora-dynamic-left-para">
+              橘子情感的创始团队，作为业内首批从业者，制定了众多行业准则，以及在实践中
+							不断地创新理论，以及丰富完善教学经验。多年来的也一直致力于为业内培养输送
+							人才，培育为情感教育界的“西点军校”。此次上海站的巡回培植讲座，更是秉承着
+							“专业•责任•奉献”的理念，培养出有一批优秀实习导师。
+						</p>
+          </div>
+					<div class="ora-dynamic-right">
+            <div class="ora-dynamic-right-top">
+							<div class="ora-dynamic-right-top-item active">
+								<span class="circle"></span>
+								<a class="link" href="./news/new5.html">凤凰网人物访谈</a>
+							</div>
+							<div class="ora-dynamic-right-top-item">
+								<span class="circle"></span>
+								<a class="link" href="news/new3.html">青岛市市南区区长，亲临视察工作</a>
+							</div>
+							<div class="ora-dynamic-right-top-item">
+								<span class="circle"></span>
+								<a class="link" href="./news/new13.html">主导师团队分析学员情况以及制定方案</a>
+							</div>
+							<div class="ora-dynamic-right-top-item">
+								<span class="circle"></span>
+								<a class="link" href="news/new8.html">学员赵女士送来锦旗以及最诚挚的感谢</a>
+							</div>
+            </div>
+						<div class="ora-dynamic-right-bot">
+              <div class="ora-dynamic-right-bot-item">
+              	<div class="item active">
+              		<img src="img/index/module04-pic01-sm.jpg">
+									<div class="txt-group">
+										<p>“暖爱计划”婚恋知识公益讲座报道</p>
+										<p>“暖爱计划”全国公益巡讲--青岛站</p>
+									</div>
+              	</div>
+								<div class="item">
+              		<img src="img/index/module04-pic02-sm.jpg">
+									<div class="txt-group">
+										<p>十大杰出诚信企业表彰大会</p>
+										<p>2000年被评为十大杰出诚信企业</p>
+									</div>
+              	</div>
+								<div class="item">
+              		<img src="img/index/module04-pic03-sm.jpg">
+									<div class="txt-group">
+										<p>第六届情感导师行业交流指导会</p>
+										<p>社会各界认识交流会</p>
+									</div>
+              	</div>
+              </div>
 						</div>
+						<span class="ora-dynamic-right-top-line"></span>
 					</div>
-					<script type="text/javascript">
-						/* 新闻列表轮播图 */
-						var newsBanner = new Swiper('.swiper-container-news', {
-							autoplay: 5000,
-							pagination: ".swiper-pagination-news",
-							paginationClickable: true,
-							slidesPerView: 1,
-							loop: true,
-						});
-					</script>
-					<!-- /新闻轮播图 -->
-
-					<div class="xinwen">
-						<div class="inner">
-							<ul>
-								<li class="xinwen-li1">
-									<a href="./news/new9.html"><img src="img/index/1.jpg" /></a>
-									<div class="txt txt-hover">
-										<h2><a href="./news/new9.html" target="_blank">第六届情感导师行业交流指导会</a></h2>
-										<p>
-											<a href="./news/new9.html" target="_blank">了解详情 >>></a>
-										</p>
-									</div>
-								</li>
-								<li class="xinwen-li2">
-									<a href="./news/new2.html"><img src="img/index/2.jpg" /></a>
-									<div class="txt txt-hover">
-										<h2><a href="./news/new2.html" target="_blank">十大杰出诚信企业</a></h2>
-										<p>
-											<a href="./news/new2.html" target="_blank">了解详情 >>></a>
-										</p>
-									</div>
-								</li>
-								<li class="xinwen-li3">
-									<a href="./news/new6.html"><img src="img/index/3.jpg" /></a>
-									<div class="txt txt-hover">
-										<h2><a href="./news/new6.html" target="_blank">“暖爱计划”婚恋知识公益讲座报道</a></h2>
-										<p>
-											<a href="./news/new6.html" target="_blank">了解详情 >>></a>
-										</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="right1">
-					<h1><a href="news/new4.html">行业标杆的情感导师培植计划</a></h1>
-					<p>
-						橘子情感的创始团队，作为业内首批从业者，制定了众多行<br /> 业准则，以及在实践中不断地创新理论，以及丰富完善教学
-						<br /> 经验。多年来的也一直致力于为业内培养输送人才，培育为
-						<br /> 情感教育界的“黄埔军校”。此次上海站的巡回培植讲座，
-						<br /> 更是秉承着“专业•责任•奉献”的理念，培养出有一批优
-						<br /> 秀实习导师。
-					</p>
-					<div class="scroll-text demo1 gundong">
-						<ul>
-							<li>
-								<img src="img/index/02.png" />
-								<a href="news/new3.html" target="_blank" style="margin-left: 10px;">青岛市南区区长，亲临视察工作</a>
-							</li>
-							<li>
-								<img src="img/index/02.png" />
-								<a href="news/new3.html" target="_blank" style="margin-left: 10px;">青岛市南区区长，亲临视察工作</a>
-							</li>
-						</ul>
-					</div>
-					<div class="scroll-text demo1 gundong">
-						<ul>
-							<li>
-								<img src="img/index/02.png" />
-								<a href="news/new13.html" target="_blank" style="margin-left: 10px;">主导师团队分析学员情况以及制定方案</a>
-							</li>
-							<li>
-								<img src="img/index/02.png" />
-								<a href="news/new13.html" target="_blank" style="margin-left: 10px;">主导师团队分析学员情况以及制定方案</a>
-							</li>
-						</ul>
-					</div>
-					<div class="scroll-text demo1 gundong">
-						<ul>
-							<li>
-								<img src="img/index/02.png" />
-								<a href="news/new8.html" target="_blank" style="margin-left: 10px;">学员赵女士送来锦旗以及最诚挚的感谢</a>
-							</li>
-							<li>
-								<img src="img/index/02.png" />
-								<a href="news/new8.html" target="_blank" style="margin-left: 10px;">学员赵女士送来锦旗以及最诚挚的感谢</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+        </div>
 			</div>
 
 			<!-- 服务保障 -->
@@ -1015,7 +867,7 @@
 		<script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript">
 			/* 导师团队轮播图 */
-			var mySwiper = new Swiper('.team-banner .swiper-container', {
+			var mentorTeamSwiper = new Swiper('.team-banner .swiper-container', {
 				autoplay: 10000,
 				prevButton: '.swiper-button-prev',
 				nextButton: '.swiper-button-next',
@@ -1025,6 +877,39 @@
 			/* 二级导航菜单 */
 			var navList = new Ora();
 			navList.navList();
+
+			// 模块四轮播图
+			var oraDynamicBanner = new Swiper('.ora-dynamic-left-banner .swiper-container', {
+				pagination          : '.swiper-pagination',
+				paginationClickable : true
+		  });
+
+			// 模块四新闻列表
+			var oraDynamicList = (function (){
+				var
+				  $list_item = $('.ora-dynamic-right-top-item'),
+				  $pic_list  = $('.ora-dynamic-right-bot-item .item'),
+					$swiper_slide = $('.ora-dynamic-left-banner .swiper-slide');
+
+				$list_item.mouseover(function (event) {
+					$(this).addClass('active').siblings().removeClass('active');
+				});
+
+				$pic_list.mouseover(function (event) {
+					$(this).addClass('active').siblings().removeClass('active');
+				});
+
+				$($pic_list[0]).click(function () {
+					window.location.href = ('./news/new6.html');
+				});
+				$($pic_list[1]).click(function () {
+					window.location.href = ('./news/new2.html');
+				});
+				$($pic_list[2]).click(function () {
+					window.location.href = ('./news/new9.html');
+				});
+
+			}());
 		</script>
 	</body>
 
