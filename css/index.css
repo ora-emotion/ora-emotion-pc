@@ -161,14 +161,14 @@ input:-webkit-autofill {
 	color: #FD3232;
 }
 .ma-left1{
- 
+
 	background: url(../img/index/icon-heart-broken-white.png) no-repeat center center;
 }
 .ma-left1:hover{
 	background: url(../img/index/icon-heart-broken-red.png) no-repeat center center;
 }
 .ma-left2{
- 
+
 	background: url(../img/index/icon-paramour-white.png) no-repeat center center;
 }
 .ma-left2:hover{
@@ -340,7 +340,7 @@ input:-webkit-autofill {
 	height: 300px;
 	margin-top: 4%;
 	float: left;
-	
+
 }
 .zixun3 .wen3 h2{
 	margin-left: 200px;
@@ -490,7 +490,7 @@ input:-webkit-autofill {
 
 .demo a.next:hover {
 	/*background-position: -76px -112px;*/
-	
+
 }
 .sliderC{
 	display: none;
@@ -528,7 +528,7 @@ input:-webkit-autofill {
 .body2 .left1. .slide ol{
 	width: 100%;
 	/*height: 100%;*/
-	margin-top: -10%;	
+	margin-top: -10%;
 }
 .body2 .left1 .slide .carousel-inner img{
 	width: 100%;
@@ -597,7 +597,7 @@ input:-webkit-autofill {
     height: 100%;
     width: 600px;
     margin-left: 7%;
-   
+
     margin-top: -1px;
 }
 .body2 .right1:hover{
@@ -637,7 +637,7 @@ input:-webkit-autofill {
 }
 .gundong:hover a{
 	color: #FF3232;
-	
+
 }
 
 
@@ -974,7 +974,7 @@ input:-webkit-autofill {
     font-weight: bold;
     font-size: 30px;
     margin-top: 50px;
-    
+
 }
 
 .service .item p {
@@ -1371,45 +1371,183 @@ input:-webkit-autofill {
 }
 /* /导师团队 */
 
-
-/*
- * 文字滚动
- */
-.scroll-text {
-	width: 500px;
-	height: 4.5em;
-	overflow: hidden;
-	padding:3px;
+/* Start: 橘子动态模块 */
+.ora-dynamic-wrap {
+  width: 100%;
+  height: 885px;
+  background: #d8d8d8;
 }
-.scroll-text ul {
-	width: 800px;
-	height: 200px;
-	overflow: hidden;
-	margin: 0;
+.ora-dynamic {
+  width: 1380px;
+  height: 100%;
+  margin: 0 auto;
+  background: url("../img/index/module04-bg.png") no-repeat center center;
+  background-size: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.scroll-text ul li {
-	height: 4.5em;
-	font-size: 1.3em;
-	line-height: 3em;
+.ora-dynamic-left,
+.ora-dynamic-right {
+  height: 680px;
+  position: relative;
+  top: -13px;
 }
-.scroll-text-long {
-	width: 400px;
-	height: 300px;
-	overflow: hidden;
-	padding:3px;
-    border: 2px solid #c1c1c1;
+.ora-dynamic-left {
+  width: 642px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.scroll-text-long ul {
-	width: 800px;
-	height: 340px;
-	overflow: hidden;
+.ora-dynamic-left .swiper-slide {
+  position: relative;
 }
-.scroll-text-long ul li {
-	height: 2em;
-	font-size: 1.2em;
-	color: #F0F0F0;
+.ora-dynamic-left .img-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 24px;
+  padding-left: 14px;
 }
-
-
-
-/* 新闻列表轮播图 */
+.ora-dynamic-left .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  border-radius: 50px;
+  background: #fff;
+  opacity: .3;
+}
+.ora-dynamic-left .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: .8;
+}
+.ora-dynamic-left .swiper-pagination.swiper-pagination-bullets {
+  display: flex;
+  justify-content: flex-end;
+  bottom: 7px;
+}
+.ora-dynamic-left-title {
+  display: inline-block;
+  width: 450px;
+  height: 50px;
+  line-height: 50px;
+  background: #fd3232;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+.ora-dynamic-left-para {
+  width: 616px;
+  height: 176px;
+  border: 2px dashed #fd3232;
+  color: #2d2d2d;
+  font-size: 16px;
+  line-height: 36px;
+  padding: 15px 20px;
+}
+.ora-dynamic-right {
+  width: 670px;
+  position: relative;
+}
+.ora-dynamic-right-top {
+  width: 100%;
+  height: 295px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ora-dynamic-right-top-item {
+  margin: 22px 0;
+}
+.ora-dynamic-right-top-item:first-child {
+  margin-top: 0;
+}
+.ora-dynamic-right-top-item:last-child {
+  margin-bottom: 0;
+}
+.ora-dynamic-right-top-item .circle,
+.ora-dynamic-right-top-item .link {
+  display: inline-block;
+}
+.ora-dynamic-right-top-item .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fd3232;
+  margin-left: 44px;
+  margin-right: 60px;
+}
+.ora-dynamic-right-top-item .link {
+  font-size: 20px;
+  color: #2d2d2d;
+}
+.ora-dynamic-right-top-item.active .circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fd3232;
+  margin-left: 44px;
+  margin-right: 58px;
+  position: relative;
+  right: 1px;
+}
+.ora-dynamic-right-top-item.active .link {
+  color: #fd3232;
+}
+.ora-dynamic-right-top-line {
+  display: inline-block;
+  width: 4px;
+  height: 224px;
+  background: #fd3232;
+  position: absolute;
+  top: 36px;
+  left: 47px;
+}
+.ora-dynamic-right-bot {
+  width: 100%;
+  height: 386px;
+  background: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ora-dynamic-right-bot-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ora-dynamic-right-bot-item .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 11px;
+  padding-right: 0;
+  padding-bottom: 11px;
+  padding-left: 48px;
+  cursor: pointer;
+}
+.ora-dynamic-right-bot-item .item .txt-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+  cursor: pointer;
+  position: relative;
+  top: -15px;
+}
+.ora-dynamic-right-bot-item .item .txt-group p:first-child {
+  font-size: 24px;
+  cursor: pointer;
+}
+.ora-dynamic-right-bot-item .item .txt-group p:last-child {
+  font-size: 16px;
+  cursor: pointer;
+}
+.ora-dynamic-right-bot-item .item.active .txt-group p:first-child {
+  color: #fd3232;
+}
+/* End: 橘子动态模块 */

@@ -176,7 +176,7 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		// 获取滚动条滚动的距离
 		var scrollTop1 = $(window).scrollTop();
-	
+
 		//高级方案模块
 		if(scrollTop1 > (moduleSevenOffsetTop1 - windowHeight + 500)) {
 			// alert("ok");
@@ -185,12 +185,12 @@ $(document).ready(function() {
 				opacity: "1"
 			}, 1000);
 		}
-		
+
 	});
 	$(window).scroll(function() {
 		// 获取滚动条滚动的距离
 		var scrollTop2 = $(window).scrollTop();
-	
+
 		//高级方案模块
 		if(scrollTop2 > (moduleSevenOffsetTop2 - windowHeight + 500)) {
 			// alert("ok");
@@ -207,7 +207,7 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		// 获取滚动条滚动的距离
 		var scrollTop3 = $(window).scrollTop();
-	
+
 		//高级方案模块
 		if(scrollTop3 > (moduleSevenOffsetTop3 - windowHeight + 500)) {
 			// alert("ok");
@@ -228,7 +228,7 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		// 获取滚动条滚动的距离
 		var scrollTop4 = $(window).scrollTop();
-	
+
 		//高级方案模块
 		if(scrollTop4 > (moduleSevenOffsetTop4 - windowHeight + 500)) {
 			$(".txt-list-div1").animate({
@@ -246,4 +246,3 @@ $(document).ready(function() {
 		}
 	});
 });
-

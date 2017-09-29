@@ -95,6 +95,7 @@
           <span class="page-item">3</span>
           <span class="page-item">4</span>
           <span class="page-item">5</span>
+          <span class="page-item">6</span>
         </div>
         <span class="next-page">下一页</span>
         <span class="last-page">尾页</span>
@@ -108,8 +109,9 @@
             $container : null
           },
           jqueryMap = {},
-          setJqueryMap,  onClickPagination,
-          togglePageNum, togglePageBtn,     initModule;
+          setJqueryMap,    onClickPagination,
+          togglePageNum,   togglePageBtn,
+          limitPagination, initModule;
 
         //--------------------------- 非 DOM 操作 ------------------------------
         // setJqueryMap()
@@ -212,12 +214,18 @@
           return false;
         };
 
+        // limitPagination()
+        // 作用 ： 限制分页器显示的页数
+        //
+        limitPagination = function () {};
+
         //------------------------ jQuery 事件处理程序 --------------------------
         // onClickPagination()
         //
         onClickPagination = function (event) {
           togglePageNum();
           togglePageBtn();
+          limitPagination();
           return false;
         };
 
