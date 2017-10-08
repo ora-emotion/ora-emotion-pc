@@ -670,126 +670,206 @@ input:-webkit-autofill {
     font-size: 1.2em;
     height: 0;
 }
-.service-guarantee .module{
-	background: url(../img/index/service-guarantee-bgimg.png) center center no-repeat;
-	width: 100%;
-	background-size: cover;
-	height: 522px;
-	position: relative;
-}
-.service-guarantee .module .left{
-	width: 745px;
-	height: 520px;
-	position: absolute;
-	left: 315px;
-}
-.service-guarantee .module .left .top{
-	width: 100%;
-	height: 80px;
-}
-.service-guarantee .module .left .top>p{
-	font-size: 30px;
-	font-weight: bold;
-	line-height: 80px;
-	padding-left: 100px;
-}
-.service-guarantee .module .left .bottom{
-	width: 495px;
-	height: 265px;
-	margin-top: 70px;
-	margin-left: 100px;
-}
-.service-guarantee .module .left .bottom>p{
-	font-size: 20px;
-	font-weight: bold;
-	color: #2D2D2D;
-	margin-top: 50px;
-}
-.service-guarantee .module .right{
-	width: 600px;
-	height: 520px;
-	position: absolute;
-	right: 230px;
-}
-.service-guarantee .module .right .top{
-	width: 100%;
-	height: 80px;
-}
-.service-guarantee .module .right .top>p{
-	color: #FFFFFF;
-	font-size: 30px;
-	font-weight: bold;
-	line-height: 80px;
-	padding-left: 100px;
+
+/*@media (min-width: 1200px) {*/
+.service-guarantee .service-top {
+    height: 520px;
+    width: 100%;
+    display: flex;
 }
 
-.service-guarantee .module .right .bottom{
-	width: 100%;
-	height: 440px;
-	position: relative;
+/*--> 左侧三个正方形 */
+.service-guarantee .service-top .left {
+    position: relative;
+    height: 100%;
 }
-.service-guarantee .module .right .bottom .left{
-	width: 460px;
-	height: 400px;
-	border: 2px #FFFFFF solid;
-	border-radius: 20px 20px;
-	position: absolute;
-	left: 20px;
-	top: 20px;
+
+.service-guarantee .service-top .left div {
+    background-color: #2d2d2d;
 }
-.service-guarantee .module .right .bottom .left .top>div{
-	display: none;
+
+.service-guarantee .service-top .left .one {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
-.service-guarantee .module .right .bottom .left .top>div.active{
-	display: block;
+
+.service-guarantee .service-top .left .two {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 85px;
+    left: 140px;
 }
-.service-guarantee .module .right .bottom .left .top>div .tou{
-	width: 100%;
-	height: 60px;
-	margin-left: 20px;
-	margin-top: 20px;
+
+.service-guarantee .service-top .left .three {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    bottom: 190px;
+    left: 50px;
 }
-.service-guarantee .module .right .bottom .left .top>div .tou>img{
-	widows: 40px;
-	height: 40px;
-	float: left;
+/* /--> 左侧三个正方形 */
+
+/* --> 中间部分 */
+.service-guarantee .service-top .mid {
+    width: 738px;
+    height: 520px;
+    background: url("../img/index/bg-service.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin-left: 327px;
+    padding: 0 90px 45px 55px;
 }
-.service-guarantee .module .right .bottom .left .top>div .tou>p{
-	font-size: 20px;
-	font-weight: bold;
-	line-height: 40px;
-	margin-left: 60px;
+
+.service-guarantee .service-top .mid .mid-title {
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fe3233;
+    color: #fff;
+    font-size: 34px;
+    margin-bottom: 120px;
 }
-.service-guarantee .module .right .bottom .left .top>div .neirong{
-	width: 100%;
+
+.service-guarantee .service-top .mid .list {
+	height: 300px;
 }
-.service-guarantee .module .right .bottom .left .top>div .neirong>p{
-	color: #FFE8E8;
-	font-size: 16px;
-	line-height: 30px;
-	letter-spacing: 1px;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-indent: 36px;
-	font-weight: bold;
+
+.service-guarantee .service-top .mid .list p {
+    color: #2d2d2d;
+    font-size: 20px;
 }
-.service-guarantee .module .right .bottom .right{
-	width: 65px;
-	height: 400px;
-	position: absolute;
-	right: 20px;
-	top: 20px;
+
+@media (max-width: 1520px) {
+    .service-guarantee .service-top .mid {
+        padding: 0 30px 28px 30px;
+    }
+    .service-guarantee .service-top .mid .list p {
+        color: #2d2d2d;
+        font-size: 18px;
+    }
 }
-.service-guarantee .module .right .bottom .right ul li{
-	margin-top: 45px;
+
+.service-guarantee .service-top .mid .list p:first-child {
+    padding-bottom: 55px;
 }
-.service-guarantee .module .right .bottom .right ul li:first-child{
-	margin-top: 10px;
+
+.service-guarantee .service-top .right .right-title {
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2d2d2d;
+    color: #fff;
+    font-size: 34px;
+    margin-bottom: 120px;
 }
-.service-guarantee .module .right .bottom .right img{
-	width: 60px;
-	height: 60px;
+
+/* /--> 中间部分 */
+
+/* 右侧部分 */
+.service-guarantee .service-top .right {
+    height: 100%;
+    width: 900px;
+    background-color: #fe3233;
 }
+
+.service-guarantee .service-top .right .banner-wrap {
+    padding: 20px 30px 28px 80px;
+}
+
+@media (min-width: 1520px) {
+    .service-guarantee .service-top .right .banner-wrap .user {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #fff;
+        margin-right: 280px;
+    }
+}
+
+.service-guarantee .service-top .right .banner-wrap .user .name {
+    color: #fff;
+    font-size: 1.2em;
+    position: relative;
+    top: 2px;
+}
+
+.service-guarantee .service-top .right .right-title {
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2d2d2d;
+    color: #fff;
+    font-size: 34px;
+    margin-bottom: 45px;
+}
+
+@media (min-width: 1520px) {
+    .service-guarantee .service-top .right .banner-wrap p {
+        color: #fff;
+        font-size: 18px;
+        padding-top: 5px;
+        padding-right: 240px;
+    }
+}
+
+@media (max-width: 1520px) {
+    .service-guarantee .service-top .right .banner-wrap {
+        padding: 0 30px 28px 30px;
+    }
+
+    .service-guarantee .service-top .right .banner-wrap .user {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .service-guarantee .service-top .right .banner-wrap p {
+        color: #fff;
+        font-size: 15px;
+        margin-right: 0;
+        padding-top: 5px;
+    }
+    .service-guarantee .service-top .right .right-title {
+        margin-bottom: 100px;
+    }
+}
+
+
+@media (max-width: 1520px) {
+    .service-guarantee .service-right-bg {
+        display: none;
+    }
+}
+
+@media (min-width: 1520px) {
+    .service-guarantee .service-right-bg {
+        display: block;
+    }
+}
+
+.service-guarantee .service-right-bg {
+    background: url("../img/index/bg-service-right.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 200px;
+    height: 520px;
+    width: 245px;
+}
+/* /--> 右侧部分 */
+/* ==> 服务保障 */
+
 
 .neirong3{
 	width: 100%;
