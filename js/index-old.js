@@ -245,35 +245,4 @@ $(document).ready(function() {
 			}, 2000);
 		}
 	});
-	
-	
-	
-	
-});
-$(document).ready(function(){
-	//客户感言
-	$('.service-guarantee .module .right .bottom .right ul li:nth-child(1)').click(function(){
-		$('.service-guarantee .module .right .bottom .left .top .kehu:nth-child(2)').removeClass('active');
-		$('.service-guarantee .module .right .bottom .left .top .kehu:nth-child(1)').addClass('active');
-		$('.service-guarantee .module .right .bottom .left .top .kehu:nth-child(3)').removeClass('active');
-		$('.service-guarantee .module .right .bottom .left .top .kehu:nth-child(4)').removeClass('active');
-	});
-	$('.service-guarantee .module .right .bottom .right ul li:nth-child(2)').click(function(){
-		$('.service-guarantee .module .right .bottom .left .top .kehu:nth-child(1)').removeClass('active');
-		$('.service-guarantee .module .right .bottom .left .top .kehu:nth-child(2)').addClass('active');
-		$('.service-guarantee .module .right .bottom .left .top .kehu:nth-child(3)').removeClass('active');
-		$('.service-guarantee .module .right .bottom .left .top .kehu:nth-child(4)').removeClass('active');
-	});
-	$('.service-guarantee .module .right .bottom .right ul li:nth-child(3)').click(function(){
-		$('.service-guarantee .module .right .bottom .left .top .kehu:nth-child(1)').removeClass('active');
-		$('.service-guarantee .module .right .bottom .left .top .kehu:nth-child(3)').addClass('active');
-		$('.service-guarantee .module .right .bottom .left .top .kehu:nth-child(2)').removeClass('active');
-		$('.service-guarantee .module .right .bottom .left .top .kehu:nth-child(4)').removeClass('active');
-	});
-	$('.service-guarantee .module .right .bottom .right ul li:nth-child(4)').click(function(){
-		$('.service-guarantee .module .right .bottom .left .top .kehu:nth-child(1)').removeClass('active');
-		$('.service-guarantee .module .right .bottom .left .top .kehu:nth-child(4)').addClass('active');
-		$('.service-guarantee .module .right .bottom .left .top .kehu:nth-child(3)').removeClass('active');
-		$('.service-guarantee .module .right .bottom .left .top .kehu:nth-child(2)').removeClass('active');
-	});
 });
