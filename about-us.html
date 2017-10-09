@@ -430,17 +430,79 @@
 							  <p class="text-center">更多动态</p>
 						  </div>
 							<div class="more-dynamic-inner-pagination">
+								<!-- Start : 分页器主要内容区域 -->
 								<div class="more-dynamic-inner-pagination-content">
-									<div class="pagination-content-page pointer active">第一页</div>
-                  <div class="pagination-content-page pointer">第二页</div>
+									<!-- Start : 第一页内容 -->
+									<div class="pagination-content-page pointer active">
+										<div class="pagination-content-page-news">
+											<div class="pagination-content-page-news-item">
+												<p>第六届情感导师行业交流指导会</p>
+												<a href="./news/new1.html">了解更多>>></a>
+											</div>
+											<div class="pagination-content-page-news-item">
+												<p>十大杰出诚信企业</p>
+												<a href="./news/new2.html">了解更多>>></a>
+											</div>
+											<div class="pagination-content-page-news-item">
+												<p>市南区区长参观</p>
+												<a href="./news/new3.html">了解更多>>></a>
+											</div>
+											<div class="pagination-content-page-news-item">
+												<p>纪橘子情感行业导师培植计划•上海站</p>
+												<a href="./news/new4.html">了解更多>>></a>
+											</div>
+											<div class="pagination-content-page-news-item">
+												<p>凤凰网人物访谈</p>
+												<a href="./news/new5.html">了解更多>>></a>
+											</div>
+											<div class="pagination-content-page-news-item">
+												<p>“暖爱计划”婚恋知识公益讲座报道</p>
+												<a href="./news/new6.html">了解更多>>></a>
+											</div>
+										</div>
+									</div>
+									<!-- End : 第一页内容 -->
+									<!-- Start : 第二页内容 -->
+									<div class="pagination-content-page pointer">
+										<div class="pagination-content-page-news">
+											<div class="pagination-content-page-news-item">
+												<p>正确恋爱观讲座</p>
+												<a href="./news/new7.html">了解更多>>></a>
+											</div>
+											<div class="pagination-content-page-news-item">
+												<p>客户远道而来，送来锦旗向导师团队致谢</p>
+												<a href="./news/new8.html">了解更多>>></a>
+											</div>
+											<div class="pagination-content-page-news-item">
+												<p>社会各界人士交流会</p>
+												<a href="./news/new9.html">了解更多>>></a>
+											</div>
+											<div class="pagination-content-page-news-item">
+												<p>我们是一家人：飞扬老师、千无老师生日</p>
+												<a href="./news/new11.html">了解更多>>></a>
+											</div>
+											<div class="pagination-content-page-news-item">
+												<p>一个创业者的自述：橘子情感，专注情感，为爱而生</p>
+												<a href="./news/new12.html">了解更多>>></a>
+											</div>
+											<div class="pagination-content-page-news-item">
+												<p>团队理论研发</p>
+												<a href="./news/new13.html">了解更多>>></a>
+											</div>
+										</div>
+									</div>
+									<!-- End : 第二页内容 -->
 								</div>
+								<!-- End : 分页器主要内容区域 -->
 								<div class="more-dynamic-inner-pagination-container">
 									<div class="pagination-first-page pointer">首页</div>
                   <div class="pagination-prev-page pointer">上一页</div>
+									<!-- Start : 分页器页码 -->
 									<div class="pagination-pages">
 										<span class="pagination-page-item pointer active">1</span>
 										<span class="pagination-page-item pointer">2</span>
 									</div>
+									<!-- End : 分页器页码 -->
 									<div class="pagination-next-page pointer">下一页</div>
 									<div class="pagination-last-page pointer">尾页</div>
 								</div>
@@ -772,22 +834,28 @@
 							page_item_ac = $('.more-dynamic').find('.pagination-page-item.active'),
 							page_item_index = page_item_ac.index();
 
-							// 是否是第一页
-							if (page_item_index === 0) {
-								jqueryMap.$last_page.css(configMap.btn_allow);
-								jqueryMap.$next_page.css(configMap.btn_allow);
-								forbidBtn(0);
-
-								return false;
-							}
+						// 是否是第一页
+						if (page_item_index === 0) {
+							jqueryMap.$last_page.css(configMap.btn_allow);
+							jqueryMap.$next_page.css(configMap.btn_allow);
+							forbidBtn(0);
+							return false;
+						}
 
             // 是否是最后一页
 						if (page_item_index === page_item_length - 1) {
 							jqueryMap.$first_page.css(configMap.btn_allow);
 							jqueryMap.$prev_page.css(configMap.btn_allow);
 							forbidBtn(1);
-
 							return false;
+						}
+
+						// 既不是第一页也不是最后一页
+						if (page_item_index !== 0 && page_item_index !== page_item_length-1) {
+							jqueryMap.$first_page.css(configMap.btn_allow);
+							jqueryMap.$prev_page.css(configMap.btn_allow);
+							jqueryMap.$next_page.css(configMap.btn_allow);
+							jqueryMap.$last_page.css(configMap.btn_allow);
 						}
 
 					};
@@ -797,10 +865,9 @@
 					// 作用  : 点击分页器数字，跳转到对应页面
 					togglePageNum = function () {
 						jqueryMap.$page_num.click(function () {
-							console.log('ok');
 							var
-							  that        = $(this),
-								index       = that.index(),
+							  that  = $(this),
+								index = that.index(),
 								page  = jqueryMap.$page_item;
 
 							$(this).addClass('active')
@@ -920,6 +987,7 @@
 						togglePageNum();
             togglePageBtn();
 						limitPagination();
+
 						return false;
 					};
 					// End : onClickPagination()
@@ -931,6 +999,10 @@
 						stateMap.$container = $('.more-dynamic');
 						setJqueryMap();
 						onClickPagination();
+
+						// 页面初始化，禁用分页器首页及上一页按钮
+						jqueryMap.$first_page.css(configMap.btn_forbid);
+						jqueryMap.$prev_page.css(configMap.btn_forbid);
 					}());
 				}());
 				/* End : more dynamic - 更多动态 */
