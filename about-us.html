@@ -797,10 +797,9 @@
 					// 作用  : 点击分页器数字，跳转到对应页面
 					togglePageNum = function () {
 						jqueryMap.$page_num.click(function () {
-							console.log('ok');
 							var
-							  that        = $(this),
-								index       = that.index(),
+							  that  = $(this),
+								index = that.index(),
 								page  = jqueryMap.$page_item;
 
 							$(this).addClass('active')
@@ -920,6 +919,7 @@
 						togglePageNum();
             togglePageBtn();
 						limitPagination();
+
 						return false;
 					};
 					// End : onClickPagination()
@@ -931,6 +931,10 @@
 						stateMap.$container = $('.more-dynamic');
 						setJqueryMap();
 						onClickPagination();
+
+						// 页面初始化，禁用分页器首页及上一页按钮
+						jqueryMap.$first_page.css(configMap.btn_forbid);
+						jqueryMap.$prev_page.css(configMap.btn_forbid);
 					}());
 				}());
 				/* End : more dynamic - 更多动态 */
