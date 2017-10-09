@@ -137,6 +137,7 @@
 .more-dynamic-inner-pagination-content {
   width: 100%;
   margin: 0 auto;
+  padding-left: 52px;
 }
 .pagination-content-page {
   display: none;
@@ -201,7 +202,7 @@
   line-height: 30px;
   position: relative;
   top: 24px;
-  right: 136px;
+  right: 85px;
 }
 .more-dynamic-inner-pagination-container span {
   cursor: pointer;
