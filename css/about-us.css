@@ -130,6 +130,7 @@
   color: #2d2d2d;
   padding-top: 42px;
   padding-bottom: 32px;
+  cursor: default;
 }
 
 .more-dynamic-inner-pagination-content {

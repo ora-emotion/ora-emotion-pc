@@ -430,17 +430,35 @@
 							  <p class="text-center">更多动态</p>
 						  </div>
 							<div class="more-dynamic-inner-pagination">
+								<!-- Start : 分页器主要内容区域 -->
 								<div class="more-dynamic-inner-pagination-content">
-									<div class="pagination-content-page pointer active">第一页</div>
-                  <div class="pagination-content-page pointer">第二页</div>
+									<!-- Start : 第一页内容 -->
+									<div class="pagination-content-page pointer active">
+										第一页
+									</div>
+									<!-- End : 第一页内容 -->
+									<!-- Start : 第二页内容 -->
+                  <div class="pagination-content-page pointer">
+										第二页
+									</div>
+									<!-- End : 第二页内容 -->
+									<!-- Start : 第三页内容 -->
+                  <div class="pagination-content-page pointer">
+										第三页
+									</div>
+									<!-- End : 第三页内容 -->
 								</div>
+								<!-- End : 分页器主要内容区域 -->
 								<div class="more-dynamic-inner-pagination-container">
 									<div class="pagination-first-page pointer">首页</div>
                   <div class="pagination-prev-page pointer">上一页</div>
+									<!-- Start : 分页器页码 -->
 									<div class="pagination-pages">
 										<span class="pagination-page-item pointer active">1</span>
 										<span class="pagination-page-item pointer">2</span>
+										<span class="pagination-page-item pointer">3</span>
 									</div>
+									<!-- End : 分页器页码 -->
 									<div class="pagination-next-page pointer">下一页</div>
 									<div class="pagination-last-page pointer">尾页</div>
 								</div>
@@ -772,22 +790,28 @@
 							page_item_ac = $('.more-dynamic').find('.pagination-page-item.active'),
 							page_item_index = page_item_ac.index();
 
-							// 是否是第一页
-							if (page_item_index === 0) {
-								jqueryMap.$last_page.css(configMap.btn_allow);
-								jqueryMap.$next_page.css(configMap.btn_allow);
-								forbidBtn(0);
-
-								return false;
-							}
+						// 是否是第一页
+						if (page_item_index === 0) {
+							jqueryMap.$last_page.css(configMap.btn_allow);
+							jqueryMap.$next_page.css(configMap.btn_allow);
+							forbidBtn(0);
+							return false;
+						}
 
             // 是否是最后一页
 						if (page_item_index === page_item_length - 1) {
 							jqueryMap.$first_page.css(configMap.btn_allow);
 							jqueryMap.$prev_page.css(configMap.btn_allow);
 							forbidBtn(1);
-
 							return false;
+						}
+
+						// 既不是第一页也不是最后一页
+						if (page_item_index !== 0 && page_item_index !== page_item_length-1) {
+							jqueryMap.$first_page.css(configMap.btn_allow);
+							jqueryMap.$prev_page.css(configMap.btn_allow);
+							jqueryMap.$next_page.css(configMap.btn_allow);
+							jqueryMap.$last_page.css(configMap.btn_allow);
 						}
 
 					};
