@@ -75,7 +75,6 @@
 }
 .child-page .body2 {
   width: 100%;
-  height: 1600px;
   margin: 0 auto;
   background-color: #EDEDED;
 }
@@ -110,6 +109,8 @@
 .more-dynamic {
   background: url("../img/about-us/more-dynamic-bg.png") no-repeat center center;
   background-size: cover;
+  width: 100%;
+  height: 552px;
 }
 .more-dynamic .pointer {
   cursor: pointer;
@@ -135,8 +136,6 @@
 
 .more-dynamic-inner-pagination-content {
   width: 100%;
-  height: 300px;
-  background: lightgreen;
   margin: 0 auto;
 }
 .pagination-content-page {
@@ -145,12 +144,64 @@
 .pagination-content-page.active {
   display: block;
 }
+.pagination-content-page-news {
+  width: 858px;
+}
+.pagination-content-page-news-item {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 5px;
+  height: 48px;
+  line-height: 48px;
+}
+.pagination-content-page-news-item:nth-child(odd) {
+  background: #eaeaea;
+}
+.pagination-content-page-news-item:nth-child(even) {
+  background: #f2f2f1;
+}
+.pagination-content-page-news-item:nth-child(2) {
+  position: relative;
+  left: 40px;
+}
+.pagination-content-page-news-item:nth-child(3) {
+  position: relative;
+  left: 80px;
+}
+.pagination-content-page-news-item:nth-child(4) {
+  position: relative;
+  left: 120px;
+}
+.pagination-content-page-news-item:nth-child(5) {
+  position: relative;
+  left: 160px;
+}
+.pagination-content-page-news-item:nth-child(6) {
+  position: relative;
+  left: 200px;
+}
+.pagination-content-page-news-item p {
+  font-size: 20px;
+  color: #2d2d2d;
+}
+.pagination-content-page-news-item a {
+  font-size: 16px;
+  color: #919191;
+  transition: color .3s;
+}
+.pagination-content-page-news-item a:hover {
+  color: #fd3232;
+}
 
 .more-dynamic-inner-pagination-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   height: 30px;
   line-height: 30px;
+  position: relative;
+  top: 24px;
+  right: 136px;
 }
 .more-dynamic-inner-pagination-container span {
   cursor: pointer;
