@@ -241,6 +241,11 @@
   background: #ededed;
   border: 1px solid #dddddd;
   margin: 0 5px;
+
+  /* 当页面增多以后，删除下面三条语句 */
+  /*cursor: "not-allowed";
+  background: #ddd;
+  border: 1px solid #ddd;*/
 }
 /* End : more dynamic - 更多动态 */
 
