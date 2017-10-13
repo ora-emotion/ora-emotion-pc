@@ -789,6 +789,7 @@ input:-webkit-autofill {
 .service-guarantee .module .right .bottom .right img{
 	width: 60px;
 	height: 60px;
+  cursor: pointer;
 }
 
 .neirong3{
