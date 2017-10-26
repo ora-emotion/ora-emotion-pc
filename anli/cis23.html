@@ -19,6 +19,14 @@
 		<script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
 		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 
+		<script src="../js/data.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function () {
+				// 加载数据模块
+				data.initModule( $('html'), '../data/data.json' );
+			});
+		</script>
+
 		<style type="text/css">
 			.pic-right {
 				margin-bottom: 10px;
