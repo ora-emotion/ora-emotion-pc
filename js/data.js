@@ -78,16 +78,16 @@ var data = (function () {
     // url: ['xxx', 'xxx.html']
     switch (url[0]) {
       case 'pc' || 'www.jvziqinggan.com' :
-        jqueryMap.$title.text(data[url[1]]);
+        jqueryMap.$title.text(data[url[1]].title);
         break;
       case 'views' :
-        jqueryMap.$title.text(data.views[url[1]]);
+        jqueryMap.$title.text(data.views[url[1]].title);
         break;
       case 'news' :
-        jqueryMap.$title.text(data.news[url[1]]);
+        jqueryMap.$title.text(data.news[url[1]].title);
         break;
       case 'anli' :
-        jqueryMap.$title.text(data.anli[url[1]]);
+        jqueryMap.$title.text(data.anli[url[1]].title);
         break;
       default:
         break;
