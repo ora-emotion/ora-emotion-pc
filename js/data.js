@@ -96,6 +96,11 @@ var data = (function () {
         new13 : '团队理论研发',
         new14 : '橘子情感联合青岛大学商学院举办创业就业经验分享讲座',
         new15 : '橘子情感联合山东省创业中心举办中俄新兴行业交流会'
+      },
+      // 导师详情页
+      title_media : {
+        'video'        : '课程预览',
+        'inside-video' : '内部课程'
       }
     },
     stateMap = {
@@ -110,10 +115,11 @@ var data = (function () {
     var $html = stateMap.$html;
 
     jqueryMap = {
-      $html  : $html,
-      $body  : $html.find('body'),
-      $w1200 : $html.find('.w1200'),
-      $crumb : $html.find('.crumb')
+      $html       : $html,
+      $body       : $html.find('body'),
+      $w1200      : $html.find('.w1200'),
+      $child_page : $html.find('.child-page'),
+      $crumb      : $html.find('.crumb')
     };
   };
 
@@ -130,10 +136,13 @@ var data = (function () {
       anchor = url.split('/'),
       folder = anchor[anchor.length - 2],
       file   = anchor[anchor.length - 1].split('.')[0],
-      key;
+      $crumb = jqueryMap.$body.find('.crumb'), key;
 
     // 情感问答
     if (folder === 'anli') {
+      jqueryMap.$w1200.css({ position : 'relative' });
+      $crumb.css({ position : 'absolute', top : '30px', left : '0' });
+
       switch (folder) {
         case 'anli' :
           jqueryMap.$crumb.find('span:first-child a')
@@ -154,6 +163,9 @@ var data = (function () {
 
     // 新闻咨询
     if (folder === 'news') {
+      jqueryMap.$w1200.css({ position : 'relative' });
+      $crumb.css({ position : 'absolute', top : '30px', left : '0' });
+
       switch (folder) {
         case 'news' :
           jqueryMap.$crumb.find('span:first-child a')
@@ -172,6 +184,28 @@ var data = (function () {
       }
     }
 
+    // 橘子视频
+    if (folder === 'media') {
+      jqueryMap.$w1200.css({ position : 'relative' });
+      $crumb.css({ position : 'absolute', top : '220px', left : '360px' });
+
+      switch (folder) {
+        case 'media' :
+          jqueryMap.$crumb.find('span:first-child a')
+            .html('橘子视频<span class="crumb-icon"></span>')
+            .attr('href', '../course.html');
+          break;
+        default:
+          break;
+      }
+      for (key in configMap.title_media) {
+        jqueryMap.$crumb.find('span:last-child a').html(
+          '<span class="crumb-icon"></span>' +
+          configMap.title_media[file]+
+          '<span class="crumb-icon"></span>'
+        );
+      }
+    }
   };
   // End : innerCrumb()
 
@@ -183,14 +217,7 @@ var data = (function () {
   // 返回值 : 无
   //
   loadCrumb = function () {
-    var
-      $crumb,
-      url = document.location.href;
-
-    $crumb = jqueryMap.$body.find('.crumb');
-
-    jqueryMap.$w1200.css({ position : 'relative' });
-    $crumb.css({ position : 'absolute', top : '30px', left : '0' });
+    var url = document.location.href;
 
     innerCrumb(url);
   };
@@ -202,6 +229,7 @@ var data = (function () {
   initModule = function ($html) {
     stateMap.$html = $html;
     $html.find('.w1200').prepend(configMap.crumb_html);
+    $html.find('.child-page').prepend(configMap.crumb_html);
 
     setJqueryMap();
     loadCrumb();
