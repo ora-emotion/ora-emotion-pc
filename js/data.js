@@ -97,10 +97,22 @@ var data = (function () {
         new14 : '橘子情感联合青岛大学商学院举办创业就业经验分享讲座',
         new15 : '橘子情感联合山东省创业中心举办中俄新兴行业交流会'
       },
-      // 导师详情页
+      // 橘子视频
       title_media : {
         'video'        : '课程预览',
         'inside-video' : '内部课程'
+      },
+      // 导师详情页
+      title_mentor : {
+        'forum-book' : '嘉伟导师十本好书推荐',
+        'page1' : '嘉伟导师',
+        'page2' : '茉言导师',
+        'page3' : '浩宇导师',
+        'page4' : '阿苏导师',
+        'page5' : '路加导师',
+        'page6' : '千芜导师',
+        'page7' : '杰妮导师',
+        'page8' : '柒月导师'
       }
     },
     stateMap = {
@@ -202,6 +214,28 @@ var data = (function () {
         jqueryMap.$crumb.find('span:last-child a').html(
           '<span class="crumb-icon"></span>' +
           configMap.title_media[file]+
+          '<span class="crumb-icon"></span>'
+        );
+      }
+    }
+
+    if (folder === 'views') {
+      jqueryMap.$w1200.css({ position : 'relative' });
+      $crumb.css({ position : 'absolute', top : '1380px', left : '370px' });
+
+      switch (folder) {
+        case 'views' :
+          jqueryMap.$crumb.find('span:first-child a')
+            .html('权威专家<span class="crumb-icon"></span>')
+            .attr('href', '../focus-team.html');
+          break;
+        default:
+          break;
+      }
+      for (key in configMap.title_media) {
+        jqueryMap.$crumb.find('span:last-child a').html(
+          '<span class="crumb-icon"></span>' +
+          configMap.title_mentor[file]+
           '<span class="crumb-icon"></span>'
         );
       }
