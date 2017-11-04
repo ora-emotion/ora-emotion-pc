@@ -106,11 +106,13 @@ function fixedNav() {
 
         if (scrollTop > 1500) {
             $(".sec-nav-hide").css({
-                opacity: 1
+                opacity: 1,
+                top : 0
             });
         } else {
             $(".sec-nav-hide").css({
-                opacity: 0
+                opacity: 0,
+                top : '-50px'
             });
         }
 

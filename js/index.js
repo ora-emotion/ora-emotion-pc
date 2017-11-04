@@ -9,31 +9,31 @@ $(document).ready(function() {
        */
 
       // 显示微信二维码
-      function qrcodeWechat() {
-          // 淡入
-          function wechatFadeIn() {
-              $(".wechat").fadeIn(300);
-          }
-          // 淡出
-          function wechatFadeOut() {
-              $(".wechat").fadeOut(300);
-          }
-          // 划过图标显示
-          $(".qrcode-wechat img").mouseover(function () {
-              wechatFadeIn();
-          });
-          $(".qrcode-wechat img").mouseout(function () {
-              wechatFadeOut();
-          });
-          // 划过文字显示
-          $(".pull-right .txt p:first-child").mouseover(function () {
-              wechatFadeIn();
-          });
-          $(".pull-right .txt p:first-child").mouseout(function () {
-              wechatFadeOut();
-          });
-      }
-      qrcodeWechat();
+      // function qrcodeWechat() {
+      //     // 淡入
+      //     function wechatFadeIn() {
+      //         $(".wechat").fadeIn(300);
+      //     }
+      //     // 淡出
+      //     function wechatFadeOut() {
+      //         $(".wechat").fadeOut(300);
+      //     }
+      //     // 划过图标显示
+      //     $(".qrcode-wechat img").mouseover(function () {
+      //         wechatFadeIn();
+      //     });
+      //     $(".qrcode-wechat img").mouseout(function () {
+      //         wechatFadeOut();
+      //     });
+      //     // 划过文字显示
+      //     $(".pull-right .txt p:first-child").mouseover(function () {
+      //         wechatFadeIn();
+      //     });
+      //     $(".pull-right .txt p:first-child").mouseout(function () {
+      //         wechatFadeOut();
+      //     });
+      // }
+      // qrcodeWechat();
 
 
       // 获取当前文档高度
@@ -45,22 +45,22 @@ $(document).ready(function() {
       console.log(moduleSevenOffsetTop);
 
       $(window).scroll(function () {
-            // 获取滚动条滚动的距离
-            var scrollTop = $(window).scrollTop();
-            // console.log(scrollTop);
+        // 获取滚动条滚动的距离
+        var scrollTop = $(window).scrollTop();
+        // console.log(scrollTop);
 
-            if (scrollTop > (moduleSevenOffsetTop - windowHeight/3)) {
-                // alert("ok");
-                $(".module-07 .main .top").animate({
-                    left: "13.5%",
-                    opacity: "1"
-                }, 1000);
-                $(".module-07 .main .bot").animate({
-                    left: "0",
-                    opacity: "1"
-                }, 1000);
-            }
-        });
+        if (scrollTop > (moduleSevenOffsetTop - windowHeight/3)) {
+          // alert("ok");
+          $(".module-07 .main .top").animate({
+            left: "13.5%",
+            opacity: "1"
+          }, 1000);
+          $(".module-07 .main .bot").animate({
+            left: "0",
+            opacity: "1"
+          }, 1000);
+        }
+      });
     }
     lazyLoad();
   })();

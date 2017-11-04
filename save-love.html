@@ -22,7 +22,14 @@
 		<script type="text/javascript" src="js/save-love/imageflow.js"></script>
 		<script type="text/javascript" src="js/save-love/save-love.js"></script>
 
-		<script src="js/sitemap.js"               charset="utf-8"></script>
+		<script src="js/sitemap.js" charset="utf-8"></script>
+		<script src="js/header.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function () {
+				// 加载页面 header 区域 javascript
+				header.initModule( $('header') );
+			});
+		</script>
 	</head>
 
 	<body>
