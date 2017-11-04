@@ -9,8 +9,12 @@
 		<meta name="keywords" content="情感挽回, 挽回爱情, 感情挽回, 情感咨询, 情感挽回公司"/>
 		<meta name="description" content="橘子情感是一家专注于情感挽回、婚姻修复、爱情保鲜等服务的情感挽回公司，分享挽救婚姻、挽回爱情秘籍及方法，针对情感挽回、挽回爱情、挽救婚姻等提供解决方案，是您身边的爱情指导挽回专家！"/>
 		<link rel="shortcut icon" href="img/ora.jpg" type="image/x-icon">
+
+		<!-- import third-party styles -->
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
+
+		<!-- import our styles -->
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/head.css" />
 		<link rel="stylesheet" href="css/foot.css" />
@@ -18,22 +22,35 @@
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/anniu/anniu1.css" />
 		<link rel="stylesheet" href="css/modal-btn.css">
+
+		<!-- import third-party javascript -->
 		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/zepto.min.js"></script>
 		<script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
 		<script type="text/javascript" src="js/swiper/swiper.min.js"></script>
 
-		<script src="js/sitemap.js"               charset="utf-8"></script>
-		<script>
+    <!-- import our javascript -->
+		<!-- sitemap : 自动推送站点地图到百度站长平台 -->
+		<script src="js/sitemap.js" charset="utf-8"></script>
+
+		<!-- 页面 header 部分 javascript -->
+		<script src="js/header.js" charset="utf-8"></script>
+
+		<script charset="utf-8" type="text/javascript">
 			var deviceWidth = document.documentElement.clientWidth;
 
 			if(deviceWidth <= 980) {
 				window.location.href = "http://www.jvziqinggan.com/mobile/wap/";
 			}
 
-			$(function() {
-				$(".erweiactive").hover($(".erweima").css("display", "block"));
+			// $(function() {
+			// 	$(".erweiactive").hover($(".erweima").css("display", "block"));
+			// }());
+
+			$(function () {
+				// 加载页面 header 区域 javascript
+				header.initModule( $('header') );
 			});
 		</script>
 
@@ -486,24 +503,24 @@
 						<div class="ora-dynamic-right-top">
 							<div class="ora-dynamic-right-top-item active">
 								<span class="circle"></span>
-								<a class="link" href="./news/new5.html">凤凰网人物访谈</a>
+								<a class="link" target="_blank" href="./news/new5.html">凤凰网人物访谈</a>
 							</div>
 							<div class="ora-dynamic-right-top-item">
 								<span class="circle"></span>
-								<a class="link" href="news/new15.html">
+								<a class="link" target="_blank" href="news/new15.html">
 									橘子情感联合山东省创业中心举办中俄新兴行业交流会
 								</a>
 								<!-- <a class="link" href="news/new3.html">青岛市市南区区长，亲临视察工作</a> -->
 							</div>
 							<div class="ora-dynamic-right-top-item">
 								<span class="circle"></span>
-								<a class="link" href="./news/new13.html">
+								<a class="link" target="_blank" href="./news/new13.html">
 									主导师团队分析学员情况以及制定方案
 								</a>
 							</div>
 							<div class="ora-dynamic-right-top-item">
 								<span class="circle"></span>
-								<a class="link" href="news/new8.html">
+								<a class="link" target="_blank" href="news/new8.html">
 									学员赵女士送来锦旗以及最诚挚的感谢
 								</a>
 							</div>

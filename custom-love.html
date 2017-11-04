@@ -20,11 +20,6 @@
 		<link rel="stylesheet" href="css/custom-love.css">
 		<link rel="stylesheet" href="css/biaoti.css" />
 		<link rel="stylesheet" href="css/main.css" />
-		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-		<script src="js/sitemap.js"               charset="utf-8"></script>
-
 		<!-- 成功案例模块 a 链接样式 -->
 		<style type="text/css">
 			a:link {
@@ -33,6 +28,17 @@
 		</style>
 		<!-- /成功案例模块 a 链接样式 -->
 
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<script src="js/sitemap.js" charset="utf-8"></script>
+		<script src="js/header.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function () {
+				// 加载页面 header 区域 javascript
+				header.initModule( $('header') );
+			});
+		</script>
 	</head>
 
 	<body>
