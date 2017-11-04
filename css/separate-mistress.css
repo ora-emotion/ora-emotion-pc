@@ -633,7 +633,7 @@
 
 .body9-right {
 	float: right;
-	margin-right: 220px;
+	margin-right: 200px;
 }
 
 .body9-right-ul2 li {
@@ -727,7 +727,6 @@
 	display: flex;
 	justify-content: space-around;
 }
-
 .body10 ul li {
 	width: 210px;
 	height: 340px;

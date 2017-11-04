@@ -1,0 +1,9 @@
+.module{
+	width: 100%;
+}
+.main{
+	background: url(../img/404bgimg.jpg) center center no-repeat;
+	width: 100%;
+	height: 923px;
+	margin: 0 auto;
+}
