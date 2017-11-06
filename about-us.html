@@ -32,6 +32,11 @@
 			$(function () {
 				// 加载页面 header 区域 javascript
 				header.initModule( $('header') );
+
+				// 加载新闻咨询页面
+				$('.more-dynamic-inner-title').click(function () {
+					window.location.href = './news.html';
+				});
 			});
 		</script>
 	</head>
