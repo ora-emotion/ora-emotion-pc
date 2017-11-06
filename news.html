@@ -37,7 +37,9 @@
 		<!-- 引入 pagination 分页组件 js -->
 	  <script type="text/javascript" src="plugin/pagination/page.js"></script>
 
-		<script src="js/sitemap.js"               charset="utf-8"></script>
+		<script src="js/sitemap.js" charset="utf-8"></script>
+		<script src="js/header.js" charset="utf-8"></script>
+		<script src="js/footer.js" charset="utf-8"></script>
 
 		<script type="text/javascript">
 			$(function () {
@@ -54,6 +56,9 @@
 
 				// 加载页面 footer 区域 javascript
 				footer.initModule( $('footer') );
+
+        // 加载页面 header 区域 javascript
+				header.initModule( $('header') );
 			});
 		</script>
 	</head>
@@ -63,31 +68,7 @@
 		<div>
 
 	    <!-- 页面头部 -->
-	    <header style="width: 100%; min-width: 1200px;">
-        <div class="inner">
-          <div class="pull-left">
-            <img src="img/index/logo-word.jpg" alt="橘子情感--logo" class="img-responsive">
-          </div>
-          <div class="pull-right">
-            <div class="icon">
-              <div class="qrcode-wechat">
-                <img src="img/index/icon-wechat-red.jpg" alt="橘子情感--微信二维码">
-              </div>
-              <div class="num-phone">
-                <img src="img/index/icon-phone-red.jpg" alt="橘子情感--热线电话">
-              </div>
-            </div>
-            <div class="txt">
-              <p>官方二维码</p>
-              <p>免费情感热线电话</p>
-              <p>4006-299-520</p>
-            </div>
-          </div>
-          <div class="wechat">
-            <img src="img/index/erwei.jpg" alt="橘子情感--微信二维码">
-          </div>
-        </div>
-	    </header>
+	    <header style="width: 100%; min-width: 1200px;"></header>
 	    <!-- /页面头部 -->
 
 	    <!-- 右侧菜单 -->
