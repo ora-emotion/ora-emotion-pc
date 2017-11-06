@@ -37,6 +37,9 @@
 		<!-- 页面 header 部分 javascript -->
 		<script src="js/header.js" charset="utf-8"></script>
 
+		<!-- 页面 footer 部分 javascript -->
+		<script src="js/footer.js" charset="utf-8"></script>
+
 		<script charset="utf-8" type="text/javascript">
 			var deviceWidth = document.documentElement.clientWidth;
 
@@ -44,13 +47,12 @@
 				window.location.href = "http://www.jvziqinggan.com/mobile/wap/";
 			}
 
-			// $(function() {
-			// 	$(".erweiactive").hover($(".erweima").css("display", "block"));
-			// }());
-
 			$(function () {
 				// 加载页面 header 区域 javascript
 				header.initModule( $('header') );
+
+				// 加载页面 footer 区域 javascript
+				footer.initModule( $('footer') );
 			});
 		</script>
 
