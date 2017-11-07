@@ -14,7 +14,7 @@
 var footer = (function () {
   var
     configMap = {
-      txt_html : String()
+      main_html : String()
         + '<div class="inner">'
           + '<div class="triangle">'
             + '<div class="triangle-outer"></div>'
@@ -59,8 +59,7 @@ var footer = (function () {
     var $footer = stateMap.$footer;
 
     jqueryMap = {
-      $footer     : $footer,
-      $inner      : $footer.find('.inner')
+      $footer : $footer
     };
   };
 
@@ -90,9 +89,9 @@ var footer = (function () {
 
   initModule = function ($footer) {
     stateMap.$footer = $footer;
-    setJqueryMap();
+    $footer.html(configMap.main_html);
 
-    jqueryMap.$inner.html(configMap.txt_html);
+    setJqueryMap();
     updateImg();
   };
 
