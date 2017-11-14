@@ -910,6 +910,7 @@ input:-webkit-autofill {
     display: flex;
     margin-top: 30px;
     position: relative;
+    width: 0;
 }
 
 .service .item .btn button {
@@ -919,6 +920,23 @@ input:-webkit-autofill {
     color: #2d2d2d;
     font-size: 16px;
     border: none;
+}
+
+.service .item .btn div {
+  margin: 0 20px;
+  padding: 10px 30px;
+}
+
+.service .item:nth-child(2) .btn div,
+.service .item:nth-child(3) .btn div {
+  color: #fff;
+  background: #2d2d2d;
+  transition: all .3s;
+}
+.service .item:nth-child(2) .btn div:hover,
+.service .item:nth-child(3) .btn div:hover {
+  background-color: #fe3233;
+  color: #fff;
 }
 
 .service .item .btn button:first-child {
