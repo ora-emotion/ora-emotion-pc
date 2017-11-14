@@ -41,10 +41,6 @@ a:visited{
 	overflow: hidden;
 	font-family: "微软雅黑";
 	margin-bottom: 100px;
-	/*background-image: url(../images/dabeijing3.jpg);*/
-	/*background-image: url(../images/dabeijing2.jpg);*/
-	/*background-image: url(../images/dabeijing.jpg);*/
-
 }
 .biaoti{
 	text-align: center;
@@ -55,7 +51,6 @@ a:visited{
 	width: 900px;
 	float: left;
 	margin-top: 50px;
-
 }
 .datu{
 	width: 900px;
@@ -63,7 +58,6 @@ a:visited{
 .datu img{
 	width: 820px;
 	height: 400px;
-
 }
 .left1 h2{
 	height: 50px;
@@ -87,16 +81,15 @@ a:visited{
 }
 .left1 div{
 	margin-left: 30px;
-    padding-top: 18px;
-    width: 100%;
-    height: 51px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    line-height: 60px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #434343;
-   /* background: url("../img/cis/cis_a.jpg") no-repeat 10px 35px;*/
+  padding-top: 18px;
+  width: 100%;
+  height: 51px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #434343;
 }
 .left1 div .hong{
 	height: 20px;
@@ -106,8 +99,8 @@ a:visited{
 	margin-right: 10px;
 }
 .left1 img{
-    display: block;
-    margin: 20px auto;
+  display: block;
+  margin: 20px auto;
 }
 
 .right1{
@@ -119,16 +112,16 @@ a:visited{
 .right1 h3{
 
 	margin-left: 20px;
-    padding-top: 18px;
-    width: 175px;
-    height: 51px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    line-height: 51px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    color: #434343;
+  padding-top: 18px;
+  width: 175px;
+  height: 51px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 51px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #434343;
 	background: url("../images/cis_a.png") no-repeat center center;
 	letter-spacing:1px;
 }
@@ -156,6 +149,33 @@ a:visited{
 }
 
 
+
+.pic-right {
+	margin-bottom: 10px;
+}
+.bold {
+	font-weight: bold;
+}
+.jieshao img {
+	display: block;
+	width: 340px;
+}
+header .pull-right .txt {
+	position: relative;
+	top: -10px;
+	margin-left: 0;
+}
+header .pull-right .txt p {
+	color: #2d2d2d;
+	height: 0;
+}
+header .pull-right .txt p:first-child {
+	line-height: 0;
+	font-size: 16px;
+}
+header .pull-right .txt p:nth-child(2) {
+	font-size: 16px;
+}
 
 .pic-right {
 	margin-bottom: 10px;

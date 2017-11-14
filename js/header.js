@@ -14,10 +14,36 @@
 
 var header = (function () {
   var
+    configMap = {
+      main_html : String()
+        + '<div class="inner">'
+          + '<div class="pull-left">'
+            + '<img src="img/index/logo-word.jpg" alt="橘子情感--logo" class="img-responsive">'
+          + '</div>'
+          + '<div class="pull-right">'
+            + '<div class="icon">'
+              + '<div class="qrcode-wechat">'
+                + '<img src="img/index/icon-wechat-red.jpg" alt="橘子情感--微信二维码">'
+              + '</div>'
+              + '<div class="num-phone">'
+                + '<img src="img/index/icon-phone-red.jpg" alt="橘子情感--热线电话">'
+              + '</div>'
+            + '</div>'
+            + '<div class="txt">'
+              + '<p>官方二维码</p>'
+              + '<p>免费情感热线电话</p>'
+              + '<p>4006-299-520</p>'
+            + '</div>'
+          + '</div>'
+          + '<div class="wechat">'
+            + '<img src="img/index/erwei.jpg" alt="橘子情感--微信二维码">'
+          + '</div>'
+        + '</div>'
+    },
     stateMap = { $header : null },
     jqueryMap = {},
 
-    setJqueryMap, toggleWechat, initModule;
+    setJqueryMap, updateImg, toggleWechat, initModule;
 
   setJqueryMap = function () {
     var $header = stateMap.$header;
@@ -29,9 +55,52 @@ var header = (function () {
     };
   };
 
+  // Start : updateImg()
+  // 功能  : 动态更新 header 图标
+  //
+  updateImg = function () {
+    var
+      changeImg,
+      url = window.location.href;
+
+    url = url.split('/');
+
+    changeImg = function () {
+      $('header .pull-left img').attr('src', '../img/index/logo-word.jpg');
+
+      $('header .pull-right .icon .qrcode-wechat img')
+        .attr('src', '../img/index/icon-wechat-red.jpg');
+
+      $('header .pull-right .icon .num-phone img')
+        .attr('src', '../img/index/icon-phone-red.jpg');
+
+      $('header .wechat img')
+        .attr('src', '../img/index/erwei.jpg');
+    };
+
+    // 当为子页面时，更新图标
+    switch (url[url.length - 2]) {
+      case 'views' :
+        changeImg();
+        break;
+      case 'media' :
+        changeImg();
+        break;
+      case 'news' :
+      changeImg();
+        break;
+      case 'anli' :
+        changeImg();
+        break;
+      default:
+        break;
+    }
+  };
+  // End : updateImg()
+
   // Start : toggleWechat()
   // 功能 : 显示和隐藏 header 区域微信二维码图片
-  // 说明 : 
+  // 说明 :
   //   * 当鼠标移入 ‘官方二维码’ 处的图标时，显示二维码；当鼠标移出时，隐藏二维码。
   //
   toggleWechat = function () {
@@ -46,8 +115,10 @@ var header = (function () {
 
   initModule = function ($header) {
     stateMap.$header = $header;
+    $header.html(configMap.main_html);
 
     setJqueryMap();
+    updateImg();
     toggleWechat();
   };
 

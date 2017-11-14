@@ -30,43 +30,23 @@
 		<script src="../js/data.js" charset="utf-8"></script>
 		<script src="../js/sitemap.js" charset="utf-8"></script>
 		<script src="../js/header.js" charset="utf-8"></script>
+		<script src="../js/footer.js" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function () {
 				data.initModule( $('html') );
 
 				// to load header javascript
 				header.initModule( $('header') );
+
+				// 加载页面 footer 区域 javascript
+				footer.initModule( $('footer') );
 			});
 		</script>
 	</head>
 
 	<body>
 		<!-- 页面头部 -->
-		<header>
-			<div class="inner">
-				<div class="pull-left">
-					<img src="../img/index/logo-word.jpg" alt="橘子情感--logo" class="img-responsive">
-				</div>
-				<div class="pull-right">
-					<div class="icon">
-						<div class="qrcode-wechat">
-							<img src="../img/index/icon-wechat-red.jpg" alt="橘子情感--微信二维码">
-						</div>
-						<div class="num-phone">
-							<img src="../img/index/icon-phone-red.jpg" alt="橘子情感--热线电话">
-						</div>
-					</div>
-					<div class="txt">
-						<p>官方二维码</p>
-						<p>免费情感热线电话</p>
-						<p>4006-299-520</p>
-					</div>
-				</div>
-				<div class="wechat">
-					<img src="../img/index/erwei.jpg" alt="橘子情感--微信二维码">
-				</div>
-			</div>
-		</header>
+		<header></header>
 		<!-- /页面头部 -->
 
 		<!-- 右侧菜单 -->
@@ -260,42 +240,7 @@
 			</div>
 		</div>
 		<!-- 页面底部 -->
-		<footer>
-			<div class="inner">
-				<div class="triangle">
-					<div class="triangle-outer"></div>
-					<div class="triangle-inner"></div>
-				</div>
-				<div class="main">
-					<div class="footer-logo left"></div>
-					<div class="txt mid">
-						<div class="footer-top">
-							<span class="icon phone footer-mid-left">
-                                        <img src="../img/index/icon-phone-red.png" alt="橘子情感--热线电话">
-                                    </span>
-							<span class="txt footer-mid-right">
-                                        <p class="phone-txt">橘子情感热线</p>
-                                        <p class="phone-num">4006-299-520</p>
-                                </span>
-						</div>
-						<div class="bot">
-							<div class="left pull-left">
-								<p>橘子微信公众平台：<span class="wechat-num">juziqinggan</span></p>
-								<p>青岛橘子创想文化传播有限公司</p>
-							</div>
-							<div class="right pull-right">
-								<p>公司地址：<span class="address">青岛市市南区银川西路 67 号动漫产业园 A 座 212B</span></p>
-								<p>备案号：<span class="record-num">鲁 ICP 备 17023741 号</span></p>
-							</div>
-						</div>
-					</div>
-					<div class="icon qrcode text-center">
-						<div class="qrcode right"></div>
-						<span class="txt">扫一扫关注我们</span>
-					</div>
-				</div>
-			</div>
-		</footer>
+		<footer></footer>
 		<!-- /页面底部 -->
 		<script type="text/javascript" src="../js/common.js"></script>
 		<!-- 引入 json 数据 -->

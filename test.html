@@ -4,52 +4,36 @@
     <meta charset="utf-8">
     <title>冒泡</title>
     <script src="js/jquery-3.1.0.min.js" charset="utf-8"></script>
-
+    <script src="js/test.js" charset="utf-8"></script>
     <script>
-      $(function (){
-        var
-          wrapper = $('.wrapper'),
-          inner   = $('.inner');
-         
-//         wrapper.mouseover(function () {
-//           console.log('mouseover');
-//         });
-        wrapper.mouseover(function (event) {
-          var target = event.target;
-
-          if (target.className.toLowerCase() == 'inner') {
-            event.stopPropagation();
-//             return false;
-          }
-
-          console.log('ok');
-
-//           event.preventDefault();
-
-//           console.log(target.className);
-//           if (target.className == 'INNER') {
-//             return false;
-//           }
-        });
+      $(function () {
+        checkUser.initModule( $('.wrapper') );
       });
     </script>
-
-    <style type="text/css">
-      .wrapper {
-        width: 300px;
-        height: 300px;
-        background: red;
-      }
-      .inner {
-        width: 200px;
-        height: 200px;
-        background: green;
-      }
-    </style>
   </head>
   <body>
+
     <div class="wrapper">
-      <div class="inner"></div>
+      <div class="mentor">
+        <span class="mentor-name"></span>
+      </div>
+
+      <div class="user">
+        <span class="user-name"></span>
+      </div>
+
+      <button type="button" name="button">查看用户</button>
     </div>
+
+    <table>
+      <tbody class="xxx">
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </tbody>
+    </table>
+
   </body>
 </html>
