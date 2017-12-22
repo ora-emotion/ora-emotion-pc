@@ -1,0 +1,58 @@
+/* Start stylesheet reset */
+.indent {
+  text-indent: .5rem;
+}
+/* End stylesheet reset */
+
+/* Start module 01 area: 嘉伟导师十本好书推荐 */
+.module-01 .main {
+  background: #fbfbfb;
+}
+.module-01 .main .txt-group {
+  padding: 0 .22rem;
+}
+.module-01 .main .txt-group p {
+  line-height: .36rem;
+  height: 100%;
+}
+.module-01 .main .txt-group p:nth-child(2) {
+  padding: .2rem 0;
+}
+
+.module-01 .main .book-item-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: .5rem;
+}
+.module-01 .main .book-item-group .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: .2rem 0 .2rem .22rem;
+  margin: .1rem 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  background: #fff;
+}
+.module-01 .main .book-item-group .item img {
+  width: 1.78rem;
+  height: 2.24rem;
+  padding-right: .26rem;
+}
+.module-01 .main .book-item-group .item .des {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 5.02rem;
+  overflow: hidden;
+}
+.module-01 .main .book-item-group .item .des .book-title {
+  float: left;
+  color: #fd3232;
+  padding: 0 0 .15rem;
+}
+.module-01 .main .book-item-group .item .des .book-des {
+  line-height: .36rem;
+  color: #333;
+}
+/* End module 01 area: 嘉伟导师十本好书推荐 */

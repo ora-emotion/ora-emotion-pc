@@ -1,0 +1,1 @@
+spa.service.mentor=function(){var t,l={main_html:String()+'<div class="spa-module-title"><span class="spa-module-title-line"></span><p class="spa-module-title-txt">橘子情感导师团队</p><span class="spa-module-title-line"></span></div>'};return t=function(t){t.html(l.main_html)},{initModule:t}}();

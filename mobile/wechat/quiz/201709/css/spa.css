@@ -1,0 +1,312 @@
+/*
+ * index.css
+ * Root stylesheets
+*/
+
+/* Reset stylesheets */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+body {
+  width: 7.5rem;
+  height: 100%;
+  overflow: hidden;
+}
+
+.spa-welcome,
+.spa-question,
+.spa-score,
+.spa-modal {
+  width: 7.5rem;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* spa-welcome stylesheets */
+.spa-welcome {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.spa-welcome-bg {
+  width: 7.5rem;
+
+}
+.spa-welcome-start-btn,
+.spa-welcome-rule-btn {
+  width: 3.8rem;
+  height: 1.18rem;
+  position: absolute;
+}
+.spa-welcome-start-btn {
+  background: url("../images/btn-welcome-start.png") no-repeat center center;
+  background-size: 100% 100%;
+  top: 8.77rem;
+  left: 22.5%;
+}
+.spa-welcome-rule-btn {
+  background: url("../images/btn-welcome-rule.png") no-repeat center center;
+  background-size: 100% 100%;
+  top: 10.37rem;
+  left: 22.5%;
+}
+
+/* spa-modal */
+.spa-modal,
+.spa-modal-content,
+.spa-modal-welcome-rule,
+.modal-opacity,
+.modal-content {
+  width: 100%;
+  height: 100%;
+}
+.spa-modal {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+/* spa-modal-welcome-rule */
+.spa-modal-welcome-rule {
+  overflow: hidden;
+}
+.spa-modal-welcome-rule,
+.spa-modal-welcome-rule .modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spa-modal .spa-modal-welcome-rule .modal-opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #000;
+  opacity: 0;
+}
+.spa-modal .spa-modal-welcome-rule .modal-content {
+  width: 6.87rem;
+  height: 9.23rem;
+  background: url("../images/modal-welcome-rule.png") no-repeat center center;
+  background-size: 100% 100%;
+  position: relative;
+  top: -15rem;
+  z-index: 2;
+}
+.spa-modal .spa-modal-welcome-rule .modal-content .txt {
+  color: #fff;
+  width: 4.65rem;
+  height: 4.3rem;
+  padding: .2rem .3rem;
+  position: relative;
+  top: .4rem;
+  overflow-y: scroll;
+  background: transparent;
+}
+.spa-modal .spa-modal-welcome-rule .modal-content .txt .time p:first-child,
+.spa-modal .spa-modal-welcome-rule .modal-content .txt .rule p:first-child {
+  font-size: .36rem;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+}
+.spa-modal .spa-modal-welcome-rule .modal-content .txt .time p:last-child,
+.spa-modal .spa-modal-welcome-rule .modal-content .txt .rule p:last-child {
+  font-size: .28rem;
+  line-height: .5rem;
+}
+.spa-modal .spa-modal-welcome-rule .modal-content .txt .time p:last-child {
+  text-align: center;
+}
+.spa-modal .spa-modal-welcome-rule .modal-content .txt .rule p:first-child {
+  padding-top: .4rem;
+}
+
+.spa-modal .spa-modal-welcome-rule .modal-close-btn {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 9.38rem;
+  left: 40.8%;
+  z-index: 2;
+  background: transparent;
+}
+
+/* spa-modal-welcome-rule-tip */
+.spa-modal-welcome-rule-tip {
+  overflow: hidden;
+}
+.spa-modal-welcome-rule-tip,
+.spa-modal-welcome-rule-tip .modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spa-modal .spa-modal-welcome-rule-tip .modal-opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #000;
+  opacity: 0;
+}
+.spa-modal .spa-modal-welcome-rule-tip .modal-content {
+  width: 100%;
+  height: 12.06rem;
+  background: url("../images/modal-welcome-rule-tip.png") no-repeat center center;
+  background-size: 100% 100%;
+  position: relative;
+  top: -15rem;
+  z-index: 2;
+}
+.spa-modal .spa-modal-welcome-rule-tip .modal-content .txt {
+  color: #fff;
+  width: 5.78rem;
+  height: 6.9rem;
+  padding-right: .4rem;
+  position: relative;
+  top: 1.3rem;
+  overflow-y: scroll;
+  background: transparent;
+}
+.spa-modal .spa-modal-welcome-rule-tip .modal-content .txt p {
+  font-size: .32rem;
+  text-align: center;
+  line-height: .62rem;
+}
+.spa-modal .spa-modal-welcome-rule-tip .modal-content .txt p span {
+  display: inline-block;
+}
+.spa-modal .spa-modal-welcome-rule-tip .modal-content .txt p .red {
+  color: #d40036;
+  font-weight: bold;
+}
+.spa-modal .spa-modal-welcome-rule-tip .modal-close-btn {
+  width: 1.3rem;
+  height: 1rem;
+  position: absolute;
+  top: .3rem;
+  right: .1rem;
+  z-index: 2;
+  background: transparent;
+}
+
+/* spa-question */
+.spa-question {
+  display: none;
+  width: 7.5rem;
+  height: 12.06rem;
+  background: url("../images/question-bg.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+/*.spa-question-content-item-title img {
+  width:
+}*/
+.spa-question-content {
+  display: flex;
+  flex-direction: column;
+}
+.spa-question-content-item {
+  width: 100%;
+  height: 100vh;
+  /*display: flex;*/
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.spa-question-content-item.active {
+  display: flex;
+}
+.spa-question-content-item-title {
+  width: 4.93rem;
+  height: 1.12rem;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: -2.2rem;
+  left: .2rem;
+}
+.spa-question-content-item-title .title-serial-num {
+  display: inline-block;
+  text-align: center;
+  font-size: .39rem;
+  color: #fff;
+  width: .55rem;
+  height: .55rem;
+  line-height: .55rem;
+  border-radius: 50%;
+  background: #fd4c95;
+  position: absolute;
+  left: -.65rem;
+}
+.spa-question-content-item-title .title-serial-txt {
+  width: 100%;
+}
+.spa-question-content-item-options {
+  width: 5.88rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 3.4rem;
+  left: 11%;
+}
+.spa-question-content-item-options .option-item {
+  padding-left: .23rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.spa-question-content-item-options .option-item-icon {
+  display: inline-block;
+  width: .47rem;
+  height: .51rem;
+  background: url("../images/question-option-icon-normal.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+.spa-question-content-item-options .option-item .option-item-txt {
+  font-size: .26rem;
+  line-height: .35rem;
+  width: 4.6rem;
+  padding-left: .22rem;
+}
+.spa-question-content-item-options .option-item-icon.active {
+  background: url("../images/question-option-icon-active.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+.spa-question-content-item-next-btn img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.spa-question-content-item-next-btn .spa-question-next-btn,
+.spa-question-content-item-next-btn .spa-question-submit-btn {
+  width: 2.2rem;
+  height: .86rem;
+  bottom: 2.18rem;
+  right: 1.03rem;
+}
+.spa-question-content-item-next-btn .spa-question-submit-btn {
+  display: none;
+}
+
+.spa-score {
+  display: none;
+  background: url("../images/score.png") no-repeat center center;
+  background-size: 6.99rem 5.96rem;
+}

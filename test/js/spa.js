@@ -1,0 +1,1 @@
+var spa=(function(){var a=function(b){spa.shell.initModule(b)};return{initModule:a}}());

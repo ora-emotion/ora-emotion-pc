@@ -1,0 +1,331 @@
+@import "swiper/swiper.css";
+
+/* Start stylesheet reset */
+p {
+  font-size: .26rem;
+  line-height: .36rem;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+ /* End stylesheet reset */
+
+/* Start module 01 area: 橘子情感 */
+.module-01 .main {
+  background: url("../images/about/module01-bg.png") no-repeat center center;
+  width: 100%;
+  height: 6.36rem;
+  background-size: cover;
+  position: relative;
+}
+.module-01 .main .para {
+  position: absolute;
+  text-indent: .52rem;
+}
+.module-01 .main .para:first-child {
+  top: 0;
+  right: 0;
+  width: 3.28rem;
+  padding-top: .26rem;
+  padding-right: .24rem;
+}
+.module-01 .main .para:last-child {
+  bottom: -.1rem;
+  padding: 0 .24rem .26rem;
+}
+/* Start module 01 area: 橘子情感 */
+
+/* Start module 02 area: 橘子情感发展历程 */
+.module-02 .main {
+  padding-top: .2rem;
+}
+.module-02 .main .content {
+  display: flex;
+  justify-content: center;
+}
+
+.module-02 .main .content .mid.bg {
+  padding-top: .1rem;
+  width: .38rem;
+  height: 16.76rem;
+  background: url("../images/about/module02-icon03.png") no-repeat center center;
+  background-size: cover;
+}
+
+.module-02 .main .content .left,
+.module-02 .main .content .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.module-02 .main .content .left .item,
+.module-02 .main .content .right .item {
+  position: relative;
+}
+.module-02 .main .content .left .item {
+  right: -.05rem;
+}
+  .module-02 .main .content .left .item:first-child {
+    top: .9rem;
+  }
+  .module-02 .main .content .left .item:nth-child(2) {
+    top: .5rem;
+  }
+  .module-02 .main .content .left .item:last-child {
+    top: .15rem;
+  }
+.module-02 .main .content .right .item {
+  left: -.4rem;
+}
+  .module-02 .main .content .right .item:first-child {
+    top: -.15rem;
+  }
+  .module-02 .main .content .right .item:nth-child(2) {
+    bottom: .7rem;
+  }
+  .module-02 .main .content .right .item:last-child {
+    bottom: 1.26rem;
+  }
+
+.module-02 .main .content .left .item .txt-group,
+.module-02 .main .content .right .item .txt-group {
+  width: 2.98rem;
+}
+
+.module-02 .main .content .left .item .txt-group .year .icon,
+.module-02 .main .content .right .item .txt-group .year .icon {
+  display: inline-block;
+  width: .34rem;
+  background-size: 100%;
+  position: relative;
+  vertical-align: bottom;
+  top: .13rem;
+}
+
+.module-02 .main .content .left .item .txt-group .year,
+.module-02 .main .content .right .item .txt-group .year {
+  line-height: .41rem;
+  height: .41rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+.module-02 .main .content .left .item .txt-group .year .icon {
+  height: .41rem;
+  background: url("../images/about/module02-icon01.png") no-repeat center center;
+}
+.module-02 .main .content .right .item .txt-group .year .icon {
+  padding-right: .1rem;
+  height: .4rem;
+  background: url("../images/about/module02-icon02.png") no-repeat center center;
+}
+
+.module-02 .main .content .left img,
+.module-02 .main .content .left .item .txt-group .para,
+.module-02 .main .content .right img,
+.module-02 .main .content .right .item .txt-group .para {
+  position: relative;
+}
+.module-02 .main .content .left .item .txt-group .para,
+.module-02 .main .content .left .item img {
+  right: .25rem;
+}
+.module-02 .main .content .right .item .txt-group .para,
+.module-02 .main .content .right .item img {
+  left: .4rem;
+}
+.module-02 .main .content .left .item img,
+.module-02 .main .content .right .item img {
+  width: 100%;
+  top: .1rem;
+}
+/* End module 02 area: 橘子情感发展历程 */
+
+/* Start module 03 area: 橘子情感 */
+.module-03 .main .bg {
+  background: url("../images/about/module03-bg.png") no-repeat center center;
+  width: 100%;
+  height: 6.57rem;
+  background-size: cover;
+}
+/* End module 03 area: 橘子情感 */
+
+/* Start module 04 area: 橘子动态 */
+.module-04 .swiper-slide-title {
+  width: 470px;
+  text-align: center;
+  font-size: .26rem;
+  color: #2d2d2d;
+  height: .36rem;
+  line-height: .36rem;
+  position: relative;
+  top: -.15rem;
+}
+.module-04 .swiper-pagination.swiper-pagination-bullets {
+  bottom: .4rem;
+  height: .6rem;
+}
+.module-04 .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: .3;
+  position: relative;
+  top: -.6rem;
+}
+.module-04 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: .8;
+}
+/* End module 04 area: 橘子动态 */
+
+/* Start module 05 area: 荣获杰出诚信企业称号 */
+.module-05 .main {
+  width: 100%;
+}
+.module-05 .main .top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: .22rem;
+}
+.module-05 .main .top .item-group {
+  display: flex;
+  justify-content: space-between;
+  margin: .11rem 0;
+  padding: 0 .21rem;
+}
+.module-05 .main .top .item-group .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.module-05 .main .top .item-group .item .item-img {
+  width: 3.45rem;
+  height: 2.16rem;
+  color: #333333;
+}
+.module-05 .main .top .item-group .item .item-title {
+  width: 3.14rem;
+  font-size: .26rem;
+  line-height: .36rem;
+  padding-top: .08rem;
+}
+.module-05 .main .top .item-group .item .item-link {
+  width: 100%;
+  height: .36rem;
+  line-height: .36rem;
+  padding-top: .05rem;
+  padding-right: .02rem;
+  text-align: right;
+  font-size: .22rem;
+  color: #919191;
+  float: right;
+}
+.module-05 .main .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #f8f8f8;
+  padding-top: .18rem;
+  padding-bottom: .08rem;  /* 添加新闻后，删除该语句 */
+}
+.module-05 .main .bottom .item-group .item {
+  display: none;
+}
+.module-05 .main .bottom .item-group .item.active {
+  display: block;
+  padding: 0 .17rem;
+  display: flex;
+  justify-content: space-between;
+  height: .52rem;
+  line-height: .52rem;
+}
+.module-05 .main .bottom .item-group .item .item-title {
+  font-size: .26rem;
+  color: #333;
+  width: 5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.module-05 .main .bottom .item-group .item .item-link {
+  font-size: .22rem;
+  color: #919191;
+  padding-right: .04rem;
+}
+.module-05 .main .bottom .more {
+  display: inline-block;
+  width: 100%;
+  height: .6rem;
+  line-height: .6rem;
+  padding-bottom: .06rem;
+  color: #fd3232;
+  text-align: center;
+  font-size: .26rem;
+}
+/* End module 05 area: 荣获杰出诚信企业称号 */
+
+/* Start module 06 area: 服务步骤内容 */
+.module-06-bg{
+  background: url("../images/save-love/servicewen_bg.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: 7.04rem 100%;
+  width: 100%;
+  height: 7.67rem;
+  margin-top: .3rem;
+}
+/* End module 06 area: 服务步骤内容 */
+
+/* Start module 07 area: 四大保障 */
+.module-07 .main {
+  width: 100%;
+  height: 9.35rem;
+  background: url("../images/about/module07-bg.png") no-repeat center center;
+  background-size: cover;
+}
+.module-07 .main .txt-group {
+  width: 3.68rem;
+  height: 100%;
+  padding-left: .2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.module-07 .main .txt-group .item {
+  padding: .1rem;
+}
+.module-07 .main .txt-group .item:first-child {
+  padding-top: .24rem;
+}
+.module-07 .main .txt-group .item:last-child {
+  padding-bottom: .24rem;
+}
+.module-07 .main .txt-group .item .txt-title {
+  font-weight: bold;
+}
+/* End module 06 area: 四大保障 */
+
+/* Start module 07 area: 合作媒体 */
+.module-08 .main .bg {
+  background: url("../images/about/module08-bg.png") no-repeat center center;
+  width: 6.85rem;
+  height: 2.1rem;
+  margin: 0 auto;
+}
+/* Start module 07 area: 合作媒体 */

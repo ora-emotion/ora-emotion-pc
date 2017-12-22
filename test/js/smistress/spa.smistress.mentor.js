@@ -1,0 +1,1 @@
+spa.smistress.mentor=function(){var s,t={main_html:String()+'<div class="spa-module-title"><span class="spa-module-title-line"></span><p class="spa-module-title-txt">导师团队</p><span class="spa-module-title-line"></span></div><div class="smistress-mentor-main"></div>'};return s=function(s){s.html(t.main_html)},{initModule:s}}();

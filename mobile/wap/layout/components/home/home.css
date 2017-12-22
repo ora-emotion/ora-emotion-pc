@@ -1,0 +1,23 @@
+/** home btn */
+.home {
+    position: fixed;
+    bottom: .4rem;
+    right: .5rem;
+    width: 138px;
+    z-index: 10;
+    height: 138px;
+
+    opacity: .4;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+
+    background: rgba(0, 0, 0, .3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/** home btn */

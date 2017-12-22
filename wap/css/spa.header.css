@@ -1,0 +1,50 @@
+/*
+ * spa.css
+ * Header namespace styles
+*/
+
+.spa-header {
+  width: 100%;
+  height: .77rem;
+  background: #fff;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, .3);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+.spa-header-logo {
+  background: url("../images/util/logo.png") no-repeat center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 2.04rem;
+  height: .56rem;
+
+  margin-left: .37rem;
+}
+.spa-header-contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-right: .37rem;
+}
+.spa-header-contact-icon {
+  background: url("../images/util/header-icon.png") no-repeat center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: .43rem;
+  height: .43rem;
+}
+.spa-header-contact-txt {
+  padding-left: .08rem;
+}
+.spa-header-contact-txt p {
+  font-size: .26rem;
+  line-height: .27rem;
+}

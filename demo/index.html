@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script>
+			window.onload = function() {
+				var time = getCookie('time');
+				if(time > 1) {
+					window.location.href = 'other.html';
+				} else {
+					time++;
+					setCookie('time', time);
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<p>
+			11111111111111111
+		</p>
+	</body>
+
+</html>
