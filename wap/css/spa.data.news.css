@@ -1,0 +1,34 @@
+/*
+ * spa.data.news.css
+ * News namespace styles
+ * 新闻咨询样式表
+*/
+
+.spa-data-news h2{
+	font-size: .4rem;
+	text-align: center;
+	margin-top: .2rem;
+	margin-bottom: .2rem;
+}
+.spa-data-news p{
+	font-size: .26rem;
+	text-indent: .52rem;
+	height: 100%;
+	line-height: .4rem;
+	padding-left: .2rem;
+	padding-right: .2rem;
+	margin-top: .2rem;
+	margin-bottom: .2rem;
+}
+.spa-data-news .center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.spa-data-news span{
+	font-size: .2rem;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	display: block;
+}

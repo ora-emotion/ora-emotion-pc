@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jquery幻灯片插件带滚动条的圆形立体图片旋转滚动</title>
+    <meta name="description" content="jquery幻灯片插件制作3D旋转木马图片旋转滚动，设置水平滚动条控制圆形立体图片旋转滚动。支持水平拖动滚动条图片旋转滚动。" />
+
+    <style type="text/css">
+        * {
+            margin:0;
+            padding:0;
+            list-style: none;
+        }
+        a,img {
+            border:0;
+        }
+        body {
+            font:12px/180% Arial, Helvetica, sans-serif, "新宋体";
+            width: 100%;
+            height: 580px;
+            margin: 0 auto;
+        }
+        #wide-wrapper {
+            padding-top: 40px;
+        }
+        #carousel {
+            margin:0 auto;
+            padding:0;
+            list-style: none;
+        }
+        #carousel li img {
+            background: transparent;
+            border-radius: 50%;
+        }
+        #carousel .carousel-item {
+            background: transparent;
+            border: none;
+        }
+        #carousel .click {
+            box-shadow: none;
+        }
+
+        #wide-wrapper .txt-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: relative;
+            top: 150px;
+        }
+        #wide-wrapper .txt-group .item {
+            display: none;
+            width: 632px;
+            height: 215px;
+            border-radius: 30px;
+        }
+        #wide-wrapper .txt-group .item:after {
+            position: absolute;
+            top: -100px;
+            left: 44.898%;
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 50px solid transparent;
+        }
+        #wide-wrapper .txt-group .item:nth-child(1):after {
+            border-bottom: 50px solid #fdf0cd;
+        }
+        #wide-wrapper .txt-group .item:nth-child(4):after {
+            border-bottom: 50px solid #d6fcf9;
+        }
+        #wide-wrapper .txt-group .item:nth-child(3):after {
+            border-bottom: 50px solid #fcdfdf;
+        }
+        #wide-wrapper .txt-group .item:nth-child(2):after {
+            border-bottom: 50px solid #dfe6ff;
+        }
+        #wide-wrapper .txt-group .item.active {
+            display: block;
+        }
+        #wide-wrapper .txt-group .item:nth-child(1) {
+            background: #fdf0cd;
+        }
+        #wide-wrapper .txt-group .item:nth-child(4) {
+            background: #d6fcf9;
+        }
+        #wide-wrapper .txt-group .item:nth-child(3) {
+            background: #fcdfdf;
+        }
+        #wide-wrapper .txt-group .item:nth-child(2) {
+            background: #dfe6ff;
+        }
+        #wide-wrapper .txt-group .item p {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 26px;
+            color: #333333;
+            padding: 44px 24px;
+            line-height: 42px;
+            letter-spacing: 2px;
+            display: flex;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="css/carousel.css" />
+
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.carousel.js"></script>
+
+</head>
+
+<body>
+
+<div id="wide-wrapper">
+    <ul id="carousel">
+        <li><img src="images/save-love/module05-icon00-active.png" alt=""/></li>
+        <li><img src="images/save-love/module05-icon03-active.png" alt=""/></li>
+        <li><img src="images/save-love/module05-icon02-active.png" alt=""/></li>
+        <li><img src="images/save-love/module05-icon01-active.png" alt=""/></li>
+    </ul>
+    <div class="txt-group">
+        <div class="item active">
+            <p>
+                发现对方开始有所隐瞒，逐渐发现对方已经在外另有新欢，同床异梦，让你无法忍受。你不想忍气吞声，但也不知如何是好。
+            </p>
+        </div>  <!-- active item -->
+        <div class="item">
+            <p>
+                因为各种经济问题，你们开始相互不理解，甚至埋怨。生活的压力，价值感情的崩塌，让你喘不过气。
+            </p>
+        </div>  <!-- hidden item -->
+        <div class="item">
+            <p>
+                无法沟通、互相误解，当初相爱相依的激情荡然无存。你们开始冷战、争吵，爱情矛盾愈演愈烈。
+            </p>
+        </div>  <!-- hidden item -->
+        <div class="item">
+            <p>
+                长期的异地恋，导致沟通不畅，信任危机。不在身边的爱人，你根本不知道如何维持。地域的隔阂让你有心无力。
+            </p>
+        </div>  <!-- hidden item -->
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    var onClickItem;
+    var $txtItem;
+    $txtItem = $('.txt-group .item');
+
+    onClickItem = function () {
+        var _this = $(this);
+        var _index = _this.index();
+        $($txtItem[_index])
+            .css({ 'display' : 'block' })
+            .siblings().css({ 'display' : 'none' });
+    };
+
+    $('#carousel').carousel({
+        itemWidth:246,
+        itemHeight:246,
+        horizontalRadius:270,  // 水平距离
+        verticalRadius:120,    // 垂直距离
+        resize:false,
+        mouseDrag:false,
+        scaleRatio:0.4,
+        itemClick: onClickItem // 单个元素的点击事件
+    });
+
+</script>
+
+</body>
+</html>

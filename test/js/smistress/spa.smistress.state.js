@@ -1,0 +1,1 @@
+spa.smistress.state=function(){var s,t={main_html:String()+'<div class="spa-module-title"><span class="spa-module-title-line"></span><p class="spa-module-title-txt">婚姻状况</p><span class="spa-module-title-line"></span></div>'};return s=function(s){s.html(t.main_html)},{initModule:s}}();

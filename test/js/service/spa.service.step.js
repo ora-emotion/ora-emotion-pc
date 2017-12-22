@@ -1,0 +1,1 @@
+spa.service.step=function(){var s,t={main_html:String()+'<div class="spa-module-title"><span class="spa-module-title-line"></span><p class="spa-module-title-txt">服务步骤内容</p><span class="spa-module-title-line"></span></div>'};return s=function(s){s.html(t.main_html)},{initModule:s}}();

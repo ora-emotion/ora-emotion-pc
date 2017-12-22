@@ -1,0 +1,349 @@
+/*
+*
+* 定制爱情 - css
+*
+**/
+
+@import "swiper/swiper.css";
+
+/** Start module 01: 单身原因 */
+.module-01 .main {
+    padding-top: .35rem;
+}
+.module-01 .main .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.module-01 .main .swiper-container .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.module-01 .main .swiper-container .swiper-slide .txt-title {
+    font-weight: bold;
+    line-height: .36rem;
+    height: .36rem;
+
+    padding-top: .15rem;
+    padding-bottom: .05rem;
+}
+.module-01 .main .swiper-container .swiper-slide .txt-des {
+    width: 2.62rem;
+}
+/** End module 01: 单身原因 */
+
+/** Start module 02: 错误做法导致后果 */
+.module-02 .main {
+    background: #e1e6fe;
+}
+.module-02 .main .split-line {
+    width: 100%;
+    height: .01rem;
+    background: #313131;
+}
+
+.module-02 .main .swiper-container .swiper-wrapper .swiper-slide {
+    width: 3.15rem;
+    display: flex;
+    justify-content: center;
+
+    padding: .3rem 0;
+}
+
+.module-02 .main .swiper-container .swiper-wrapper .swiper-slide .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 .3rem;
+}
+.module-02 .main .swiper-container .swiper-wrapper .swiper-slide .item .img {
+    width: 2.19rem;
+    height: 1.4rem;
+}
+.module-02 .main .swiper-container .swiper-wrapper .swiper-slide .item .img img {
+    width: 100%;
+}
+.module-02 .main .swiper-container .swiper-wrapper .swiper-slide .item .txt .title {
+    padding: .12rem 0;
+    font-weight: bold;
+    line-height: .36rem;
+    height: .36rem;
+}
+.module-02 .main .swiper-container .swiper-wrapper .swiper-slide .item .txt .para {
+    width: 3.16rem;
+    line-height: .36rem;
+}
+
+.module-02 .main .tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: .18rem 0;
+}
+.module-02 .main .tabs span {
+    display: inline-block;
+    width: .42rem;
+    height: .07rem;
+    border-radius: 10px;
+    margin: 0 .13rem;
+
+    background: #bbc4f4;
+}
+.module-02 .main .tabs span.active {
+    background: #8f9ce6;
+}
+.module-02 .main .tabs span {
+    margin: 0 5px;
+}
+/** End module 02: 错误做法导致后果 */
+
+/** Start module 03: 橘子情感定制服务*/
+
+.module-03 .main {
+    position: relative;
+    width: 100%;
+    height: 4.1rem;
+    overflow: hidden;
+}
+.module-03 .main .column-line {
+    width: .02rem;
+    height: 7.4rem;
+    background: #fa3232;
+    position: absolute;
+    top: .12rem;
+    left: .64rem;
+}
+.module-03 .main .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: relative;
+    z-index: 1;
+}
+.module-03 .main .content .item {
+    padding-left: .48rem;
+    padding-top: .05rem;
+    padding-bottom: .05rem;
+}
+.module-03 .main .content .item .txt-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-weight: bold;
+    line-height: .43rem;
+    height: .43rem;
+}
+.module-03 .main .content .item .txt-title p {
+    padding-left: .4rem;
+}
+.module-03 .main .content .item .txt-des {
+    width: 5.78rem;
+    padding-left: .73rem;
+    line-height: .36rem;
+}
+.module-03 .more {
+    padding-top: .3rem;
+    padding-left: 1.22rem;
+}
+/** End module 03: 橘子情感定制服务 */
+
+/** Start module 04: 成功案例 */
+.module-04 .main {
+    background: #eaedf8;
+}
+.module-04 .main .item {
+    display: flex;
+    padding: .22rem 0;
+}
+.module-04 .main .item:last-child {
+    border: none;
+}
+.module-04 .main .item .pic {
+    width: 2.18rem;
+    height: 1.31rem;
+
+    padding-left: .14rem;
+}
+.module-04 .main .item .pic img {
+    width: 100%;
+    height: 100%;
+}
+.module-04 .main .item .txt-group {
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding-left: .15rem;
+    position: relative;
+    top: -.05rem;
+}
+.module-04 .main .item .txt-group p {
+    color: #333333;
+    width: 100%;
+    height: 100%;
+
+    line-height: .36rem;
+}
+.module-04 .main .item .txt-group p.topic {
+    font-weight: bold;
+    height: .36rem;
+
+    /*padding-bottom: .08rem;*/
+}
+.module-04 .main .item .txt-group p.des {
+    line-height: .36rem;
+}
+.module-04 .main .item .txt-group p.des a {
+    color: #fd3232;
+}
+/** End module 04: 成功案例 */
+
+/** Start module 05: 橘子优势 */
+.module-05 .main {
+    background: #e1fef8;
+}
+.module-05 .main .split-line {
+    width: 100%;
+    height: .01rem;
+    background: #313131;
+}
+
+.module-05 .main .swiper-container .swiper-wrapper .swiper-slide {
+    display: flex;
+    justify-content: center;
+
+    padding: .3rem 0;
+}
+.module-05 .main .swiper-container .swiper-wrapper .swiper-slide .img {
+    width: 2.39rem;
+    height: 1.44rem;
+
+    padding-left: .13rem;
+}
+.module-05 .main .swiper-container .swiper-wrapper .swiper-slide .img img {
+
+    width: 100%;
+    height: 100%;
+}
+.module-05 .main .swiper-container .swiper-wrapper .swiper-slide .txt {
+    width: 4.06rem;
+
+    padding-left: .11rem;
+}
+.module-05 .main .swiper-container .swiper-wrapper .swiper-slide .txt p {
+    line-height: .4rem;
+}
+
+.module-05 .main .tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: .18rem 0;
+}
+.module-05 .main .tabs span {
+    display: inline-block;
+    width: .17rem;
+    height: .17rem;
+    border-radius: 50%;
+
+    background: #78d8c5;
+}
+.module-05 .main .tabs span.active {
+    background: #4dbaa4;
+}
+.module-05 .main .tabs span {
+    margin: 0 5px;
+}
+/* End module 05: 橘子优势 */
+
+/** Start module 06: 导师团队 */
+.module-06 .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.module-06 .main .item {
+    display: flex;
+    justify-content: flex-start;
+    padding: .18rem 0;
+}
+.module-06 .main .item img {
+    width: 2.07rem;
+    height: 2.74rem;
+}
+.module-06 .main .item .txt-group {
+    width: 4.2rem;
+    padding-left: .2rem;
+}
+.module-06 .main .item .txt-group p {
+    color: #202020;
+    line-height: .36rem;
+}
+.module-06 .main .item .txt-group .mentor-name {
+    font-weight: bold;
+    height: .36rem;
+    padding-top: .3rem;
+    padding-bottom: .05rem;
+}
+/** End module 06: 导师团队 */
+
+/** Start module 07: 用户须知 */
+.module-07 .main {
+    background: url("../images/custom-love/module07-bg.png") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 3.74rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: .15rem 0;
+}
+.module-07 .main .txt-para {
+    width: 6.6rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 0 auto;
+}
+.module-07 .main .txt-para .icon {
+    display: inline-block;
+    width: .41rem;
+    height: .41rem;
+    background: url("../images/custom-love/module07-icon.png") no-repeat left center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.module-07 .main .txt-para p {
+    color: #202020;
+    line-height: .36rem;
+    width: 100%;
+
+    padding-left: .15rem;
+}
+/** End module 07: 用户须知 */
+
+/** Start module 08: 服务流程 */
+.module-08-bg{
+    background: url(../images/save-love/servicewen_bg.png) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: 7.04rem 100%;
+    width: 100%;
+    height: 7.67rem;
+    margin-top: .3rem;
+}
+/** End module 09: 服务流程 */

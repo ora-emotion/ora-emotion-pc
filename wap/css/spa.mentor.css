@@ -1,0 +1,98 @@
+/*
+ * spa.mentor.css
+ * Mentor mentor namespace styles
+ * 橘子情感首席导师
+*/
+
+/* Start : common styles - 本页面公共样式 */
+.mentor-para {
+  font-size: .26rem;
+  line-height: .36rem;
+  color: #333;
+  height: 100%;
+}
+.mentor-para-indent {
+  text-indent: .5rem;
+}
+/* End : common styles - 本页面公共样式 */
+
+/* Start : 专注卓越 */
+.mentor-excellent-main {
+  padding: .2rem 0;
+  background: #E8F2FF;
+}
+.mentor-excellent-main-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: .15rem;
+}
+.mentor-excellent-main-item:nth-child(2) {
+  padding-top: .2rem;
+  padding-bottom: .2rem;
+}
+.mentor-excellent-main-item img {
+  height: 100%;
+}
+.mentor-excellent-main-item-txt {
+  padding-left: .2rem;
+  padding-right: .1rem;
+}
+.mentor-excellent-main-item-txt p {
+  font-size: .26rem;
+  line-height: .34rem;
+}
+.mentor-excellent-main-item-txt p:nth-child(1) {
+  font-size: .28rem;
+  font-weight: bold;
+  line-height: .4rem;
+}
+.mentor-excellent-main-item-txt p:nth-child(3) {
+  color: #fd3232;
+}
+/* End : 专注卓越 */
+
+/* Start : 橘子情感导师团队 */
+.mentor-team-main {
+  width: 100%;
+  height: 6.69rem;
+  background: url("../images/mentor/team-bg.png") no-repeat center center;
+  background-size: 100%;
+}
+.mentor-team-main {
+  padding: .2rem 0;
+}
+.mentor-team-main .team-para {
+  text-indent: .55rem;
+  padding: .2rem .4rem;
+}
+/* End : 橘子情感导师团队 */
+
+/* Start : 橘子情感首席导师 */
+.mentor-tutor-main .swiper-container .swiper-wrapper .swiper-slide img {
+	width: 100%;
+}
+.mentor-tutor-main .swiper-container .swiper-button-prev,
+.mentor-tutor-main .swiper-container .swiper-button-next {
+	width: .32rem;
+	height: .54rem;
+}
+.mentor-tutor-main .swiper-container .swiper-button-prev {
+	background: url("../images/mentor/button-prev.png") no-repeat;
+}
+.mentor-tutor-main .swiper-container .swiper-button-next {
+	background: url("../images/mentor/button-next.png") no-repeat;
+}
+.mentor-tutor-main .swiper-container .swiper-pagination-bullet {
+  width: .2rem;
+	height: .2rem;
+	border-radius: .2rem;
+	background: rgba(0, 0, 0, .5);
+	margin: 0 .12rem;
+	transition: all 1s;
+}
+.mentor-tutor-main .swiper-container .swiper-pagination-bullet-active {
+	width: .5rem;
+	background: rgba(184, 185, 182, .7);
+}
+/* End : 橘子情感首席导师 */

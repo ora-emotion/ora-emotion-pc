@@ -1,0 +1,1 @@
+spa.smarriage.reason=function(){var a,s={main_html:String()+'<div class="spa-module-title"><span class="spa-module-title-line"></span><p class="spa-module-title-txt">婚姻危机出现的原因</p><span class="spa-module-title-line"></span></div><div class="smarriage-reason-main"><div class="smarriage-reason-main-bg"></div><div>'};return a=function(a){a.html(s.main_html)},{initModule:a}}();

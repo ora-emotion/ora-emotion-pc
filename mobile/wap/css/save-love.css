@@ -1,0 +1,314 @@
+@import "swiper/swiper.css";
+
+
+/** Start module 01 area */
+.module-01 .main {
+    background: #eaedf8;
+}
+.module-01 .main .split-line {
+    width: 100%;
+    height: .01rem;
+    background: #313131;
+}
+
+.module-01 .main .swiper-container .swiper-wrapper .swiper-slide {
+    display: flex;
+    justify-content: flex-start;
+
+    padding-top: .24rem;
+    padding-bottom: .27rem;
+}
+.module-01 .main .swiper-container .swiper-wrapper .swiper-slide .img {
+    width: 2.62rem;
+    height: 1.93rem;
+
+    padding-left: .13rem;
+}
+.module-01 .main .swiper-container .swiper-wrapper .swiper-slide .img img {
+
+    width: 100%;
+    height: 100%;
+}
+.module-01 .main .swiper-container .swiper-wrapper .swiper-slide .txt {
+    width: 4.46rem;
+
+    padding-left: .11rem;
+}
+.module-01 .main .swiper-container .swiper-wrapper .swiper-slide .txt p {
+    line-height: .4rem;
+}
+
+.module-01 .main .tabs {
+    display: flex;
+    justify-content: space-around;
+
+    padding-bottom: .11rem;
+}
+.module-01 .main .tabs p {
+    height: .64rem;
+    line-height: .64rem;
+
+    color: #415580;
+}
+.module-01 .main .tabs p.active {
+    font-weight: bold;
+}
+.module-01 .main .tabs p:first-child {
+    padding-left: .335rem;
+}
+.module-01 .main .tabs p:last-child {
+    padding-right: .335rem;
+}
+/** End module 01 area */
+
+
+/** Start module 02 area */
+.module-02 .main {
+    position: relative;
+    background: #f9f9f9;
+
+    padding-top: .32rem;
+    padding-bottom: .92rem;
+}
+.module-02 .main .swiper-container .swiper-wrapper .swiper-slide {
+    display: flex;
+    justify-content: space-between;
+}
+.module-02 .main .swiper-container .swiper-wrapper .swiper-slide .item {
+    width: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 .22rem;
+}
+.module-02 .main .swiper-container .swiper-wrapper .swiper-slide .item .icon {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.module-02 .main .swiper-container .swiper-wrapper .swiper-slide:first-child .item:nth-child(1) .icon {
+    background: url("../images/save-love/module02-icon01.png") no-repeat center center;
+}
+.module-02 .main .swiper-container .swiper-wrapper .swiper-slide:first-child .item:nth-child(2) .icon {
+    background: url("../images/save-love/module02-icon02.png") no-repeat center center;
+}
+.module-02 .main .swiper-container .swiper-wrapper .swiper-slide:first-child .item:nth-child(3) .icon {
+    background: url("../images/save-love/module02-icon03.png") no-repeat center center;
+}
+.module-02 .main .swiper-container .swiper-wrapper .swiper-slide:last-child .item:nth-child(1) .icon {
+    background: url("../images/save-love/module02-icon04.png") no-repeat center center;
+}
+.module-02 .main .swiper-container .swiper-wrapper .swiper-slide:last-child .item:nth-child(2) .icon {
+    background: url("../images/save-love/module02-icon05.png") no-repeat center center;
+}
+.module-02 .main .swiper-container .swiper-wrapper .swiper-slide:last-child .item:nth-child(3) .icon {
+    background: url("../images/save-love/module02-icon06.png") no-repeat center center;
+}
+
+.module-02 .main .swiper-pagination {
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    bottom: .15rem;
+    left: 40%;
+    right: 40%;
+}
+.module-02 .main .swiper-pagination .swiper-pagination-bullet {
+    width: .16rem;
+    height: .16rem;
+    background: #b8b8b8;
+
+    margin: 0 .08rem;
+}
+.module-02 .main .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #b1b1b1;
+}
+/** End module 02 area */
+
+
+/** Start module 03 area */
+.module-03 .main {
+    background: #eaedf8;
+}
+.module-03 .main .item {
+    display: flex;
+
+    padding: .22rem 0;
+    border-bottom: 1px solid #ccd4f3;
+}
+.module-03 .main .item:last-child {
+    border: none;
+}
+.module-03 .main .item .pic {
+    width: 1.42rem;
+    height: 1.89rem;
+
+    padding-left: .37rem;
+}
+.module-03 .main .item .pic img {
+    width: 100%;
+    height: 100%;
+}
+.module-03 .main .item .txt-group {
+    width: 5.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding-left: .15rem;
+}
+.module-03 .main .item .txt-group p {
+    color: #333333;
+    width: 100%;
+    height: 100%;
+
+    line-height: .36rem;
+}
+.module-03 .main .item .txt-group p.topic {
+    font-weight: bold;
+    height: .36rem;
+
+    padding-bottom: .08rem;
+}
+.module-03 .main .item .txt-group p.des {
+    line-height: .36rem;
+}
+/** End module 03 area */
+
+/** Start module 04 area */
+.module-04 .main .row {
+    padding: .24rem 0;
+}
+.module-04 .main .row:first-child {
+    background: #f9f9f9;
+}
+.module-04 .main .row:last-child {
+    background: #ececec;
+}
+.module-04 .main .row p {
+    padding-left: .3rem;
+    height: 100%;
+    line-height: .36rem;
+}
+.module-04 .main .row p span:first-child {
+    font-weight: bold;
+    padding-bottom: .06rem;
+}
+.module-04 .main .row p span:last-child {
+    text-indent: .5rem;
+}
+.module-04 .main .row p img {
+    float: right;
+
+    padding-right: .22rem;
+    padding-left: .1rem;
+}
+/** End module 04 area */
+
+
+/*
+ * 能够提供的挽回爱情服务 module-06
+ */
+.module-06{
+	width: 100%;
+}
+.module-06 .main{
+	background: url(../images/save-love/service-bgimg.png) center center no-repeat;
+	background-size: contain;
+	height: 5.1rem;
+}
+/*/////////////////*/
+
+/*
+ * 成功案例 module-07
+ */
+.module-07{
+	width: 100%;
+	height: 4.3rem;
+}
+.module-07 .main{
+	padding-left: .2rem;
+}
+.module-07 .main img{
+	width: 100%;
+	height: 100%;
+}
+.module-07 .main .tu1, .module-07 .main .tu2{
+	float:left;
+	width: 2.5rem;
+	height: 1.8rem;
+	padding-right: .2rem;
+}
+.module-07 .main .wen1,.wen2{
+	/*width: 4.45rem;*/
+	height: 2rem;
+	padding-left: .2rem;
+}
+.module-07 .main h3{
+	font-size: .28rem;
+}
+.module-07 .main p{
+	line-height: .35rem;
+}
+.module-07 .main p .link {
+    color: #fd3232;
+}
+.module-07 .main a{
+	color: #2d2d2d;
+	font-size: .26rem;
+}
+.module-07 .main a:hover{
+	color: #FF3232;
+}
+.module-07 .main a:active{
+	color: #FF3232;
+}
+/*////////////////*/
+
+
+/*
+ * 导师团队 module-08
+ */
+.module-08 {
+	width: 100%;
+	/*height: 10rem;*/
+}
+.module-08 img{
+	width: 2.65rem;
+	height: 3.72rem;
+}
+.module-08 .main{
+	width: 5.6rem;
+	height: 7.8rem;
+	margin: 0 auto;
+}
+.module-08 .main .tu1,
+.module-08 .main .tu2 {
+    display: flex;
+}
+.module-08 .main .tu1 img,
+.module-08 .main .tu2 img {
+    padding: .1rem .1rem;
+}
+/*.module-08 .main .tu2{*/
+	/*width: 100%;*/
+/*}*/
+/*//////////////*/
+
+
+/*
+ * 服务步骤 module-09
+ */
+
+.module-09-bg{
+	background: url(../images/save-love/servicewen_bg.png) no-repeat center center;
+	-webkit-background-size: cover;
+    background-size: 7.04rem 100%;
+    width: 100%;
+    height: 7.67rem;
+    margin-top: .3rem;
+}
+/*////////////////*/

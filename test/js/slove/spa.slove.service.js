@@ -1,0 +1,1 @@
+spa.slove.service=function(){var s,l={main_html:String()+'<div class="spa-module-title"><span class="spa-module-title-line"></span><p class="spa-module-title-txt">能够提供的挽回爱情服务</p><span class="spa-module-title-line"></span></div><div class="slove-service-main"></div>'};return s=function(s){s.html(l.main_html)},{initModule:s}}();

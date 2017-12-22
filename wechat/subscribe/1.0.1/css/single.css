@@ -1,0 +1,21 @@
+@import "style.css";
+
+/** 头图上下移动的小按钮 */
+.preface {
+    width: 100%;
+}
+.preface-img {
+    position: relative;
+    /*background: url("../images/team/preface.jpg") no-repeat center center;*/
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.preface-img img {
+    width: 100vw;
+    height: 100vh;
+}
+/** 头图上下移动的小按钮 */

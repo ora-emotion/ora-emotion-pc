@@ -1,0 +1,271 @@
+/*
+ * spa.service.css
+ * Service Introduction namespace styles
+ * 服务介绍样式表
+*/
+
+
+h3{
+	font-size: .28rem;
+}
+p{
+	font-size: .26rem;
+	line-height: .35rem;
+	color: #2d2d2d;
+}
+
+/* Start : "挽爱计划"私人定制服务 */
+.service-customize-main {
+	width: 100%;
+}
+.service-customize-main-top {
+	width: 90%;
+	height: 1.1rem;
+	margin: 0 auto;
+}
+.service-customize-main-top p {
+	text-indent: .52rem;
+}
+.service-customize-main-bottom {
+	width: 90%;
+	height: 3.2rem;
+	margin: 0 auto;
+}
+.service-customize-main-bottom-group {
+	display: flex;
+	justify-content: space-around;
+}
+.service-customize-main-bottom-group-item {
+	width: 1.3rem;
+}
+.service-customize-main-bottom-group-item p {
+	text-align: center;
+}
+.service-customize-main-bottom-group-item img {
+	padding-left: .2rem;
+	width: .85rem;
+	height: .85rem;
+}
+/* End : "挽爱计划"私人定制服务 */
+
+/* Start : 当今社会情感现状 */
+.service-state-main {
+	width: 100%;
+	height: 7.1rem;
+	background: url("../images/service/state-bg.png") center center no-repeat;
+	background-size: 100% 100%;
+}
+.service-state-main-text {
+	width: 90%;
+	margin: 0 auto;
+}
+.service-state-main-text p {
+	text-indent: .52rem;
+}
+.service-state-main-text .p1 {
+	padding-top: .15rem;
+}
+.service-state-main-text .p2 {
+	padding-top: .3rem;
+}
+.service-state-main-pic {
+	width: 90%;
+	margin: .5rem auto;
+	display: flex;
+	justify-content: space-around;
+}
+/* End : 当今社会情感现状 */
+
+/* Start : “挽爱计划”九维帮助服务体系 */
+.service-system-main {
+	width: 100%;
+	background-color: #F9F9F9;
+}
+.service-system-main-top {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: .2rem;
+}
+.service-system-main-top-text p {
+	text-indent: .52rem;
+}
+.service-system-main-top-icons-group {
+	display: flex;
+	justify-content: space-around;
+	height: 2.1rem;
+	padding-top: .2rem;
+	width: 100%;
+}
+.service-system-main-top-icons-group-item {
+	width: 1.7rem;
+	height: 100%;
+}
+.service-system-main-top-icons-group-item img {
+	padding-left: .3rem;
+}
+.service-system-main-top-icons-group-item p {
+	text-align: center;
+}
+.service-system-main-mid {
+	width: 100%;
+	height: .1rem;
+	border-bottom: .03rem dashed #535353;
+}
+.service-system-main-bottom {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: .3rem;
+}
+.service-system-main-bottom-item {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 2rem;
+}
+.service-system-main-bottom-item .left {
+	width: 3.2rem;
+}
+.service-system-main-bottom-item .right {
+	padding-left: .2rem;
+}
+.service-system-main-bottom-item .right img {
+  padding-right: .1rem;
+  position: relative;
+  top: .03rem;
+}
+/* End : “挽爱计划”九维帮助服务体系 */
+
+/* Start : 视频课程 */
+.service-course-main {
+	width:100%;
+}
+.service-course-main .head p {
+	height: 100%;
+	padding: .1rem .2rem;
+	text-indent: .52rem;
+}
+.service-course-main .curriculum .group {
+	width: 100%;
+	height: 2.35rem;
+	background-color: #F2F2F2;
+	display: flex;
+	justify-content: space-around;
+}
+.service-course-main .curriculum .group .left {
+	padding-top: .3rem;
+}
+.service-course-main .curriculum .group .left img {
+	width: 2.63rem;
+	height: 1.72rem;
+}
+.service-course-main .curriculum .group .zhong {
+	padding-top: .4rem;
+}
+.service-course-main .curriculum .group .zhong h3 {
+	font-size: .3rem;
+}
+.service-course-main .curriculum .group .zhong p:first-child {
+	margin-top: .2rem;
+}
+.service-course-main .curriculum .group .zhong p:last-child {
+	padding-top: .5rem;
+}
+.service-course-main .curriculum .group .right {
+	margin-top: -.15rem;
+}
+.service-course-main .curriculum .group:last-child {
+	margin-top: .2rem;
+}
+
+.service-course-main .curriculum .group:last-child .left {
+	padding-left: .1rem;
+}
+.service-course-main .curriculum .group:last-child .zhong {
+	padding-left: .15rem;
+}
+/* End : 视频课程 */
+
+/* Start : 橘子情感导师团队 */
+.service-mentor-main {
+	width: 100%;
+	height: 5.65rem;
+	position: relative;
+}
+.service-mentor-main .left {
+	width: 3.87rem;
+	height: 100%;
+	float: left;
+}
+.service-mentor-main .left img {
+	width: 100%;
+	height: 100%;
+}
+.service-mentor-main .right {
+	position: absolute;
+	width: 4.5rem;
+	top: .5rem;
+	left: 2.85rem;
+}
+.service-mentor-main .right p {
+	text-indent: .52rem;
+	line-height: .35rem;
+}
+.service-mentor-main .right .top {
+	margin: 0 auto;
+}
+.service-mentor-main .right .bottom {
+	margin: .3rem auto;
+}
+/* End : 橘子情感导师团队 */
+
+/* Start : 首席主导师 */
+/* End : 首席主导师 */
+
+/* Start : 服务步骤内容 */
+.service-step-main {
+	background: url("../images/util/progress-bg.png") no-repeat center center;
+  background-size: 7.04rem 100%;
+  height: 7.67rem;
+  margin-top: .3rem;
+}
+/* End : 服务步骤内容 */
+
+/* Start : 给您的保障 */
+.service-guarantee-main>div{
+	width: 100%;
+	height: 2.1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.service-guarantee-main>div>p{
+	width: 4.4rem;
+	/*height: 1.1rem;*/
+	line-height: .4rem;
+
+}
+.service-guarantee-main-top{
+	background: url("../images/service/guarantee-bg01.png") center center no-repeat;
+	background-size: 100% 100%;
+}
+.service-guarantee-main-top p{
+	padding-left: 3rem;
+}
+.service-guarantee-main-mid{
+	background: url("../images/service/guarantee-bg02.png") center center no-repeat;
+	background-size: 100% 100%;
+	margin-top: .2rem;
+}
+.service-guarantee-main-mid p{
+	padding-left: .7rem;
+}
+
+.service-guarantee-main-bottom{
+	background: url("../images/service/guarantee-bg03.png") center center no-repeat;
+	background-size: 100% 100%;
+	margin-top: .2rem;
+}
+.service-guarantee-main-bottom p{
+	padding-left: 3rem;
+}
+/* End : 给您的保障 */

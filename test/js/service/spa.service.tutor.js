@@ -1,0 +1,1 @@
+spa.service.tutor=function(){var t,l={main_html:String()+'<div class="spa-module-title"><span class="spa-module-title-line"></span><p class="spa-module-title-txt">首席主导师</p><span class="spa-module-title-line"></span></div>'};return t=function(t){t.html(l.main_html)},{initModule:t}}();

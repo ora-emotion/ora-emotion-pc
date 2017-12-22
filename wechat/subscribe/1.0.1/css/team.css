@@ -1,0 +1,242 @@
+@import "style.css";
+
+
+/** para font size stylesheet*/
+p.para-font-size {
+    width: 100%;
+    height: 100%;
+}
+/** para font size stylesheet*/
+
+/** title line */
+.inner>.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: .12rem;
+}
+.inner>.title>p {
+    font-size: .3rem;
+    font-weight: bold;
+    height: .7rem;
+    line-height: .7rem;
+    padding: 0 .1rem;
+}
+.inner>.title>.title-line {
+    display: inline-block;
+    background: url("../images/save-love-plan/title-line.png") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    width: .37rem;
+    height: .02rem;
+}
+/** title line */
+
+
+/** 头图上下移动的小按钮 */
+.preface {
+    width: 100%;
+}
+.preface-img {
+    position: relative;
+    background: url("../images/team/preface.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.preface-btn {
+    position: relative;
+    bottom: -88%;
+    opacity: 1;
+
+    width: .84rem;
+    height: .84rem;
+
+    border-radius: 50%;
+
+    background: url("../images/team/preface-btn.png") no-repeat center center;
+    -webkit-background-size: contain;
+    background-size: contain;
+
+}
+.preface-img img {
+    width: 100%;
+    height: 100%;
+}
+/** 头图上下移动的小按钮 */
+
+
+/** split line */
+.split-line {
+    background: url("../images/save-love-plan/split-line.png") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: .19rem;
+    margin-top: .56rem;
+    margin-bottom: .4rem;
+}
+/** split line */
+
+
+/** color */
+.red {
+    color: #ff5378;
+}
+p {
+    color: #434343;
+}
+/** color */
+
+
+/** module 0 area */
+.module-0 .para {
+    text-indent: .55rem;
+    padding: 0 .13rem;
+}
+/** module 0 area */
+
+/** module 01 area */
+.module-01 .main .row {
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: .64rem;
+}
+.module-01 .main .row:first-child {
+    padding-top: .45rem;
+}
+.module-01 .main .row:last-child {
+    padding-bottom: .23rem;
+}
+
+.module-01 .main .row .pic {
+    width: 2.55rem;
+    height: 1.79rem;
+
+    padding-right: .22rem;
+}
+.module-01 .main .row .pic img {
+    width: 100%;
+}
+
+.module-01 .main .row .txt-group {
+    width: 4.24rem;
+}
+.module-01 .main .row .txt-group .title {
+    font-weight: bold;
+    color: #434343;
+}
+.module-01 .main .row .txt-group .title, p.des {
+    height: .24rem;
+    line-height: .24rem;
+}
+.module-01 .main .row .txt-group .title {
+    padding-bottom: .1rem;
+}
+.module-01 .main .row .txt-group .des {
+    padding-top: .1rem;
+}
+.module-01 .main .row .txt-group .para {
+    line-height: .37rem;
+}
+/** module 01 area */
+
+
+/** module 02 area */
+/*.module-02 .main .icons-group {*/
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+
+    /*padding: .37rem 0 .58rem;*/
+/*}*/
+
+/*.module-02 .main .icons-group .item {*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+/*}*/
+
+/*.module-02 .main .icons-group .item p {*/
+    /*padding-top: .18rem;*/
+/*}*/
+
+.module-02 .main .paras-group {
+    padding: 0 .13rem;
+}
+
+.module-02 .main .paras-group p {
+    font-size: .26rem;
+    letter-spacing: .02rem;
+    text-indent: .55rem;
+}
+.module-02 .main .paras-group p:first-child {
+    padding-bottom: .36rem;
+}
+.module-02 .main .paras-group p:last-child {
+    padding-bottom: .14rem;
+}
+
+/** module 02 area */
+
+
+/** module 03 area */
+.module-03 .main {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+    padding-top: .51rem;
+}
+.module-03 .main .row {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 .92rem .96rem;
+}
+.module-03 .main .row .pic {
+    padding-right: .64rem;
+}
+
+.module-03 .main .row .txt-group .mentor-name {
+    border-bottom: 2px solid #e5214b;
+    padding-bottom: .05rem;
+    margin-bottom: .13rem;
+
+    height: .36rem;
+    line-height: .36rem;
+
+    font-size: .3846rem;
+    font-weight: bold;
+}
+.module-03 .main .row .txt-group .mentor-name .mentor-name-pinyin {
+    font-size: .1923rem;
+    color: #7a7a7a;
+    padding-left: .21rem;
+}
+
+.module-03 .main .row .txt-group .para {
+    line-height: .42rem;
+}
+/** module 03 area */
+
+
+/** Start qrcode area*/
+.module.qrcode .gray-line {
+    width: 90%;
+    height: 2px;
+    margin: 0 auto;
+    background: lightgray;
+}
+.module.qrcode .main {
+    width: 100%;
+    height: 3.31rem;
+    background: url("../images/qrcode.png") no-repeat center center;
+}
+/** End qrcode area*/

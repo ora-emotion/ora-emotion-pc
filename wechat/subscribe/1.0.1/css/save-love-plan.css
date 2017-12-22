@@ -1,0 +1,638 @@
+@import "style.css";
+
+/** title line */
+.inner>.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: .12rem;
+}
+.inner>.title>p {
+    font-size: .3rem;
+    font-weight: bold;
+    height: .7rem;
+    line-height: .7rem;
+    padding: 0 .1rem;
+}
+.inner>.title>.title-line {
+    display: inline-block;
+    background: url("../images/save-love-plan/title-line.png") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    width: .37rem;
+    height: .02rem;
+}
+/** title line */
+
+
+/** 头图上下移动的小按钮 */
+.preface {
+    width: 100%;
+}
+.preface-img {
+    position: relative;
+    background: url("../images/save-love-plan/preface.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.preface-btn {
+    position: relative;
+    bottom: -88%;
+    opacity: 1;
+
+    width: .84rem;
+    height: .84rem;
+
+    border-radius: 50%;
+
+    background: url("../images/save-love-plan/preface-btn.png") no-repeat center center;
+    -webkit-background-size: contain;
+    background-size: contain;
+
+}
+.preface-img img {
+    width: 100%;
+    height: 100%;
+}
+/** 头图上下移动的小按钮 */
+
+
+/** 页面背景图 */
+.bg {
+    width: 100%;
+    height: 60.53rem;
+    background: url("../images/save-love-plan/bg.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+/** 页面背景图 */
+
+
+/** preface icons and texts*/
+.preface {
+    background-color: #fefdf8;
+}
+
+.preface .split-line {
+    margin-top: .56rem;
+    margin-bottom: .4rem;
+}
+
+.preface .para {
+    text-indent: .55rem;
+    padding: 0 .15rem;
+}
+
+.preface .preface-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 .2rem;
+}
+
+.preface .preface-icons .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 .4rem;
+}
+.preface .preface-icons .row:last-child {
+    margin-bottom: .35rem;
+}
+
+.preface .preface-icons .row .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.preface .preface-icons .row .item .item-icon {
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: .85rem;
+    height: .85rem;
+    margin-top: .35rem;
+}
+
+.preface .preface-icons .row:first-child .item:nth-child(1) .item-icon {
+    background: url("../images/save-love-plan/preface-icon-top-01.png") no-repeat center center;
+}
+.preface .preface-icons .row:first-child .item:nth-child(2) .item-icon {
+    background: url("../images/save-love-plan/preface-icon-top-02.png") no-repeat center center;
+}
+.preface .preface-icons .row:first-child .item:nth-child(3) .item-icon {
+    background: url("../images/save-love-plan/preface-icon-top-03.png") no-repeat center center;
+}
+.preface .preface-icons .row:first-child .item:nth-child(4) .item-icon {
+    background: url("../images/save-love-plan/preface-icon-top-04.png") no-repeat center center;
+}
+
+.preface .preface-icons .row:last-child .item:nth-child(1) .item-icon {
+    background: url("../images/save-love-plan/preface-icon-bot-01.png") no-repeat center center;
+}
+.preface .preface-icons .row:last-child .item:nth-child(2) .item-icon {
+    background: url("../images/save-love-plan/preface-icon-bot-02.png") no-repeat center center;
+}
+.preface .preface-icons .row:last-child .item:nth-child(3) .item-icon {
+    background: url("../images/save-love-plan/preface-icon-bot-03.png") no-repeat center center;
+}
+.preface .preface-icons .row:last-child .item:nth-child(4) .item-icon {
+    background: url("../images/save-love-plan/preface-icon-bot-04.png") no-repeat center center;
+}
+/** preface icons and texts*/
+
+
+.bg {
+    width: 100%;
+    height: 60.53rem;
+    background: url("../images/save-love-plan/bg.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+
+/** module area */
+.module {
+    background-color: transparent;
+}
+/** module area */
+
+
+/** split line */
+.split-line {
+    background: url("../images/save-love-plan/split-line.png") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: .19rem;
+    margin-top: .1rem;
+    margin-bottom: .4rem;
+}
+/** split line */
+
+
+/** text indent */
+.indent {
+    text-indent: .52rem;
+}
+/** text indent */
+
+
+/** module 01 area */
+.module-01 .txt {
+    padding: 0 .31rem;
+    /*text-align: justify;*/
+    letter-spacing: .02rem;
+}
+.module-01 .txt .indent:last-child {
+    margin-top: .4rem;
+}
+
+.module-01 .circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: .26rem;
+    padding: .27rem 0;
+}
+.module-01 .circle .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: .43rem;
+}
+.module-01 .circle .row:last-child {
+    margin-bottom: 0;
+}
+
+.module-01 .circle .row .icon {
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 1.45rem;
+    height: 1.44rem;
+    margin-left: .45rem;
+    margin-right: .65rem;
+}
+
+.module-01 .circle .row:first-child .icon {
+    background: url("../images/save-love-plan/module01-circle-01.png") no-repeat center center;
+}
+
+.module-01 .circle .row:nth-child(2) .icon {
+    background: url("../images/save-love-plan/module01-circle-02.png") no-repeat center center;
+}
+
+.module-01 .circle .row:last-child .icon {
+    background: url("../images/save-love-plan/module01-circle-03.png") no-repeat center center;
+}
+
+.module-01 .circle .row .des .num {
+    font-size: .26rem;
+    font-weight: bold;
+    color: #f83962;
+}
+.module-01 .circle .row:last-child .des .num {
+    color: #539cff;
+}
+/** module 01 area */
+
+
+/** module 02 area */
+
+/* para area */
+.module-02 .para p {
+    padding: 0 .44rem;
+    margin-bottom: .21rem;
+}
+/* para area */
+
+/* icons group area */
+.module-02 .icons-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 .34rem .68rem;
+}
+.module-02 .icons-group .row {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: .5rem;
+}
+.module-02 .icons-group .row:last-child {
+    padding-bottom: 0;
+}
+.module-02 .icons-group .row .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.module-02 .icons-group .row .item .icon {
+    width: 1.66rem;
+    height: 1.37rem;
+
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.module-02 .icons-group .row .item p {
+    height: .28rem;
+    line-height: .28rem;
+}
+
+.module-02 .icons-group .row:nth-child(1) .item:nth-child(1) .icon {
+    background: url("../images/save-love-plan/module02-icon-top-01.png") no-repeat center center;
+}
+.module-02 .icons-group .row:nth-child(1) .item:nth-child(2) .icon {
+    background: url("../images/save-love-plan/module02-icon-top-02.png") no-repeat center center;
+}
+.module-02 .icons-group .row:nth-child(1) .item:nth-child(3) .icon {
+    background: url("../images/save-love-plan/module02-icon-top-03.png") no-repeat center center;
+}
+
+.module-02 .icons-group .row:nth-child(2) .item:nth-child(1) .icon {
+    background: url("../images/save-love-plan/module02-icon-mid-01.png") no-repeat center center;
+}
+.module-02 .icons-group .row:nth-child(2) .item:nth-child(2) .icon {
+    background: url("../images/save-love-plan/module02-icon-mid-02.png") no-repeat center center;
+}
+.module-02 .icons-group .row:nth-child(2) .item:nth-child(3) .icon {
+    background: url("../images/save-love-plan/module02-icon-mid-03.png") no-repeat center center;
+}
+
+.module-02 .icons-group .row:nth-child(3) .item:nth-child(1) .icon {
+    background: url("../images/save-love-plan/module02-icon-bot-01.png") no-repeat center center;
+}
+.module-02 .icons-group .row:nth-child(3) .item:nth-child(2) .icon {
+    background: url("../images/save-love-plan/module02-icon-bot-02.png") no-repeat center center;
+}
+.module-02 .icons-group .row:nth-child(3) .item:nth-child(3) .icon {
+    background: url("../images/save-love-plan/module02-icon-bot-03.png") no-repeat center center;
+}
+/* icons group area */
+/** module 02 area */
+
+
+/** module 03 area */
+.module-03 {
+    padding-top: .09rem;
+    padding-bottom: .68rem;
+}
+.module-03 .row {
+    display: flex;
+
+    padding-left: .07rem;
+    padding-bottom: .29rem;
+}
+.module-03 .row:last-child {
+    padding-bottom: 0;
+}
+
+.module-03 .row .img {
+    width: 3.21rem;
+    height: 1.99rem;
+}
+.module-03 .row .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.module-03 .row .txt {
+    padding-top: .23rem;
+    padding-left: .16rem;
+}
+
+.module-03 .row .txt .txt-title {
+    line-height: .35rem;
+    height: .35rem;
+
+    font-size: .3rem;
+    font-weight: bold;
+    color: #f83962;
+}
+
+.module-03 .row .txt .txt-title .icon {
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    display: inline-block;
+    width: .35rem;
+    height: .35rem;
+
+    vertical-align: top;
+}
+
+.module-03 .row:first-child .txt .txt-title .icon {
+    background: url("../images/save-love-plan/module03-icon-01.png") no-repeat 0 center;
+}
+.module-03 .row:nth-child(2) .txt .txt-title .icon {
+    background: url("../images/save-love-plan/module03-icon-02.png") no-repeat 0 center;
+}
+.module-03 .row:last-child .txt .txt-title .icon {
+    background: url("../images/save-love-plan/module03-icon-03.png") no-repeat 0 center;
+}
+/** module 03 area */
+
+
+/** module 04 area */
+.module-04 .indent {
+    padding: 0 .1rem;
+    /*letter-spacing: .02rem;*/
+}
+.module-04 .pics-group {
+    display: flex;
+    justify-content: space-between;
+
+    padding: .12rem .1rem .65rem;
+}
+.module-04 .pics-group .pic {
+    width: 3.29rem;
+    height: 2.07rem;
+}
+.module-04 .pics-group .pic img {
+    width: 100%;
+}
+/** module 04 area */
+
+
+/** module 05 area */
+.module-05 .avatars-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-bottom: .98rem;
+}
+
+.module-05 .avatars-group .row {
+    display: flex;
+    justify-content: space-around;
+}
+.module-05 .avatars-group .row:last-child {
+    padding-top: .25rem;
+}
+
+.module-05 .avatars-group .row .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.module-05 .avatars-group .row .item .icon {
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    width: 2.55rem;
+    height: 2.55rem;
+}
+
+.module-05 .avatars-group .row:first-child .item:first-child .icon {
+    background: url("../images/save-love-plan/mentor-jiawei.png") no-repeat center center;
+}
+.module-05 .avatars-group .row:first-child .item:last-child .icon {
+    background: url("../images/save-love-plan/mentor-qianwu.png") no-repeat center center;
+}
+.module-05 .avatars-group .row:last-child .item:first-child .icon {
+    background: url("../images/save-love-plan/mentor-lujia.png") no-repeat center center;
+}
+.module-05 .avatars-group .row:last-child .item:last-child .icon {
+    background: url("../images/save-love-plan/mentor-qingen.png") no-repeat center center;
+}
+
+.module-05 .avatars-group .row .item .mentor {
+    font-weight: bold;
+}
+/** module 05 area */
+
+
+/** module 06 area */
+.module-06 .main {
+    display: flex;
+
+    padding-top: .3rem;
+    padding-left: .62rem;
+    padding-bottom: .76rem;
+}
+.module-06 .main .icons-group {
+    width: .63rem;
+    height: 7.6rem;
+
+    display: flex;
+    justify-content: center;
+}
+.module-06 .main .icons-group .column-line {
+    width: .02rem;
+    height: 100%;
+    background: #fdcfd9;
+}
+.module-06 .main .icons-group .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+.module-06 .main .icons-group .icons .icon-wrap {
+    width: .53rem;
+    height: .53rem;
+
+    position: absolute;
+    top: 0;
+    left: -.31rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.module-06 .main .icons-group .icons .icon-wrap .icon-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: #ff5378;
+
+    border: 5px solid #fd849e;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.module-06 .main .icons-group .icons .icon-wrap .icon {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: .04rem;
+    top: .04rem;
+
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.module-06 .main .icons-group .icons .icon-wrap:first-child {
+    top: 0;
+}
+.module-06 .main .icons-group .icons .icon-wrap:nth-child(2) {
+    top: 4.75rem;
+}
+.module-06 .main .icons-group .icons .icon-wrap:nth-child(3) {
+    top: 5.9rem;
+}
+.module-06 .main .icons-group .icons .icon-wrap:last-child {
+    top: 7.1rem;
+}
+
+.module-06 .main .icons-group .icons .icon-wrap:first-child .icon {
+    background: url("../images/save-love-plan/module06-icon-01.png") no-repeat center center;
+}
+.module-06 .main .icons-group .icons .icon-wrap:nth-child(2) .icon {
+    background: url("../images/save-love-plan/module06-icon-02.png") no-repeat center center;
+}
+.module-06 .main .icons-group .icons .icon-wrap:nth-child(3) .icon {
+    background: url("../images/save-love-plan/module06-icon-03.png") no-repeat center center;
+}
+.module-06 .main .icons-group .icons .icon-wrap:last-child .icon {
+    background: url("../images/save-love-plan/module06-icon-04.png") no-repeat center center;
+}
+
+.module-06 .main .txt {
+    padding-left: .32rem;
+}
+
+.module-06 .main .txt p:first-child .phone-num {
+    color: #ff5378;
+}
+
+.module-06 .main .txt .qrcode {
+    display: flex;
+    justify-content: center;
+
+    padding-top: .27rem;
+    padding-bottom: .32rem;
+
+    position: relative;
+    right: .2rem;
+}
+
+.module-06 .main .txt .qrcode i {
+    background: url("../images/save-love-plan/qrcode.png") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    display: inline-block;
+    width: 2.21rem;
+    height: 2.21rem;
+}
+
+.module-06 .main .txt p:nth-child(4),
+.module-06 .main .txt p:nth-child(5) {
+    padding-top: .38rem;
+}
+/** module 06 area */
+
+
+/** module 07 area */
+.module-07 .main {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: .52rem;
+    padding-bottom: .69rem;
+}
+.module-07 .main .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 2.3rem;
+    height: 2.96rem;
+
+    background-color: #e8e8e8;
+
+    position: relative;
+}
+.module-07 .main .item img {
+    position: absolute;
+    top: -.52rem;
+    left: .75rem;
+
+    width: .81rem;
+    height: .81rem;
+}
+.module-07 .main .item p {
+    padding: .12rem .22rem 0;
+}
+/** module 07 area */
+
+
+/** Start qrcode area*/
+.module.qrcode .gray-line {
+    width: 90%;
+    height: 2px;
+    margin: 0 auto;
+    background: lightgray;
+}
+.module.qrcode .main {
+    width: 100%;
+    height: 3.31rem;
+    background: url("../images/qrcode.png") no-repeat center center;
+}
+/** End qrcode area*/

@@ -1,0 +1,1 @@
+spa.smistress.progress=function(){var s,i={main_html:String()+'<div class="spa-module-title"><span class="spa-module-title-line"></span><p class="spa-module-title-txt">分离小三服务流程</p><span class="spa-module-title-line"></span></div><div class="smistress-progress-main"></div>'};return s=function(s){s.html(i.main_html)},{initModule:s}}();

@@ -1,0 +1,235 @@
+/*
+ * index.css
+ * Root stylesheets
+*/
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hidden, .ti {
+  display: none;
+}
+.ti.active {
+  display: block;
+}
+.active{
+  display: block;
+}
+
+.welcome{
+  background: url(../images/welcome-bgimg.png) center center no-repeat;
+  width: 100%;
+  height: 12.17rem;
+  background-size: cover;
+  position: relative;
+}
+/*.welcome .wen{
+  background: url(../images/wen-bgimg.png) center center no-repeat;
+  width: 5.45rem;
+  height: 3.5rem;
+  background-size: cover;
+  position: absolute;
+  top: 6rem;
+  left: 1rem;
+
+}
+.welcome .wen .wenp{
+  width: 5rem;
+  height: 3.5rem;
+  margin: 0 auto;
+  padding-top: 0rem;
+  padding-left: .1rem;
+  overflow-y: scroll;
+  scrollbar-base-color: #FE4D95;
+  scrollbar-face-color: #FFC2DB;
+  scrollbar-shadow-color: #FFC2DB;
+  scrollbar-highlight-color: #FE4D95;
+  scrollbar-3dlight-color: #FE4D95;
+  scrollbar-darkshadow-color: #FE4D95;
+  scrollbar-track-color: #FE4D95;
+  scrollbar-arrow-color: #FFD6DA;
+}
+#style-2::-webkit-scrollbar{
+  width: .2rem;
+  background-color: transparent;
+}
+#style-2::-webkit-scrollbar-thumb{
+  background-color: #FE4D95;
+  color: #FE4D95;
+  border-radius: .1rem;
+}
+.welcome .wen .wenp p{
+  font-size: .3rem;
+  font-weight: bold;
+  padding-left: .1rem;
+  padding-right: .1rem;
+  color: #fe4f95;
+  letter-spacing: .02rem;
+}*/
+.welcome .start{
+  background: url(../images/start-bgimg.png) center center no-repeat;
+  width: 3.29rem;
+  height: 1.16rem;
+  position: absolute;
+  top: 10rem;
+  left: 2rem;
+}
+.welcome .rule {
+  background: url(../images/rule-bgimg.png) center center no-repeat;
+  width: 3.29rem;
+  height: 1.16rem;
+  position: absolute;
+  top: 11.1rem;
+  left: 2rem;
+}
+
+.questions {
+  background: url(../images/bgimg.png) center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 12.09rem;
+}
+
+.questions .neirong {
+  width: 6rem;
+  height: 6.2rem;
+  margin: 0 auto;
+  padding-top: 4rem;
+  position: relative;
+}
+
+.questions .neirong .group {
+  width: 100%;
+  height: 6rem;
+}
+
+.questions .neirong .group .ti .head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.questions .neirong .group .ti .head .tihao {
+  background-color: #EF5967;
+  width: .6rem;
+  height: .6rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.questions .neirong .group .ti .head .tihao>span {
+  font-size: .45rem;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: .15rem;
+  color: #FFFFFF;
+}
+
+.questions .neirong .group .ti .head>img {
+  width: 5.15rem;
+  height: .72rem;
+}
+.questions .neirong .group .ti .body{
+
+}
+.questions .neirong .group .ti .body ul{
+  padding-left: 0;
+}
+.questions .neirong .group .ti .body ul li{
+  width: 100%;
+  margin-top: .2rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.questions .neirong .group .ti .body ul li p{
+  font-size: .26rem;
+  width: 6.8rem;
+  padding-top: 0;
+  margin: 0;
+  padding-left: .1rem;
+  padding-right: .1rem;
+}
+.questions .neirong .group .ti .body ul li .bg{
+  width: .47rem;
+  height: .52rem;
+  background: url(../images/out.png) center center no-repeat;
+  background-size: cover;
+}
+.questions .neirong .group .ti .body ul li:hover .bg{
+  background: url(../images/on.png) center center no-repeat;
+  /*background-size: cover;*/
+}
+.questions .btn {
+  background: url(../images/btn.png) center center no-repeat;
+  background-size: cover;
+  width: 1.78rem;
+  height: .6rem;
+  position: absolute;
+  right: .2rem;
+  bottom: .1rem;
+}
+.questions .btn:hover{
+  box-shadow: .1rem .1rem .05rem #FF3232;
+}
+
+.score {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+}
+
+/* 模态框 */
+.rule-modal {
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rule-modal .inner {
+  /*position: absolute;
+  top: 0;
+  left: 1.25rem;*/
+  /*top: -100vh;*/
+  /*opacity: 0;*/
+  width: 5rem;
+  height: 5rem;
+  background: rgba(0, 0, 0, .3);
+  overflow: hidden;
+  /*z-index: 2;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.rule-modal-content {
+  width: 100%;
+  height: 80%;
+  background: blue;
+}
+.rule-modal-close-btn {
+  width: 10%;
+  height: 10%;
+  background: green;
+  border-radius: 50%;
+}
+
+.modal-opacity {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  z-index: 2;
+}

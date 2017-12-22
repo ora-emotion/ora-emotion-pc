@@ -1,0 +1,223 @@
+<!--
+	作者：706861648@qq.com
+	时间：2017-09-08
+	描述：专注卓越
+-->
+<div class="module module-01">
+	<div class="main">
+		<div class="nei1">
+			<div class="left">
+				<img src="images/team/absorbed-img1.png" />
+			</div>
+			<div class="right">
+				<h3>专注</h3>
+				<p>
+					每一个学员的计划，都会经过责任导师组严谨全面的分析，集中讨论后，给出风险最
+					小、效率最高的执行方案
+				</p>
+				<p class="pred">
+					每位用户严谨对待
+				</p>
+			</div>
+		</div>
+		<div class="nei2">
+			<div class="left">
+				<img src="images/team/absorbed-img2.png" />
+			</div>
+			<div class="right">
+				<h3>专业</h3>
+				<p>
+					每一位导师、助教，均为资深全职人员，高效指导学员用户。用户出现问题，将在第一
+					时间得到完善解决
+				</p>
+				<p class="pred">
+					内部理论系统研发
+				</p>
+			</div>
+		</div>
+		<div class="nei3">
+			<div class="left">
+				<img src="images/team/absorbed-img3.png" />
+			</div>
+			<div class="right">
+				<h3>专心</h3>
+				<p>
+					在多年的执教，及实践指导中，导师团队不断根据经验，从两性心理角度出发，总结整
+					理更多高效理论和方法
+				</p>
+				<p class="pred">
+					高效的办公状态
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--
+	作者：706861648@qq.com
+	时间：2017-09-08
+	描述：橘子情感导师团队
+-->
+<div class="module module-02">
+	<div class="main">
+		<div class="wen">
+			<p class="p1">
+				橘子情感的导师团队，均为资深全职导师，其中包括平均从业4年以上的国家心理咨询师、
+				专业心理侧写师、国家级婚恋咨询师、情感挽回专家、情感维稳师等专业导师，为您的爱
+				情保驾护航。
+			</p>
+			<p class="p2">
+				每一段感情，都值得被珍惜；而每一位用户，都会在这里得到最专业、最全面的指导服务。
+				橘子情感的所有情感导师，均秉承着“专业、责任、奉献”的核心价值观，将挽回爱情、捍
+				卫幸福是为己任。因为专业，所以卓越，橘子情感的成功率和口碑，也一直引领业界。而
+				主导师团队开设的“全国情感导师培植计划”，多年来也为整个行业输送了大批优秀的从业
+				人才。
+			</p>
+		</div>
+	</div>
+</div>
+
+<!-- Start module 03 area: 橘子情感首席导师 -->
+<div class="module module-03">
+	<div class="main">
+    <div class="swiper-container">
+    	<div class="swiper-wrapper">
+        <div class="swiper-slide">
+					<img src="images/team/daoshi-jiawei.png" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/team/daoshi-jieni.png" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/team/daoshi-lujia.png" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/team/daoshi-moyan.png" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/team/daoshi-qianwu.png" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/team/daoshi-qiyue.png" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/team/daoshi-asu.png" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/team/daoshi-haoyu.png" alt="">
+				</div>
+    	</div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-pagination"></div>
+    </div>
+	</div>
+</div>
+<!-- End module 03 area: 橘子情感首席导师 -->
+
+<script type="text/javascript">
+	//-------------------------------- 模块三 -------------------------------------
+
+	// 声明语块
+	var
+		cardItem = $( '.module-03 .main .demo__card-cont' ).find( '.demo__card' ),
+		img_src,
+		loadCss, onClickCard
+	  ;
+
+	// 点击事件
+	// 功能：请求卡片对应的三级页面
+	onClickCard = function ( module ) {
+		$.ajax({
+			type    : 'GET',
+			url     : 'views/team/' + 'daoshi-' + module + '.html',
+			success : function ( data ) {
+				console.log( '请求 HTML 成功!' );
+				$( '#container' ).html( data );
+			},
+			error   : function ( error ) {
+				console.log( '请求 HTML 失败!' );
+			}
+		});
+
+		loadCss();
+		loadJs();
+
+		return false;
+	};
+
+	// 加载 JS 文件
+	loadJs = function () {
+		$.ajax({
+			type    : 'GET',
+			url     : 'js/team-three-level.js',
+			success : function ( data ) {
+				console.log( '请求 JS 成功!' );
+			},
+			error   : function ( error ) {
+				console.log( '请求 JS 失败!' );
+			}
+		});
+
+		return false;
+	};
+
+	// 加载外部 CSS 演示表
+	// 功能：请求对应三级页面的 CSS 样式表
+	loadCss = function () {
+		$.ajax({
+			type    : 'GET',
+			url     : 'css/team-three-level.css',
+			success : function ( data ) {
+				console.log( '请求 CSS 成功!' );
+				$( 'head link.dynamic' ).attr( 'href', 'css/team-three-level.css' );
+			},
+			error   : function ( error ) {
+				console.log( '请求 CSS 失败!' );
+			}
+		});
+		return false;
+	};
+
+	// 加载 JS 文件
+	loadJs = function () {
+		$.ajax({
+			type    : 'GET',
+			url     : 'js/team-three-level.js',
+			success : function ( data ) {
+				console.log( '请求 JS 成功!' );
+			},
+			error   : function ( error ) {
+				console.log( '请求 JS 失败!' );
+			}
+		});
+
+		return false;
+	};
+
+	// 加载请求的 HTML 文件
+	var i;
+	for ( i = 0; i < cardItem.length; i++ ) {
+		$( cardItem[i] ).click(function () {
+			img_src = $(this).find( 'img' ).attr( 'src' );
+			img_src =  img_src.split( '-' )[1].split( '.' )[0];
+			onClickCard( img_src );
+
+			return false;
+		});
+	}
+
+  $(document).ready(function () {
+		// 导师部分轮播图
+		var mySwiper = new Swiper('.module-03 .main .swiper-container', {
+			autoplay            : 5000,
+			loop                : true,
+			pagination          : '.swiper-pagination',
+			paginationClickable : true,
+			prevButton          : '.swiper-button-prev',
+      nextButton          : '.swiper-button-next'
+		});
+	});
+
+</script>

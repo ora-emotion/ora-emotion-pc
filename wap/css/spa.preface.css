@@ -1,0 +1,14 @@
+/*
+ * spa.css
+ * Preface namespace styles
+*/
+
+.spa-preface-img {
+  width: 100%;
+  height: 3.46rem;
+  margin-top: .77rem;
+}
+.spa-preface-img img {
+  width: 100%;
+  height: 100%;
+}
