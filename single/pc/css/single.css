@@ -76,6 +76,9 @@ li {
 .color-red {
   color: #ff3232;
 }
+.color-orange {
+  color: #fb9d2d;
+}
 .img-center {
   display: flex;
   justify-content: center;
