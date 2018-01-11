@@ -1,0 +1,264 @@
+@import "swiper/swiper.css";
+h3{
+	font-size: .28rem;
+}
+p{
+	font-size: .26rem;
+	line-height: .35rem;
+	color: #2d2d2d;
+}
+.module-01 .main{
+	width: 100%;
+}
+.module-01 .main .top{
+	width: 90%;
+	height: 1.1rem;
+	margin: 0 auto;
+}
+.module-01 .main .top p{
+	text-indent: .52rem;
+}
+.module-01 .main .bottom{
+	width: 90%;
+	height: 3.2rem;
+	margin: 0 auto;
+}
+.module-01 .main .bottom .zu{
+	width: 1.3rem;
+}
+.module-01 .main .bottom .zu p{
+	text-align: center;
+}
+.module-01 .main .bottom .zu img{
+	padding-left: .2rem;
+	width: .85rem;
+	height: .85rem;
+}
+.module-01 .main .bottom .top1{
+	display: flex;
+	justify-content: space-around;
+}
+
+.module-01 .main .bottom .bottom1{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+.module-02 .main{
+	width: 100%;
+	height: 7.1rem;
+	background: url(../images/service/status-bgimg.png) center center no-repeat;
+	background-size: 100% 100%;
+}
+.module-02 .main .wen{
+	width: 90%;
+	margin: 0 auto;
+}
+.module-02 .main .wen p{
+	text-indent: .52rem;
+}
+.module-02 .main .wen .p1{
+	padding-top: .15rem;
+}
+.module-02 .main .wen .p2{
+	padding-top: .3rem;
+}
+.module-02 .main .tu{
+	width: 90%;
+	margin: .5rem auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.module-03 .main{
+	width: 100%;
+	background-color: #F9F9F9;
+}
+.module-03 .main .top{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: .2rem;
+}
+.module-03 .main .top .wen p{
+	text-indent: .52rem;
+}
+.module-03 .main .top .tu{
+	
+}
+.module-03 .main .top .tu>div{
+	display: flex;
+	justify-content: space-around;
+	height: 2.1rem;
+	padding-top: .2rem;
+	width: 100%;
+}
+.module-03 .main .top .tu>div .zu{
+	width: 1.7rem;
+	height: 100%;
+}
+.module-03 .main .top .tu>div .zu img{
+	padding-left: .3rem;
+}
+.module-03 .main .top .tu>div .zu p{
+	text-align: center;
+}
+
+.module-03 .main>.zhong{
+	width: 100%;
+	height: .1rem;
+	border-bottom: .03rem dashed #535353;
+}
+.module-03 .main>.bottom{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: .3rem;
+}
+.module-03 .main>.bottom>.zu{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 2rem;
+}
+.module-03 .main>.bottom .zu .left{
+	width: 3.2rem;
+}
+.module-03 .main>.bottom .zu .right{
+	padding-left: .2rem;
+}
+
+
+
+.module-04 .main{
+	width:100%;
+}
+.module-04 .main .head p{
+	height: 100%;
+	padding: .1rem .2rem;
+	text-indent: .52rem;
+}
+.module-04 .main .curriculum .zu{
+	width: 100%;
+	height: 2.35rem;
+	background-color: #F2F2F2;
+	display: flex;
+	justify-content: space-around;
+}
+
+.module-04 .main .curriculum .zu .left{
+	padding-top: .3rem;
+}
+.module-04 .main .curriculum .zu .left img{
+	width: 2.63rem;
+	height: 1.72rem;
+}
+.module-04 .main .curriculum .zu .zhong{
+	padding-top: .4rem;
+}
+.module-04 .main .curriculum .zu .zhong h3{
+	font-size: .3rem;
+}
+.module-04 .main .curriculum .zu .zhong p:first-child{
+	margin-top: .2rem;
+}
+.module-04 .main .curriculum .zu .zhong p:last-child{
+	padding-top: .5rem;
+}
+.module-04 .main .curriculum .zu .right{
+	margin-top: -.15rem;
+}
+.module-04 .main .curriculum .zu:last-child{
+	margin-top: .2rem;
+}
+
+.module-04 .main .curriculum .zu:last-child .left{
+	padding-left: .1rem;
+}
+.module-04 .main .curriculum .zu:last-child .zhong{
+	padding-left: .15rem;
+}
+
+
+
+.module-05 .main{
+	width: 100%;
+	height: 5.65rem;
+	position: relative;
+}
+.module-05 .main .left{
+	width: 3.87rem;
+	height: 100%;
+	float: left;
+}
+.module-05 .main .left img{
+	width: 100%;
+	height: 100%;
+}
+.module-05 .main .right{
+	position: absolute;
+	width: 4.5rem;
+	top: .5rem;
+	left: 2.85rem;
+}
+.module-05 .main .right p{
+	text-indent: .52rem;
+	line-height: .35rem;
+}
+.module-05 .main .right .top{
+	margin: 0 auto;
+}
+.module-05 .main .right .bottom{
+	margin: .3rem auto;
+}
+
+
+.module-07 .main{
+	background: url(../images/service/servicewen_bg.png) no-repeat center center;
+	-webkit-background-size: cover;
+    background-size: 7.04rem 100%;
+    width: 100%;
+    height: 7.67rem;
+    margin-top: .3rem;
+}
+
+
+
+.module-08 .main>div{
+	width: 100%;
+	height: 2.1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.module-08 .main>div>p{
+	width: 4.4rem;
+	/*height: 1.1rem;*/
+	line-height: .4rem;
+	
+}
+.module-08 .main .top{
+	background: url(../images/service/guarantee-bgimg1.png) center center no-repeat;
+	background-size: 100% 100%;
+}
+.module-08 .main .top>p{
+	padding-left: 3rem;
+}
+.module-08 .main .zhong{
+	background: url(../images/service/guarantee-bgimg2.png) center center no-repeat;
+	background-size: 100% 100%;
+	margin-top: .2rem;
+}
+.module-08 .main .zhong >p{
+	padding-left: .7rem;
+}
+
+.module-08 .main .bottom{
+	background: url(../images/service/guarantee-bgimg3.png) center center no-repeat;
+	background-size: 100% 100%;
+	margin-top: .2rem;
+}
+.module-08 .main .bottom>p{
+	padding-left: 3rem;
+}

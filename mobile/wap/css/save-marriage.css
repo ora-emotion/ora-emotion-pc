@@ -1,0 +1,341 @@
+@import "swiper/swiper.css";
+.module-01 {
+	width: 100%;
+	height: 3rem;
+}
+
+.module-01 .main {
+	display: flex;
+	justify-content: space-around;
+}
+
+.module-01 .main .icon-txt-group {
+	width: 1.6rem;
+}
+
+.module-01 .main .icon-txt-group img {
+	width: 1.22rem;
+	height: 1.22rem;
+	padding-left: .17rem;
+}
+
+.module-01 .main .icon-txt-group p {
+	width: 100%;
+	text-align: center;
+}
+
+.module-02 .main {
+	background-color: #F4F4F4;
+	width: 100%;
+	height: 7rem;
+}
+
+.module-02 .main .clear {
+	width: 100%;
+	height: .2rem;
+}
+
+.module-02 .main .bg {
+	background: url(../images/save-marriage/crisis-bgimg.png) center center no-repeat;
+	background-size: 100% 100%;
+	width: 6.78rem;
+	height: 6.5rem;
+	margin: 0 auto;
+	/*padding-top: .5rem;*/
+}
+
+.module-03 .main {
+	width: 100%;
+	height: 4.45rem;
+	background-color: #FFEDED;
+}
+
+.module-03 .main p {
+	width: 4.25rem;
+	height: 1.7rem;
+	line-height: .35rem;
+}
+
+.module-03 .main .top p {
+	float: right;
+	padding-right: .2rem;
+}
+
+.module-03 .main .bottom p {
+	float: left;
+	padding-left: .2rem;
+}
+
+.module-03 .main .top {
+	width: 100%;
+	height: 1.8rem;
+	padding-top: .15rem;
+}
+
+.module-03 .main .top img {
+	width: 2.71rem;
+	height: 1.7rem;
+	padding-left: .1rem;
+}
+
+
+/*.module-03 .main .top p{
+	padding-right: .2rem;
+}*/
+
+.module-03 .main .zhong {
+	width: 100%;
+	height: .2rem;
+	border-bottom: 2px solid #FFCACA;
+}
+
+.module-03 .main .bottom {
+	width: 100%;
+	height: 2rem;
+	padding-top: .2rem;
+}
+
+.module-03 .main .bottom img {
+	width: 2.71rem;
+	height: 1.7rem;
+	padding-left: .2rem;
+}
+
+/*
+ * 下拉列表
+ */
+.module-04 .main .ul1 {
+	width: 5.25rem;
+	background-color: #BECCE7;
+	margin: 0 auto;
+	transform: translateZ(0);
+}
+
+.module-04 .main .ul1 input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+}
+
+.module-04 .main .ul1 label {
+	position: relative;
+	display: block;
+	height: .8rem;
+	line-height: .8rem;
+	padding-left: .8rem;
+	font-size: .26rem;
+	font-weight: 600;
+	cursor: pointer;
+	border-top: 1px #919FBA solid;
+}
+
+.module-04 .main .ul1 label[for*='1'] {
+	border: 0;
+}
+
+.module-04 .main .ul1 section {
+	height: 0;
+	transition: .3s all;
+	overflow: hidden;
+}
+.module-04 .main .ul1 section.active {
+	height: 1.8rem;
+	width: 5.26rem;
+	background: url("../images/save-marriage/erro-bgimg.png") center center / 100% 100% no-repeat;
+}
+.p1{
+	line-height: .35rem;
+	padding: .3rem .1rem .2rem .3rem;
+}
+/*/下拉列表***/
+
+.module-05 .main{
+	background: url(../images/save-marriage/marriage-type-bgimg.png) center center no-repeat;
+	background-size: 7.5rem 100%;
+	width: 100%;
+	height: 4.96rem;
+}
+.module-05 .main div div p{
+	padding-top: 1.2rem;
+	padding-left: .18rem;
+	width: 1.3rem;
+	text-align: center;
+}
+.module-05 .main .top{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding-top: .2rem;
+}
+.module-05 .main .bottom{
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	margin: .2rem auto;
+}
+.module-05 .main .top .m51{
+	background: url(../images/save-marriage/marriage-type-bgimg1.png) center center no-repeat;
+	background-size: 100% 100%;
+	width: 1.64rem;
+	height: 2.17rem;
+}
+.module-05 .main .top .m52{
+	background: url(../images/save-marriage/marriage-type-bgimg2.png) center center no-repeat;
+	background-size: 100% 100%;
+	width: 1.64rem;
+	height: 2.17rem;
+}
+.module-05 .main .top .m53{
+	background: url(../images/save-marriage/marriage-type-bgimg3.png) center center no-repeat;
+	background-size: 100% 100%;
+	width: 1.64rem;
+	height: 2.17rem;
+}
+.module-05 .main .bottom .m54{
+	background: url(../images/save-marriage/marriage-type-bgimg4.png) center center no-repeat;
+	background-size: 100% 100%;
+	width: 1.64rem;
+	height: 2.17rem;
+}
+.module-05 .main .bottom .m55{
+	background: url(../images/save-marriage/marriage-type-bgimg5.png) center center no-repeat;
+	background-size: 100% 100%;
+	width: 1.64rem;
+	height: 2.17rem;
+}
+
+
+.module-06 .main {
+    position: relative;
+    background: #D7E3F1;
+    padding-top: .32rem;
+    padding-bottom: .92rem;
+    height: 2rem;
+}
+.module-06 .main .swiper-container .swiper-wrapper .swiper-slide {
+    display: flex;
+    justify-content: space-around;
+}
+.module-06 .main .swiper-container .swiper-wrapper .swiper-slide .item {
+    width: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .22rem;
+}
+.module-06 .main .swiper-container .swiper-wrapper .swiper-slide .item .icon {
+    width: 1.44rem;
+    height: 1.44rem;
+}
+.module-06 .main .swiper-container .swiper-wrapper .swiper-slide:first-child .item:nth-child(1) .icon {
+    background: url(../images/save-marriage/service-img1.png) no-repeat center center;
+}
+.module-06 .main .swiper-container .swiper-wrapper .swiper-slide:first-child .item:nth-child(2) .icon {
+    background: url(../images/save-marriage/service-img2.png) no-repeat center center;
+}
+.module-06 .main .swiper-container .swiper-wrapper .swiper-slide:first-child .item:nth-child(3) .icon {
+    background: url(../images/save-marriage/service-img3.png) no-repeat center center;
+}
+.module-06 .main .swiper-container .swiper-wrapper .swiper-slide:last-child .item:nth-child(1) .icon {
+    background: url(../images/save-marriage/service-img4.png) no-repeat center center;
+}
+.module-06 .main .swiper-container .swiper-wrapper .swiper-slide:last-child .item:nth-child(2) .icon {
+    background: url(../images/save-marriage/service-img5.png) no-repeat center center;
+}
+
+.module-06 .main .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: .15rem;
+    left: 40%;
+    right: 40%;
+}
+.module-06 .main .swiper-pagination .swiper-pagination-bullet {
+    width: .5rem;
+    height: .1rem;
+    background: #BDD3ED;
+    margin: 0 .08rem;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+.module-06 .main .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #ABC3DF;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+.module-07 .main .top{
+	background: url(../images/save-marriage/case-bgimg1.png) center center no-repeat;
+	background-size: 7.5rem 100%;
+	width: 100%;
+	height: 2.43rem;
+}
+.module-07 .main .bottom{
+	background: url(../images/save-marriage/case-bgimg2.png) center center no-repeat;
+	background-size: 7.5rem 100%;
+	width: 100%;
+	height: 2.82rem;
+	margin-top: .1rem;
+}
+
+.module-07 .main h3{
+	font-size: .28rem;
+}
+.module-07 .main p{
+	line-height: .35rem;
+}
+.module-07 .main .top h3{
+	padding-left: 2.1rem;
+	padding-top: .1rem;
+	width:70%;
+}
+.module-07 .main .top p{
+	padding-left: 2.1rem;
+	width: 70%;
+}
+.module-07 .main .bottom h3{
+	padding-left: .1rem;
+	padding-top: .15rem;
+	width: 72%;
+}
+.module-07 .main .bottom p{
+	padding-left: .15rem;
+	width: 70%;
+}
+
+
+.module-08 .main .top{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+.module-08 .main .top p{
+	text-align: center;
+	font-weight: 600;
+}
+
+.module-08 .main .bottom{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin-top: .2rem;
+}
+.module-08 .main .bottom p{
+	font-weight: 600;
+	text-align: center;
+}
+
+.module-09 .main{
+	background: url(../images/save-marriage/servicewen_bg.png) no-repeat center center;
+	-webkit-background-size: cover;
+    background-size: 7.04rem 100%;
+    width: 100%;
+    height: 7.67rem;
+    margin-top: .3rem;
+}

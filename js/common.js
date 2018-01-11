@@ -1,30 +1,30 @@
 
 // 显示微信二维码
-function qrcodeWechat() {
-    // 淡入
-    function wechatFadeIn() {
-        $(".wechat").fadeIn(300);
-    }
-    // 淡出
-    function wechatFadeOut() {
-        $(".wechat").fadeOut(300);
-    }
-    // 划过图标显示
-    $(".qrcode-wechat img").mouseover(function () {
-        wechatFadeIn();
-    });
-    $(".qrcode-wechat img").mouseout(function () {
-        wechatFadeOut();
-    });
-    // 划过文字显示
-    $(".pull-right .txt p:first-child").mouseover(function () {
-        wechatFadeIn();
-    });
-    $(".pull-right .txt p:first-child").mouseout(function () {
-        wechatFadeOut();
-    });
-}
-qrcodeWechat();
+// function qrcodeWechat() {
+//     // 淡入
+//     function wechatFadeIn() {
+//         $(".wechat").fadeIn(300);
+//     }
+//     // 淡出
+//     function wechatFadeOut() {
+//         $(".wechat").fadeOut(300);
+//     }
+//     // 划过图标显示
+//     $(".qrcode-wechat img").mouseover(function () {
+//         wechatFadeIn();
+//     });
+//     $(".qrcode-wechat img").mouseout(function () {
+//         wechatFadeOut();
+//     });
+//     // 划过文字显示
+//     $(".pull-right .txt p:first-child").mouseover(function () {
+//         wechatFadeIn();
+//     });
+//     $(".pull-right .txt p:first-child").mouseout(function () {
+//         wechatFadeOut();
+//     });
+// }
+// qrcodeWechat();
 
 /* 右侧导航 */
 $(function() {
@@ -71,7 +71,7 @@ navJson();
 //$(document).ready(function(){
 //	//获取当前屏幕宽度
 //	var windowWidth = $(window).width();
-//	
+//
 //	//判断移动端，跳转页面
 //	if(windowWidth<=980){
 //		self.location='../mobile/wap/index.html';

@@ -1,0 +1,294 @@
+@import "../components/module-title/module-title.css";
+@import "../components/home/home.css";
+
+/** Start stylesheet reset */
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+ol, ul, dl {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:link{
+	text-underline: none;
+}
+a:visited{
+	text-underline: none;
+}
+a:hover{
+	text-underline: none;
+	color: #FF3232;
+}
+a:active {
+    text-underline: none;
+    color: #FF3232;
+}
+
+p {
+    font-size: .26rem;
+    line-height: .27rem;
+}
+
+p.indent {
+    text-indent: .5rem;
+}
+/** End stylesheet reset */
+
+
+/** Start header area */
+header {
+    width: 100%;
+    height: .77rem;
+    background: #fff;
+    box-shadow: 2px 2px rgba(0, 0, 0, .5);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+header .logo {
+    background: url("../images/logo.png") no-repeat center center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 2.04rem;
+    height: .56rem;
+
+    margin-left: .37rem;
+}
+
+header .contact-us {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-right: .37rem;
+}
+header .contact-us .icon {
+    background: url("../images/header-icon.png") no-repeat center center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: .43rem;
+    height: .43rem;
+}
+header .contact-us .txt {
+    padding-left: .08rem;
+}
+/** End header area */
+
+
+/** Start preface area */
+.preface .banner-img {
+    width: 100%;
+    height: 3.46rem;
+    margin-top: .77rem;
+}
+
+.preface .banner-img img {
+    width: 100%;
+    height: 100%;
+}
+/** End preface area */
+
+
+/** Start footer area */
+footer {
+    width: 100%;
+    margin-top: .68rem;
+    height: 1.66rem;
+    background: url(../images/footer_bgimg.png) center center no-repeat;
+    background-size: contain;
+    /*border-top: 1px solid #b9b9b9;*/
+    display: flex;
+    justify-content: flex-start;
+
+    position: relative;
+}
+
+footer .column .txt-group {
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer .column .ora-phone {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: .11rem;
+    padding-bottom: .09rem;
+}
+footer .column .ora-phone .icon {
+    display: inline-block;
+    width: .41rem;
+    height: .47rem;
+
+    background: url("../images/phone-icon.png") no-repeat center center;
+    -webkit-background-size: .41rem .47rem;
+    background-size: .41rem .47rem;
+}
+footer .column .ora-phone .txt-group {
+    height: .47rem;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    top: .14rem;
+    left: .02rem;
+}
+footer .column .ora-phone .txt-group p {
+    color: #fd3232;
+}
+footer .column .ora-phone .txt-group p:first-child {
+    font-size: .0948rem;
+    line-height: .18rem;
+}
+footer .column .ora-phone .txt-group p:last-child {
+    font-size: .1777rem;
+    line-height: .15rem;
+}
+
+footer p {
+    font-size: .12rem;
+    color: #fff;
+    line-height: .21rem;
+}
+
+footer .column:first-child {
+    padding-left: .95rem;
+    padding-top: .17rem;
+    padding-right: .82rem;
+}
+footer .column:first-child img {
+    width: 2.02rem;
+    height: 1.25rem;
+}
+/** End footer area */
+
+
+/** Start slider bar */
+#bar {
+    position: fixed;
+    top: .77rem;
+    left: -455px;
+    z-index: 5;
+
+    width: 524px;
+    height: 956px;
+    background: transparent;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#bar .content {
+    width: 453px;
+    height: 100%;
+    background: #2f2f31;
+    position: relative;
+}
+#bar .content .slider-bar-title {
+    color: #fff;
+    font-size: 26px;
+    line-height: 76px;
+    width: 100%;
+    height: 76px;
+    text-align: center;
+    background: #212123;
+}
+#bar .content .list .list-item {
+    width: 445px;
+    height: 100%;
+    border-left: 8px solid transparent;
+}
+#bar .content .list .list-item.active {
+    border-left: 8px solid #fb2d2d;
+    background: #212123;
+    width: 445px;
+}
+#bar .content .list .list-item p {
+    color: #fff;
+    font-size: 26px;
+    line-height: 88px;
+    height: 88px;
+    width: 382px;
+    border-bottom: 1px solid #212123;
+    margin: 0 auto;
+}
+#bar .content .list .list-item p .icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding-left: 48px;
+    padding-right: 44px;
+    vertical-align: middle;
+}
+#bar .content .list .list-item:nth-child(1) p .icon {
+    background: url("../images/slider-bar/btn-back-home.png") no-repeat center center;
+}
+#bar .content .list .list-item:nth-child(2) p .icon {
+    background: url("../images/slider-bar/btn-save-love.png") no-repeat center center;
+}
+#bar .content .list .list-item:nth-child(3) p .icon {
+    background: url("../images/slider-bar/btn-save-marriage.png") no-repeat center center;
+}
+#bar .content .list .list-item:nth-child(4) p .icon {
+    background: url("../images/slider-bar/btn-separate-mistress.png") no-repeat center center;
+}
+#bar .content .list .list-item:nth-child(5) p .icon {
+    background: url("../images/slider-bar/btn-custom-love.png") no-repeat center center;
+}
+#bar .content .list .list-item:nth-child(6) p .icon {
+    background: url("../images/slider-bar/btn-emotion-forum.png") no-repeat center center;
+}
+#bar .content .list .list-item:nth-child(7) p .icon {
+    background: url("../images/slider-bar/btn-team.png") no-repeat center center;
+}
+#bar .content .list .list-item:nth-child(8) p .icon {
+    background: url("../images/slider-bar/btn-service.png") no-repeat center center;
+}
+#bar .content .list .list-item:nth-child(9) p .icon {
+    background: url("../images/slider-bar/btn-about.png") no-repeat center center;
+}
+#bar .content .btn-retracted {
+    width: 100%;
+    height: 80px;
+}
+#bar .content .btn-retracted .icon {
+    width: 18px;
+    height: 32px;
+    position: absolute;
+    bottom: 25px;
+    right: 52px;
+
+    background: url("../images/slider-bar/btn-retracted.png") no-repeat center center;
+}
+#bar .btn-wrap {
+    position: relative;
+    right: 0;
+    width: 59px;
+    height: 138px;
+    background: #979798;
+    border-radius: 0 10px 10px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bar .btn-wrap .btn {
+    background: url("../images/slider-bar/btn.png") no-repeat -40px 0;
+    width: 40px;
+    height: 63px;
+    overflow: hidden;
+}
+/** End slider bar */

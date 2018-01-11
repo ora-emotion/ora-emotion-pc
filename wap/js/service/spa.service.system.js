@@ -1,0 +1,140 @@
+/*
+ * spa.service.system.js
+ * System module for Service
+ * 服务介绍 - “挽爱计划”九维帮助服务体系
+*/
+
+/*jslint           browser : true,   continue : true,
+  devel  : true,    indent : 2,       maxerr  : 50,
+  newcap : true,     nomen : true,   plusplus : true,
+  regexp : true,    sloppy : true,       vars : false,
+  white  : true
+*/
+/*global $, spa */
+
+spa.service.system = (function () {
+  var
+    configMap = {
+      main_html : String()
+        + '<div class="spa-module-title">'
+          + '<span class="spa-module-title-line"></span>'
+          + '<p class="spa-module-title-txt">“挽爱计划”九维帮助服务体系</p>'
+          + '<span class="spa-module-title-line"></span>'
+        +  '</div>'
+        + '<div class="service-system-main">'
+          + '<div class="service-system-main-top">'
+          	+ '<div class="service-system-main-top-text">'
+          		+ '<p>'
+          			+ '你的专属导师团队，将从九大维度，全面分析指导你的具体情感问题。你在'
+                + '感情中会遇到的每一个问题，都会被导师团队预估，并且解决。'
+          		+ '</p>'
+          	+ '</div>'
+          	+ '<div class="service-system-main-top-icons">'
+          		+ '<div class="service-system-main-top-icons-group">'
+          			+ '<div class="service-system-main-top-icons-group-item">'
+          				+ '<img src="images/service/system-icon01.png" />'
+          				+ '<p>成功概率</p>'
+          				+ '<p>全面分析</p>'
+          			+ '</div>'
+          			+ '<div class="service-system-main-top-icons-group-item">'
+          				+ '<img src="images/service/system-icon02.png" />'
+          				+ '<p>具体的挽回</p>'
+          				+ '<p>行动方案</p>'
+          			+ '</div>'
+          			+ '<div class="service-system-main-top-icons-group-item">'
+          				+ '<img src="images/service/system-icon03.png" />'
+          				+ '<p>对方心理的</p>'
+          				+ '<p>专业分析</p>'
+          			+ '</div>'
+          		+ '</div>'
+          		+ '<div class="service-system-main-top-icons-group">'
+          			+ '<div class="service-system-main-top-icons-group-item">'
+          				+ '<img src="images/service/system-icon04.png" />'
+          				+ '<p>潜在竞争对手</p>'
+          				+ '<p>风险评估</p>'
+          			+ '</div>'
+          			+ '<div class="service-system-main-top-icons-group-item">'
+          				+ '<img src="images/service/system-icon05.png" />'
+          				+ '<p>自身恋爱能力</p>'
+          				+ '<p>提升学习计划</p>'
+          			+ '</div>'
+          			+ '<div class="service-system-main-top-icons-group-item">'
+          				+ '<img src="images/service/system-icon06.png" />'
+          				+ '<p>私人定制魅力</p>'
+          				+ '<p>提升计划</p>'
+          			+ '</div>'
+          		+ '</div>'
+          		+ '<div class="service-system-main-top-icons-group">'
+          			+ '<div class="service-system-main-top-icons-group-item">'
+          				+ '<img src="images/service/system-icon07.png" />'
+          				+ '<p>见面约会</p>'
+          				+ '<p>计划设计</p>'
+          			+ '</div>'
+          			+ '<div class="service-system-main-top-icons-group-item">'
+          				+ '<img src="images/service/system-icon08.png" />'
+          				+ '<p>与对方的聊天</p>'
+          				+ '<p>实时指导</p>'
+          			+ '</div>'
+          			+ '<div class="service-system-main-top-icons-group-item">'
+          				+ '<img src="images/service/system-icon09.png" />'
+          				+ '<p>长期恋爱关系</p>'
+          				+ '<p>维护计划</p>'
+          			+ '</div>'
+          		+ '</div>'
+          	+ '</div>'
+          + '</div>'
+          + '<div class="service-system-main-mid"></div>'
+          + '<div class="service-system-main-bottom">'
+            + '<div class="service-system-main-bottom-item">'
+            	+ '<div class="left">'
+            		+ '<img src="images/service/system-pic01.png" />'
+            	+ '</div>'
+            	+ '<div class="right">'
+            		+ '<h3>'
+            			+ '<img src="images/service/system-bottom-icon01.png" />'
+            			+ '<span style="color: #53D0FF;">开会讨论</span>'
+            		+ '</h3>'
+            		+ '<p>'
+            			+ '根据每位学员的不同情况，开会讨论，并定制课程计划'
+            		+ '</p>'
+            	+ '</div>'
+            + '</div>'
+            + '<div class="service-system-main-bottom-item">'
+            	+ '<div class="left">'
+            		+ '<img src="images/service/system-pic02.png" />'
+            	+ '</div>'
+            	+ '<div class="right">'
+            		+ '<h3>'
+            			+ '<img src="images/service/system-bottom-icon02.png" />'
+            			+ '<span style="color: #F8B244;">办公环境</span>'
+            		+ '</h3>'
+            		+ '<p>'
+            			+ '整洁美观的环境，让人赏心悦目，整齐干净的状态'
+            		+ '</p>'
+            	+ '</div>'
+            + '</div>'
+            + '<div class="service-system-main-bottom-item">'
+        			+ '<div class="left">'
+      				  + '<img src="images/service/system-pic03.png" />'
+        			+ '</div>'
+        			+ '<div class="right">'
+        				+ '<h3>'
+        					+ '<img src="images/service/system-bottom-icon03.png" />'
+        					+ '<span style="color: #FF5378;">私人沟通</span>'
+        				+ '</h3>'
+        				+ '<p>'
+        					+ '保护学员隐私，专业多对一指导，高效解决学员情感问题'
+        				+ '</p>'
+        			+ '</div>'
+        		+ '</div>'
+        	+ '</div>'
+        + '</div>'
+    },
+    initModule;
+
+  initModule = function ($system) {
+    $system.html(configMap.main_html);
+  };
+
+  return { initModule : initModule };
+}());

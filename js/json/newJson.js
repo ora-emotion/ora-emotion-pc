@@ -37,7 +37,6 @@ function cisRight() {
 //--> 插入图片
             var imgWrap = $(".right1 .jieshao span");
             var picLink = $(".right1 .jieshao span a");
-            console.log(picLink);
 
             $(picLink).attr("href", "../course.html");  // 设置 a 标签链接为 "../course.html"
 
@@ -126,11 +125,13 @@ function fixedNav() {
 
         if (scrollTop > 300) {
             $(".sec-nav-hide").css({
-                opacity: 1
+                opacity: 1,
+                top : 0
             });
         } else {
             $(".sec-nav-hide").css({
-                opacity: 0
+                opacity: 0,
+                top : '-50px'
             });
         }
 
@@ -157,7 +158,6 @@ var rightNav = (function () {
         type: "GET",
         url: "../component/right-nav/right-nav.html",
         success: function (data) {
-            console.log(data);
             $(".yb_conct").append(data);
 
             $(".yb_ercode img").attr("src", "../img/weixin.gif");

@@ -1,0 +1,140 @@
+/*
+ * spa.forum.css
+ * Forum namespace styles
+ * 情感论坛样式表
+*/
+
+
+.forum-main {
+  position: relative;
+}
+
+.forum-main-top {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.forum-main-top-left {
+	width: 60%;
+	float: left;
+	margin-left: .1rem;
+	margin-right: .1rem;
+}
+.forum-main-top-left .swiper-container .swiper-wrapper .swiper-slide .item {
+  width: 100%;
+}
+.forum-main-top-left .swiper-container .swiper-wrapper .item img {
+	width: 4.5rem;
+	height: 2.7rem;
+}
+.forum-main-top-left .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 2.4rem;
+  left: 55%;
+}
+.forum-main-top-left .swiper-pagination .swiper-pagination-bullet {
+  width: .17rem;
+  height: .17rem;
+  background: #ccc;
+}
+.forum-main-top-left .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #f0f0f0;
+}
+
+
+.forum-main-top-right {
+	width: 35%;
+	float: right;
+	margin-right: .1rem;
+	display: flex;
+	flex-direction: column;
+}
+.forum-main-top-right-top a,
+.forum-main-top-right-top img {
+	width: 100%;
+	height: 100%;
+}
+.forum-main-top-right-bottom {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.forum-main-top-right-bottom span {
+	font-size: .26rem;
+}
+.forum-main-top-right-bottom>.biaoti {
+	width: 100%;
+	height: .3rem;
+	display: flex;
+	justify-content: flex-start;
+}
+.forum-main-top-right-bottom>.biaoti span {
+  margin-left: .05rem;
+}
+.forum-main-top-right-bottom>p {
+	height: .35rem;
+	display: flex;
+	align-items: center;
+}
+.forum-main-top-right-bottom>p>a {
+	font-size: .26rem;
+	color: #2D2D2D;
+	line-height: .35rem;
+	display: inline-block;
+	width: 100%;
+}
+.forum-main-top-right-bottom>p>a:first-child {
+	line-height: .3rem;
+}
+
+.forum-main-bottom {
+	width: 100%;
+}
+.forum-main-bottom .biaoti span {
+	font-size: .26rem;
+  margin-left: .15rem;
+}
+
+.forum-main-bottom .anli-group {
+  height: 19.9rem;
+  overflow: hidden;
+}
+
+.forum-main-bottom .anli {
+	width: 100%;
+	height: 1.8rem;
+	margin-top: .1rem;
+	margin-bottom: .4rem;
+}
+.forum-main-bottom .anli .left {
+	width: 1.85rem;
+	height: 100%;
+	float: left;
+	margin-left: .2rem;
+}
+.forum-main-bottom .anli .left img {
+	width: 100%;
+	height: 100%;
+}
+.forum-main-bottom .anli .right {
+	width: 5.15rem;
+	height: 100%;
+	float: left;
+	margin-left: .2rem;
+  overflow: hidden;
+}
+.forum-main-bottom .anli .right h3 {
+	font-size: .28rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.forum-main-bottom .anli .right p {
+  padding-top: .1rem;
+}
+.forum-main-bottom .more {
+  padding-left: .2rem;
+  color: #fd3232;
+}

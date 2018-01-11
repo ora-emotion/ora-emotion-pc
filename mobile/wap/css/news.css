@@ -1,0 +1,31 @@
+.module .main{
+	width: 100%;
+}
+.module .main h2{
+	font-size: .4rem;
+	text-align: center;
+	margin-top: .2rem;
+	margin-bottom: .2rem;
+}
+.module .main p{
+	font-size: .26rem;
+	text-indent: .52rem;
+	height: 100%;
+	line-height: .4rem;
+	padding-left: .2rem;
+	padding-right: .2rem;
+	margin-top: .2rem;
+	margin-bottom: .2rem;
+}
+.module .main .center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.module .main span{
+	font-size: .2rem;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	display: block;
+}

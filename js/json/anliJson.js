@@ -160,7 +160,7 @@ var rightNav = (function () {
         type: "GET",
         url: "../component/right-nav/right-nav.html",
         success: function (data) {
-            console.log(data);
+            // console.log(data);
             $(".yb_conct").append(data);
 
             $(".yb_ercode img").attr("src", "../img/weixin.gif");

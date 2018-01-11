@@ -1,0 +1,1 @@
+spa.about.guarantee=function(){var t,a={main_html:String()+'<div class="spa-module-title"><span class="spa-module-title-line"></span><p class="spa-module-title-txt">四大保障</p><span class="spa-module-title-line"></span></div>'};return t=function(t){t.html(a.main_html)},{initModule:t}}();

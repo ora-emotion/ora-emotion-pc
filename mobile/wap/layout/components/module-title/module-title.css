@@ -1,0 +1,26 @@
+/** title line */
+.module .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: .68rem;
+}
+.module .title>p {
+    font-size: .3rem;
+    height: .77rem;
+    line-height: .77rem;
+    padding: 0 .08rem;
+    color: #333333;
+}
+.module .title>.title-line {
+    display: inline-block;
+    background: url("../../images/title-line.png") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    width: .54rem;
+    height: .02rem;
+}
+/** title line */

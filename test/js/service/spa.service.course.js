@@ -1,0 +1,1 @@
+spa.service.course=function(){var s,l={main_html:String()+'<div class="spa-module-title"><span class="spa-module-title-line"></span><p class="spa-module-title-txt">视频课程</p><span class="spa-module-title-line"></span></div>'};return s=function(s){s.html(l.main_html)},{initModule:s}}();

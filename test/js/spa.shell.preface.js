@@ -1,0 +1,1 @@
+spa.shell.preface=function(){var e,a={preface_html:String()+'<div class="spa-preface-img"><img src="images/index/preface.png"></div>'},r={$preface:null};return e=function(e){r.$preface=e,e.html(a.preface_html)},{initModule:e}}();

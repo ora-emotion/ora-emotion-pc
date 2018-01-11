@@ -1,0 +1,38 @@
+/*
+ * index.css
+ * Root stylesheets
+*/
+
+/* Reset stylesheets */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+body {
+  width: 7.5rem;
+  height: 100%;
+  overflow: hidden;
+}
+
+.spa-welcome,
+.spa-question,
+.spa-score,
+.spa-modal {
+  width: 7.5rem;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.spa-welcome { background: red;}
+.spa-question { background: green; }
+.spa-score { background: blue; }
+.spa-modal { background: gray; }

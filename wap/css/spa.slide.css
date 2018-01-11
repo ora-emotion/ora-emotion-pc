@@ -1,0 +1,123 @@
+/*
+ * spa.slide.css
+ * Slide namespace styles
+ * 侧导航
+*/
+
+
+a {
+  display: inline-block;
+  color: #616161;
+  font-size: .3rem;
+}
+
+.spa-slide {
+  position: fixed;
+  top: 0;
+  left: -520px;
+  width: 520px;
+  height: 100vh;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+.spa-slide-main {
+  position: relative;
+  top: .7rem;
+  left: 0;
+  width: 5.2rem;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: .4rem;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.spa-slide-main-item {
+  width: 100%;
+  padding: .15rem 0;
+  white-space: nowrap;
+  display: inline-block;
+  color: #616161;
+  font-size: .3rem;
+}
+.spa-slide-main-item-icon {
+  display: inline-block;
+  width: .62rem;
+  height: .57rem;
+  vertical-align: middle;
+  margin-left: .45rem;
+}
+.spa-slide-main-item-txt {
+  margin-left: .70rem;
+}
+.spa-slide-main-item:nth-child(1) .spa-slide-main-item-icon {
+  background: url("../images/slide/icon-home.png") no-repeat center center;
+  background-size: 100%;
+}
+.spa-slide-main-item:nth-child(2) .spa-slide-main-item-icon {
+  background: url("../images/slide/icon-slove.png") no-repeat center center;
+  background-size: 100%;
+}
+.spa-slide-main-item:nth-child(3) .spa-slide-main-item-icon {
+  background: url("../images/slide/icon-smarriage.png") no-repeat center center;
+  background-size: 100%;
+}
+.spa-slide-main-item:nth-child(4) .spa-slide-main-item-icon {
+  background: url("../images/slide/icon-smistress.png") no-repeat center center;
+  background-size: 100%;
+}
+.spa-slide-main-item:nth-child(5) .spa-slide-main-item-icon {
+  background: url("../images/slide/icon-clove.png") no-repeat center center;
+  background-size: 100%;
+}
+.spa-slide-main-item:nth-child(6) .spa-slide-main-item-icon {
+  background: url("../images/slide/icon-forum.png") no-repeat center center;
+  background-size: 100%;
+}
+.spa-slide-main-item:nth-child(7) .spa-slide-main-item-icon {
+  background: url("../images/slide/icon-mentor.png") no-repeat center center;
+  background-size: 100%;
+}
+.spa-slide-main-item:nth-child(8) .spa-slide-main-item-icon {
+  background: url("../images/slide/icon-service.png") no-repeat center center;
+  background-size: 100%;
+}
+.spa-slide-main-item:nth-child(9) .spa-slide-main-item-icon {
+  background: url("../images/slide/icon-about.png") no-repeat center center;
+  background-size: 100%;
+}
+.spa-slide-main-btn span {
+  display: inline-block;
+  width: .3rem;
+  height: .5rem;
+  background: url("../images/slide/btn-retract.png") no-repeat center center;
+  background-size: 100%;
+  vertical-align: middle;
+  position: relative;
+  top: 0;
+  left: 5rem;
+}
+.spa-slide-btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+}
+.spa-slide-btn-extend {
+  display: inline-block;
+  position: fixed;
+  left: 0;
+  bottom: 2.62rem;
+  width: .69rem;
+  height: 1rem;
+  background: url("../images/slide/btn-extend.png") no-repeat center center;
+  background-size: 100%;
+  display: inline-block;
+  opacity: 1;
+}

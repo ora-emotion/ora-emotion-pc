@@ -1,0 +1,1 @@
+spa.smarriage.progress=function(){var s,a={main_html:String()+'<div class="spa-module-title"><span class="spa-module-title-line"></span><p class="spa-module-title-txt">挽回婚姻服务流程</p><span class="spa-module-title-line"></span></div><div class="smarriage-progress-main"></div>'};return s=function(s){s.html(a.main_html)},{initModule:s}}();

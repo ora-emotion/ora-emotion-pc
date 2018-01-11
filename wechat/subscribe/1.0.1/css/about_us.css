@@ -1,0 +1,247 @@
+.change-font-size {
+    width: 100%;
+    height: 100%;
+}
+
+
+/** title line */
+.inner>.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: .12rem;
+}
+.inner>.title>p {
+    font-size: .3rem;
+    font-weight: bold;
+    height: .7rem;
+    line-height: .7rem;
+    padding: 0 .1rem;
+}
+.inner>.title>.title-line {
+    display: inline-block;
+    background: url("../images/save-love-plan/title-line.png") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: .37rem;
+    height: .02rem;
+}
+/** title line */
+
+
+
+.preface {
+    width: 100%;
+}
+.preface-img {
+    position: relative;
+    background: url(../images/about_us/banner_bg.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.preface-btn {
+    position: relative;
+    bottom: -88%;
+    opacity: 1;
+
+    width: .84rem;
+    height: .84rem;
+
+    border-radius: 50%;
+
+    background: url("../images/save-love-plan/preface-btn.png") no-repeat center center;
+    -webkit-background-size: contain;
+    background-size: contain;
+
+}
+.preface-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.bg {
+    width: 100%;
+    /*height: 60.53rem;*/
+    background: url(../images/about_us/bg_img.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+/** split line */
+.split-line {
+    background: url(../images/about_us/split-line.png) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: .19rem;
+    margin-top: .1rem;
+    margin-bottom: .4rem;
+}
+/** split line */
+
+
+.module-01 {
+	padding-top: .5rem;
+	margin-bottom: .7rem;
+}
+.module-01 .txt {
+    padding: 0 .31rem;
+    /*text-align: justify;*/
+    letter-spacing: .02rem;
+}
+/*.module-01 .txt p{
+	font-size: 17px;
+}*/
+.module-01 .txt .indent:last-child {
+    margin-top: .4rem;
+}
+
+.module-02-bg{
+	background: url(../images/about_us/development_left.png) no-repeat .3rem 0.01rem;
+	-webkit-background-size: .36rem 25.9rem;
+    background-size: .38rem 25.9rem;
+    /*background-size: .4rem 26rem;*/
+    width: 100%;
+    height: 9.5rem;
+    margin-top: .3rem;
+    overflow: hidden;
+}
+.module-02-bg .year{
+	color: #FF5378;
+}
+.module-02-bg p{
+	margin-left: 15%;
+	width: 77%;
+
+}
+.module-02-bg img{
+	margin-left: 1.1rem;
+}
+.module-02-bg .indent{
+	height: 1.50rem;
+}
+.module-02-bg .year{
+	height: .4rem;
+}
+.module-02-bg .p1{
+	margin-top: -.01rem;
+}
+.module-02-bg .p2{
+	margin-top: 0.35rem;
+}
+.module-02-bg .p3{
+	margin-top: 0.38rem;
+}
+.module-02-bg .p4{
+	margin-top: 0.35rem;
+}
+.module-02-bg .p5{
+	margin-top: 0.4rem;
+}
+.img4 {
+    margin-top: 0;
+}
+.img6 {
+	margin-top: .3rem;
+}
+.module-02-bg img:last-child {
+
+}
+.module-02-bg .year.last{
+	margin-top: .14rem;
+}
+
+.btn{
+	width: 60%;
+	height: .2rem;
+	/*text-align: center;*/
+	margin-top: -.4rem;
+	margin-left: .6rem;
+}
+.btn a{
+	font-size: .26rem;
+	color: #2d2d2d;
+
+}
+.module3{
+	margin-top: 1.5rem;
+}
+
+.module-03-bg{
+	background: url(../images/about_us/environmen_img.png) no-repeat center center;
+	-webkit-background-size: cover;
+    background-size: 7.29rem 100%;
+    width: 100%;
+    height: 2.16rem;
+    margin-top: .3rem;
+}
+.module-04-bg{
+	background: url(../images/about_us/hovor_img.png) no-repeat center center;
+	-webkit-background-size: cover;
+    background-size: 6.04rem 100%;
+    width: 100%;
+    height: 4.74rem;
+    margin-top: .3rem;
+}
+
+.module-05-bg{
+	background: url(../images/about_us/servicewen_bg.png) no-repeat center center;
+	-webkit-background-size: cover;
+    background-size: 7.04rem 100%;
+    width: 100%;
+    height: 7.67rem;
+    margin-top: .3rem;
+}
+
+.module-06 .main {
+    display: flex;
+    justify-content: space-between;
+    width: 7rem;
+    margin: 0 auto;
+}
+.module-06 .main .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 4rem;
+    height: 4.6rem;
+    background-color: #e8e8e8;
+    position: relative;
+}
+.module-06 .main1 .item:nth-child(1){
+	background: url(../images/about_us/guarantee_bg1.png) center center no-repeat;
+}
+.module-06 .main1 .item:nth-child(2){
+	background: url(../images/about_us/guarantee_bg2.png) center center no-repeat;
+}
+.module-06 .main2 .item:nth-child(1){
+	background: url(../images/about_us/guarantee_bg3.png) center center no-repeat;
+}
+.module-06 .main2 .item:nth-child(2){
+	background: url(../images/about_us/guarantee_bg4.png) center center no-repeat;
+}
+.module-06 .main .item h3{
+	margin-top: 1.3rem;
+}
+.module-06 .main .item p {
+   padding-left: .4rem;
+   padding-right: .3rem;
+}
+
+
+.inner.module-07 {
+  padding-bottom: .9rem;
+}
+.module-07-bg{
+	background: url(../images/about_us/cooperation.png) no-repeat center center;
+	-webkit-background-size: cover;
+  background-size: 4.98rem 1.81rem;
+  width: 100%;
+  height: 2rem;
+}

@@ -1,0 +1,165 @@
+/*
+ * spa.video.css
+ * Video namespace styles
+ * 橘子视频样式表（包括视频预览页面和付费视频页面的样式表）
+*/
+
+
+.preface {
+  display: none;
+}
+
+/* Start : 视频预览页面样式表 - spa.video.free */
+.video-free-main .play .play-group {
+  padding-top: .77rem;
+}
+.video-free-main .play .play-group video {
+  margin: 0 auto;
+  display: none;
+}
+.video-free-main .play .play-group video.active {
+  display: block;
+}
+
+.video-free-main .play .txt-group .item {
+  display: none;
+  padding-left: .16rem;
+  padding-top: .2rem;
+}
+.video-free-main .play .txt-group .item.active {
+  display: block;
+}
+.video-free-main .play .txt-group .item .play-title {
+  font-weight: bold;
+  color: #333;
+  line-height: .26rem;
+  height: .26rem;
+}
+.video-free-main .play .txt-group .item .play-des-group {
+  display: flex;
+  justify-content: flex-start;
+  padding: .2rem 0 0;
+}
+.video-free-main .play .txt-group .item .play-des-group .icon {
+  display: inline-block;
+  width: .26rem;
+  height: .22rem;
+  margin-right: .12rem;
+  vertical-align: middle;
+  background: url("../images/video/icon.png") no-repeat center center;
+  background-size: 100%;
+}
+.video-free-main .play .txt-group .item .play-des-group .play-des {
+  font-size: .2rem;
+  color: #535353;
+  line-height: .22rem;
+  height: .22rem;
+}
+
+.video-free-main .split-line {
+  width: 100%;
+  height: 1px;
+  background: 1px solid #aaa;
+  margin-bottom: .18rem;
+  margin-top: .36rem;
+}
+
+.video-free-main .video-list .video-title {
+  font-weight: bold;
+  line-height: .5rem;
+  height: .5rem;
+  padding-left: .16rem;
+}
+.video-free-main .video-list .swiper-container .swiper-wrapper .swiper-slide .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.video-free-main .video-list .swiper-container .swiper-wrapper .swiper-slide .item img {
+  width: 2.63rem;
+  height: 1.72rem;
+}
+.video-free-main .video-list .swiper-container .swiper-wrapper .swiper-slide .item p {
+  padding-top: .2rem;
+}
+/* End : 视频预览页面样式表 - spa.video.free */
+
+/* Start : 付费视频页面样式表 - spa.video.free */
+.video-vip-main .play .play-group {
+  padding-top: .77rem;
+}
+.video-vip-main .play .play-group video {
+  margin: 0 auto;
+  display: none;
+}
+.video-vip-main .play .play-group video.active {
+  display: block;
+}
+
+.video-vip-main .play .txt-group .item {
+  display: none;
+  padding-left: .16rem;
+  padding-top: .2rem;
+}
+.video-vip-main .play .txt-group .item.active {
+  display: block;
+}
+.video-vip-main .play .txt-group .item .play-title {
+  font-weight: bold;
+  color: #333;
+  line-height: .26rem;
+  height: .26rem;
+}
+.video-vip-main .play .txt-group .item .play-des-group {
+  display: flex;
+  justify-content: flex-start;
+  padding: .2rem 0 0;
+}
+.video-vip-main .play .txt-group .item .play-des-group .icon {
+  display: inline-block;
+  width: .26rem;
+  height: .22rem;
+  margin-right: .12rem;
+  vertical-align: middle;
+  background: url("../images/video/icon.png") no-repeat center center;
+  background-size: 100%;
+}
+.video-vip-main .play .txt-group .item .play-des-group .play-des {
+  font-size: .2rem;
+  color: #535353;
+  line-height: .22rem;
+  height: .22rem;
+}
+
+.video-vip-main .split-line {
+  width: 100%;
+  height: 1px;
+  background: 1px solid #aaa;
+  margin-bottom: .18rem;
+  margin-top: .36rem;
+}
+
+.video-vip-main .video-list .video-title {
+  font-weight: bold;
+  line-height: .5rem;
+  height: .5rem;
+  padding-left: .16rem;
+}
+.video-vip-main .video-list .swiper-container .swiper-wrapper .swiper-slide .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.video-vip-main .video-list .swiper-container .swiper-wrapper .swiper-slide .item img {
+  width: 2.63rem;
+  height: 1.72rem;
+}
+.video-vip-main .video-list .swiper-container .swiper-wrapper .swiper-slide .item p {
+  width: 2.63rem;
+  padding-top: .2rem;
+  line-height: .46rem;
+  text-align: center;
+}
+/* Start : 付费视频页面样式表 - spa.video.free */

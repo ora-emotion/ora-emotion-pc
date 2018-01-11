@@ -1,0 +1,35 @@
+
+.preface{
+	display: none;
+}
+.module {
+	width: 100%;
+	margin-top: .5rem;
+}
+.module .main{
+	width: 100%;
+	margin: 0 auto;
+}
+.module .main .tu{
+	width: 100%;
+}
+.module .main .tu img{
+	width: 7.29rem;
+	padding-left: .1rem;
+}
+.module .main .wen{
+	width: 90%;
+	margin: 0 auto;
+}
+.module .main .wen h3{
+	font-size: .32rem;
+	margin-top: .5rem;
+}
+.module .main .wen p{
+	font-size: .26rem;
+	line-height: .5rem;
+	height: 100%;
+}
+.module .main .wen p.red{
+	color: #FF3232;
+}

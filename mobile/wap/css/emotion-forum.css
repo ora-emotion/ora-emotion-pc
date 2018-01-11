@@ -1,0 +1,119 @@
+@import "swiper/swiper.css";
+
+.module-01 .main {
+    position: relative;
+    /*height: 23rem;*/
+}
+.module-01 .main .top{
+	height: 2.6rem;
+}
+.module-01 .main .top .left{
+	width: 60%;
+	height: 60%;
+	float: left;
+	margin-left: .2rem;
+}
+.module-01 .main .top .left .swiper-container .swiper-wrapper .swiper-slide .item {
+    width: 100%;
+}
+.module-01 .main .top .left .swiper-container .swiper-wrapper .item img{
+	width: 4.5rem;
+	height: 2.7rem;
+}
+
+.module-01 .main .top .left .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 2.4rem;
+    left: 55%;
+    /*right: 5%;*/
+}
+.module-01 .main .top .left .swiper-pagination .swiper-pagination-bullet{
+    width: .17rem;
+    height: .17rem;
+    background: #cccccc;
+}
+.module-01 .main .top .left .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: #f0f0f0;
+}
+.module-01>.main>.top>.right{
+	width: 35%;
+	float: right;
+	height: 100%;
+	/*border: 1px solid #000000;*/
+}
+.module-01>.main>.top>.right>.top{
+	width: 100%;
+	height: 60%;
+}
+.module-01>.main>.top>.right>.top>img{
+	width: 100%;
+	height: 100%;
+}
+.module-01>.main>.top>.right>.bottom{
+	height: 40%;
+}
+.module-01>.main>.top>.right>.bottom span{
+	font-size: .26rem;
+}
+.module-01>.main>.top>.right>.bottom>.biaoti{
+	margin-top: -.7rem;
+	width: 100%;
+	height: .3rem;
+}
+.module-01>.main>.top>.right>.bottom>p{
+	height: .35rem;
+}
+.module-01>.main>.top>.right>.bottom>p>a{
+	font-size: .26rem;
+	color: #2D2D2D;
+	line-height: .35rem;
+}
+.module-01>.main>.top>.right>.bottom>p>a:first-child{
+	line-height: 1.9rem;
+}
+.module-01>.main>.bottom{
+	width: 100%;
+}
+.biaoti span{
+	font-size: .26rem;
+}
+
+.anli-group {
+  height: 19.9rem;
+  overflow: hidden;
+}
+
+.anli{
+	width: 100%;
+	height: 1.8rem;
+	margin-top: .2rem;
+	margin-bottom: .4rem;
+}
+.anli .left{
+	width: 1.85rem;
+	height: 100%;
+	float: left;
+	margin-left: .2rem;
+}
+.anli .left img{
+	width: 100%;
+	height: 100%;
+}
+.anli .right{
+	width: 5.15rem;
+	height: 100%;
+	float: left;
+	margin-left: .2rem;
+  overflow: hidden;
+}
+.anli .right h3{
+	font-size: .28rem;
+}
+
+
+.module .main .bottom .more {
+  color: #fd3232;
+  padding-left: .2rem;
+}

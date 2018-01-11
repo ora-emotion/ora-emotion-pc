@@ -1,0 +1,324 @@
+/*
+ * spa.clove.css
+ * Customize Love namespace styles
+ * 定制爱情样式表
+*/
+
+/* Start : reason - 单身原因 */
+.clove-reason-main {
+  padding-top: .35rem;
+}
+.clove-reason-main .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.clove-reason-main .swiper-container .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clove-reason-main .swiper-container .swiper-slide .txt-title {
+  font-weight: bold;
+  line-height: .36rem;
+  height: .36rem;
+  padding-top: .15rem;
+  padding-bottom: .05rem;
+}
+.clove-reason-main .swiper-container .swiper-slide .txt-des {
+  width: 2.62rem;
+}
+/* End : reason - 单身原因 */
+
+/* Start : consequence - 错误做法导致后果 */
+.clove-consequence-main {
+  background: #e1e6fe;
+}
+.clove-consequence-main .split-line {
+  width: 100%;
+  height: .01rem;
+  background: #313131;
+}
+
+.clove-consequence-main .swiper-container .swiper-wrapper .swiper-slide {
+  width: 3.15rem;
+  display: flex;
+  justify-content: center;
+  padding: .3rem 0;
+}
+
+.clove-consequence-main .swiper-container .swiper-wrapper .swiper-slide .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 .3rem;
+}
+.clove-consequence-main .swiper-container .swiper-wrapper .swiper-slide .item .img {
+  width: 2.19rem;
+  height: 1.4rem;
+}
+.clove-consequence-main .swiper-container .swiper-wrapper .swiper-slide .item .img img {
+  width: 100%;
+}
+.clove-consequence-main .swiper-container .swiper-wrapper .swiper-slide .item .txt .title {
+  padding: .12rem 0;
+  font-weight: bold;
+  line-height: .36rem;
+  height: .36rem;
+  text-align: center;
+}
+.clove-consequence-main .swiper-container .swiper-wrapper .swiper-slide .item .txt .para {
+  width: 3.16rem;
+  line-height: .36rem;
+}
+
+.clove-consequence-main .tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .18rem 0;
+}
+.clove-consequence-main .tabs span {
+  display: inline-block;
+  width: .42rem;
+  height: .07rem;
+  border-radius: 10px;
+  margin: 0 .13rem;
+  background: #bbc4f4;
+}
+.clove-consequence-main .tabs span.active {
+  background: #8f9ce6;
+}
+.clove-consequence-main .tabs span {
+  margin: 0 5px;
+}
+/* End : consequence - 错误做法导致后果 */
+
+/* Start : customize - 橘子情感定制服务 */
+.clove-customize-main {
+  position: relative;
+  width: 100%;
+  height: 4.1rem;
+  overflow: hidden;
+}
+.clove-customize-main .column-line {
+  width: .02rem;
+  height: 7.4rem;
+  background: #fa3232;
+  position: absolute;
+  top: .12rem;
+  left: .64rem;
+}
+.clove-customize-main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+.clove-customize-main-content-item {
+  padding-left: .48rem;
+  padding-top: .05rem;
+  padding-bottom: .05rem;
+}
+.clove-customize-main-content-item .txt-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+  line-height: .43rem;
+  height: .43rem;
+}
+.clove-customize-main-content-item .txt-title p {
+  padding-left: .4rem;
+}
+.clove-customize-main-content-item .txt-des {
+  width: 5.78rem;
+  padding-left: .73rem;
+  line-height: .36rem;
+}
+.clove-customize .more {
+  padding-top: .3rem;
+  padding-left: 1.22rem;
+}
+/* End : customize - 橘子情感定制服务 */
+
+/* Start : example - 成功案例 */
+.clove-example-main {
+  background: #eaedf8;
+}
+.clove-example-main-item {
+  display: flex;
+  padding: .22rem 0;
+}
+.clove-example-main-item:last-child {
+  border: none;
+}
+.clove-example-main-item .pic {
+  width: 2.18rem;
+  height: 1.31rem;
+  padding-left: .14rem;
+}
+.clove-example-main-item .pic img {
+  width: 100%;
+  height: 100%;
+}
+.clove-example-main-item .txt-group {
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: .15rem;
+  position: relative;
+  top: -.05rem;
+}
+.clove-example-main-item .txt-group p {
+  color: #333333;
+  width: 100%;
+  height: 100%;
+  line-height: .36rem;
+}
+.clove-example-main-item .txt-group p.topic {
+  font-weight: bold;
+  height: .36rem;
+
+  /*padding-bottom: .08rem;*/
+}
+.clove-example-main-item .txt-group p.des {
+  line-height: .36rem;
+}
+.clove-example-main-item .txt-group p.des a {
+  color: #fd3232;
+}
+/* End : example - 成功案例 */
+
+/* Start : advantage - 橘子优势 */
+.clove-advantage-main {
+  background: #e1fef8;
+}
+.clove-advantage-main .split-line {
+  width: 100%;
+  height: .01rem;
+  background: #313131;
+}
+
+.clove-advantage-main .swiper-container .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  padding: .3rem 0;
+}
+.clove-advantage-main .swiper-container .swiper-wrapper .swiper-slide .img {
+  width: 2.39rem;
+  height: 1.44rem;
+  padding-left: .13rem;
+}
+.clove-advantage-main .swiper-container .swiper-wrapper .swiper-slide .img img {
+  width: 100%;
+  height: 100%;
+}
+.clove-advantage-main .swiper-container .swiper-wrapper .swiper-slide .txt {
+  width: 4.06rem;
+  padding-left: .11rem;
+}
+.clove-advantage-main .swiper-container .swiper-wrapper .swiper-slide .txt p {
+  line-height: .4rem;
+}
+.clove-advantage-main .tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .18rem 0;
+}
+.clove-advantage-main .tabs span {
+  display: inline-block;
+  width: .17rem;
+  height: .17rem;
+  border-radius: 50%;
+  background: #78d8c5;
+}
+.clove-advantage-main .tabs span.active {
+  background: #4dbaa4;
+}
+.clove-advantage-main .tabs span {
+  margin: 0 5px;
+}
+/* End : advantage - 橘子优势 */
+
+/* Start : mentor - 导师团队 */
+.clove-mentor-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clove-mentor-main .item {
+  display: flex;
+  justify-content: flex-start;
+  padding: .18rem 0;
+}
+.clove-mentor-main .item img {
+  width: 2.07rem;
+  height: 2.74rem;
+}
+.clove-mentor-main .item .txt-group {
+  width: 4.2rem;
+  padding-left: .2rem;
+}
+.clove-mentor-main .item .txt-group p {
+  color: #202020;
+  line-height: .36rem;
+}
+.clove-mentor-main .item .txt-group .mentor-name {
+  font-weight: bold;
+  height: .36rem;
+  padding-top: .3rem;
+  padding-bottom: .05rem;
+}
+/* End : mentor - 导师团队 */
+
+/* Start : instruction - 用户须知 */
+.clove-instruction-main {
+  background: url("../images/clove/instruction-bg.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 3.74rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: .15rem 0;
+}
+.clove-instruction-main .txt-para {
+  width: 6.6rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+.clove-instruction-main .txt-para .icon {
+  display: inline-block;
+  width: .41rem;
+  height: .41rem;
+  background: url("../images/clove/instruction-icon.png") no-repeat left center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.clove-instruction-main .txt-para p {
+  color: #202020;
+  line-height: .36rem;
+  width: 100%;
+  padding-left: .15rem;
+}
+/* End : instruction - 用户须知 */
+
+/* Start : step - 服务流程 */
+.clove-progress-main {
+	background: url(../images/util/progress-bg.png) no-repeat center center;
+  background-size: 7.04rem 100%;
+  height: 7.67rem;
+  margin-top: .3rem;
+}
+/* End : step - 服务流程 */

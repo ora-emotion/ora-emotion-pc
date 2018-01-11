@@ -1,0 +1,1 @@
+spa.shell.header=function(){var a,e={header_html:String()+'<a href="./"><div class="spa-header-logo"></div></a><div class="spa-header-contact"><div class="spa-header-contact-icon"></div><div class="spa-header-contact-txt"><p>免费情感热线电话</p><p>4006-299-520</p></div></div>'},d={$header:null};return a=function(a){d.$header=a,a.html(e.header_html)},{initModule:a}}();
